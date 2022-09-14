@@ -1,8 +1,7 @@
-<h1>Human Interface Guidelines 번역</h1>
+<h1><a href="https://developer.apple.com/design/human-interface-guidelines/guidelines/overview/">Human Interface Guidelines</a> 번역</h1>
 
-<details>
-<summary><h3><code>flatform</code></h3></summary>
 
+<a href="./Flatforms/Overview.md"><img src="https://img.shields.io/badge/flatfroms-9cf?style=for-the-badge&" alt=""></a>
 - <a href="./Flatforms/Overview.md">Overview</a>
 - <a href="./Designing_for_iOS.md">Designing for iOS</a>
 - <a href="./Designing_for_iPadOS.md">Designing for iPadOS</a>
@@ -10,11 +9,9 @@
 - <a href="./Designing_for_tvOS.md">Designing for tvOS</a>
 - <a href="./Designing_for_watchOS.md">Designing for watchOS</a>
 
-</details>
+---
 
-
-<details>
-<summary><h3><code>Foundations</code></h3></summary>
+<a href="./Flatforms/Overview.md"><img src="https://img.shields.io/badge/Foundations-9cf?style=for-the-badge&" alt=""></a>
 
 - <a href="">Overview</a>
 - <a href="">Accessibility</a>
@@ -32,11 +29,9 @@
 - <a href="">SF Symbols</a>
 - <a href="">Typography</a>
 
-</details>
+---
 
-
-<details>
-<summary><h3><code>Patterns</code></h3></summary>
+<a href="./Flatforms/Overview.md"><img src="https://img.shields.io/badge/Patterns-9cf?style=for-the-badge&" alt=""></a>
 
 - <a href="">Overview</a>
 - <a href="">Accessing private data</a>
@@ -64,10 +59,9 @@
 - <a href="">Undo and redo</a>
 - <a href="">Workouts</a>
 
-</details>
+---
 
-<details>
-<summary><h3><code>Components</code></h3></summary>
+<a href="./Flatforms/Overview.md"><img src="https://img.shields.io/badge/Components-9cf?style=for-the-badge&" alt=""></a>
 
 - <a href="">All components</a>
 - <a href="">Content</a>
@@ -79,11 +73,9 @@
 - <a href="">Status</a>
 - <a href="">System experiences</a>
 
-</details>
+---
 
-
-<details>
-<summary><h3><code>Inputs</code></h3></summary>
+<a href="./Flatforms/Overview.md"><img src="https://img.shields.io/badge/Inputs-9cf?style=for-the-badge&" alt=""></a>
 
 - <a href="">Overview</a>
 - <a href="">Apple Pencil and Scribble</a>
@@ -98,10 +90,9 @@
 - <a href="">Touch Bar</a>
 - <a href="">Touchscreen gestures</a>
 
-</details>
+---
 
-<details>
-<summary><h3><code>Technologies</code></h3></summary>
+<a href="./Flatforms/Overview.md"><img src="https://img.shields.io/badge/Technologies-9cf?style=for-the-badge&" alt=""></a>
 
 - <a href="">All technologies</a>
 - <a href="">AirPlay</a>
@@ -131,19 +122,5 @@
 - <a href="">Tap to Pay on iPhone</a>
 - <a href="">Wallet</a>
 
-</details>
 
-<style>
-h3 {
-    display: inline;
-}
-
-a {
-    color: gray;
-}
-
-a:hover {
-    color: white;
-}
-</style>
 
