@@ -1,6 +1,5 @@
 <h1>Human Interface Guidelines 번역</h1>
 
----
 <details>
 <summary><h3><code>flatform</code></h3></summary>
 
@@ -13,7 +12,6 @@
 
 </details>
 
----
 
 <details>
 <summary><h3><code>Foundations</code></h3></summary>
@@ -36,7 +34,6 @@
 
 </details>
 
----
 
 <details>
 <summary><h3><code>Patterns</code></h3></summary>
@@ -69,8 +66,6 @@
 
 </details>
 
----
-
 <details>
 <summary><h3><code>Components</code></h3></summary>
 
@@ -86,7 +81,6 @@
 
 </details>
 
----
 
 <details>
 <summary><h3><code>Inputs</code></h3></summary>
@@ -105,8 +99,6 @@
 - <a href="">Touchscreen gestures</a>
 
 </details>
-
----
 
 <details>
 <summary><h3><code>Technologies</code></h3></summary>
@@ -140,8 +132,6 @@
 - <a href="">Wallet</a>
 
 </details>
-
----
 
 <style>
 h3 {
