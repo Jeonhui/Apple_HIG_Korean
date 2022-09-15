@@ -5,6 +5,7 @@
 > 사용자들은 그들의 아이폰에 의존하여 언제, 어디에 있든 연결을 유지하고, 게임을 하며 미디어를 보고, 작업을 수행하고, 사용자들의 정보를 추적합니다.
 >
 <br/>
+
 As you begin designing your app or game for iOS, start by understanding the following fundamental device characteristics and patterns that distinguish the iOS experience. Using these characteristics and patterns to inform your design decisions can help you provide an app or game that iPhone users appreciate.
 
 > 당신이 iOS 앱이나 게임 디자인을 하기 시작했을 때, iOS의 경험을 구분하는 것은 기초적인 장치의 특성과 패턴들을 이해하는 것부터 시작합니다. 이러한 특성과 패턴들을 사용하여 당신의 디자인을 전달하게 된다면, iPhone 사용자가 높이 평가하는 앱이나 게임을 제공하는 데 도움이 될 수 있습다.
