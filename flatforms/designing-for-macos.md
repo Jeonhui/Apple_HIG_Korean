@@ -1,1 +1,1 @@
-<h1>[Platforms] Designing for macOS</h1>
+# **[Platforms] Designing for macOS**

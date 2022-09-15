@@ -1,4 +1,4 @@
-<h1>[Platforms] Designing for iPadOS</h1>
+# **[Platforms] Designing for iPadOS**
 
 <h3></h3>
 
