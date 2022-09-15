@@ -1,39 +1,36 @@
 <h1><a href="https://developer.apple.com/design/human-interface-guidelines/guidelines/overview/">Human Interface Guidelines</a> 번역</h1>
 
 
-<a href="./Flatforms/Overview.md"><img src="https://img.shields.io/badge/flatfroms-9cf?style=for-the-badge&" alt=""></a>
-- <a href="./Flatforms/Overview.md">Overview</a>
-- <a href="./Designing_for_iOS.md">Designing for iOS</a>
-- <a href="./Designing_for_iPadOS.md">Designing for iPadOS</a>
-- <a href="./Designing_for_macOS.md">Designing for macOS</a>
-- <a href="./Designing_for_tvOS.md">Designing for tvOS</a>
-- <a href="./Designing_for_watchOS.md">Designing for watchOS</a>
+<a href="./flatforms/overview.md"><img src="https://img.shields.io/badge/flatfroms-9cf?style=for-the-badge&" alt=""></a>
+- <a href="./designing-for-ios.md">Designing for iOS ✔️</a>
+- <a href="./designing-for-ipados.md">Designing for iPadOS</a>
+- <a href="./designing-for-macos.md">Designing for macOS</a>
+- <a href="./designing-for-tv.md">Designing for tvOS</a>
+- <a href="./designing-for-watch.md">Designing for watchOS</a>
 
 ---
 
-<a href="./Flatforms/Overview.md"><img src="https://img.shields.io/badge/Foundations-9cf?style=for-the-badge&" alt=""></a>
+<a href="./foundations/overview.md"><img src="https://img.shields.io/badge/Foundations-9cf?style=for-the-badge&" alt=""></a>
 
-- <a href="">Overview</a>
-- <a href="">Accessibility</a>
-- <a href="">App icons</a>
-- <a href="">Branding</a>
-- <a href="">Color</a>
-- <a href="">Dark Mode</a>
-- <a href="">Icons</a>
-- <a href="">Images</a>
-- <a href="">Inclusion</a>
-- <a href="">Layout</a>
-- <a href="">Materials</a>
-- <a href="">Motion</a>
-- <a href="">Right to left</a>
-- <a href="">SF Symbols</a>
-- <a href="">Typography</a>
+- <a href="./foundations/accessibility.md">Accessibility</a>
+- <a href="./foundations/app-icons.md">App icons</a>
+- <a href="./foundations/branding.md">Branding</a>
+- <a href="./foundations/color.md">Color</a>
+- <a href="./foundations/dark-mode.md">Dark Mode</a>
+- <a href="./foundations/icons.md">Icons</a>
+- <a href="./foundations/images.md">Images</a>
+- <a href="./foundations/inclusion.md">Inclusion</a>
+- <a href="./foundations/layout.md">Layout</a>
+- <a href="./foundations/materials.md">Materials</a>
+- <a href="./foundations/motion.md">Motion</a>
+- <a href="./foundations/right-to-left.md">Right to left</a>
+- <a href="./foundations/sf-symbols.md">SF Symbols</a>
+- <a href="./foundations/Typography.md">Typography</a>
 
 ---
 
-<a href="./Flatforms/Overview.md"><img src="https://img.shields.io/badge/Patterns-9cf?style=for-the-badge&" alt=""></a>
+<a href="./Flatforms/overview.md"><img src="https://img.shields.io/badge/Patterns-9cf?style=for-the-badge&" alt=""></a>
 
-- <a href="">Overview</a>
 - <a href="">Accessing private data</a>
 - <a href="">Drag and drop</a>
 - <a href="">Entering data</a>
@@ -61,7 +58,7 @@
 
 ---
 
-<a href="./Flatforms/Overview.md"><img src="https://img.shields.io/badge/Components-9cf?style=for-the-badge&" alt=""></a>
+<a href="./Flatforms/overview.md"><img src="https://img.shields.io/badge/Components-9cf?style=for-the-badge&" alt=""></a>
 
 - <a href="">All components</a>
 - <a href="">Content</a>
@@ -75,9 +72,8 @@
 
 ---
 
-<a href="./Flatforms/Overview.md"><img src="https://img.shields.io/badge/Inputs-9cf?style=for-the-badge&" alt=""></a>
+<a href="./Flatforms/overview.md"><img src="https://img.shields.io/badge/Inputs-9cf?style=for-the-badge&" alt=""></a>
 
-- <a href="">Overview</a>
 - <a href="">Apple Pencil and Scribble</a>
 - <a href="">Digital Crown</a>
 - <a href="">Focus and selection</a>
@@ -92,7 +88,7 @@
 
 ---
 
-<a href="./Flatforms/Overview.md"><img src="https://img.shields.io/badge/Technologies-9cf?style=for-the-badge&" alt=""></a>
+<a href="./Flatforms/overview.md"><img src="https://img.shields.io/badge/Technologies-9cf?style=for-the-badge&" alt=""></a>
 
 - <a href="">All technologies</a>
 - <a href="">AirPlay</a>
