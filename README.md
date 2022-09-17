@@ -1,5 +1,8 @@
 # **[Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/guidelines/overview/) 번역**
 
+![https://img.shields.io/badge/papago-blue?style=for-the-badge&](https://img.shields.io/badge/papago-blue?style=for-the-badge&)
+![https://img.shields.io/badge/githubAction-lightgray?style=for-the-badge&](https://img.shields.io/badge/githubActionS-lightgray?style=for-the-badge&)
+
 ![https://img.shields.io/badge/flatfroms-9cf?style=for-the-badge&](https://img.shields.io/badge/flatfroms-9cf?style=for-the-badge&)
 
 - [Designing for iOS ✔️](./flatforms/designing-for-ios.md)
