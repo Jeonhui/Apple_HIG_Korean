@@ -1,0 +1,1 @@
+# **[patterns] managing-accounts**

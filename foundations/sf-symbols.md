@@ -1,2 +1,1 @@
-<h1> [Foundations] SF Symbols </h1>
-
+# **[foundations] sf-symbols**

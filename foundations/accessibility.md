@@ -1,10 +1,14 @@
 # **[Foundations] Accessibility**
 
 ### People use Apple’s accessibility features to personalize how they interact with their devices in ways that work for them.
+> 사용자들은 애플의 접근성 기능을 사용하여 장치에 적합한 방식으로 상호작용 방식을 개인화 합니다.
 
 ![https://developer.apple.com/design/human-interface-guidelines/images/intro/foundations/foundations-accessibility-intro-dark_2x.png](https://developer.apple.com/design/human-interface-guidelines/images/intro/foundations/foundations-accessibility-intro-dark_2x.png)
 
 An accessible app or game supports accessibility personalizations by design and gives everyone a great user experience, regardless of their capabilities or how they use their devices.
+> 접근 가능한 앱이나 게임은 디자인 별로 접근성 개인화를 지원하고, 모든 좋은 사용자 경험을 줍니다.
+
+<br/>
 
 Approximately one in seven people have a disability that affects the way they interact with the world and their devices. People can experience disabilities at any age, for any duration, and at varying levels of severity. For example, situational disabilities — such as a wrist injury from a fall or voice loss from overuse — can affect the way almost everyone interacts with their devices at various times.
 

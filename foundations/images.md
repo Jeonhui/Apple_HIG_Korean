@@ -1,1 +1,1 @@
-<h1> [Foundations] Images </h1>
+# **[foundations] images**

@@ -1,0 +1,1 @@
+# **[patterns] accessing-private-data**

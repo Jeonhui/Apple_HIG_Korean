@@ -1,1 +1,1 @@
-<h1> [Foundations] Dark Mode </h1>
+# **[foundations] dark-mode**

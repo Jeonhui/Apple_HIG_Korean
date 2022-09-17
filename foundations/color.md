@@ -1,1 +1,1 @@
-<h1> [Foundations] Color </h1>
+# **[foundations] color**
