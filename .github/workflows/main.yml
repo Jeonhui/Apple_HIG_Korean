@@ -1,0 +1,54 @@
+# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+#Workflow의 이름
+name: Python package
+
+# Event 작성 부분(Trigger)
+# [push(Branch or Tag), pull_request, schedule]
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  push:
+    branches: [ main ]
+
+
+jobs:
+  #build라는 job생성 (하위 3개의 step)
+  build:
+    runs-on: macos-latest
+    strategy:
+      #조기 오류 처리
+      fail-fast: false
+      
+      # 파이썬 버전 선택
+      matrix:
+        python-version: [ "3.9" ]
+
+    steps:
+      # uses 어떤 액션을 사용할지 지정 (이미 만들어진 액션 사용할 때 지정)
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v3 #
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      #pip 설치
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install flake8 pytest
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: scrap IOSDevelopersNews
+        run: |
+          python translate.py
+        env: 
+          X_NAVER_CLIENT_ID: ${{ secrets.X_NAVER_CLIENT_ID }}
+          X_NAVER_CLIENT_SECRET: ${{ secrets.X_NAVER_CLIENT_SECRET }}
+      - name: Add & Commit
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: '*.md'
+          message: 'update HIG'
+        env:
+          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
