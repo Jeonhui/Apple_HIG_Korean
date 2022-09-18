@@ -39,16 +39,16 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install flake8 pytest
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: scrap IOSDevelopersNews
+      - name: translate
         run: |
           python translate.py
         env: 
-          X_NAVER_CLIENT_ID: ${{ secrets.X_NAVER_CLIENT_ID }}
-          X_NAVER_CLIENT_SECRET: ${{ secrets.X_NAVER_CLIENT_SECRET }}
+          X_Naver_Client_Id: ${{ secrets.X_NAVER_CLIENT_ID }}
+          X_Naver_Client_Secret: ${{ secrets.X_NAVER_CLIENT_SECRET }}
       - name: Add & Commit
         uses: EndBug/add-and-commit@v9
         with:
-          add: '*.md'
+          add: '*.md logs'
           message: 'update HIG'
         env:
           GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
