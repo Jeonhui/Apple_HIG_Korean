@@ -3,13 +3,13 @@
 ![https://img.shields.io/badge/papago-blue?style=for-the-badge&](https://img.shields.io/badge/papago-blue?style=for-the-badge&)
 ![https://img.shields.io/badge/githubAction-lightgray?style=for-the-badge&](https://img.shields.io/badge/githubActionS-lightgray?style=for-the-badge&)
 
-![https://img.shields.io/badge/flatfroms-9cf?style=for-the-badge&](https://img.shields.io/badge/flatfroms-9cf?style=for-the-badge&)
+![https://img.shields.io/badge/platfroms-9cf?style=for-the-badge&](https://img.shields.io/badge/platfroms-9cf?style=for-the-badge&)
 
-- [Designing for iOS ✔️](./flatforms/designing-for-ios.md)
-- [Designing for iPadOS](./flatforms/designing-for-ipados.md)
-- [Designing for macOS](./flatforms/designing-for-macos.md)
-- [Designing for tvOS](./flatforms/designing-for-tvos.md)
-- [Designing for watchOS](./flatforms/designing-for-watchos.md)
+- [Designing for iOS ✔️](./platforms/designing-for-ios.md)
+- [Designing for iPadOS](./platforms/designing-for-ipados.md)
+- [Designing for macOS](./platforms/designing-for-macos.md)
+- [Designing for tvOS](./platforms/designing-for-tvos.md)
+- [Designing for watchOS](./platforms/designing-for-watchos.md)
 
 ---
 
