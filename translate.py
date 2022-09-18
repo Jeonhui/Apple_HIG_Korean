@@ -8,7 +8,7 @@ import re
 #
 # environ.environ()
 
-MAX_CAPACITY = 800
+MAX_CAPACITY = 8000
 
 
 # translate text with papago API
