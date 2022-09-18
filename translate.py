@@ -14,8 +14,8 @@ MAX_CAPACITY = 800
 # translate text with papago API
 def translateWithPapagoAPI(text):
     # Header Info
-    client_id = os.getenv('X_Naver_Client_Id')
-    client_secret = os.getenv('X_Naver_Client_Secret')
+    client_id = os.getenv('X_NAVER_CLIENT_ID')
+    client_secret = os.getenv('X_NAVER_CLIENT_SECRET')
 
     # Post Url
     url = "https://openapi.naver.com/v1/papago/n2mt"
@@ -107,10 +107,10 @@ def translate():
 
                         # translate
                         if len(text.split(' ')) > 3:
-                            capacity += len(originData[i])
-                            if capacity > MAX_CAPACITY:
+                            if capacity + len(originData[i]) > MAX_CAPACITY:
                                 finished = True
                                 break
+                            capacity += len(originData[i])
                             currentPathFile.write(originText + '\n')
                             translatedText = translateWithPapagoAPI(text)
                             currentPathFile.write(
@@ -141,7 +141,7 @@ def translate():
                 break
 
     logsFile.write(
-        time.strftime('%Y-%m-%d %H:%M:%S') + ' | ' + logFilePath + ' | ' + str(logLine) + '|' + str(capacity) + '\n')
+        time.strftime('%Y-%m-%d %H:%M:%S') + ' | ' + logFilePath + ' | ' + str(logLine) + ' | ' + str(capacity) + '\n')
     logsFile.close()
 
 
