@@ -43,8 +43,8 @@ jobs:
         run: |
           python translate.py
         env: 
-          X_Naver_Client_Id: ${{ secrets.X_NAVER_CLIENT_ID }}
-          X_Naver_Client_Secret: ${{ secrets.X_NAVER_CLIENT_SECRET }}
+          X_NAVER_CLIENT_ID: ${{ secrets.X_NAVER_CLIENT_ID }}
+          X_NAVER_CLIENT_SECRET: ${{ secrets.X_NAVER_CLIENT_SECRET }}
       - name: Add & Commit
         uses: EndBug/add-and-commit@v9
         with:
