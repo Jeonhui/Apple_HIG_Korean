@@ -16,6 +16,8 @@ def translateWithPapagoAPI(text):
     # Header Info
     client_id = os.getenv('X_NAVER_CLIENT_ID')
     client_secret = os.getenv('X_NAVER_CLIENT_SECRET')
+    print(client_id)
+    print(client_secret)
 
     # Post Url
     url = "https://openapi.naver.com/v1/papago/n2mt"
