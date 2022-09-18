@@ -113,7 +113,7 @@ def translate():
 
                             translatedText = translateWithPapagoAPI(text)
 
-                            if translatedText == 'error':
+                            if translatedText == 'error' or translatedText == '':
                                 finished = True
                                 break
 
