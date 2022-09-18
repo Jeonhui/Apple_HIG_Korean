@@ -16,8 +16,6 @@ def translateWithPapagoAPI(text):
     # Header Info
     client_id = os.getenv('X_NAVER_CLIENT_ID')
     client_secret = os.getenv('X_NAVER_CLIENT_SECRET')
-    print(client_id)
-    print(client_secret)
 
     # Post Url
     url = "https://openapi.naver.com/v1/papago/n2mt"
@@ -112,9 +110,16 @@ def translate():
                             if capacity + len(originData[i]) > MAX_CAPACITY:
                                 finished = True
                                 break
+
+                            translatedText = translateWithPapagoAPI(text)
+
+                            if translatedText == 'error':
+                                finished = True
+                                break
+
                             capacity += len(originData[i])
                             currentPathFile.write(originText + '\n')
-                            translatedText = translateWithPapagoAPI(text)
+
                             currentPathFile.write(
                                 (('> ' + translatedText + '\n>\n\n') if translatedText[0] != '-' else (
                                         '- > ' + translatedText[1:])) + '\n\n')
