@@ -28,7 +28,7 @@
 - [Motion](./foundations/motion.md)
 - [Right to left](./foundations/right-to-left.md)
 - [SF Symbols](./foundations/sf-symbols.md)
-- [Typography](./foundations/Typography.md)
+- [Typography](./foundations/typography.md)
 
 ---
 
