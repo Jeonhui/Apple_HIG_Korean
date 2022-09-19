@@ -8,7 +8,7 @@ name: Python package
 # [push(Branch or Tag), pull_request, schedule]
 on:
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '0 0 * * *'
 #   push:
 #     branches: [ main ]
 

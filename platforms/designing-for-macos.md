@@ -52,8 +52,6 @@ As you begin designing your app or game for macOS, start by understanding the fu
 
 
 - [The menu bar](../components/system-experiences/the-menu-bar)
-- >  메뉴 모음
-
 - [Finder](../patterns/file-management)
 - [Mission Control](../patterns/going-full-screen)
 - [Dock](../components/menus-and-actions/dock-menus)

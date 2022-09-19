@@ -54,7 +54,6 @@ As you begin designing your app or game for iPad, start by understanding the fol
 - [Multitasking](../patterns/multitasking)
 - [Widgets](../components/system-experiences/widgets)
 - [Drag and drop](../patterns/drag-and-drop)
-- >  끌어서 놓기
 
 
 # **Best practices**

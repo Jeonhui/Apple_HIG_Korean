@@ -61,8 +61,6 @@ iOS provides several features that help people interact with the system and thei
 
 - [Widgets](../components/system-experiences/widgets.md)
 - [Home Screen quick actions](../components/system-experiences/home-screen-quick-actions.md)
-- >  홈 스크린 빠른 동작
-
 - [Spotlight](../patterns/searching.md)
 - [Shortcuts](../technologies/siri/shortcuts-and-suggestions.md)
 - [Activity views](../components/menus-and-actions/activity-views.md)
