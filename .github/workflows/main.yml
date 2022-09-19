@@ -29,7 +29,7 @@ jobs:
       # uses 어떤 액션을 사용할지 지정 (이미 만들어진 액션 사용할 때 지정)
       - uses: actions/checkout@v3
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v3 #
+        uses: actions/setup-python@v3
         with:
           python-version: ${{ matrix.python-version }}
 
@@ -48,7 +48,7 @@ jobs:
       - name: Add & Commit
         uses: EndBug/add-and-commit@v9
         with:
-          add: '*.md logs --force'
+          add: '*.md --force'
           message: 'update HIG'
         env:
           GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}

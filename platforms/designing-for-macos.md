@@ -68,3 +68,18 @@ Great Mac experiences integrate the platform and device capabilities that people
 - Leverage large displays to present more content in fewer nested levels and with less need for modality, while maintaining a comfortable information density that doesn’t make people strain to view the content they want.
 - >  대형 디스플레이를 활용하여 더 적은 중첩 수준으로 더 많은 콘텐츠를 표시하고 모달리티에 대한 필요성은 줄이는 동시에 사용자가 원하는 콘텐츠를 보기 위해 부담을 주지 않는 편안한 정보 밀도를 유지할 수 있습니다.
 
+- Let people resize, hide, show, and move your windows to fit their work style and device configuration, and support full-screen mode to help people focus in a distraction-free context.
+- >  작업 스타일 및 장치 구성에 맞게 창의 크기를 조정, 숨기기, 표시 및 이동할 수 있도록 하고 전체 화면 모드를 지원하여 주의가 산만하지 않은 상황에 집중할 수 있도록 합니다.
+
+- Use the menu bar to give people easy access to all the commands they need to do things in your app.
+- >  메뉴 표시줄을 사용하여 사람들이 앱에서 작업을 수행하는 데 필요한 모든 명령에 쉽게 액세스할 수 있습니다.
+
+- Help people take advantage of high-precision input modes to perform pixel-perfect selections and edits.
+- >  사람들이 고정밀 입력 모드를 활용하여 픽셀 단위로 완벽한 선택 및 편집을 수행할 수 있도록 지원합니다.
+
+- Support keyboard shortcuts to help people accelerate actions and support keyboard-only work styles.
+- >  키보드 단축키를 지원하여 사용자가 작업을 가속화하고 키보드 전용 작업 스타일을 지원합니다.
+
+- Enable personalization, letting people customize toolbars, configure windows to display the views they use most, and choose the colors and fonts they want to see in the interface.
+- >  사용자가 도구줄을 사용자 정의하고, 가장 많이 사용하는 보기를 표시하도록 창을 구성하고, 인터페이스에서 보고자 하는 색상과 글꼴을 선택할 수 있도록 개인 설정을 사용합니다.
+

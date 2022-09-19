@@ -8,7 +8,7 @@ import re
 #
 # environ.environ()
 
-MAX_CAPACITY = 8000
+MAX_CAPACITY = 10000
 
 
 # translate text with papago API
@@ -38,14 +38,14 @@ def translateWithPapagoAPI(text):
 
 def translate():
     # get last log
-    logsFile = open('./logs', 'r+')
+    logsFile = open('logs.md', 'r+')
     logs = list(filter(lambda log: log.strip() != '', logsFile.readlines()))
 
     # check last log
-    lastLog = logs[-1] if len(logs) > 0 else None
-    lastLogFilePath = lastLog.split("|")[1].strip() if lastLog is not None else None
-    lastLogFileLine = int(lastLog.split("|")[2].strip()) if lastLog is not None else 0
-
+    lastLog = logs[-1] if len(logs) > 2 else None
+    lastLogFilePath = lastLog.split("|")[2].strip() if lastLog is not None else None
+    lastLogFileLine = int(lastLog.split("|")[3].strip()) if lastLog is not None else 0
+    print(lastLogFilePath, lastLogFileLine)
     # open README.md & get Lines containing paths
     README = open('./README.md', 'r')
     lines = list(filter(lambda line: line[:2] == '- ', README.readlines()))
@@ -110,7 +110,6 @@ def translate():
                             if capacity + len(originData[i]) > MAX_CAPACITY:
                                 finished = True
                                 break
-
                             translatedText = translateWithPapagoAPI(text)
 
                             if translatedText == 'error' or translatedText == '':
@@ -148,7 +147,7 @@ def translate():
                 break
 
     logsFile.write(
-        time.strftime('%Y-%m-%d %H:%M:%S') + ' | ' + logFilePath + ' | ' + str(logLine) + ' | ' + str(capacity) + '\n')
+        ' | ' + time.strftime('%Y-%m-%d %H:%M:%S') + ' | ' + logFilePath + ' | ' + str(logLine) + ' | ' + str(capacity) + ' | \n')
     logsFile.close()
 
 
