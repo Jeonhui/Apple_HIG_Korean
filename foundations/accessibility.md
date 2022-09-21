@@ -167,3 +167,218 @@ Assistive technologies like VoiceOver, and accessibility features like display a
 
 
 
+**Prefer the system-provided switch component.** SwiftUI provides a switch that indicates its state by the position of its knob and its fill color. For some people, however, the addition of labels makes it easier to perceive whether a switch is on or off. When you use system-provided switches, iOS, iPadOS, tvOS, and watchOS automatically displays on/off glyphs within them when people turn on On/Off Labels.
+> 시스템에서 제공하는 스위치 구성 요소를 선호합니다. SwiftUI는 노브의 위치와 채우기 색상으로 상태를 표시하는 스위치를 제공합니다. 그러나 일부 사람들에게는 라벨을 추가하면 스위치가 켜져 있는지 또는 꺼져 있는지 더 쉽게 인식할 수 있다. 시스템 제공 스위치를 사용하는 경우 iOS, iPadOS, tvOS 및 watchOS는 사람들이 온/오프 라벨을 켜면 자동으로 그 안에 온/오프 글리프를 표시합니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/switches-without-labels_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/switches-without-labels_2x.png)
+
+Without on/off labels
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/switches-with-labels_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/switches-with-labels_2x.png)
+
+With on/off labels
+
+**Consider giving links a visual indicator in addition to color, such as an underline.** It’s fine to use color to identify a link, but if you use it as the only indicator, people — such as those with color blindness or cognitive or situational attention impairments — may not be able to perceive the distinction.
+> 링크에 밑줄과 같은 색 이외에 시각적 표시기를 제공하는 것을 고려하십시오. 링크를 식별하기 위해 색을 사용하는 것은 괜찮지만 색맹이나 인지적 또는 상황적 주의력 장애가 있는 사람과 같은 사람들은 구별을 인식하지 못할 수 있습니다.
+>
+
+
+
+
+# **User input**
+
+**Let people input information by speaking instead of typing.** Adding a dictation button in a text entry field lets people choose speech as their preferred input method. If you create a custom keyboard, be sure to include a microphone key for dictation.
+> 텍스트 입력 필드에 받아쓰기 단추를 추가하면 사용자가 선호하는 입력 방법으로 음성을 선택할 수 있습니다. 사용자 지정 키보드를 만드는 경우 받아쓰기를 위한 마이크 키를 포함해야 합니다.
+>
+
+
+
+
+**Support Siri or Shortcuts for performing important tasks by voice alone.** To learn more about enabling Siri interactions in your app, see [Siri](../technologies/siri/introduction).
+> 음성만으로 중요한 작업을 수행하기 위한 Siri 또는 바로 가기 지원. 앱에서 Siri 상호 작용을 활성화하는 방법에 대한 자세한 내용은 Siri를 참조하십시오.
+>
+
+
+
+
+**When possible, don’t prevent people from selecting plain text.** Many people rely on using selected text as input for translations and definitions.
+> 가능하면 일반 텍스트를 선택하지 마십시오. 많은 사람들이 선택한 텍스트를 번역 및 정의 입력으로 사용합니다.
+>
+
+
+
+
+# **Haptics**
+
+**Support the system-defined haptics.** Many people rely on haptics to help them interact with apps when they can’t see the screen. For example, system apps play haptics to notify people when a task has succeeded or failed or when an event is about to happen. Be sure to use the system-defined haptics consistently in your app so that you don’t confuse people. For guidance, see [Playing haptics](../patterns/playing-haptics).
+> 시스템 정의 햅틱을 지원합니다. 많은 사람들이 화면이 보이지 않을 때 앱과 상호 작용할 수 있도록 햅틱을 사용합니다. 예를 들어 시스템 앱은 작업이 성공하거나 실패하거나 이벤트가 발생하려고 할 때 사람들에게 알리기 위해 햅틱을 재생한다. 사람들에게 혼란을 주지 않도록 앱에서 시스템 정의 햅틱을 일관되게 사용해야 한다. 자세한 내용은 햅틱 재생을 참조하십시오.
+>
+
+
+
+
+# **VoiceOver**
+
+VoiceOver gives audible descriptions of onscreen content, helping people get information and navigate when they can’t see the screen.
+> VoiceOver는 화면 내용에 대한 청각적 설명을 제공하여 사람들이 화면을 볼 수 없을 때 정보를 얻고 탐색할 수 있도록 도와줍니다.
+>
+
+
+
+
+# **Content descriptions**
+
+**Provide alternative descriptions for all images that convey meaning.** If you don’t describe the meaningful images in your content, you prevent VoiceOver users from fully experiencing your app. To create a useful description, start by reporting what would be self-explanatory to someone who is able to see the image. Because VoiceOver reads the text surrounding the image and any captions, focus your description on information that’s conveyed by the image itself.
+> 의미를 전달하는 모든 이미지에 대한 대체 설명을 제공합니다. 콘텐츠에 의미 있는 이미지를 설명하지 않으면 VoiceOver 사용자가 앱을 완전히 경험하지 못하게 됩니다. 유용한 설명을 작성하려면 먼저 이미지를 볼 수 있는 사용자에게 직접 설명하는 내용을 보고하십시오. VoiceOver는 이미지 주변의 텍스트와 캡션을 읽으므로 이미지 자체에서 전달되는 정보에 설명을 집중합니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/image-with-alt-text_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/image-with-alt-text_2x.png)
+
+The alternative description for this image is “Man and woman signing on FaceTime.”
+> 이 이미지에 대한 대체 설명은 "FaceTime에 서명하는 남자와 여자"입니다.
+>
+
+
+
+
+**Make infographics fully accessible.** Provide a concise description of the infographic that explains what it conveys. If people can interact with the infographic to get more or different information, you need to make these interactions available to VoiceOver users, too. The accessibility APIs provide ways to represent custom interactive elements so that assistive technologies can help people use them.
+> 인포그래픽에 완전히 접근할 수 있도록 합니다. 인포그래픽이 전달하는 의미를 설명하는 인포그래픽에 대한 간결한 설명을 제공하십시오. 사람들이 더 많은 또는 다른 정보를 얻기 위해 인포그래픽과 상호 작용할 수 있다면 VoiceOver 사용자들도 이러한 상호 작용을 사용할 수 있도록 해야 합니다. 접근성 API는 보조 기술이 사람들이 사용하는 데 도움을 줄 수 있도록 사용자 지정 대화형 요소를 표현하는 방법을 제공합니다.
+>
+
+
+
+
+**When an image is purely decorative and isn't intended to communicate anything, hide it from assistive technologies.** Making VoiceOver describe a purely decorative image can waste people’s time and add to their cognitive load without providing any benefit.
+> 이미지가 순수하게 장식되어 있고 어떤 것도 전달하기 위한 것이 아닐 때, 그것을 보조 기술로부터 숨기세요. 보이스오버가 순수하게 장식된 이미지를 묘사하도록 만드는 것은 사람들의 시간을 낭비하고 아무런 이점도 제공하지 않고 그들의 인지적 부담을 가중시킬 수 있습니다.
+>
+
+
+
+
+**Give each screen a unique title and provide headings that identify sections in your information hierarchy.** When people arrive on a screen, the title is the first piece of information they receive from an assistive technology. To help people understand the structure of your app, create a unique title for each screen that succinctly describes its contents or purpose. Similarly, people need accurate section headings to help them build a mental map of the information hierarchy of each screen.
+> 각 화면에 고유한 제목을 지정하고 정보 계층에서 섹션을 식별하는 제목을 지정합니다. 사용자가 화면에 도착하면 해당 제목은 보조 기술로부터 받은 첫 번째 정보입니다. 사람들이 앱의 구조를 이해하도록 돕기 위해 각 화면에 대한 내용이나 목적을 간결하게 설명하는 고유한 제목을 만드십시오. 마찬가지로, 사람들은 각 화면의 정보 계층의 마인드 맵을 구축하는 데 도움이 되는 정확한 섹션 표제가 필요하다.
+>
+
+
+
+
+**Help everyone enjoy your video and audio content.** When you provide closed captions, audio descriptions, and transcripts, you can help people benefit from audio and video content in ways that work for them.
+> 모든 사람이 비디오 및 오디오 콘텐츠를 즐길 수 있도록 지원합니다. 폐쇄 캡션, 오디오 설명 및 스크립트를 제공할 때 사용자에게 적합한 방식으로 오디오 및 비디오 콘텐츠의 혜택을 받을 수 있도록 지원할 수 있습니다.
+>
+
+
+
+
+*Closed captions* give people a textual equivalent for the audible information in a video. You can also use closed captions to provide multiple translations for the same content, letting the system choose the version that matches the device’s current settings. Because closed captions aren’t always available, it’s important to provide subtitles, too.
+> 폐쇄 캡션은 사람들에게 비디오의 청각 정보에 대해 텍스트로 동등한 것을 제공한다. 또한 폐쇄 캡션을 사용하여 동일한 콘텐츠에 대해 여러 번 번역할 수 있으므로 시스템에서 장치의 현재 설정과 일치하는 버전을 선택할 수 있습니다. 자막을 항상 사용할 수 있는 것은 아니기 때문에 자막을 제공하는 것도 중요합니다.
+>
+
+
+
+
+*Audio descriptions* provide a spoken narration of important information that’s presented only visually.
+> 오디오 설명은 시각적으로만 표시되는 중요한 정보에 대한 음성 내레이션을 제공합니다.
+>
+
+
+
+
+A *transcript* provides a complete textual description of a video, covering both audible and visual information, so that people can enjoy the video in different ways.
+> 녹취록은 사람들이 다양한 방법으로 비디오를 즐길 수 있도록 청각과 시각 정보를 모두 포함하는 비디오에 대한 완전한 텍스트 설명을 제공한다.
+>
+
+
+
+
+For developer guidance, see [Selecting subtitles and alternative audio tracks](https://developer.apple.com/documentation/avfoundation/media_playback_and_selection/selecting_subtitles_and_alternative_audio_tracks).
+> 개발자 지침은 자막 및 대체 오디오 트랙 선택을 참조하십시오.
+>
+
+
+
+
+# **Navigation**
+
+**Make sure VoiceOver users can navigate to every element.** VoiceOver uses accessibility information from onscreen elements to help people understand the location of each element and what it can do. System-provided UI components include this accessibility information by default, but VoiceOver can’t help people discover and use custom elements unless you provide the information. For developer guidance, see [Accessibility modifiers](https://developer.apple.com/documentation/swiftui/view-accessibility).
+> VoiceOver 사용자가 모든 요소를 탐색할 수 있는지 확인합니다. VoiceOver는 화면 요소의 내게 필요한 정보를 사용하여 사람들이 각 요소의 위치와 기능을 이해할 수 있도록 도와줍니다. 시스템에서 제공하는 UI 구성 요소에는 기본적으로 이 접근성 정보가 포함되지만 사용자가 정보를 제공하지 않는 한 VoiceOver는 사용자가 사용자 지정 요소를 검색하고 사용하는 데 도움이 될 수 없습니다. 개발자 지침은 내게 필요한 옵션 수정자를 참조하십시오.
+>
+
+
+
+
+**Improve the VoiceOver experience by specifying how elements should be grouped, ordered, or linked.** Proximity, alignment, and other contextual cues can help sighted people perceive the relationships among onscreen elements, but these cues don’t work well for VoiceOver users. Examine your app for places where relationships among elements are visual only, and describe these relationships to VoiceOver.
+> 요소 그룹화, 순서 지정 또는 연결 방법을 지정하여 VoiceOver 환경을 개선합니다. 근접성, 정렬 및 기타 상황별 단서는 시각장애인이 화면 요소 간의 관계를 인식하는 데 도움이 될 수 있지만 이러한 단서는 VoiceOver 사용자에게 잘 작동하지 않습니다. 앱에서 요소 간의 관계가 시각적으로만 표시되는 장소를 검사하고 VoiceOver와의 관계를 설명합니다.
+>
+
+
+
+
+For example, the layout below relies on proximity and centering to imply that each phrase is a caption for the image above it. However, if you don’t tell VoiceOver that each image should be grouped with its phrase, VoiceOver reads, “A large container holding a variety of mangoes. A large container holding many green artichokes. Mangoes come from trees that belong to the genus Mangifera. Artichokes come from a variety of a species of thistle.” This happens because VoiceOver reads elements from top to bottom by default. For developer guidance, see [shouldGroupAccessibilityChildren](https://developer.apple.com/documentation/objectivec/nsobject/1615143-shouldgroupaccessibilitychildren) and [accessibilityTitleUIElement](https://developer.apple.com/documentation/appkit/nsaccessibility/1535155-accessibilitytitleuielement?language=occ).
+> 예를 들어, 아래 레이아웃은 각 구문이 위 이미지에 대한 캡션임을 암시하기 위해 근접성과 중심에 의존합니다. 그러나, 만약 당신이 VoiceOver에게 각각의 이미지를 문구와 함께 그룹화해야 한다고 말하지 않는다면, VoiceOver는 "다양한 망고를 담은 큰 용기"라고 읽는다. 많은 녹색 아티초크를 담고 있는 큰 용기. 망고는 망기페라속에 속하는 나무에서 나온다. 아티초크는 엉겅퀴의 다양한 종에서 나옵니다." 이 문제는 VoiceOver가 기본적으로 위에서 아래로 요소를 읽기 때문에 발생합니다. 개발자 지침은 그룹 내게 필요한 옵션 하위 항목 및 내게 필요한 옵션을 참조하십시오.제목 UIElement.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/mangoes_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/mangoes_2x.png)
+
+Mangoes come from trees that belong to the genus Mangifera.
+> 망고는 망기페라속에 속하는 나무에서 나온다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/artichokes_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/artichokes_2x.png)
+
+Artichokes come from a variety of a species of thistle.
+> 아티초크는 엉겅퀴의 다양한 종에서 나온다.
+>
+
+
+
+
+**Tell VoiceOver when onscreen content or layout changes.** An unexpected change in content or layout can be very confusing to VoiceOver users, because it means that their mental map of the screen is no longer accurate. It’s crucial to report onscreen changes so that VoiceOver and other assistive technologies can help people update their understanding of the screen. For developer guidance, see [UIAccessibility.Notification](https://developer.apple.com/documentation/uikit/uiaccessibility/notification) (UIKit) or [NSAccessibility.Notification](https://developer.apple.com/documentation/appkit/nsaccessibility/notification) (AppKit).
+> 화면 내용 또는 레이아웃이 변경될 때 VoiceOver에 알립니다. 예상치 못한 내용 또는 레이아웃 변경은 VoiceOver 사용자가 더 이상 화면의 마인드 맵이 정확하지 않다는 것을 의미하기 때문에 매우 혼란스러울 수 있습니다. VoiceOver 및 기타 보조 기술이 사람들이 화면에 대한 이해를 업데이트하는 데 도움이 될 수 있도록 화면 변경 사항을 보고하는 것이 중요합니다. 개발자 지침은 UIAaccessibility를 참조하십시오.알림(UIKit) 또는 NSA 액세스 가능성.알림(AppKit).
+>
+
+
+
+
+**Help people predict when a control opens a different webpage or app.** An unexpected change in context can cause confusion and require people to suddenly rebuild their mental model of the onscreen environment. One way to draw attention to a potential change in context is append an ellipsis to a button’s title. Throughout the system, an ellipsis trailing the title is the standard way for a button to communicate that it opens another window or view in which people can complete the action. For example, Mail in iOS and iPadOS appends an ellipsis to the Move Message button, signaling that a separate view opens, listing the destinations people can choose.
+> 컨트롤이 다른 웹 페이지나 앱을 열 때 사람들이 예측할 수 있도록 도와줍니다. 예상치 못한 상황 변화는 혼란을 야기할 수 있고 사람들이 갑자기 화면 환경의 마인드 모델을 재구성해야 합니다. 문맥의 잠재적인 변화에 주의를 끄는 한 가지 방법은 단추의 제목에 줄임표를 추가하는 것이다. 시스템 전체에서 줄임표 후행은 사용자가 작업을 완료할 수 있는 다른 창이나 보기를 연다는 것을 알리는 버튼의 표준 방법입니다. 예를 들어 iOS 및 iPadOS의 메일은 메시지 이동 단추에 줄임표를 추가하여 별도의 보기가 열리며 사용자가 선택할 수 있는 수신처를 나열합니다.
+>
+
+
+
+
+**Provide alternative text labels for all important interface elements.** Alternative text labels aren’t visible onscreen, but they let VoiceOver audibly describe onscreen elements, making navigation easier for people with visual disabilities. System-provided controls have useful labels by default, but you need to create labels for custom elements. For example, if you create an accessibility element that represents a custom rating button, you might supply the label “Rate.”
+> 모든 중요한 인터페이스 요소에 대해 대체 텍스트 레이블을 제공합니다. 대체 텍스트 레이블은 화면에는 표시되지 않지만 VoiceOver에서 화면 요소를 청각적으로 설명할 수 있으므로 시각 장애가 있는 사람들이 쉽게 탐색할 수 있습니다. 시스템에서 제공하는 컨트롤에는 기본적으로 유용한 레이블이 있지만 사용자 정의 요소에 대한 레이블을 만들어야 합니다. 예를 들어, 사용자 정의 등급 단추를 나타내는 접근성 요소를 작성하는 경우 "등급" 레이블을 제공할 수 있습니다.
+>
+
+
+
+
+**Support the VoiceOver rotor when necessary.** VoiceOver users can use an onscreen control called the *rotor* to navigate a document or webpage by headings, links, or other section types. The rotor can also bring up the braille keyboard. You can help VoiceOver users navigate among related items in your app by identifying these items to the rotor. For developer guidance, see [UIAccessibilityCustomRotor](https://developer.apple.com/documentation/uikit/uiaccessibilitycustomrotor) and [NSAccessibilityCustomRotor](https://developer.apple.com/documentation/appkit/nsaccessibilitycustomrotor).
+> 필요한 경우 VoiceOver 로터를 지원합니다. VoiceOver 사용자는 로터라는 화면 컨트롤을 사용하여 제목, 링크 또는 기타 섹션 유형으로 문서 또는 웹 페이지를 탐색할 수 있습니다. 회전자는 또한 점자 키보드를 올릴 수 있다. VoiceOver 사용자가 로터에 연결된 항목을 식별하여 앱에서 관련 항목 사이를 탐색할 수 있도록 도울 수 있습니다. 개발자 지침은 UIAAccessibilityCustomRotor 및 NSAAccessibilityCustomRotor를 참조하십시오.
+>
+
+
+
+
+**In iPadOS and macOS, make sure people can use the keyboard to navigate and interact with all onscreen components in your app.** Ideally, people can turn on Full Keyboard Access and perform every task in your experience using only the keyboard. In addition to [accessibility keyboard shortcuts](https://support.apple.com/en-us/HT204434), the system defines a large number of other [keyboard shortcuts](https://support.apple.com/en-us/HT201236) that many people use all the time. To support all users, it’s important to avoid overriding any system-defined keyboard shortcuts in your app. For guidance, see [Keyboards](../inputs/keyboards).
+> iPadOS 및 macOS에서 사용자가 키보드를 사용하여 앱의 모든 화면 구성 요소를 탐색하고 상호 작용할 수 있는지 확인하십시오. 이상적인 경우, 사용자는 전체 키보드 액세스를 설정하고 키보드만 사용하여 사용자 환경의 모든 작업을 수행할 수 있습니다. 접근성 바로 가기 키 외에도, 시스템은 많은 사람들이 항상 사용하는 많은 다른 바로 가기 키를 정의합니다. 모든 사용자를 지원하려면 앱에서 시스템 정의 키보드 단축키를 재정의하지 않는 것이 중요합니다. 자세한 내용은 키보드를 참조하십시오.
+>
+
+
+
+
+# **Text display**
+
