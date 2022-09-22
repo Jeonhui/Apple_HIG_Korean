@@ -82,12 +82,19 @@ For example, a common user flow in a social media app might be “post a respons
 
 
 - Read posted comments
+- > 게시된 댓글 읽기
+
 - Choose a comment for a response
 - >  응답에 대한 주석 선택
 
 - Open the response view
+- > 응답 보기 열기
+
 - Edit the response
+- > 응답 편집
+
 - Post the response
+- > 응답 전송
 
 For each critical user flow in your app or game, turn on an accessibility feature, such as VoiceOver, Reduce Motion, or Large Text Size, and make sure that you can complete every task in the flow without difficulty. After you fix the problems you uncover, turn on a different accessibility feature and run through the user flow again. To help you audit, test, and fix your app or game, consider using Xcode’s Accessibility Inspector.
 > 앱이나 게임의 각 중요한 사용자 흐름에 대해 VoiceOver, Reduce Motion 또는 Large Text Size와 같은 내게 필요한 기능을 설정하고 흐름의 모든 작업을 어려움 없이 완료할 수 있는지 확인합니다. 발견한 문제를 해결한 후 다른 내게 필요한 옵션 기능을 설정하고 사용자 흐름을 다시 실행하십시오. 앱이나 게임을 감사, 테스트 및 수정하는 데 도움이 되도록 Xcode의 내게 필요한 옵션 검사기를 사용하는 것을 고려해 보십시오.
@@ -576,32 +583,11 @@ As seen with red-green colorblindness.
 
 
 | Text size | Text weight | Minimum contrast ratio |
-> | 텍스트 크기 | 텍스트 무게 | 최소 대비 |
->
-
-
-
 | --- | --- | --- |
-> | --- | --- | --- |
->
-
-
-
 | Up to 17 points | All | 4.5:1 |
-> | 최대 17점 | 전체 | 4.5:1 |
->
-
-
-
-| 18 points and larger | All | 3:1 |
-> | 18점 이상 | 모두 | 3:1 |
->
-
-
-
+| 18점 이상 | 모두 | 3:1 |
 | All | Bold | 3:1 |
-> | 모두 | 굵은 글씨 | 3:1 |
->
+| 모두 | 굵은 글씨 | 3:1 |
 
 
 

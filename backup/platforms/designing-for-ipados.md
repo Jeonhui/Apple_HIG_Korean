@@ -1,1 +1,0 @@
-# **[Platforms] Designing for iPadOS**

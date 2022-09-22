@@ -93,7 +93,7 @@ def translate():
             for i in range(len(originData)):
                 # if find last log file line
                 if findLastLogFileLine:
-                    if originData[0] != '|' and originData[i].strip() != '' and originData[i][0] != '!' and i != 0:
+                    if originData[i][0] != '|' and originData[i].strip() != '' and originData[i][0] != '!' and i != 0:
 
                         # remove Sharp and Asterisk
                         originText = originData[i].strip()
@@ -106,7 +106,7 @@ def translate():
                             text = text.replace("[" + repl[0] + "](" + repl[1] + ")", repl[0])
 
                         # translate
-                        if len(text.split(' ')) > 5 and text[0] != '|':
+                        if len(text.split(' ')) > 5:
                             if capacity + len(originData[i]) > MAX_CAPACITY:
                                 finished = True
                                 break
@@ -130,7 +130,7 @@ def translate():
                         currentPathFile.write('\n') # title
 
                     else:
-                        currentPathFile.write(originData[i].strip() + '\n') # image or empty
+                        currentPathFile.write(originData[i].strip() + '\n') # image or table or empty
 
                 # for log
                 logLine = i
