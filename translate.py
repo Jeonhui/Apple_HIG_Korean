@@ -106,7 +106,7 @@ def translate():
                             text = text.replace("[" + repl[0] + "](" + repl[1] + ")", repl[0])
 
                         # translate
-                        if len(text.split(' ')) > 5:
+                        if len(text.split(' ')) > 5 and text[0] != '|':
                             if capacity + len(originData[i]) > MAX_CAPACITY:
                                 finished = True
                                 break
