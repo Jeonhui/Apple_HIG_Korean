@@ -5,3 +5,4 @@
  | 2022-09-19 15:07:11 | ./platforms/designing-for-watchos.md | 11 | 3956 | 
  | 2022-09-20 02:31:18 | ./foundations/accessibility.md | 61 | 9664 | 
  | 2022-09-21 02:42:36 | ./foundations/accessibility.md | 141 | 9692 | 
+ | 2022-09-22 02:30:28 | ./foundations/app-icons.md | 11 | 9979 | 

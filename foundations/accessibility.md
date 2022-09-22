@@ -382,3 +382,226 @@ Artichokes come from a variety of a species of thistle.
 
 # **Text display**
 
+**In iOS, iPadOS, tvOS, and watchOS, use Dynamic Type and test that your app’s layout adapts to all font sizes.** Dynamic Type lets people pick the font size that works for them. Verify that your design can scale and that both text and glyphs are legible at all font sizes. On iPhone or iPad, for example, turn on Larger Accessibility Text Sizes in Settings > Accessibility > Display & Text Size > Larger Text, and make sure your app remains comfortably readable. You can download the Dynamic Type size tables in the Sketch, Photoshop, and Adobe XD [Apple Design Resources](https://developer.apple.com/design/resources/) for each platform.
+> iOS, iPadOS, tvOS 및 watchOS에서 동적 유형을 사용하여 앱의 레이아웃이 모든 글꼴 크기에 맞게 조정되는지 테스트합니다. 동적 유형을 사용하면 사용자에게 적합한 글꼴 크기를 선택할 수 있습니다. 설계가 축척할 수 있고 텍스트와 글리프가 모든 글꼴 크기에서 읽을 수 있는지 확인합니다. 예를 들어 iPhone 또는 iPad의 경우 설정 > 내게 필요한 옵션 > 디스플레이 및 텍스트 크기 > 큰 텍스트에서 큰 텍스트 크기를 설정하고 앱이 편안하게 읽을 수 있도록 합니다. 각 플랫폼의 스케치, 포토샵 및 Adobe XD Apple Design Resources에서 동적 유형 크기 표를 다운로드할 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/small-text_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/small-text_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/large-text_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/large-text_2x.png)
+
+**As font size increases, keep text truncation to a minimum.** In general, aim to display as much useful text in the largest accessibility font size as you do in the largest standard font size. Avoid truncating text in scrollable regions unless people can open a separate view to read the rest of the content. You can prevent text truncation in a label by configuring it to use as many lines as needed to display a useful amount of text; for developer guidance, see [numberOfLines](https://developer.apple.com/documentation/uikit/uilabel/1620539-numberoflines).
+> 글꼴 크기가 커지면 텍스트 잘라내기를 최소화하십시오. 일반적으로 가장 큰 표준 글꼴 크기만큼 유용한 텍스트를 가장 큰 내게 필요한 글꼴 크기로 표시하도록 합니다. 다른 보기를 열어 나머지 내용을 읽을 수 없는 경우 스크롤 가능한 영역에서 텍스트를 잘라내지 마십시오. 유용한 양의 텍스트를 표시하는 데 필요한 만큼 많은 줄을 사용하도록 구성하여 레이블에서 텍스트 잘라내기를 방지할 수 있습니다. 개발자 지침은 numberOfLines를 참조하십시오.
+>
+
+
+
+
+**Consider adjusting layout at large font sizes.** When font size increases, inline items and container boundaries can crowd text, making it less readable. For example, if you display text inline with secondary items — such as glyphs or timestamps — the text has less horizontal space. At large font sizes, an inline layout might cause text to truncate or result in overlapping text and secondary items. In this case, consider using a stacked layout where the text appears above the secondary items. Similarly, multiple columns of text can become less readable at large font sizes because each column constrains horizontal space. In this case, consider reducing the number of columns when font size increases to avoid text truncation and improve overall readability. For developer guidance, see [isAccessibilityCategory](https://developer.apple.com/documentation/uikit/uicontentsizecategory/2897444-isaccessibilitycategory).
+> 큰 글꼴 크기로 레이아웃을 조정하는 것을 고려하십시오. 글꼴 크기가 커지면 인라인 항목과 컨테이너 경계가 텍스트를 혼잡하게 하여 가독성이 떨어질 수 있습니다. 예를 들어, 텍스트를 보조 항목(예: 글리프 또는 타임스탬프)과 함께 인라인으로 표시할 경우 텍스트의 수평 공간이 줄어듭니다. 큰 글꼴 크기에서는 인라인 레이아웃으로 인해 텍스트가 잘리거나 텍스트와 보조 항목이 겹칠 수 있습니다. 이 경우 텍스트가 보조 항목 위에 나타나는 스택형 레이아웃을 사용하는 것이 좋습니다. 마찬가지로, 각 열은 수평 공간을 제한하기 때문에 큰 글꼴 크기에서는 텍스트의 여러 열이 읽기 어려워질 수 있습니다. 이 경우 글꼴 크기가 증가할 때 열 수를 줄여 텍스트 잘라내기를 방지하고 전체 가독성을 향상시키십시오. 개발자 지침은 내게 필요한 옵션 범주를 참조하십시오.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/inline-layout_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/inline-layout_2x.png)
+
+At smaller text sizes, Mail displays the date inline with the sender’s name.
+> 텍스트 크기가 작을수록 메일은 발신인 이름과 함께 날짜를 표시합니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/stacked-layout_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/stacked-layout_2x.png)
+
+At the largest accessibility text size, Mail displays the date below the recipient’s name.
+> 접근성 텍스트 크기가 가장 큰 메일은 수신인 이름 아래에 날짜를 표시합니다.
+>
+
+
+
+
+**Increase the size of meaningful interface icons as font size increases.** If you use interface icons to communicate important information, make sure they are easy to view at larger font sizes, too. When you use [SF Symbols](../foundations/sf-symbols/), you get icons that scale automatically with Dynamic Type size changes.
+> 글꼴 크기가 커질수록 의미 있는 인터페이스 아이콘의 크기를 늘립니다. 중요한 정보를 전달하기 위해 인터페이스 아이콘을 사용하는 경우 더 큰 글꼴 크기로도 쉽게 볼 수 있도록 하십시오. SF 기호를 사용하면 동적 유형 크기 변경에 따라 자동으로 크기가 조정되는 아이콘을 볼 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/icons-small_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/icons-small_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/icons-large_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/icons-large_2x.png)
+
+**Maintain a consistent information hierarchy regardless of the current font size.** For example, keep primary elements toward the top of the screen even when the font size is very large, so that people don’t lose track of these elements.
+> 예를 들어 글꼴 크기가 매우 큰 경우에도 기본 요소를 화면 맨 위로 유지하여 사용자가 이러한 요소를 놓치지 않도록 합니다.
+>
+
+
+
+
+**Prefer regular or heavy font weights in your app.** Consider using Regular, Medium, Semibold, or Bold font weights, because they are easier to see. Avoid Ultralight, Thin, and Light font weights, which can be more difficult to see.
+> 앱에서 일반 글꼴이나 무거운 글꼴을 선호합니다. 일반 글꼴, 중간 글꼴, 세미볼드 글꼴 또는 굵은 글꼴을 사용하는 것을 고려하십시오. 보기 쉽기 때문입니다. 보기 어려울 수 있는 초경량, 얇은 글꼴 및 가벼운 글꼴 가중치는 피합니다.
+>
+
+
+
+
+**Ensure your app responds correctly and looks good when people enable bold text.** In iOS, iPadOS, tvOS, and watchOS, people turn on the bold text accessibility setting to make text and symbols easier to see. In response, your app should make all text bolder and give all glyphs an increased stroke weight. The system fonts and SF symbols automatically adjust to the bold text accessibility setting.
+> iOS, iPadOS, tvOS 및 watchOS에서는 텍스트와 기호를 보다 쉽게 볼 수 있도록 굵은 텍스트 접근성 설정을 켭니다. 이에 대응하여, 당신의 앱은 모든 텍스트를 더 굵게 만들고 모든 글리프에 증가된 스트로크 가중치를 부여해야 한다. 시스템 글꼴 및 SF 기호는 굵은 텍스트 접근성 설정으로 자동으로 조정됩니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/bold-off_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/bold-off_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/bold-text_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/images/bold-text_2x.png)
+
+**Make sure custom fonts are legible.** Custom typefaces can sometimes be difficult to read. Unless your app has a compelling need for a custom font, such as for branding purposes or to create an immersive gaming experience, it’s usually best to use the system fonts. If you do use a custom font, make sure it’s easy to read, even at small sizes.
+> 사용자 정의 글꼴이 읽기 쉬운지 확인하십시오. 사용자 정의 글꼴은 때때로 읽기 어려울 수 있습니다. 브랜딩 목적이나 몰입형 게임 환경을 만드는 것과 같은 사용자 지정 글꼴에 대한 강력한 요구가 앱에 없는 한, 일반적으로 시스템 글꼴을 사용하는 것이 가장 좋습니다. 사용자 지정 글꼴을 사용하는 경우 작은 크기에서도 쉽게 읽을 수 있도록 합니다.
+>
+
+
+
+
+**Avoid full text justification.** The whitespace created by fully justified text can create patterns that make it difficult for many people to read and focus on the text. Left justification — or right justification in right-to-left languages — provides a framing reference for people with learning and literacy challenges, such as dyslexia.
+> 전체 텍스트 정당성을 사용하지 마십시오. 완전히 정당화된 텍스트로 만들어진 공백은 많은 사람들이 텍스트를 읽고 집중하기 어렵게 만드는 패턴을 만들 수 있습니다. 왼쪽 정당성 또는 오른쪽에서 왼쪽 언어에서 오른쪽 정당성은 난독증과 같은 학습 및 문해력 문제를 가진 사람들에게 프레임 참조를 제공합니다.
+>
+
+
+
+
+**Avoid using italics or all caps for long passages of text.** Italics and all caps are great for occasional emphasis, but overuse of these styles makes text hard to read.
+> 텍스트의 긴 구절에는 기울임꼴 또는 모든 캡을 사용하지 마십시오. 기울임꼴과 모든 캡은 가끔 강조할 때는 좋지만 이러한 스타일을 과도하게 사용하면 텍스트를 읽기 어렵습니다.
+>
+
+
+
+
+# **Color and effects**
+
+**Don’t rely solely on color to differentiate between objects or communicate important information.** If you use color to convey information, be sure to provide text labels or glyph shapes to help everyone perceive it.
+> 사물을 구별하거나 중요한 정보를 전달하기 위해 색상에만 의존하지 말고, 정보를 전달하기 위해 색상을 사용할 경우 모든 사람이 인식할 수 있도록 텍스트 레이블이나 글리프 모양을 제공해야 합니다.
+>
+
+
+
+
+**Prefer system colors for text.** When you use system colors in text, it responds correctly to accessibility settings such as Invert Colors and Increase Contrast.
+> 텍스트에 시스템 색상을 선호합니다. 텍스트에서 시스템 색상을 사용하면 색 반전 및 대비 증가와 같은 내게 필요한 옵션 설정에 올바르게 응답합니다.
+>
+
+
+
+
+**Avoid using color combinations as the only way to distinguish between two states or values.** Many colorblind people find it difficult to distinguish blue from orange; other problematic combinations are red and green, red and black, and either red or green combined with gray. When it makes sense to use a combination of colors to communicate states or values, include additional visual indicators so everyone can perceive the information. For example, instead of using red and green circles to indicate offline and online, you could use a red square and a green circle. Some image-editing software includes tools that can help you proof for colorblindness.
+> 두 상태 또는 값을 구별하는 유일한 방법으로 색상 조합을 사용하지 마십시오. 많은 색맹인들은 파란색과 주황색을 구별하는 것을 어려워합니다. 다른 문제가 있는 조합은 빨간색과 녹색, 빨간색과 검은색, 빨간색과 녹색이 회색과 결합됩니다. 상태나 값을 전달하기 위해 색상 조합을 사용하는 것이 타당할 경우, 모든 사람이 정보를 인식할 수 있도록 추가 시각적 표시기를 포함시킨다. 예를 들어, 빨간색과 녹색 원을 사용하여 오프라인과 온라인 상태를 나타내는 대신 빨간색 사각형과 녹색 원을 사용할 수 있습니다. 일부 이미지 편집 소프트웨어에는 색맹을 입증하는 데 도움이 되는 도구가 포함되어 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/ios/images/colorBlindness_fullColor_2x.png](https://developer.apple.com/design/human-interface-guidelines/ios/images/colorBlindness_fullColor_2x.png)
+
+As seen without colorblindness.
+
+![https://developer.apple.com/design/human-interface-guidelines/ios/images/colorBlindness_Protanopia_2x.png](https://developer.apple.com/design/human-interface-guidelines/ios/images/colorBlindness_Protanopia_2x.png)
+
+As seen with red-green colorblindness.
+
+**Ensure your views respond correctly to Invert Colors.** People can turn on Invert Colors when they prefer to view items on a dark background. In the Smart Invert mode of Invert Colors, images, video, and full-color icons (such as app icons and nontemplate images) don’t invert, and dark UI stays dark. Test your app or game to find places where you might need to prevent an image — like a photo in a custom view — from inverting.
+> 보기가 색 반전(Invert Colors)에 올바르게 응답하는지 확인하십시오. 어두운 배경의 항목을 보고 싶을 때 색 반전(Invert Colors)을 설정할 수 있습니다. 색 반전(Invert Colors)의 스마트 반전(Smart Invert) 모드에서는 이미지, 비디오 및 전체 색상 아이콘(예: 앱 아이콘 및 템플릿이 아닌 이미지)이 반전되지 않고 어두운 UI가 어둡게 유지됩니다. 사용자 지정 보기에 있는 사진과 같이 이미지가 반전되지 않도록 해야 할 수 있는 장소를 찾기 위해 앱이나 게임을 테스트합니다.
+>
+
+
+
+
+**Use strongly contrasting colors to improve readability.** Many factors affect the perception of color, including font size and weight, color brightness, screen resolution, and lighting conditions. When you increase color contrast of visual elements like text, glyphs, and controls, you can help more people use your app in more situations. To find out if the contrast of adjacent colors in your UI meets minimum acceptable levels, you can use Xcode’s Accessibility Inspector or an online color calculator based on the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/TR/WCAG21/) color contrast formula. In general, smaller or lighter-weight text needs to have greater contrast to be legible. Use the following values for guidance.
+> 글꼴 크기 및 무게, 색 밝기, 화면 해상도, 조명 상태 등 다양한 요소가 색 인식에 영향을 미칩니다. 텍스트, 글리프 및 컨트롤과 같은 시각적 요소의 색상 대비를 높이면 더 많은 사람들이 더 많은 상황에서 앱을 사용할 수 있도록 도울 수 있습니다. UI에서 인접한 색 대비가 최소 허용 수준을 충족하는지 확인하려면 Xcode의 내게 필요한 옵션 검사기 또는 WCAG(Web Content 내게 필요한 옵션 지침) 색 대비 공식에 기반한 온라인 색 계산기를 사용할 수 있습니다. 일반적으로 더 작거나 가벼운 텍스트는 읽기 쉽도록 더 큰 대비를 가질 필요가 있다. 다음 값을 지침으로 사용합니다.
+>
+
+
+
+
+**Avoid requiring animations unless they’re essential for your experience.** In general, let people use your app without relying on any animations.
+> 일반적으로 애니메이션에 의존하지 않고 앱을 사용할 수 있도록 합니다.
+>
+
+
+
+
+**Play tightened animations when Reduce Motion is on.** People can turn on Reduce Motion if they tend to get distracted or experience dizziness or nausea when viewing animations that include effects such as zooming, scaling, spinning, or peripheral motion. In response to this setting, you need to turn off or reduce animations that are known to cause problems (to learn more, see [Responsive design for motion](https://webkit.org/blog/7551/responsive-design-for-motion/)). If you use a problematic animation to communicate important information, consider designing a non animated alternative or tightening the physics of the animation to reduce its motion. For example:
+> 줌, 스케일링, 회전 또는 주변 움직임과 같은 효과를 포함하는 애니메이션을 볼 때 주의가 산만해지거나 어지러움이나 메스꺼움을 느낄 경우 모션 감소 기능을 설정할 수 있습니다. 이 설정에 대응하려면 문제를 일으키는 것으로 알려진 애니메이션을 끄거나 줄여야 합니다(자세한 내용은 동작에 대한 반응 설계 참조). 문제가 있는 애니메이션을 사용하여 중요한 정보를 전달할 경우 애니메이션이 아닌 대체 애니메이션을 설계하거나 애니메이션의 물리학을 조여 움직임을 줄이는 것을 고려해 보십시오. 예:
+>
+
+
+
+
+- Tighten springs to reduce bounce effects or track 1:1 with the user’s finger
+- >  스프링을 조여 바운스 효과를 줄이거나 사용자의 손가락으로 1:1 트랙을 합니다.
+
+- Avoid animating depth changes in z-axis layers
+- >  z축 도면층의 깊이 변경 애니메이션 방지
+
+- Avoid animating into or out of blurs
+- >  애니메이션이 흐려지거나 흐려지지 않도록 합니다.
+
+- Replace a slide with a fade to avoid motion
+- >  움직임을 방지하기 위해 슬라이드를 페이드로 바꿉니다.
+
+
+**Let people control video and other motion effects.** Avoid autoplaying video or effects without also providing a button or other way to control them.
+> 사람들이 비디오 및 기타 모션 효과를 제어할 수 있도록 합니다. 버튼이나 다른 제어 방법을 제공하지 않고 비디오 또는 효과를 자동 재생하는 것을 피하십시오.
+>
+
+
+
+
+**Be cautious when displaying moving or blinking elements.** Although subtle movement and blinking can draw people’s attention, these effects can also be distracting and they aren’t useful for people with visual disabilities. Worse, some blinking elements can cause epileptic episodes. In all cases, avoid using movement and blinking as the only way to convey information.
+> 움직이는 요소나 깜빡이는 요소를 표시할 때 주의하세요. 비록 미묘한 움직임과 깜박임이 사람들의 주의를 끌 수 있지만, 이러한 효과들은 또한 산만할 수 있고 시각 장애가 있는 사람들에게 유용하지 않습니다. 더 나쁜 것은, 일부 깜박이는 요소들이 간질 증상을 일으킬 수 있다는 것이다. 모든 경우, 정보를 전달하는 유일한 방법으로 움직임과 깜박임을 사용하지 마십시오.
+>
+
+
+
+
+**Change blurring and transparency when people turn on Reduce Transparency.** For example, make areas of blurred content and translucency mostly opaque. For best results, use a color value in the opaque area that’s different from the original color value you used when the area was blurred or translucent.
+> 예를 들어, 투명도 감소를 설정하면 흐릿한 내용과 투명도가 대부분 불투명하게 됩니다. 최상의 결과를 얻으려면 영역이 흐리거나 반투명할 때 사용한 원래 색상 값과 다른 불투명 영역의 색상 값을 사용하십시오.
+>
+
+
+
+
+| Text size | Text weight | Minimum contrast ratio |
+> | 텍스트 크기 | 텍스트 무게 | 최소 대비 |
+>
+
+
+
+| --- | --- | --- |
+> | --- | --- | --- |
+>
+
+
+
+| Up to 17 points | All | 4.5:1 |
+> | 최대 17점 | 전체 | 4.5:1 |
+>
+
+
+
+| 18 points and larger | All | 3:1 |
+> | 18점 이상 | 모두 | 3:1 |
+>
+
+
+
+| All | Bold | 3:1 |
+> | 모두 | 굵은 글씨 | 3:1 |
+>
+
+
+
