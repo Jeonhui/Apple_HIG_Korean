@@ -286,3 +286,54 @@ For the App Store, create a 1280x768 px version of your tvOS app icon. In additi
 
 ### **watchOS app icon sizes**
 
+For the App Store, create a 1024x1024 px version of your watchOS app icon. You can let the system automatically scale this version down to all other sizes, or — if you want to customize the appearance of your app icon at specific sizes — you can supply the sizes listed in the following table. All icon dimensions are shown in pixels @2x.
+> 앱 스토어의 경우 시계의 1024x1024 px 버전을 만듭니다.OS 앱 아이콘. 시스템에서 자동으로 이 버전을 다른 모든 크기로 축소하거나(특정 크기로 앱 아이콘 모양을 사용자 지정하려는 경우) 다음 표에 나열된 크기를 제공할 수 있습니다. 모든 아이콘 치수는 픽셀 @2x로 표시됩니다.
+>
+
+
+
+
+If you have a companion iPhone app, you also need to supply your watchOS app icon in the following sizes.
+> 만약 당신이 아이폰 앱을 가지고 있다면, 당신은 또한 당신의 시계를 제공해야 한다.OS 앱 아이콘 크기는 다음과 같습니다.
+>
+
+
+
+
+| Platform | Layers | Transparency | Asset shape |
+| --- | --- | --- | --- |
+| iOS, iPadOS | Single | No | Square |
+| macOS | Single | Yes, as appropriate | Square with rounded corners |
+| tvOS | Multiple | No | Rectangle |
+| watchOS | Single | No | Square |
+
+| @2x (pixels) | @3x (pixels) iPhone only | Usage |
+| --- | --- | --- |
+| 120x120 | 180x180 | Home Screen on iPhone |
+| 167x167 | – | Home Screen on iPad Pro |
+| 152x152 | – | Home Screen on iPad, iPad mini |
+| 80x80 | 120x120 | Spotlight on iPhone, iPad Pro, iPad, iPad mini |
+| 58x58 | 87x87 | Settings on iPhone, iPad Pro, iPad, iPad mini |
+| 76x76 | 114x114 | Notifications on iPhone, iPad Pro, iPad, iPad mini |
+
+| @1x (pixels) | @2x (pixels) |
+| --- | --- |
+| 512x512 | 1024x1024 |
+| 256x256 | 512x512 |
+| 128x128 | 256x256 |
+| 32x32 | 64x64 |
+| 16x16 | 32x32 |
+
+| @1x (pixels) | @2x (pixels) | Usage |
+| --- | --- | --- |
+| 400x240 | 800x480 | Home Screen |
+
+| 38mm | 40mm | 41mm | 42mm | 44mm | 45mm | 49mm | Usage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 80x80 | 88x88 | 92x92 | 80x80 | 100x100 | 102x102 | 108x108 | Home Screen |
+| 48x48 | 55x55 | 58x58 | 55x55 | 58x58 | 66x66 | 66x66 | Notification Center |
+| 172x172 | 196x196 | 196x196 | 196x196 | 216x216 | 234x234 | 258x258 | Short look |
+
+| @2x (pixels) | @3x (pixels) |
+| --- | --- |
+| 58x58 | 87x87 |
