@@ -356,3 +356,443 @@ release to release, based on a variety of environmental variables.
 
 
 
+interface looks great when the appearance of macOS changes in the future, use dynamic system colors as intended.
+> 향후 macOS의 외관이 바뀔 때 인터페이스가 훌륭해 보입니다, 의도한 대로 동적 시스템 색상을 사용하십시오.
+>
+
+
+
+
+# **Color management**
+
+A *color space* represents the colors in a *color model* like RGB or CMYK. Common color spaces — sometimes called *
+> 색 공간은 RGB 또는 CMYK와 같은 색상 모델에서 색상을 나타냅니다.
+>
+
+
+
+gamuts* — are sRGB and Display P3.
+> Gamuts — sRGB 및 Display P3입니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/color/images/color-graphic-wide-color-dark_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/color/images/color-graphic-wide-color-dark_2x.png)
+
+A *color profile* describes the colors in a color space using, for example, mathematical formulas or tables of data that
+> 색상 프로파일은 예를 들어 다음과 같은 수학 공식 또는 데이터 테이블을 사용하여 색상 공간의 색상을 설명합니다.
+>
+
+
+
+map colors to numerical representations. An image embeds its color profile so that a device can interpret the image’s
+> 색을 숫자로 나타내다 이미지가 색 프로필을 내장하여 장치가 이미지를 해석할 수 있도록 합니다.
+>
+
+
+
+colors correctly and reproduce them on a display.
+> 올바른 색상과 디스플레이에서 재현합니다.
+>
+
+
+
+
+**Apply color profiles to your images.** Color profiles help ensure that your app’s colors appear as intended on
+> 이미지에 색상 프로파일을 적용합니다. 색 프로필은 앱의 색상이 의도한 대로 나타나도록 합니다.
+>
+
+
+
+different displays. The sRGB color space produces accurate colors on most displays.
+> 여러 가지 디스플레이 sRGB 색 공간은 대부분의 디스플레이에서 정확한 색상을 생성합니다.
+>
+
+
+
+
+**Use wide color to enhance the visual experience on compatible displays.** Wide color displays support a P3 color
+> 호환되는 디스플레이의 시각적 경험을 향상시키려면 넓은 색상을 사용하십시오. 와이드 컬러 디스플레이는 P3 컬러를 지원합니다.
+>
+
+
+
+space, which can produce richer, more saturated colors than sRGB. As a result, photos and videos that use wide color are
+> sRGB보다 더 풍부하고 포화된 색을 만들 수 있는 공간. 결과적으로, 넓은 색상을 사용하는 사진과 비디오는
+>
+
+
+
+more lifelike, and visual data and status indicators that use wide color can be more meaningful. When appropriate, use
+> 보다 실제적인 색상과 넓은 색상을 사용하는 시각적 데이터 및 상태 표시기가 보다 의미 있을 수 있습니다. 적절한 경우,
+>
+
+
+
+the Display P3 color profile at 16 bits per pixel (per channel) and export images in PNG format. Note that you need to
+> P3 컬러 프로파일을 픽셀당 16비트(채널당)로 표시하고 이미지를 PNG 형식으로 내보냅니다. 다음 작업을 수행해야 합니다.
+>
+
+
+
+use a wide color display to design wide color images and select P3 colors.
+> 와이드 컬러 디스플레이를 사용하여 와이드 컬러 이미지를 디자인하고 P3 색상을 선택합니다.
+>
+
+
+
+
+**Provide color space–specific image and color variations if necessary.** In general, P3 colors and images appear fine
+> 필요한 경우 색 공간별 이미지 및 색 변형을 제공합니다. 일반적으로 P3 색상과 이미지는 정상으로 보입니다.
+>
+
+
+
+on sRGB displays. Occasionally, it may be hard to distinguish two very similar P3 colors when viewing them on an sRGB
+> sRGB 디스플레이에. 때때로 sRGB에서 매우 유사한 두 가지 P3 색상을 구별하기 어려울 수 있습니다.
+>
+
+
+
+display. Gradients that use P3 colors can also sometimes appear clipped on sRGB displays. To avoid these issues and to
+> 진열하다 P3 색상을 사용하는 그라데이션은 sRGB 디스플레이에 잘린 것처럼 보일 수도 있다. 이러한 문제를 방지하고 다음을 수행합니다.
+>
+
+
+
+ensure visual fidelity on both wide color and sRGB displays, you can use the asset catalog of your Xcode project to
+> 넓은 색상과 sRGB 디스플레이 모두에서 시각적 충실도를 보장합니다. Xcode 프로젝트의 자산 카탈로그를 사용하여
+>
+
+
+
+provide different versions of images and colors for each color space.
+> 각 색 공간에 대해 서로 다른 버전의 이미지와 색상을 제공합니다.
+>
+
+
+
+
+To learn more, see [How to start designing assets in Display P3](https://developer.apple.com/news/?id=5cda5ipr).
+> 자세한 내용은 디스플레이 P3에서 자산 설계를 시작하는 방법을 참조하십시오.
+>
+
+
+
+
+# **Platform considerations**
+
+# **iOS, iPadOS**
+
+iOS defines two sets of dynamic background colors — *system* and *grouped* — each of which contains primary, secondary,
+> iOS는 두 세트의 동적 배경색을 정의한다 - 시스템과 그룹 - 각각 기본, 보조,
+>
+
+
+
+and tertiary variants that help you convey a hierarchy of information. In general, use the grouped background
+> 그리고 정보의 계층 구조를 전달하는 데 도움이 되는 3차 변종. 일반적으로 그룹화된 배경을 사용합니다.
+>
+
+
+
+colors ([systemGroupedBackground](https://developer.apple.com/documentation/uikit/uicolor/3173145-systemgroupedbackground)
+, [secondarySystemGroupedBackground](https://developer.apple.com/documentation/uikit/uicolor/3173138-secondarysystemgroupedbackground)
+,
+and [tertiarySystemGroupedBackground](https://developer.apple.com/documentation/uikit/uicolor/3173155-tertiarysystemgroupedbackground))
+when you have a grouped table view; otherwise, use the system set of background
+> 그룹화된 테이블 보기가 있는 경우; 그렇지 않으면 배경의 시스템 세트를 사용합니다.
+>
+
+
+
+colors ([systemBackground](https://developer.apple.com/documentation/uikit/uicolor/3173140-systembackground)
+, [secondarySystemBackground](https://developer.apple.com/documentation/uikit/uicolor/3173137-secondarysystembackground)
+,
+and [tertiarySystemBackground](https://developer.apple.com/documentation/uikit/uicolor/3173154-tertiarysystembackground))
+.
+
+With both sets of background colors, you generally use the variants to indicate hierarchy in the following ways:
+> 두 배경색 집합 모두 일반적으로 변형을 사용하여 다음과 같은 방식으로 계층을 나타냅니다.
+>
+
+
+
+
+- Primary for the overall view
+- >  전체 보기에 대한 기본 설정
+
+- Secondary for grouping content or elements within the overall view
+- >  전체 보기 내에서 내용 또는 요소를 그룹화하기 위한 보조
+
+- Tertiary for grouping content or elements within secondary elements
+- >  2차 요소 내에서 내용 또는 요소를 그룹화하기 위한 3차
+
+
+For foreground content, iOS defines the following dynamic colors:
+> 포그라운드 콘텐츠의 경우 iOS는 다음과 같은 동적 색상을 정의한다.
+>
+
+
+
+
+# **macOS**
+
+macOS defines the following dynamic system colors (you can also view them in the Developer palette of the standard Color
+> macOS는 다음과 같은 동적 시스템 색상을 정의합니다(표준 색상의 개발자 팔레트에서도 볼 수 있습니다).
+>
+
+
+
+panel):
+
+### **App accent colors**
+
+Beginning in macOS 11, you can specify an *accent color* to customize the appearance of your app’s buttons, selection
+> macOS 11부터 액센트 색상을 지정하여 앱의 단추 모양과 선택 항목을 사용자 지정할 수 있습니다.
+>
+
+
+
+highlighting, and sidebar icons. The system applies your accent color when the current value in General > Accent color
+> 강조 표시 및 사이드바 아이콘. 현재 값이 General(일반) > Accent(액센트) 색상일 때 시스템이 액센트 색상을 적용합니다.
+>
+
+
+
+settings is *multicolor*.
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/color/images/app-accent-colors-podcasts_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/color/images/app-accent-colors-podcasts_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/color/images/app-accent-colors-podcasts-preferences_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/color/images/app-accent-colors-podcasts-preferences_2x.png)
+
+If people set their accent color setting to a value other than multicolor, the system applies their chosen color to the
+> 만약 사람들이 그들의 악센트 색상 설정을 멀티컬러 이외의 값으로 설정한다면, 시스템은 그들이 선택한 색상을
+>
+
+
+
+relevant items throughout your app, replacing your accent color. The exception is a sidebar icon that uses a fixed color
+> 앱 전체에서 관련 항목을 선택하여 액센트 색상을 대체합니다. 고정된 색상을 사용하는 사이드바 아이콘은 예외입니다.
+>
+
+
+
+you specify. Because a fixed-color sidebar icon uses a specific color to provide meaning, the system doesn’t override
+> 당신이 지정하세요. 고정 색상 사이드바 아이콘은 의미를 제공하기 위해 특정 색상을 사용하기 때문에 시스템이 재정의되지 않습니다.
+>
+
+
+
+its color when people change the value of accent color settings. For guidance,
+> 사람들이 액센트 색상 설정의 값을 변경할 때 그것의 색상. 안내를 위해,
+>
+
+
+
+see [Sidebars](../components/navigation-and-search/sidebars).
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/color/images/fixed-color-orange_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/color/images/fixed-color-orange_2x.png)
+
+The iCloud glyph remains teal, even when the other glyphs use orange.
+> 아이클라우드 글리프는 다른 글리프가 오렌지를 사용하더라도 스틸로 남아 있다.
+>
+
+
+
+
+# **tvOS**
+
+**Consider choosing a limited color palette that coordinates with your app logo.** Subtle use of color can help you
+> 당신의 앱 로고와 어울리는 제한된 색상 팔레트를 선택하는 것을 고려해보세요. 미묘한 색의 사용은 당신을 도울 수 있다.
+>
+
+
+
+communicate your brand while deferring to the content.
+> 내용을 고려하면서 브랜드를 전달합니다.
+>
+
+
+
+
+**Avoid using only color to indicate focus.** Subtle scaling and responsive animation are the primary ways to denote
+> 초점을 나타내기 위해 색상만 사용하지 마십시오. 미묘한 스케일링과 반응성 애니메이션은 다음과 같은 주요 방법입니다.
+>
+
+
+
+interactivity when an element is in focus.
+> 요소가 포커스에 있을 때 상호 작용.
+>
+
+
+
+
+# **watchOS**
+
+**Use pure black for your app’s background color.** Pure black — that is, #000000 hex — blends seamlessly with the Apple
+> 앱의 배경색에 순검색을 사용합니다. 순수 블랙(즉, 00000000 헥스)은 Apple과 완벽하게 혼합됩니다.
+>
+
+
+
+Watch bezel and creates the illusion of an edgeless screen.
+> 베젤을 보고 가장자리가 없는 화면의 착각을 일으킨다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/color/images/color-black-background_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/color/images/color-black-background_2x.png)
+
+**Recognize that people might prefer graphic complications to use tinted mode instead of full color.** The system can
+> 사람들은 전체 색상 대신 색조 모드를 사용하기 위해 그래픽 합병증을 선호할 수 있다는 것을 인식한다. 시스템은 할 수 있다.
+>
+
+
+
+use a single color that’s based on the wearer’s selected color in a graphic complication’s images, gauges, and text. For
+> 그래픽 합병증의 이미지, 게이지 및 텍스트에서 착용자가 선택한 색상을 기반으로 하는 단일 색상을 사용합니다. 위해서
+>
+
+
+
+guidance,
+see [Complications](../components/system-experiences/complications)
+.
+
+# **Specifications**
+
+# **iOS, iPadOS**
+
+### **System colors (iOS)**
+
+• [Default](../foundations/color#)
+• [Accessible](../foundations/color#)
+
+
+| Light            | Dark              | Name   | SwiftUI API                                                                          |
+|------------------|-------------------|--------|--------------------------------------------------------------------------------------|
+| R 255 G 59 B 48  | R 255 G 69 B 58   | Red    | [systemRed](https://developer.apple.com/documentation/swiftui/color/red-r0xf)        |
+| R 255 G 149 B 0  | R 255 G 159 B 10  | Orange | [systemOrange](https://developer.apple.com/documentation/swiftui/color/orange-82f82) |
+| R 255 G 204 B 0  | R 255 G 214 B 10  | Yellow | [systemYellow](https://developer.apple.com/documentation/swiftui/color/yellow-7dwbr) |
+| R 52 G 199 B 89  | R 48 G 209 B 88   | Green  | [systemGreen](https://developer.apple.com/documentation/swiftui/color/green-w7ed)    |
+| R 0 G 199 B 190  | R 102 G 212 B 207 | Mint   | [systemMint](https://developer.apple.com/documentation/swiftui/color/mint-35bmu)     |
+| R 48 G 176 B 199 | R 64 G 200 B 224  | Teal   | [systemTeal](https://developer.apple.com/documentation/swiftui/color/teal-7u2cz)     |
+| R 50 G 173 B 230 | R 100 G 210 B 255 | Cyan   | [systemCyan](https://developer.apple.com/documentation/swiftui/color/cyan-7osri)     |
+| R 0 G 122 B 255  | R 10 G 132 B 255  | Blue   | [systemBlue](https://developer.apple.com/documentation/swiftui/color/blue-8buzr)     |
+| R 88 G 86 B 214  | R 94 G 92 B 230   | Indigo | [systemIndigo](https://developer.apple.com/documentation/swiftui/color/indigo-7talx) |
+| R 175 G 82 B 222 | R 191 G 90 B 242  | Purple | [systemPurple](https://developer.apple.com/documentation/swiftui/color/purple-8yxzw) |
+| R 255 G 45 B 85  | R 255 G 55 B 95   | Pink   | [systemPink](https://developer.apple.com/documentation/swiftui/color/pink-49kdx)     |
+| R 162 G 132 B 94 | R 172 G 142 B 104 | Brown  | [systemBrown](https://developer.apple.com/documentation/swiftui/color/brown-59e5a)   |
+
+### **System gray colors (iOS)**
+
+• [Default](../foundations/color#)
+• [Accessible](../foundations/color#)
+
+| Light             | Dark              | Name     | UIKit API                                                                                  |
+|-------------------|-------------------|----------|--------------------------------------------------------------------------------------------|
+| R 142 G 142 B 147 | R 142 G 142 B 147 | Gray     | [systemGray](https://developer.apple.com/documentation/swiftui/color/gray-7dqon)           |
+| R 174 G 174 B 178 | R 99 G 99 B102    | Gray (2) | [systemGray2](https://developer.apple.com/documentation/uikit/uicolor/3255071-systemgray2) |
+| R 199 G 199 B 204 | R 72 G 72 B 74    | Gray (3) | [systemGray3](https://developer.apple.com/documentation/uikit/uicolor/3255072-systemgray3) |
+| R 209G 209B 214   | R 58 G 58 B 60    | Gray (4) | [systemGray4](https://developer.apple.com/documentation/uikit/uicolor/3255073-systemgray4) |
+| R 229 G 229 B 234 | R 44 G 44 B 46    | Gray (5) | [systemGray5](https://developer.apple.com/documentation/uikit/uicolor/3255074-systemgray5) |
+| R 242 G 242 B 247 | R 28 G 28 B 30    | Gray (6) | [systemGray6](https://developer.apple.com/documentation/uikit/uicolor/3255075-systemgray6) |
+
+# **macOS**
+
+### **System colors (macOS)**
+
+• [Default](../foundations/color#)
+• [Vibrant](../foundations/color#)
+• [Accessible](../foundations/color#)
+• [Accessible + Vibrant](../foundations/color#)
+
+| Aqua              | Dark              | Name   | SwiftUI API                                                                               |
+|-------------------|-------------------|--------|-------------------------------------------------------------------------------------------|
+| R 255 G 59 B 48   | R 255 G 69 B 58   | Red    | [systemRedColor](https://developer.apple.com/documentation/swiftui/color/red-r0xf)        |
+| R 255 G 149 B 0   | R 255 G 159 B 10  | Orange | [systemOrangeColor](https://developer.apple.com/documentation/swiftui/color/orange-82f82) |
+| R 255 G 204 B 0   | R 255 G 214 B 10  | Yellow | [systemYellowColor](https://developer.apple.com/documentation/swiftui/color/yellow-7dwbr) |
+| R 40 G 205 B 65   | R 50 G 215 B 75   | Green  | [systemGreenColor](https://developer.apple.com/documentation/swiftui/color/green-w7ed)    |
+| R 0 G 199 B 190   | R 102 G 212 B 207 | Mint   | [systemMintColor](https://developer.apple.com/documentation/swiftui/color/mint-35bmu)     |
+| R 89 G 173 B 196  | R 106 G 196 B 220 | Teal   | [systemTealColor](https://developer.apple.com/documentation/swiftui/color/teal-7u2cz)     |
+| R 85 G 190 B 240  | R 90 G 200 B 245  | Cyan   | [systemCyanColor](https://developer.apple.com/documentation/swiftui/color/cyan-7osri)     |
+| R 0 G 122 B 255   | R 10 G 132 B 255  | Blue   | [systemBlueColor](https://developer.apple.com/documentation/swiftui/color/blue-8buzr)     |
+| R 88 G 86 B 214   | R 94 G 92 B 230   | Indigo | [systemIndigoColor](https://developer.apple.com/documentation/swiftui/color/indigo-7talx) |
+| R 175G 82 B 222   | R 191 G 90 B 242  | Purple | [systemPurpleColor](https://developer.apple.com/documentation/swiftui/color/purple-8yxzw) |
+| R 255 G 45 B 85   | R 255 G 55 B 95   | Pink   | [systemPinkColor](https://developer.apple.com/documentation/swiftui/color/pink-49kdx)     |
+| R 162 G 132 B 94  | R 172 G 142 B 104 | Brown  | [systemBrownColor](https://developer.apple.com/documentation/swiftui/color/brown-59e5a)   |
+| R 142 G 142 B 147 | R 152 G 152 B 157 | Gray   | [systemGrayColor](https://developer.apple.com/documentation/swiftui/color/gray-7dqon)     |
+
+# **watchOS**
+
+### **System colors (watchOS)**
+
+| Color | Use for... | UIKit API |
+| --- | --- | --- |
+| Label | A text label that contains primary content. | label |
+| Secondary label | A text label that contains secondary content. | secondaryLabel |
+| Tertiary label | A text label that contains tertiary content. | tertiaryLabel |
+| Quaternary label | A text label that contains quaternary content. | quaternaryLabel |
+| Placeholder text | Placeholder text in controls or text views. | placeholderText |
+| Separator | A separator that allows some underlying content to be visible. | separator |
+| Opaque separator | A separator that doesn’t allow any underlying content to be visible. | opaqueSeparator |
+| Link | Text that functions as a link. | link |
+
+| Color | Use for... | AppKit API |
+| --- | --- | --- |
+| Alternate selected control text color | The text on a selected surface in a list or table. | alternateSelectedControlTextColor |
+| Alternating content background colors | The backgrounds of alternating rows or columns in a list, table, or collection view. | alternatingContentBackgroundColors |
+| Control accent | The accent color selected by the user in System Settings. | controlAccent |
+| Control background color | The background of a large interface element, such as a browser or table. | controlBackgroundColor |
+| Control color | The surface of a control. | controlColor |
+| Control text color | The text of a control that is enabled. | controlTextColor |
+| Current control tint | The system-defined control tint. | currentControlTint |
+| Disabled control text color | The text of a control that’s disabled. | disabledControlTextColor |
+| Find highlight color | The color of a find indicator. | findHighlightColor |
+| Grid color | The gridlines of an interface element, such as a table. | gridColor |
+| Header text color | The text of a header cell in a table. | headerTextColor |
+| Highlight color | The virtual light source onscreen. | highlightColor |
+| Keyboard focus indicator color | The ring that appears around the currently focused control when using the keyboard for interface navigation. | keyboardFocusIndicatorColor |
+| Label color | The text of a label containing primary content. | labelColor |
+| Link color | A link to other content. | linkColor |
+| Placeholder text color | A placeholder string in a control or text view. | placeholderTextColor |
+| Quaternary label color | The text of a label of lesser importance than a tertiary label, such as watermark text. | quaternaryLabelColor |
+| Scrubber textured background color | The background of a scrubber in the Touch Bar. For guidance, see Touch Bar > Visual Design > Color. | scrubberTexturedBackgroundColor |
+| Secondary label color | The text of a label of lesser importance than a primary label, such as a label used to represent a subheading or additional information. | secondaryLabelColor |
+| Selected content background color | The background for selected content in a key window or view. | selectedContentBackgroundColor |
+| Selected control color | The surface of a selected control. | selectedControlColor |
+| Selected control text color | The text of a selected control. | selectedControlTextColor |
+| Selected menu item text color | The text of a selected menu. | selectedMenuItemTextColor |
+| Selected text background color | The background of selected text. | selectedTextBackgroundColor |
+| Selected text color | The color for selected text. | selectedTextColor |
+| Separator color | A separator between different sections of content. | separatorColor |
+| Shadow color | The virtual shadow cast by a raised object onscreen. | shadowColor |
+| Tertiary label color | The text of a label of lesser importance than a secondary label, such as a label used to represent disabled text. | tertiaryLabelColor |
+| Text background color | The background color behind text. | textBackgroundColor |
+| Text color | The text in a document. | textColor |
+| Under page background color | The background behind a document’s content. | underPageBackgroundColor |
+| Unemphasized selected content background color | The selected content in a non-key window or view. | unemphasizedSelectedContentBackgroundColor |
+| Unemphasized selected text background color | A background for selected text in a non-key window or view. | unemphasizedSelectedTextBackgroundColor |
+| Unemphasized selected text color | Selected text in a non-key window or view. | unemphasizedSelectedTextColor |
+| Window background color | The background of a window. | windowBackgroundColor |
+| Window frame text color | The text in the window’s title bar area. | windowFrameTextColor |
+
+| Values | Name | SwiftUI API |
+| --- | --- | --- |
+| R 255G 59B 48 | Red | systemRed |
+| R 255G 149B 0 | Orange | systemOrange |
+| R 255G 230B 32 | Yellow | systemYellow |
+| R 4G 222B 113 | Green | systemGreen |
+| R 102G 212B 207 | Mint | systemMint |
+| R 106G 196B 220 | Teal | systemTeal |
+| R 90G 200B 250 | Cyan | systemCyan |
+| R 32G 148B 250 | Blue | systemBlue |
+| R 120G 122B 255 | Indigo | systemIndigo |
+| R 191G 90B 242 | Purple | systemPurple |
+| R 250G 17B 79 | Pink | systemPink |
+| R 172G 142B 104 | Brown | systemBrown |
+| R 155G 160B 170 | Gray | systemGray |
