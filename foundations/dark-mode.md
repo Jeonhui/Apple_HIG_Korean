@@ -140,3 +140,44 @@ The system uses vibrancy and increased contrast to maintain the legibility of te
 
 # **iOS, iPadOS**
 
+In Dark Mode, the system uses two sets of background colors — called *base* and *elevated* — to enhance the perception of depth when one dark interface is layered above another. The base colors are dimmer, making background interfaces appear to recede, and the elevated colors are brighter, making foreground interfaces appear to advance.
+> 다크 모드에서 시스템은 하나의 다크 인터페이스가 다른 인터페이스 위에 레이어드될 때 깊이에 대한 인식을 향상시키기 위해 베이스와 상승이라는 두 가지 배경 색상을 사용합니다. 기본 색상은 더 어두워서 배경 인터페이스가 뒤로 물러나는 것처럼 보이고, 높아진 색상은 더 밝아져 전경 인터페이스가 전진하는 것처럼 보인다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/dark-mode/images/base-with-four-semantic-colors_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/dark-mode/images/base-with-four-semantic-colors_2x.png)
+
+Base
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/dark-mode/images/elevated-with-four-semantic-colors_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/dark-mode/images/elevated-with-four-semantic-colors_2x.png)
+
+Elevated
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/dark-mode/images/light-with-four-semantic-colors_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/dark-mode/images/light-with-four-semantic-colors_2x.png)
+
+Light
+
+**Prefer the system background colors.** Dark Mode is dynamic, which means that the background color automatically changes from base to elevated when an interface is in the foreground, such as a popover or modal sheet. The system also uses the elevated background color to provide visual separation between apps in a multitasking environment and between windows in a multiple-window context. Using a custom background color can make it harder for people to perceive these system-provided visual distinctions.
+> 시스템 배경색을 선택합니다. 다크 모드는 동적입니다. 즉, 팝업 또는 모달 시트와 같이 인터페이스가 전경에 있을 때 배경색이 베이스에서 상승으로 자동으로 변경됩니다. 이 시스템은 또한 높은 배경색을 사용하여 멀티태스킹 환경의 앱 간 및 다중 윈도우 컨텍스트의 창 간 시각적 분리를 제공한다. 사용자 지정 배경색을 사용하면 시스템에서 제공하는 이러한 시각적 차이를 인식하기가 더 어려워질 수 있습니다.
+>
+
+
+
+
+# **macOS**
+
+When people choose the graphite accent color in General settings, macOS causes window backgrounds to pick up color from the current desktop picture. The result — called *desktop tinting* — is a subtle effect that helps windows blend more harmoniously with their surrounding content.
+> 일반 설정에서 사람들이 그라파이트 액센트 색상을 선택하면 macOS에서 창 배경이 현재 바탕 화면 사진에서 색을 선택하게 됩니다. 바탕 화면 색조라고 하는 결과는 창이 주변 콘텐츠와 더 조화롭게 혼합되도록 돕는 미묘한 효과입니다.
+>
+
+
+
+
+**Include some transparency in custom component backgrounds when appropriate.** Transparency lets your components pick up color from the window background when desktop tinting is active, creating a visual harmony that can persist even when the desktop picture changes. To help achieve this harmony, add transparency only to a custom component that has a visible background or bezel, and only when the component is in a neutral state, such as state that doesn’t use color. You don’t want to add transparency when the component is in a state that uses color, because doing so can cause the component’s color to fluctuate when the window background adjusts to a different location on the desktop or when the desktop picture changes.
+> 적절한 경우 사용자 지정 구성 요소 배경에 투명도를 포함합니다. 투명도를 사용하면 바탕 화면 색조가 활성화되어 있을 때 구성 요소가 창 배경에서 색상을 선택하여 바탕 화면 사진이 변경되더라도 시각적 조화를 유지할 수 있습니다. 이러한 조화를 이루려면 배경이나 베젤이 보이는 사용자 지정 구성 요소에만 투명도를 추가하고 구성 요소가 색상을 사용하지 않는 상태와 같은 중립 상태에 있을 때만 투명도를 추가하십시오. 구성 요소가 색상을 사용하는 상태일 때는 투명도를 추가하지 않을 수 있습니다. 이렇게 하면 창 배경이 바탕 화면의 다른 위치에 조정되거나 바탕 화면 사진이 변경될 때 구성 요소의 색상이 변동될 수 있습니다.
+>
+
+
+

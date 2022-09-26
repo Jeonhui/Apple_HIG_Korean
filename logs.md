@@ -9,3 +9,4 @@
  | 2022-09-23 02:36:51 | ./foundations/app-icons.md | 117 | 9979 | 
  | 2022-09-24 02:39:46 | ./foundations/color.md | 92 | 9907 | 
  | 2022-09-25 02:37:40 | ./foundations/dark-mode.md | 51 | 9941 | 
+ | 2022-09-26 02:40:10 | ./foundations/icons.md | 117 | 9693 | 
