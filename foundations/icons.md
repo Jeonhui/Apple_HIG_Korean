@@ -276,3 +276,115 @@ macOS 11 composites the elements you supply to produce your custom document icon
 
 
 
+**Design simple images that clearly communicate the document type.** Whether you use a background fill, a center image, or both, prefer uncomplicated shapes and a reduced palette of distinct colors. Your document icon can display as small as 16x16 px, so you want to create designs that remain recognizable at every size.
+> 문서 유형을 명확하게 전달하는 간단한 이미지를 디자인합니다. 배경 채우기, 중앙 이미지 또는 둘 모두를 사용하든 간에 복잡한 모양과 구별되는 색상의 팔레트를 줄이기를 선호합니다. 문서 아이콘은 16x16px만큼 작게 표시될 수 있으므로 모든 크기에서도 인식할 수 있는 설계를 생성하려고 합니다.
+>
+
+
+
+
+**Designing a single, expressive image for the background fill can be a great way to help people understand and recognize a document type.** For example, Xcode and TextEdit both use rich background images that don’t include a center image.
+> 예를 들어 Xcode와 TextEdit는 모두 중앙 이미지를 포함하지 않는 풍부한 배경 이미지를 사용합니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/macos/images/doc-icon-custom-1_2x.png](https://developer.apple.com/design/human-interface-guidelines/macos/images/doc-icon-custom-1_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/macos/images/doc-icon-fill-only_2x.png](https://developer.apple.com/design/human-interface-guidelines/macos/images/doc-icon-fill-only_2x.png)
+
+**Consider reducing complexity in the small versions of your document icon.** Icon details that are clear in large versions can look blurry and be hard to recognize in small versions. For example, to ensure that the grid lines in the custom heart document icon remain clear in intermediate sizes, you might use fewer lines and thicken them by aligning them to the reduced pixel grid. In the 16x16 px size, you might remove the lines altogether.
+> 작은 버전의 문서 아이콘의 복잡성을 줄이는 것이 좋습니다. 큰 버전에서는 명확한 아이콘 세부 정보가 흐릿하게 보이고 작은 버전에서는 인식하기 어려울 수 있습니다. 예를 들어, 사용자 정의 하트 문서 아이콘의 그리드 선을 중간 크기로 선명하게 유지하기 위해 더 적은 선을 사용하고 축소된 픽셀 그리드에 정렬하여 굵게 할 수 있습니다. 16x16 px 크기에서는 라인을 모두 제거할 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/macos/images/doc-icon-fewer-details-1_2x.png](https://developer.apple.com/design/human-interface-guidelines/macos/images/doc-icon-fewer-details-1_2x.png)
+
+The 32x32 px icon has fewer grid lines and a thicker EKG line.
+> 32x32px 아이콘은 그리드 선이 적고 EKG 선이 더 두껍습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/macos/images/doc-icon-fewer-details-2_2x.png](https://developer.apple.com/design/human-interface-guidelines/macos/images/doc-icon-fewer-details-2_2x.png)
+
+The 16x16 px @2x icon retains the EKG line but has no grid lines.
+> 16x16 px @2x 아이콘은 EKG 라인을 유지하지만 그리드 라인이 없습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/macos/images/doc-icon-fewer-details-3_2x.png](https://developer.apple.com/design/human-interface-guidelines/macos/images/doc-icon-fewer-details-3_2x.png)
+
+The 16x16 px @1x icon has no EKG line and no grid lines.
+> 16x16 px @1x 아이콘에는 EKG 선과 그리드 선이 없습니다.
+>
+
+
+
+
+**Avoid placing important content in the top-right corner of your background fill.** The system automatically masks your image to fit the document icon shape and draws the white folded corner on top of the fill. Create a set of background images in the sizes listed below.
+> 중요한 내용을 배경 채우기의 오른쪽 상단 모서리에 배치하지 마십시오. 시스템은 자동으로 이미지를 문서 아이콘 모양에 맞게 마스킹하고 채우기 위에 흰색으로 접힌 모서리를 그립니다. 아래 나열된 크기의 배경 이미지 세트를 만듭니다.
+>
+
+
+
+
+- 512x512 px @1x, 1024x1024 px @2x
+- >  512xpx px @1x, 1024xpx px @2x
+
+- 256x256 px @1x, 512x512 px @2x
+- >  256x256px @1x, 512xpx px @2x
+
+- 128x128 px @1x, 256x256 px @2x
+- >  128x128px @1x, 256x256px @2x
+
+- 32x32 px @1x, 64x64 px @2x
+- >  32x32px @1x, 64x64px @2x
+
+- 16x16 px @1x, 32x32 px @2x
+- >  16x16px @1x, 32x32px @2x
+
+
+**If a familiar object can convey a document’s type or its connection with your app, consider creating a center image that depicts it.** Design a simple, unambiguous image that’s clear and recognizable at every size. The center image measures half the size of the overall document icon canvas. For example, to create a center image for a 32x32 px document icon, use an image canvas that measures 16x16 px. You can provide center images in the following sizes:
+> 친숙한 객체가 문서의 유형이나 앱과의 연결을 전달할 수 있다면 이를 묘사하는 중앙 이미지를 만드는 것을 고려해 보십시오. 모든 크기로 선명하고 인식 가능한 단순하고 모호하지 않은 이미지를 디자인하십시오. 중앙 이미지는 전체 문서 아이콘 캔버스의 절반 크기를 측정합니다. 예를 들어 32x32px 문서 아이콘의 중앙 이미지를 생성하려면 16x16px 크기의 이미지 캔버스를 사용하십시오. 다음과 같은 크기의 센터 영상을 제공할 수 있습니다.
+>
+
+
+
+
+- 256x256 px @1x, 512x512 px @2x
+- >  256x256px @1x, 512xpx px @2x
+
+- 128x128 px @1x, 256x256 px @2x
+- >  128x128px @1x, 256x256px @2x
+
+- 32x32 px @1x, 64x64 px @2x
+- >  32x32px @1x, 64x64px @2x
+
+- 16x16 px @1x, 32x32 px @2x
+- >  16x16px @1x, 32x32px @2x
+
+
+**Define a margin that measures about 10% of the image canvas and keep most of the image within it.** Although parts of the image can extend into this margin for optical alignment, it’s best when the image occupies about 80% of the image canvas. For example, most of the center image in a 256x256 px canvas would fit in an area that measures 205x205 px.
+> 이미지 캔버스의 약 10%를 측정하는 여백을 정의하고 대부분의 이미지를 그 안에 유지합니다. 이미지의 일부가 광학 정렬을 위해 이 여백까지 확장될 수 있지만 이미지가 이미지 캔버스의 약 80%를 차지하는 것이 가장 좋습니다. 예를 들어 256x256px 캔버스의 중앙 이미지 대부분은 205x205px 크기의 영역에 들어갑니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/macos/images/doc-icon-parts-margins_2x.png](https://developer.apple.com/design/human-interface-guidelines/macos/images/doc-icon-parts-margins_2x.png)
+
+**Specify a succinct term if it helps people understand your document type.** By default, the system displays a document’s extension at the bottom edge of the document icon, but if the extension is unfamiliar you can supply a more descriptive term. For example, the document icon for a SceneKit scene file uses the term *scene* instead of the file extension *scn*. The system automatically scales the extension text to fit in the document icon, so be sure to use a term that’s short enough to be legible at small sizes. By default, the system capitalizes every letter in the text.
+> 사용자가 문서 유형을 이해하는 데 도움이 되는 간결한 용어를 지정하십시오. 기본적으로 시스템은 문서 아이콘의 맨 아래에 문서의 확장자를 표시하지만 확장자가 익숙하지 않은 경우 더 자세한 용어를 제공할 수 있습니다. 예를 들어 SceneKit 장면 파일의 문서 아이콘은 파일 확장자 scn 대신 scene이라는 용어를 사용합니다. 시스템은 문서 아이콘에 맞도록 확장 텍스트의 크기를 자동으로 조정하므로 작은 크기로 읽을 수 있을 만큼 충분히 짧은 용어를 사용해야 합니다. 기본적으로 시스템은 텍스트의 모든 문자를 대문자로 표시합니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/macos/images/doc-icon-custom-extension_2x.png](https://developer.apple.com/design/human-interface-guidelines/macos/images/doc-icon-custom-extension_2x.png)
