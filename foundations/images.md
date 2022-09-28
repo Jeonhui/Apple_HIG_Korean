@@ -183,3 +183,64 @@ You can embed layered images in your app or retrieve them from a content server 
 
 
 
+- **Parallax Previewer app for macOS.** Parallax Previewer can import PNG files to serve as individual layers, layered images (`.lsr`) created with the Parallax Exporter plug-in, and layered Photoshop images (`.psd`). Parallax Previewer can export LSR files that you can import directly into an Xcode project.
+- >  PNG 파일을 가져와 개별 레이어, 패러락스 익스포터 플러그인으로 만든 레이어드 이미지(thorlsr), 레이어드 포토샵 이미지(thorpsd)로 활용할 수 있다. 시차 미리 보기에서는 LSR 파일을 내보내고 이를 Xcode 프로젝트로 직접 가져올 수 있습니다.
+
+- **Parallax Exporter Adobe Photoshop plug-in.** Use this plug-in to test your layered images in Photoshop and export them as LSR files that you can import directly into an Xcode project.
+- >  시차 내보내기 Adobe Photoshop 플러그인. 이 플러그인을 사용하여 Photoshop에서 계층화된 이미지를 테스트하고 Xcode 프로젝트로 직접 가져올 수 있는 LSR 파일로 내보낼 수 있습니다.
+
+- **Xcode.** Drag standard PNG files into your app’s asset catalog to serve as individual layers of an image stack in Xcode. Image stacks can be exported as LSR files. Xcode can also import LSR files.
+- >  Xcode. 표준 PNG 파일을 앱의 자산 카탈로그로 끌어 Xcode에서 이미지 스택의 개별 계층으로 사용할 수 있습니다. 이미지 스택은 LSR 파일로 내보낼 수 있습니다. Xcode는 LSR 파일을 가져올 수도 있습니다.
+
+
+If your app retrieves layered images from a content server at runtime, you must provide those images in runtime layered image (`.lcr`) format. You don’t create runtime layered images directly; you generate them from LSR files or Photoshop files using the `layerutil` command-line tool that Xcode provides. Runtime layered images are intended to be downloaded — don’t embed them within your app.
+> 앱이 런타임에 콘텐츠 서버에서 계층화된 이미지를 검색하면 해당 이미지를 런타임 계층화된 이미지(--lcr') 형식으로 제공해야 합니다. 런타임 계층화 이미지는 직접 생성하지 않고 Xcode가 제공하는 layerutil 명령줄 도구를 사용하여 LSR 파일이나 Photoshop 파일에서 생성합니다. 런타임 계층화된 이미지는 다운로드하기 위한 것이므로 앱에 포함시키지 마십시오.
+>
+
+
+
+
+# **watchOS**
+
+**In general, avoid transparency to keep image files small.** If you always composite an image on the same solid background color, it’s more efficient to include the background in the image. However, transparency is necessary in complication images, menu icons, and other interface icons that serve as template images, because the system uses it to determine where to apply color.
+> 일반적으로 이미지 파일을 작게 유지하려면 투명도를 사용하지 마십시오. 항상 동일한 솔리드 배경 색상에 이미지를 합성하는 경우 이미지에 배경을 포함하는 것이 더 효율적입니다. 그러나 시스템이 색상을 적용할 위치를 결정하기 위해 사용하기 때문에 복잡도 이미지, 메뉴 아이콘 및 템플릿 이미지 역할을 하는 기타 인터페이스 아이콘에는 투명성이 필요합니다.
+>
+
+
+
+
+**Use autoscaling PDFs to let you provide a single asset for all screen sizes.** Design your image for the 40mm and 42mm screens at 2x. When you load the PDF, WatchKit automatically scales the image based on the device’s screen size, using the values shown below:
+> 자동 스케일링 PDF를 사용하여 모든 화면 크기에 대해 단일 자산을 제공할 수 있습니다. 40mm 및 42mm 화면의 이미지를 2배 크기로 디자인하십시오. PDF를 로드할 때 WatchKit은 아래 표시된 값을 사용하여 장치의 화면 크기에 따라 이미지의 크기를 자동으로 조정합니다.
+>
+
+
+
+
+| Image type | Format |
+| --- | --- |
+| Bitmap or raster work | De-interlaced PNG files |
+| PNG graphics that don't require full 24-bit color | An 8-bit color palette |
+| Photos | JPEG files, optimized as necessary, or HEIC files |
+| Flat icons, interface icons, and other flat artwork that requires high-resolution scaling | PDF or SVG files |
+
+| Platform | Scale factors |
+| --- | --- |
+| iOS | @2x and @3x |
+| iPadOS | @2x |
+| macOS, tvOS | @1x and @2x |
+| watchOS | @2x |
+
+| Image side | Focused/Safe zone size | Actual size |
+| --- | --- | --- |
+| Longest | Length of longest unfocused side + 70 pt | Length of longest focused side x 106% |
+| Shortest | Proportional based on longest side | Proportional based on longest side |
+
+| Screen size | Image scale |
+| --- | --- |
+| 38mm | 90% |
+| 40mm | 100% |
+| 41mm | 106% |
+| 42mm | 100% |
+| 44mm | 110% |
+| 45mm | 119% |
+| 49mm | 119% |
