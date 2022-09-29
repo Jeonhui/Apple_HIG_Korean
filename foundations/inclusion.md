@@ -193,3 +193,152 @@ As you create copy and images that represent people, portray a range of human ch
 
 
 
+Also review the settings and objects you show. For example, showing high levels of affluence might make sense in some scenarios, but in other cases it can be unwelcoming and make an app seem out of touch. When it makes sense in your app, prefer showing places, homes, activities, and items that are familiar and relatable to most people.
+> 표시되는 설정 및 개체도 검토합니다. 예를 들어, 높은 수준의 풍요를 보여주는 것은 어떤 시나리오에서는 말이 될 수 있지만, 다른 경우에는 환영받지 못하고 앱이 연결되지 않는 것처럼 보일 수 있다. 앱에서 이치에 맞으면 대부분의 사람들에게 친숙하고 친숙한 장소, 집, 활동 및 항목을 표시하는 것을 선호합니다.
+>
+
+
+
+
+# **Avoiding stereotypes**
+
+Everyone holds biases and stereotypes — often unconsciously — and it can be challenging to discover how they affect your thoughts. A goal of inclusive design is to become aware of your biases and generalizations so you can recognize where they might influence your design decisions.
+> 모든 사람들은 편견과 고정관념을 가지고 있고 - 종종 무의식적으로 - 그것들이 여러분의 생각에 어떻게 영향을 미치는지 발견하는 것은 어려울 수 있다. 포괄적 설계의 목표는 편견과 일반화를 인식하여 그것이 설계 결정에 영향을 미칠 수 있는 위치를 인식하는 것입니다.
+>
+
+
+
+
+For example, consider an app that helps people manage account access for various family members. If this app uses a stereotypical definition of *family* — such as a woman, a man, and their biological children — it’s likely to communicate this perspective in its copy and images. Because the app assumes that people’s families fit this narrow definition, it excludes everyone whose family is different.
+> 예를 들어, 사람들이 다양한 가족 구성원의 계정 액세스를 관리하는 데 도움이 되는 앱을 생각해 보십시오. 만약 이 앱이 여성, 남성, 그리고 그들의 생물학적 자녀와 같은 가족에 대한 고정관념적인 정의를 사용한다면, 그것은 복사와 이미지에서 이 관점을 전달할 가능성이 높다. 그 앱은 사람들의 가족이 이 좁은 정의에 부합한다고 가정하기 때문에, 그것은 가족이 다른 모든 사람들을 배제한다.
+>
+
+
+
+
+Although the assumption made in the account-access app might seem like an obvious mistake, it’s important to realize that not all assumptions are so easy to spot. For example, consider an app that requires people to choose security questions they can answer for future identity confirmation, such as:
+> 계정 액세스 앱에서 이루어진 가정은 명백한 실수처럼 보일 수 있지만, 모든 가정을 쉽게 발견할 수 있는 것은 아니라는 것을 깨닫는 것이 중요하다. 예를 들어, 향후 신원 확인을 위해 사람들이 대답할 수 있는 보안 질문을 선택해야 하는 앱을 생각해 보십시오.
+>
+
+
+
+
+- What was your favorite subject in college?
+- >  대학에서 가장 좋아하는 과목은 무엇이었습니까?
+
+- What was the make of your first car?
+- >  당신의 첫 차는 무엇으로 만들어졌습니까?
+
+- How did you feel when you first saw a rainbow?
+- >  무지개를 처음 봤을 때 기분이 어땠나요?
+
+
+From some perspectives these questions refer to commonplace events, but all are based on experiences that not everyone has. Using a context-specific experience to communicate something is useless for everyone who doesn’t share that context and effectively excludes them. To create alternatives to the culture- and capability-specific questions above, you might reference more universal human experiences like:
+> 어떤 관점에서는 이러한 질문들은 평범한 사건들을 언급하지만, 모든 것은 모든 사람들이 가지고 있지 않은 경험에 기초한다. 어떤 것을 의사소통하기 위해 상황별 경험을 사용하는 것은 그 상황을 공유하지 않고 그것들을 효과적으로 배제하는 모든 사람들에게 쓸모가 없다. 위의 문화 및 기능별 질문에 대한 대안을 만들기 위해 다음과 같은 보다 보편적인 인간의 경험을 참조할 수 있습니다.
+>
+
+
+
+
+- What’s your favorite hobby?
+- What was the name of your first friend?
+- >  당신의 첫 번째 친구의 이름은 무엇이었습니까?
+
+- What quality describes you best?
+- >  당신을 가장 잘 묘사하는 품질은 무엇입니까?
+
+
+Basing design decisions on stereotypes or assumptions inevitably leads to exclusion because generalizations can’t reflect the diversity of human perspectives. Avoiding assumptions and instead focusing on inclusion can help you craft experiences that benefit everyone.
+> 고정관념이나 가정에 기초한 설계 결정은 일반화가 인간 관점의 다양성을 반영할 수 없기 때문에 불가피하게 배제된다. 가정을 피하고 대신 포함에 집중하면 모든 사람에게 이익이 되는 경험을 쌓는 데 도움이 될 수 있습니다.
+>
+
+
+
+
+# **Accessibility**
+
+An inclusive app is accessible to everyone. People rely on Apple’s accessibility features — such as VoiceOver, Display Accommodations, closed captioning, Switch Control, and Speak Screen — to customize their devices for their individual needs, so it’s essential to support these features in your app.
+> 모든 사람이 포괄적인 앱에 액세스할 수 있습니다. 사람들은 VoiceOver, Display Admositions, Closed Caption, Switch Control 및 Speak Screen과 같은 Apple의 접근성 기능에 의존하므로 앱에서 이러한 기능을 지원하는 것이 중요합니다.
+>
+
+
+
+
+It’s also essential to avoid assuming that any disability might prevent someone from wanting to use your app. Making an assumption like this can result in designs that limit an app’s potential audience. In contrast, when you focus on making each app experience accessible, you give everyone the opportunity to benefit from your app in ways that work for them.
+> 또한 어떤 장애라도 누군가가 당신의 앱을 사용하는 것을 방해할 수 있다고 가정하는 것을 피하는 것이 필수적이다. 이와 같이 가정하면 앱의 잠재적 시청자를 제한하는 설계가 발생할 수 있다. 이와는 대조적으로, 각 앱 환경에 액세스할 수 있도록 하는 데 초점을 맞추면, 모든 사람이 자신에게 맞는 방식으로 앱의 혜택을 누릴 수 있는 기회를 얻게 됩니다.
+>
+
+
+
+
+To help you design an app that everyone can enjoy, remember that:
+> 모든 사람이 즐길 수 있는 앱을 설계할 수 있도록 하려면 다음을 기억하십시오.
+>
+
+
+
+
+- Each disability is a spectrum. For example, visual disabilities range from low vision to complete blindness, and include things like color blindness, blurry vision, light sensitivity, and peripheral vision loss.
+- >  각각의 장애는 스펙트럼이다. 예를 들어, 시각 장애는 낮은 시력에서 완전한 실명에 이르기까지 다양하며 색맹, 흐릿한 시력, 빛 민감성, 말초 시력 손실과 같은 것들을 포함한다.
+
+- Everyone can experience disabilities. In addition to disabilities that most people experience as they age, there are *temporary disabilities* — like short-term hearing loss due to an infection — and *situational disabilities* — like being unable to hear while on a noisy train — that can affect everyone at various times.
+- >  누구나 장애를 경험할 수 있습니다. 대부분의 사람들이 나이가 들면서 경험하는 장애 외에도, 감염으로 인한 단기 난청 같은 일시적인 장애와 시끄러운 기차 안에서 들을 수 없는 것과 같은 상황적 장애는 다양한 시간에 모든 사람에게 영향을 미칠 수 있다.
+
+
+As you design content that welcomes people of all abilities, consider the following tips.
+> 모든 능력을 가진 사람들을 환영하는 콘텐츠를 디자인할 때, 다음 팁을 고려하세요.
+>
+
+
+
+
+**Avoid images and language that exclude people with disabilities.** For example, include people with disabilities when you represent a variety of people, and avoid language that uses a disability to express a negative quality.
+> 장애인을 배제하는 이미지와 언어를 피하라. 예를 들어, 다양한 사람들을 대표할 때 장애인을 포함시키고, 장애를 사용하여 부정적인 품질을 표현하는 언어를 피하라.
+>
+
+
+
+
+**Take a people-first approach when writing about people with disabilities.** For example, you could describe an individual’s accomplishments and goals before mentioning a disability they may have. If you’re writing about a specific person or community, find out how they self-identify; for more guidance, see [Writing about disability](https://help.apple.com/applestyleguide/#/apd49cbb2b06).
+> 장애인에 대해 글을 쓸 때 사람 우선의 접근법을 취하라. 예를 들어, 당신은 그들이 가지고 있을지도 모르는 장애를 언급하기 전에 개인의 업적과 목표를 설명할 수 있다. 특정 개인 또는 공동체에 대해 글을 쓰는 경우, 그들이 어떻게 자신을 식별하는지 알아봅니다. 자세한 지침은 장애에 대한 글을 참조하십시오.
+>
+
+
+
+
+**Prioritize simplicity and perceivability.** Prefer familiar, consistent interactions that make tasks simple to perform, and ensure that everyone can perceive your content, whether they use sight, hearing, or touch.
+> 단순성과 인식 가능성을 우선시합니다. 작업을 쉽게 수행할 수 있는 친숙하고 일관된 상호 작용을 선호하고 시각, 청각, 촉각 등 모든 사람이 사용자의 콘텐츠를 인식할 수 있도록 합니다.
+>
+
+
+
+
+To learn more about making your app accessible, see [Accessibility](../foundations/accessibility).
+> 앱에 액세스할 수 있도록 설정하는 방법에 대한 자세한 내용은 내게 필요한 옵션을 참조하십시오.
+>
+
+
+
+
+# **Languages**
+
+People expect to customize their device by choosing a language for text and a region for formatting values like date, time, and money. To welcome a global audience, first prepare your app to handle languages and regions other than your own — a process called *internationalization* — and provide translated text and resources for specific locales. For an overview of internationalization, see [Expanding your app to new markets](https://developer.apple.com/localization/); for developer guidance on localization, see [Localization](https://developer.apple.com/documentation/xcode/localization).
+> 사람들은 텍스트를 위한 언어와 날짜, 시간, 그리고 돈과 같은 값을 포맷하기 위한 지역을 선택함으로써 그들의 장치를 사용자 정의하기를 기대한다. 글로벌 사용자를 환영하려면 먼저 자신의 언어 및 지역 이외의 언어(국제화라고 하는 프로세스)를 처리하고 특정 지역에 대해 번역된 텍스트와 리소스를 제공할 수 있도록 앱을 준비하십시오. 국제화에 대한 개요는 새로운 시장으로 앱 확장, 현지화에 대한 개발자 지침은 현지화를 참조하십시오.
+>
+
+
+
+
+Focusing on inclusion can help you prepare for localization. For example, using plain language, avoiding unnecessary gender references, representing a variety of people, and avoiding stereotypes and culture-specific content, can put you in a good position to create versions of your app localized into more languages. Using [SF Symbols](../foundations/sf-symbols) for the glyphs in your app can also help streamline localization. In addition to providing many language-specific glyphs, SF Symbols includes glyphs you can use in both left-to-right and right-to-left contexts; for guidance, see [Right to left](../foundations/right-to-left).
+> 포함에 초점을 맞추면 현지화를 준비하는 데 도움이 될 수 있습니다. 예를 들어, 평이한 언어를 사용하고, 불필요한 성별 참조를 피하고, 다양한 사람들을 대표하며, 고정관념과 문화별 콘텐츠를 피하는 것은 더 많은 언어로 현지화된 앱 버전을 만들 수 있는 좋은 위치에 있게 할 수 있다. 앱에서 글리프에 SF 기호를 사용하면 현지화를 간소화하는 데 도움이 될 수 있습니다. 많은 언어별 글리프를 제공하는 것 외에도 SF 기호에는 왼쪽에서 오른쪽으로 및 오른쪽에서 왼쪽으로 모두 사용할 수 있는 글리프가 포함되어 있습니다. 자세한 내용은 오른쪽에서 왼쪽으로를 참조하십시오.
+>
+
+
+
+
+As you localize your app and related content, also be aware of the ways you use color. Colors often have strong culture-specific meanings, so it’s essential to discover how people respond to specific colors in each locale you support. In some places, for example, white is associated with death or grief, whereas in other places, it’s associated with purity or peace. If you use color as a way to communicate, make sure your color choices communicate the same thing in each version of your app.
+> 앱 및 관련 콘텐츠를 현지화할 때 색상을 사용하는 방법도 숙지해야 합니다. 색상은 종종 문화별 의미가 강하기 때문에 지원하는 각 로케일에서 사람들이 특정 색에 어떻게 반응하는지 알아내는 것이 중요합니다. 예를 들어, 어떤 곳에서는 흰색이 죽음이나 슬픔과 관련이 있는 반면, 다른 곳에서는 순결이나 평화와 관련이 있다. 만약 당신이 의사소통 방법으로 색을 사용한다면, 당신의 앱의 각 버전에서 당신의 색상 선택이 같은 것을 전달하는지 확인하세요.
+>
+
+
+

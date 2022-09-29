@@ -12,3 +12,4 @@
  | 2022-09-26 02:40:10 | ./foundations/icons.md | 117 | 9693 | 
  | 2022-09-27 02:28:36 | ./foundations/images.md | 69 | 9834 | 
  | 2022-09-28 02:32:05 | ./foundations/inclusion.md | 83 | 9737 | 
+ | 2022-09-29 02:38:55 | ./foundations/layout.md | 35 | 9817 | 
