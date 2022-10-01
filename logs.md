@@ -14,3 +14,4 @@
  | 2022-09-28 02:32:05 | ./foundations/inclusion.md | 83 | 9737 | 
  | 2022-09-29 02:38:55 | ./foundations/layout.md | 35 | 9817 | 
  | 2022-09-30 02:53:14 | ./foundations/layout.md | 182 | 9941 | 
+ | 2022-10-01 02:49:43 | ./foundations/motion.md | 17 | 9700 | 

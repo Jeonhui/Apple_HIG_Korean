@@ -412,3 +412,164 @@ If you use the UIKit collection view flow element, the number of columns in a gr
 
 ![https://developer.apple.com/design/human-interface-guidelines/foundations/layout/images/layout-controls-dark_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/layout/images/layout-controls-dark_2x.png)
 
+**Support autorotation in views people might want to show others.** When people flip their wrist away, apps typically respond to the motion by sleeping the display, but in some cases it makes sense to autorotate the content. For example, a wearer might want to show an image to a friend or display a QR code to a reader. For developer guidance, see [isAutorotating](https://developer.apple.com/documentation/watchkit/wkextension/2868464-isautorotating).
+> 사람들이 다른 사람들에게 보여주고 싶어할 수 있는 보기에서 자동 회전을 지원합니다. 사람들이 손목을 뒤집을 때, 앱들은 일반적으로 디스플레이를 절전 모드로 하여 동작에 반응하지만, 경우에 따라서는 콘텐츠를 자동 회전이 가능합니다. 예를 들어, 착용자는 친구에게 이미지를 보여주거나 판독기에 QR 코드를 표시하기를 원할 수 있다. 개발자 지침은 자동 회전을 참조하십시오.
+>
+
+
+
+
+# **Specifications**
+
+# **iOS, iPadOS**
+
+### **Device screen sizes and orientations**
+> 장치 화면 크기 및 방향
+>
+
+
+
+
+**NOTE**All scale factors in the table above are UIKit scale factors, which may differ from native scale factors. For developer guidance, see [scale](https://developer.apple.com/documentation/uikit/uiscreen/1617836-scale) and [nativeScale](https://developer.apple.com/documentation/uikit/uiscreen/1617825-nativescale).
+> 참고 위 표의 모든 척도 인자는 UIKit 척도 인자로, 기본 척도 인자와 다를 수 있습니다. 개발자 지침은 스케일 및 nativeScale을 참조하십시오.
+>
+
+
+
+
+### **Device size classes**
+
+Different size class combinations apply to the full-screen experience on different devices, based on screen size.
+> 다른 크기 등급 조합은 화면 크기에 따라 다른 장치의 전체 화면 경험에 적용된다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/layout/images/layout-size-classes_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/layout/images/layout-size-classes_2x.png)
+
+On iPad, size classes also apply when your app or game runs in a [multitasking](../patterns/multitasking) configuration.
+> iPad에서는 앱이나 게임이 멀티태스킹 구성으로 실행될 때도 크기 클래스가 적용됩니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/layout/images/layout-two-thirds.svg](https://developer.apple.com/design/human-interface-guidelines/foundations/layout/images/layout-two-thirds.svg)
+
+2/3 split view
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/layout/images/layout-half.svg](https://developer.apple.com/design/human-interface-guidelines/foundations/layout/images/layout-half.svg)
+
+1/2 split view
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/layout/images/layout-thirds.svg](https://developer.apple.com/design/human-interface-guidelines/foundations/layout/images/layout-thirds.svg)
+
+1/3 split view
+
+# **watchOS**
+
+| Device | Dimensions (portrait) |
+| --- | --- |
+| 12.9" iPad Pro | 1024x1366 pt (2048x2732 px @2x) |
+| 11" iPad Pro | 834x1194 pt (1668x2388 px @2x) |
+| 10.5" iPad Pro | 834x1194 pt (1668x2388 px @2x) |
+| 9.7" iPad Pro | 768x1024 pt (1536x2048 px @2x) |
+| 7.9" iPad mini | 768x1024 pt (1536x2048 px @2x) |
+| 10.5" iPad Air | 834x1112 pt (1668x2224 px @2x) |
+| 9.7" iPad Air | 768x1024 pt (1536x2048 px @2x) |
+| 10.2" iPad | 810x1080 pt (1620x2160 px @2x) |
+| 9.7" iPad | 768x1024 pt (1536x2048 px @2x) |
+| iPhone 14 Pro Max | 430x932 pt (1290x2796 px @3x) |
+| iPhone 14 Pro | 393x852 pt (1179x2556 px @3x) |
+| iPhone 14 Plus | 428x926 pt (1284x2778 px @3x) |
+| iPhone 14 | 390x844 pt (1170x2532 px @3x) |
+| iPhone 13 Pro Max | 428x926 pt (1284x2778 px @3x) |
+| iPhone 13 Pro | 390x844 pt (1170x2532 px @3x) |
+| iPhone 13 | 390x844 pt (1170x2532 px @3x) |
+| iPhone 13 mini | 375x812 pt (1125x2436 px @3x) |
+| iPhone 12 Pro Max | 428x926 pt (1284x2778 px @3x) |
+| iPhone 12 Pro | 390x844 pt (1170x2532 px @3x) |
+| iPhone 12 | 390x844 pt (1170x2532 px @3x) |
+| iPhone 12 mini | 375x812 pt (1125x2436 px @3x) |
+| iPhone 11 Pro Max | 414x896 pt (1242x2688 px @3x) |
+| iPhone 11 Pro | 375x812 pt (1125x2436 px @3x) |
+| iPhone 11 | 414x896 pt (828x1792 px @2x) |
+| iPhone XS Max | 414x896 pt (1242x2688 px @3x) |
+| iPhone XS | 375x812 pt (1125x2436 px @3x) |
+| iPhone XR | 414x896 pt (828x1792 px @2x) |
+| iPhone X | 375x812 pt (1125x2436 px @3x) |
+| iPhone 8 Plus | 414x736 pt (1080x1920 px @3x) |
+| iPhone 8 | 375x667 pt (750x1334 px @2x) |
+| iPhone 7 Plus | 414x736 pt (1080x1920 px @3x) |
+| iPhone 7 | 375x667 pt (750x1334 px @2x) |
+| iPhone 6s Plus | 414x736 pt (1080x1920 px @3x) |
+| iPhone 6s | 375x667 pt (750x1334 px @2x) |
+| iPhone 6 Plus | 414x736 pt (1080x1920 px @3x) |
+| iPhone 6 | 375x667 pt (750x1334 px @2x) |
+| 4.7" iPhone SE | 375x667 pt (750x1334 px @2x) |
+| 4" iPhone SE | 320x568 pt (640x1136 px @2x) |
+| iPod touch 5th generation and later | 320x568 pt (640x1136 px @2x) |
+
+| Device | Portrait orientation | Landscape orientation |
+| --- | --- | --- |
+| 12.9" iPad Pro | Regular width, regular height | Regular width, regular height |
+| 11" iPad Pro | Regular width, regular height | Regular width, regular height |
+| 10.5" iPad Pro | Regular width, regular height | Regular width, regular height |
+| 9.7" iPad | Regular width, regular height | Regular width, regular height |
+| 7.9" iPad mini | Regular width, regular height | Regular width, regular height |
+| iPhone 14 Pro Max | Compact width, regular height | Regular width, compact height |
+| iPhone 14 Pro | Compact width, regular height | Compact width, regular height |
+| iPhone 14 Plus | Compact width, regular height | Regular width, compact height |
+| iPhone 14 | Compact width, regular height | Compact width, regular height |
+| iPhone 13 Pro Max | Compact width, regular height | Regular width, compact height |
+| iPhone 13 Pro | Compact width, regular height | Compact width, compact height |
+| iPhone 13 | Compact width, regular height | Compact width, compact height |
+| iPhone 13 mini | Compact width, regular height | Compact width, compact height |
+| iPhone 12 Pro Max | Compact width, regular height | Regular width, compact height |
+| iPhone 12 Pro | Compact width, regular height | Compact width, compact height |
+| iPhone 12 | Compact width, regular height | Compact width, compact height |
+| iPhone 12 mini | Compact width, regular height | Compact width, compact height |
+| iPhone 11 Pro Max | Compact width, regular height | Regular width, compact height |
+| iPhone 11 Pro | Compact width, regular height | Compact width, compact height |
+| iPhone 11 | Compact width, regular height | Regular width, compact height |
+| iPhone XS Max | Compact width, regular height | Regular width, compact height |
+| iPhone XS | Compact width, regular height | Compact width, compact height |
+| iPhone XR | Compact width, regular height | Regular width, compact height |
+| iPhone X | Compact width, regular height | Compact width, compact height |
+| iPhone 8 Plus | Compact width, regular height | Regular width, compact height |
+| iPhone 8 | Compact width, regular height | Compact width, compact height |
+| iPhone 7 Plus | Compact width, regular height | Regular width, compact height |
+| iPhone 7 | Compact width, regular height | Compact width, compact height |
+| iPhone 6s Plus | Compact width, regular height | Regular width, compact height |
+| iPhone 6s | Compact width, regular height | Compact width, compact height |
+| iPhone SE | Compact width, regular height | Compact width, compact height |
+| iPod touch 5th generation and later | Compact width, regular height | Compact width, compact height |
+
+| Device | Mode | Portrait orientation | Landscape orientation |
+| --- | --- | --- | --- |
+| 12.9" iPad Pro | 2/3 split view | Compact width, regular height | Regular width, regular height |
+|  | 1/2 split view | N/A | Regular width, regular height |
+|  | 1/3 split view | Compact width, regular height | Compact width, regular height |
+| 11" iPad Pro | 2/3 split view | Compact width, regular height | Regular width, regular height |
+|  | 1/2 split view | N/A | Compact width, regular height |
+|  | 1/3 split view | Compact width, regular height | Compact width, regular height |
+| 10.5" iPad Pro | 2/3 split view | Compact width, regular height | Regular width, regular height |
+|  | 1/2 split view | N/A | Compact width, regular height |
+|  | 1/3 split view | Compact width, regular height | Compact width, regular height |
+| 9.7" iPad | 2/3 split view | Compact width, regular height | Regular width, regular height |
+|  | 1/2 split view | N/A | Compact width, regular height |
+|  | 1/3 split view | Compact width, regular height | Compact width, regular height |
+| 7.9" iPad mini 4 | 2/3 split view | Compact width, regular height | Regular width, regular height |
+|  | 1/2 split view | N/A | Compact width, regular height |
+|  | 1/3 split view | Compact width, regular height | Compact width, regular height |
+
+| Series | Screen size | Width (pixels) | Height (pixels) |
+| --- | --- | --- | --- |
+| Apple Watch Ultra | 49mm | 410 | 502 |
+| 7 and later | 41 mm | 352 | 430 |
+| 7 and later | 45 mm | 396 | 484 |
+| 4, 5, and 6 | 40 mm | 324 | 394 |
+| 4, 5, and 6 | 44 mm | 368 | 448 |
+| 1, 2, and 3 | 38 mm | 272 | 340 |
+| 1, 2, and 3 | 42 mm | 312 | 390 |
