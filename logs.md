@@ -16,3 +16,4 @@
  | 2022-09-30 02:53:14 | ./foundations/layout.md | 182 | 9941 | 
  | 2022-10-01 02:49:43 | ./foundations/motion.md | 17 | 9700 | 
  | 2022-10-02 02:42:47 | ./foundations/right-to-left.md | 215 | 9710 | 
+ | 2022-10-03 02:07:57 | ./foundations/sf-symbols.md | 85 | 9778 | 

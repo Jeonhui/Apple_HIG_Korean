@@ -389,3 +389,147 @@ If you have a custom interface icon that uses letters or words to communicate a 
 
 
 
+**Flip an interface icon that shows forward or backward motion.** When something moves in the same direction that people read, they typically interpret that direction as forward; when something moves in the opposite direction, people tend to interpret the direction as backward. An interface icon that depicts an object moving forward or backward needs to flip in the RTL context to preserve the meaning of the motion. For example, an icon that represents a speaker typically shows sound waves emanating forward from the speaker. In the LTR context, the sound waves come from the left, so in the RTL context, the icon needs to flip to show the waves coming from the right.
+> 정방향 또는 역방향 움직임을 보여주는 인터페이스 아이콘을 뒤집습니다. 사람들이 읽는 방향과 같은 방향으로 움직이면 그들은 일반적으로 그 방향을 정방향으로 해석하고, 반대 방향으로 움직이면 사람들은 그 방향을 역방향으로 해석하는 경향이 있습니다. 물체가 앞으로 또는 뒤로 이동하는 것을 묘사하는 인터페이스 아이콘은 모션의 의미를 보존하기 위해 RTL 컨텍스트에서 플립해야 합니다. 예를 들어, 스피커를 나타내는 아이콘은 일반적으로 스피커에서 전방으로 방출되는 음파를 보여준다. LTR 문맥에서는 음파가 왼쪽에서 나오기 때문에 RTL 문맥에서는 오른쪽에서 오는 파동을 보여주기 위해 아이콘이 뒤집혀야 합니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/speaker-wave-3.svg](https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/speaker-wave-3.svg)
+
+LTR variant of a symbol that depicts forward motion
+> 전진 모션을 나타내는 기호의 LTR 변형
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/speaker-wave-3-rtl.svg](https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/speaker-wave-3-rtl.svg)
+
+RTL variant of a symbol that depicts forward motion
+> 전진 운동을 나타내는 기호의 RTL 변형
+>
+
+
+
+
+**Don’t flip logos or universal signs and marks.** Displaying a flipped logo confuses people and can have legal repercussions. Always display a logo in its original form, even if it includes text. People expect universal symbols and marks like the checkmark to have a consistent appearance, so avoid flipping them.
+> 로고나 보편적인 기호와 표시를 뒤집지 마십시오. 뒤집힌 로고를 표시하는 것은 사람들을 혼란스럽게 하고 법적 영향을 미칠 수 있습니다. 로고가 텍스트를 포함하더라도 항상 원래 형태로 표시합니다. 사람들은 체크마크와 같은 보편적인 기호와 마크가 일관된 외관을 가질 것으로 기대하기 때문에 그것들을 뒤집는 것을 피한다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/appletv-dark.svg](https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/appletv-dark.svg)
+
+A logo
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/checkmark-dark.svg](https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/checkmark-dark.svg)
+
+A universal symbol or mark
+
+**In general, avoid flipping interface icons that depict real-world objects.** Unless you use the object to indicate directionality, it’s best to avoid flipping an icon that represents a familiar item. For example, clocks work the same everywhere, so a traditional clock interface icon needs to look the same regardless of language direction. Some interface icons might seem to reference language or reading direction because they represent items that are slanted for right-handed use. However, most people are right-handed, so flipping an icon that shows a right-handed tool isn’t necessary and might be confusing.
+> 일반적으로 실제 개체를 나타내는 인터페이스 아이콘은 뒤집지 마십시오. 개체를 사용하여 방향성을 나타내지 않는 한 익숙한 항목을 나타내는 아이콘은 뒤집지 않는 것이 좋습니다. 예를 들어 시계는 어디에서나 동일하게 작동하므로 기존의 시계 인터페이스 아이콘은 언어 방향에 관계없이 동일하게 보여야 합니다. 일부 인터페이스 아이콘은 오른손잡이 사용을 위해 기울어진 항목을 나타내기 때문에 언어 또는 판독 방향을 참조하는 것처럼 보일 수 있다. 하지만, 대부분의 사람들은 오른손잡이이기 때문에 오른손잡이 도구를 보여주는 아이콘을 뒤집는 것은 불필요하고 혼란스러울 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/clock-fill-dark.svg](https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/clock-fill-dark.svg)
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/pencil-dark.svg](https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/pencil-dark.svg)
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/gamecontroller-fill-dark.svg](https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/gamecontroller-fill-dark.svg)
+
+Glyphs that represent physical objects don’t generally need to flip.
+> 물리적 물체를 나타내는 글리프는 일반적으로 뒤집을 필요가 없습니다.
+>
+
+
+
+
+**Before merely flipping a complex custom interface icon, consider its individual components and the overall visual balance.** In some cases, a component — like a badge, slash, or magnifying glass — needs to adhere to a visual design language regardless of localization. For example, SF Symbols maintains visual consistency by using the same backslash to represent the prohibition or negation of a symbol’s meaning in both LTR and RTL versions.
+> 복잡한 사용자 지정 인터페이스 아이콘을 뒤집기 전에 개별 구성 요소와 전체적인 시각적 균형을 고려해야 합니다. 경우에 따라 배지, 슬래시 또는 돋보기와 같은 구성 요소는 지역화와 관계없이 시각적 디자인 언어를 준수해야 합니다. 예를 들어 SF 심볼은 동일한 백슬래시를 사용하여 LTR 및 RTL 버전 모두에서 심볼의 의미를 금지하거나 부정하는 것을 표시함으로써 시각적 일관성을 유지합니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/speaker-slash-fill-dark.svg](https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/speaker-slash-fill-dark.svg)
+
+LTR variant of a symbol that includes a backslash
+> 백슬래시를 포함하는 기호의 LTR 변형
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/speaker-slash-fill-rtl-dark.svg](https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/speaker-slash-fill-rtl-dark.svg)
+
+RTL variant of a symbol that includes a backslash
+> 백슬래시를 포함하는 기호의 RTL 변형
+>
+
+
+
+
+In other cases, you might need to flip a component (or its position) to ensure the localized version of the icon still makes sense. For example, if a badge represents the actual UI that people see in your app, it needs to flip if your UI flips. Alternatively, if a badge modifies the meaning of an interface icon, consider whether flipping the badge preserves both the modified meaning and the overall visual balance of the icon.
+> 다른 경우에는 아이콘의 지역화된 버전이 계속 적합하도록 구성 요소(또는 해당 위치)를 뒤집어야 할 수 있습니다. 예를 들어, 배지가 앱에서 사람들이 보는 실제 UI를 나타내는 경우 UI가 뒤집히면 뒤집어야 합니다. 또는 배지가 인터페이스 아이콘의 의미를 수정하는 경우 배지를 뒤집으면 수정된 의미와 아이콘의 전체적인 시각적 균형이 모두 유지되는지 여부를 고려합니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/cart-fill-badge-plus-dark.svg](https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/cart-fill-badge-plus-dark.svg)
+
+![https://developer.apple.com/design/human-interface-guidelines/images/checkmark_2x.png](https://developer.apple.com/design/human-interface-guidelines/images/checkmark_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/cart-fill-badge-rtl-unbalanced-dark.svg](https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/cart-fill-badge-rtl-unbalanced-dark.svg)
+
+![https://developer.apple.com/design/human-interface-guidelines/images/crossout_2x.png](https://developer.apple.com/design/human-interface-guidelines/images/crossout_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/cart-fill-badge-plus-rtl-dark.svg](https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/cart-fill-badge-plus-rtl-dark.svg)
+
+![https://developer.apple.com/design/human-interface-guidelines/images/checkmark_2x.png](https://developer.apple.com/design/human-interface-guidelines/images/checkmark_2x.png)
+
+The badge doesn’t depict an object in the UI, but keeping it in the top-right corner visually unbalances the cart.
+> 배지는 UI의 개체를 나타내지 않지만 오른쪽 상단 모서리에 배치하면 카트의 균형이 시각적으로 불균형해집니다.
+>
+
+
+
+
+If your custom interface icon includes a component that can imply handedness, like a tool, consider preserving the orientation of the tool while flipping the base image if necessary.
+> 사용자 지정 인터페이스 아이콘에 도구와 같이 손놀림을 암시할 수 있는 구성요소가 포함되어 있는 경우, 필요한 경우 기본 이미지를 뒤집으면서 도구의 방향을 유지하는 것을 고려해 보십시오.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/mail-and-text-magnifyingglass-dark.svg](https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/mail-and-text-magnifyingglass-dark.svg)
+
+LTR variant of a symbol that depicts a tool
+> 도구를 나타내는 기호의 LTR 변형
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/mail-and-text-magnifyingglass-rtl-dark.svg](https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/images/mail-and-text-magnifyingglass-rtl-dark.svg)
+
+RTL variant of a symbol that depicts a tool
+> 도구를 나타내는 기호의 RTL 변형
+>
+
+
+
+
+# **Platform considerations**
+
+*No additional considerations for iOS, iPadOS, macOS, tvOS, or watchOS.*
+> iOS, iPadOS, macOS, tvOS 또는 워치에 대한 추가 고려 사항 없음OS.
+>
+
+
+
