@@ -199,3 +199,127 @@ Specifying a scale lets you adjust a symbol’s emphasis compared to adjacent te
 
 # **Design variants**
 
+SF Symbols defines several design variants — such as fill, slash, and enclosed — that can help you communicate precise states and actions while maintaining visual consistency and simplicity in your UI. For example, you could use the slash variant of a symbol to show that an item or action is unavailable, or use the fill variant to indicate selection.
+> SF 심볼은 UI에서 시각적 일관성과 단순성을 유지하면서 정확한 상태 및 작업을 전달하는 데 도움이 되는 채우기, 슬래시 및 폐쇄형 등 여러 가지 디자인 변형을 정의합니다. 예를 들어, 기호의 슬래시 변형을 사용하여 항목 또는 작업을 사용할 수 없음을 표시하거나 채우기 변형을 사용하여 선택을 나타낼 수 있습니다.
+>
+
+
+
+
+Outline is the most common variant in SF Symbols. An outlined symbol has no solid areas, resembling the appearance of text. Most symbols are also available in a fill variant, in which the areas within some shapes are solid.
+> 윤곽선은 SF 기호에서 가장 일반적인 변형입니다. 윤곽선이 있는 기호에는 텍스트 모양과 유사한 솔리드 영역이 없습니다. 대부분의 기호는 채우기 변형으로 사용할 수 있으며, 일부 모양 내의 영역은 솔리드입니다.
+>
+
+
+
+
+In addition to outline and fill, SF Symbols also defines variants that include a slash or enclose a symbol within a shape like a circle, square, or rectangle. In many cases, enclosed and slash variants can combine with outline or fill variants.
+> 윤곽선 및 채우기 외에도 SF 기호에서는 슬래시를 포함하거나 원형, 사각형 또는 직사각형과 같은 모양으로 기호를 둘러싸는 변형도 정의합니다. 대부분의 경우, 폐쇄형 및 슬래시 변형은 윤곽선 또는 채우기 변형과 결합할 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/sf-symbols/images/variants-dark_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/sf-symbols/images/variants-dark_2x.png)
+
+SF Symbols 3 and later provides many variants for specific languages and writing systems, including Latin, Arabic, Hebrew, Hindi, Thai, Chinese, Japanese, and Korean. Language- and script-specific variants adapt automatically when the device language changes. For guidance, see [Images](https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/#images).
+> SF 기호 3 이상은 라틴어, 아랍어, 히브리어, 힌디어, 태국어, 중국어, 일본어, 한국어를 포함한 특정 언어와 문자 시스템에 대한 많은 변형을 제공한다. 언어 및 스크립트별 변형은 장치 언어가 변경될 때 자동으로 조정됩니다. 자세한 내용은 이미지를 참조하십시오.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/foundations/sf-symbols/images/localized-dark_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/sf-symbols/images/localized-dark_2x.png)
+
+Symbol variants support a range of design goals. For example:
+> 기호 변형은 다양한 설계 목표를 지원합니다. 예:
+>
+
+
+
+
+- The outline variant works well in toolbars, navigation bars, lists, and other places where you display a symbol alongside text.
+- >  윤곽선 변형은 도구 모음, 탐색 모음, 목록 및 텍스트와 함께 기호를 표시하는 다른 위치에서 잘 작동합니다.
+
+- Symbols that use an enclosing shape — like a square or circle — can improve legibility at small sizes.
+- >  정사각형이나 원과 같은 둘러싸는 모양을 사용하는 기호는 작은 크기에서도 가독성을 향상시킬 수 있습니다.
+
+- The solid areas in a fill variant tend to give a symbol more visual emphasis, making it a good choice for iOS tab bars and swipe actions and places where you use an accent color to communicate selection.
+- >  채우기 변형에서 솔리드 영역은 기호를 더 시각적으로 강조하는 경향이 있으므로 iOS 탭 모음과 스와이프 동작 및 선택 사항을 전달하기 위해 악센트 색상을 사용하는 장소에 적합합니다.
+
+
+In many cases, the view that displays a symbol determines whether to use outline or fill, so you don’t have to specify a variant. For example, an iOS tab bar prefers the fill variant, whereas a navigation bar takes the outline variant.
+> 대부분의 경우 기호를 표시하는 보기에 따라 윤곽선을 사용할지 또는 채우기를 사용할지 결정되므로 변형을 지정할 필요가 없습니다. 예를 들어, iOS 탭 바는 채우기 변형을 선호하지만 탐색 막대는 윤곽 변형을 선호합니다.
+>
+
+
+
+
+# **Custom symbols**
+
+If you need a symbol that SF Symbols doesn’t provide, you can create your own. To create a custom symbol, first export the template for a symbol that’s similar to the design you want, then use a vector-editing tool like Sketch or Illustrator to modify it. For developer guidance, see [Creating custom symbol images for your app](https://developer.apple.com/documentation/uikit/uiimage/creating_custom_symbol_images_for_your_app/).
+> SF 심볼에서 제공하지 않는 기호가 필요한 경우 직접 생성할 수 있습니다. 사용자 지정 기호를 만들려면 먼저 원하는 설계와 유사한 기호의 템플릿을 내보낸 다음 스케치 또는 일러스트레이터와 같은 벡터 편집 도구를 사용하여 수정하십시오. 개발자 지침은 앱에 대한 사용자 지정 기호 이미지 만들기를 참조하십시오.
+>
+
+
+
+
+**IMPORTANT**SF Symbols includes copyrighted symbols that depict Apple products and features. You can display these symbols in your app, but you can’t customize them. To help you identify a noncustomizable symbol, the SF Symbols app badges it with an Info icon; to help you use the symbol correctly, the inspector pane describes its usage restrictions.
+> IMPORTANTSF 기호에는 Apple 제품 및 기능을 나타내는 저작권이 있는 기호가 포함됩니다. 이러한 기호를 앱에 표시할 수는 있지만 사용자 지정할 수는 없습니다. 사용자 지정할 수 없는 기호를 식별할 수 있도록 SF 기호 앱에서 해당 기호를 정보 아이콘으로 배지하고 기호를 올바르게 사용할 수 있도록 검사자 창에서 해당 사용 제한 사항을 설명합니다.
+>
+
+
+
+
+Using a process called *annotating*, you can assign a specific color — or a specific hierarchical level, such as primary, secondary, or tertiary — to each layer in a custom symbol. Depending on the rendering modes you support, you can use a different mode in each instance of the symbol in your app.
+> 주석 처리라는 프로세스를 사용하여 사용자 정의 기호의 각 도면층에 특정 색상(기본, 보조 또는 3차 등) 또는 특정 계층 수준을 할당할 수 있습니다. 지원하는 렌더링 모드에 따라 앱에서 기호의 각 인스턴스에서 다른 모드를 사용할 수 있습니다.
+>
+
+
+
+
+**Use the template as a guide.** Create a custom symbol that’s consistent with the ones the system provides in level of detail, optical weight, alignment, position, and perspective. Strive to design a symbol that is:
+> 템플릿을 가이드로 사용합니다. 세부 수준, 광학 무게, 정렬, 위치 및 원근법에 따라 시스템에서 제공하는 것과 일치하는 사용자 지정 기호를 만듭니다. 다음과 같은 기호를 디자인하기 위해 노력하십시오.
+>
+
+
+
+
+- Simple
+- Recognizable
+- Inclusive
+- Directly related to the action or content it represents
+- >  나타내는 작업 또는 내용과 직접 관련됨
+
+
+For guidance, see [Icons](../foundations/icons).
+
+**Assign negative side margins to your custom symbol if necessary.** SF Symbols supports negative side margins to aid optical horizontal alignment when a symbol contains a badge or other elements that increase its width. For example, negative side margins can help you horizontally align a stack of folder symbols, some of which include a badge. Beginning in SF Symbols 3, the name of each margin includes the relevant configuration — such as “left-margin-Regular-M” — so be sure to use this naming pattern if you add margins to your custom symbols.
+> 필요한 경우 사용자 지정 기호에 음의 측면 여백을 할당합니다. SF 기호는 기호에 배지 또는 너비를 증가시키는 다른 요소가 있을 때 광학 수평 정렬을 지원하기 위해 음의 측면 여백을 지원합니다. 예를 들어 측면 여백이 음수이면 배지를 포함하는 폴더 기호 스택을 수평으로 정렬할 수 있습니다. SF 기호 3에서 시작하는 각 여백의 이름에는 "left-margin-regular-M"과 같은 관련 구성이 포함되어 있으므로 사용자 지정 기호에 여백을 추가할 경우 이 명명 패턴을 사용하십시오.
+>
+
+
+
+
+**Provide alternative text labels for custom symbols.** Alternative text labels — or accessibility descriptions — aren’t visible, but they let VoiceOver describe what’s on screen, making navigation easier for people with visual disabilities. For guidance, see [VoiceOver](https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility/#voiceover).
+> 사용자 지정 기호에 대한 대체 텍스트 레이블을 제공합니다. 대체 텍스트 레이블 또는 내게 필요한 옵션 설명은 볼 수 없지만 VoiceOver는 화면에 표시되는 내용을 설명하므로 시각 장애가 있는 사람들이 쉽게 탐색할 수 있습니다. 자세한 내용은 VoiceOver를 참조하십시오.
+>
+
+
+
+
+**Don’t design replicas of Apple products.** Apple products are copyrighted and you can’t reproduce them in your custom symbols. Also, you can’t customize a symbol that SF Symbols identifies as representing an Apple feature or product.
+> 애플 제품의 복제품을 디자인하지 마십시오. 애플 제품은 저작권이 있으므로 사용자 지정 기호로 복제할 수 없습니다. 또한 SF 심볼이 Apple 기능 또는 제품을 나타내는 것으로 식별하는 기호를 사용자 지정할 수 없습니다.
+>
+
+
+
+
+# **Platform considerations**
+
+*No additional considerations for iOS, iPadOS, macOS, tvOS, or watchOS.*
+> iOS, iPadOS, macOS, tvOS 또는 워치에 대한 추가 고려 사항 없음OS.
+>
+
+
+
