@@ -18,3 +18,4 @@
  | 2022-10-02 02:42:47 | ./foundations/right-to-left.md | 215 | 9710 | 
  | 2022-10-03 02:07:57 | ./foundations/sf-symbols.md | 85 | 9778 | 
  | 2022-10-04 02:20:39 | ./foundations/typography.md | 43 | 9520 | 
+ | 2022-10-05 02:21:02 | ./patterns/accessing-private-data.md | 359 | 5505 | 
