@@ -35,6 +35,8 @@
 ![https://img.shields.io/badge/Patterns-9cf?style=for-the-badge&](https://img.shields.io/badge/Patterns-9cf?style=for-the-badge&)
 
 - [Accessing private data](./patterns/accessing-private-data.md)
+- [Charting data](./patterns/charting-data.md)
+- [Collaboration and sharing](./patterns/collaboration-and-sharing.md)
 - [Drag and drop](./patterns/drag-and-drop.md)
 - [Entering data](./patterns/entering-data.md)
 - [Feedback](./patterns/feedback.md)
