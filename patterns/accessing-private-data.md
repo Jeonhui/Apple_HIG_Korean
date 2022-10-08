@@ -276,3 +276,55 @@ Here are some high-level guidelines.
 
 
 
+**Store sensitive information in a keychain.** A keychain provides a secure, predictable user experience when handling someone’s private information. For developer guidance, see [Keychain Services](https://developer.apple.com/documentation/security/keychain_services).
+> 중요한 정보를 키 체인에 저장합니다. 키체인은 누군가의 개인 정보를 처리할 때 안전하고 예측 가능한 사용자 경험을 제공한다. 개발자 지침은 키체인 서비스를 참조하십시오.
+>
+
+
+
+
+**Never store passwords or other secure content in plain-text files.** Even if you restrict access using file permissions, sensitive information is much safer in an encrypted keychain.
+> 암호 또는 기타 보안 내용을 일반 텍스트 파일에 저장하지 마십시오. 파일 사용 권한을 사용하여 액세스를 제한하더라도 암호화된 키 체인에서 중요한 정보가 훨씬 안전합니다.
+>
+
+
+
+
+**Avoid inventing custom authentication schemes.** If your app requires authentication, prefer system-provided features like [Sign in with Apple](../sign-in-with-apple/overview/) or [Password AutoFill](https://developer.apple.com/documentation/security/password_autofill/). For guidance, see [Managing accounts](../patterns/managing-accounts).
+> 사용자 지정 인증 체계를 개발하지 마십시오. 앱에 인증이 필요한 경우 Apple 로그인 또는 암호 자동 채우기와 같은 시스템에서 제공하는 기능을 선호하십시오. 자세한 내용은 계정 관리를 참조하십시오.
+>
+
+
+
+
+# **Platform considerations**
+
+*No additional considerations for iOS, iPadOS, tvOS, or watchOS.*
+> iOS, iPadOS, tvOS 또는 시청에 대한 추가 고려 사항 없음OS.
+>
+
+
+
+
+# **macOS**
+
+**Sign your app with a valid Developer ID.** If you choose to distribute your app outside the store, signing your app with Developer ID identifies you as an Apple developer and confirms that your app is safe to use. For developer guidance, see [Xcode Help](https://developer.apple.com/go/?id=ios-app-distribution-guide).
+> 유효한 개발자 ID로 앱에 서명합니다. 앱을 매장 외부에 배포하기로 선택한 경우 개발자 ID로 앱에 서명하면 애플 개발자로 식별되며 앱이 안전하다는 것을 확인할 수 있습니다. 개발자 지침은 Xcode 도움말을 참조하십시오.
+>
+
+
+
+
+**Protect people’s data with app sandboxing.** Sandboxing provides your app with access to system resources and user data while protecting it from malware. All apps submitted to the Mac App Store require sandboxing. For developer guidance, see [Configuring the macOS App Sandbox](https://developer.apple.com/documentation/xcode/configuring-the-macos-app-sandbox/).
+> 앱 샌드박스로 사람들의 데이터를 보호하세요. 샌드박싱은 악성 프로그램으로부터 보호하면서 시스템 리소스 및 사용자 데이터에 대한 액세스를 제공합니다. 맥 앱스토어에 제출된 모든 앱은 샌드박스가 필요하다. 개발자 지침은 macOS App Sandbox 구성을 참조하십시오.
+>
+
+
+
+
+**Avoid making assumptions about who is signed in.** Because of fast user switching, multiple people may be active on the same system.
+> 누가 로그인했는지에 대한 추측을 피합니다. 빠른 사용자 전환으로 인해 동일한 시스템에서 여러 사람이 활동할 수 있습니다.
+>
+
+
+
