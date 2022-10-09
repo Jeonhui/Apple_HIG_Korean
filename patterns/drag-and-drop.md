@@ -134,3 +134,106 @@ Drag and drop is a dynamic process that can result in multiple outcomes. To help
 
 
 
+**Extract only the relevant portion of dropped content if necessary.** For example, when people drag a contact to a recipient field in an email, Mail displays only the name and email address, not the contact’s address information.
+> 필요한 경우 삭제된 콘텐츠의 관련 부분만 추출합니다. 예를 들어, 사용자가 전자 메일의 수신인 필드로 연락처를 끌면 메일은 연락처의 주소 정보가 아니라 이름과 전자 메일 주소만 표시합니다.
+>
+
+
+
+
+**When a physical keyboard is attached, check for the Option key at drop time.** When people hold the Option key while dragging, they can force a drag-and-drop operation within the same container to behave like a copy. If people stop holding Option before dropping content in the same container, the drag operation results in a move.
+> 실제 키보드가 연결된 경우 드롭 시 옵션 키를 확인합니다. 사용자가 옵션 키를 누른 상태에서 끌면 동일한 컨테이너 내에서 끌어서 놓기 작업이 복사본처럼 작동하도록 강제할 수 있습니다. 동일한 컨테이너에 콘텐츠를 삭제하기 전에 사용자가 옵션 보류를 중지하면 끌기 작업이 이동합니다.
+>
+
+
+
+
+**Provide feedback when dropped content needs time to transfer.** For example, you might display a progress indicator to help people estimate how long the transfer will take. In collections, lists, and tables, you might also display a placeholder at the drop location so people know where to find the content after it finishes transferring. The system can display an alert when a time-consuming transfer occurs between apps.
+> 삭제된 콘텐츠를 전송하는 데 시간이 필요할 때 피드백을 제공합니다. 예를 들어, 진행률 표시기를 표시하여 전송 시간을 추정할 수 있습니다. 모음, 목록 및 표에서 사용자가 전송을 완료한 후 내용을 찾을 위치를 알 수 있도록 드롭 위치에 자리 표시자를 표시할 수도 있습니다. 앱 간에 시간이 많이 걸리는 전송이 발생할 경우 시스템에서 경고를 표시할 수 있습니다.
+>
+
+
+
+
+**Provide feedback when dropped content initiates a task or action.** If people drop content onto a control that initiates a task — such as printing — show people that the task has begun and keep them informed of its progress.
+> 삭제된 콘텐츠가 작업 또는 작업을 시작할 때 피드백을 제공합니다. 인쇄와 같은 작업을 시작하는 컨트롤에 내용을 떨어뜨리는 경우, 사용자에게 작업이 시작되었음을 보여주고 진행 상황을 계속 알려줍니다.
+>
+
+
+
+
+**Apply appropriate styling to dropped text.** When the source and destination both support the same text styles, make sure dropped text maintains its original font, typeface, size, and other attributes. Otherwise, apply the destination’s style to dropped text.
+> 삭제된 텍스트에 적절한 스타일링을 적용합니다. 원본과 대상이 모두 동일한 텍스트 스타일을 지원하는 경우 삭제된 텍스트가 원래 글꼴, 글꼴, 크기 및 기타 속성을 유지하는지 확인하십시오. 그렇지 않으면 삭제된 텍스트에 대상 스타일을 적용합니다.
+>
+
+
+
+
+**After a drop, maintain the content’s selection state in the destination, updating it in the source as needed.** People expect the content they drop to remain selected so they can immediately act on it. When the source and destination are the same container, the content disappears from its original location when the drag operation performs a move. When a drag operation within the same container performs a copy, remove the selection state from the content that remains in the original location. When people drag selected content to a different container, deselect the content in the source.
+> 떨어뜨린 후 콘텐츠의 선택 상태를 대상에서 유지하고 필요에 따라 원본에서 업데이트합니다. 사람들은 그들이 떨어뜨린 콘텐츠가 선택된 상태로 남아서 그들이 즉시 그것에 대해 행동할 수 있기를 기대한다. 원본과 대상이 동일한 컨테이너인 경우 끌기 작업이 이동을 수행할 때 내용이 원래 위치에서 사라집니다. 동일한 컨테이너 내의 끌기 작업이 복사본을 수행할 때 원래 위치에 남아 있는 콘텐츠에서 선택 상태를 제거하십시오. 선택한 내용을 다른 컨테이너로 끌 때, 원본의 내용을 선택 취소합니다.
+>
+
+
+
+
+# **Platform considerations**
+
+*Not supported in tvOS or watchOS.*
+> tvOS 또는 시계에서 지원되지 않음OS.
+>
+
+
+
+
+# **iOS, iPadOS**
+
+**Let people perform multiple simultaneous drag activities.** In iPadOS, people can sequentially add items to an in-progress drag session, gathering as many items as their fingers can handle. For example, people can select an app icon on the Home Screen, start dragging it, and select additional app icons before dropping all of them in a different Home Screen or in a folder. To support this interaction, you need to let people add items during a drag — providing visual feedback through flocking — and accept multiple, simultaneous drops.
+> 사용자가 여러 개의 드래그 작업을 동시에 수행하도록 합니다. 아이패드 OS에서 사람들은 진행 중인 드래그 세션에 항목을 순차적으로 추가할 수 있으며 손가락이 처리할 수 있는 만큼 많은 항목을 수집할 수 있다. 예를 들어, 다른 홈 화면이나 폴더에 모두 놓기 전에 홈 화면에서 앱 아이콘을 선택하고 끌기를 시작한 다음 추가 앱 아이콘을 선택할 수 있습니다. 이러한 상호 작용을 지원하려면 드래그 중에 사용자가 항목을 추가하고 모음을 통해 시각적 피드백을 제공하고 여러 개의 동시 드롭을 수락하도록 해야 합니다.
+>
+
+
+
+
+# **macOS**
+
+**Consider letting people drag content from your app into the Finder.** When you support this, be sure to present the content in a format your app can open later. For example, Calendar lets people drag an event to the Finder as a `.ics` file. People can share this file with others or drag it back to Calendar to open it. When necessary, you can output dragged content in a *clipping*, which is a temporary container for storing dragged content. For example, most system apps let people drag text to the Finder, where it appears as a clipping. Later, people can drag the clipping into a text field or other location that accepts text. Note that a drag-and-drop clipping isn’t related to the Clipboard.
+> 사람들이 당신의 앱에서 파인더로 콘텐츠를 끌어오게 하는 것을 고려해보세요. 이 기능을 지원할 때는 나중에 앱이 열 수 있는 형식으로 콘텐츠를 제공해야 합니다. 예를 들어, 일정관리를 사용하면 이벤트를 ".ics" 파일로 파인더로 끌 수 있습니다. 사용자는 이 파일을 다른 사용자와 공유하거나 일정관리로 다시 끌어 열 수 있습니다. 필요한 경우 끌린 콘텐츠를 저장하기 위한 임시 컨테이너인 클리핑에서 끌린 콘텐츠를 출력할 수 있습니다. 예를 들어, 대부분의 시스템 앱에서는 텍스트를 파인더로 끌어서 클리핑으로 표시할 수 있습니다. 나중에 사용자는 클리핑을 텍스트 필드 또는 텍스트를 받아들이는 다른 위치로 끌 수 있습니다. 끌어서 놓기 클리핑은 클립보드와 관련이 없습니다.
+>
+
+
+
+
+**Let people drag selected content from an inactive window without first making the window active.** Selected content in an inactive window is known as a *background selection* and has a different appearance from selected content in the active window. In general, people expect to drag a background selection to the active window without bringing the inactive window forward.
+> 먼저 창을 활성화하지 않고 사용자가 비활성 창에서 선택한 내용을 끌 수 있습니다. 비활성 창에서 선택한 내용을 백그라운드 선택이라고 하며 활성 창의 선택한 내용과 모양이 다릅니다. 일반적으로 사람들은 비활성 창을 앞으로 가져오지 않고 백그라운드 선택을 활성 창으로 끌어다 놓기를 기대합니다.
+>
+
+
+
+
+**When possible, let people drag individual items from an inactive window without affecting an existing background selection.** For example, people can drag an unselected file from an inactive Finder window without deselecting any of the window’s selected files.
+> 가능한 경우, 사용자가 기존 배경 선택에 영향을 주지 않고 비활성 창에서 개별 항목을 끌 수 있도록 합니다. 예를 들어, 사용자는 창의 선택한 파일을 선택 취소하지 않고 비활성 파인더 창에서 선택하지 않은 파일을 끌 수 있습니다.
+>
+
+
+
+
+**Consider displaying a badge during multi-item drag operations.** A badge is a small filled oval containing a number you can use to indicate the number of items people are dragging. If a destination can accept only a subset of dragged items, update the badge to show the new number.
+> 다중 항목 끌기 작업 중에 배지를 표시하는 것을 고려해 보십시오. 배지는 사람들이 끌고 있는 항목의 수를 나타내는 데 사용할 수 있는 숫자가 들어 있는 작은 채워진 타원형입니다. 대상이 끌어온 항목의 하위 집합만 허용할 수 있는 경우 배지를 업데이트하여 새 번호를 표시합니다.
+>
+
+
+
+
+**Consider changing the pointer appearance to indicate what will happen when people drop content.** In addition to using the *copy* pointer, you might want to use the *drag link*, *disappearing item*, and *operation not allowed* pointers, depending on the situation*.* For guidance, see [Pointers](https://developer.apple.com/design/human-interface-guidelines/inputs/pointing-devices#pointers).
+> 사용자가 콘텐츠를 삭제할 때 발생할 작업을 나타내도록 포인터 모양을 변경하는 것을 고려해 보십시오. 상황에 따라 복사 포인터를 사용하는 것 외에도 드래그 링크, 사라지는 항목, 허용되지 않는 작업 포인터를 사용할 수도 있습니다. 자세한 내용은 포인터를 참조하십시오.
+>
+
+
+
+
+**As much as possible, let people select and drag content with a single motion.** Unless people are selecting multiple items, they appreciate it when they don’t have to pause between making a selection and starting the drag operation.
+> 가능한 한 사람들이 한 번의 동작으로 콘텐츠를 선택하고 끌 수 있도록 합니다. 여러 항목을 선택하는 경우가 아니라면, 항목을 선택하고 끌기 작업을 시작할 때 잠시 멈출 필요가 없습니다.
+>
+
+
+
