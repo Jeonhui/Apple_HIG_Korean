@@ -23,3 +23,4 @@
  | 2022-10-07 02:29:15 | ./patterns/accessing-private-data.md | 125 | 9972 | 
  | 2022-10-08 02:07:51 | ./patterns/drag-and-drop.md | 45 | 9912 | 
  | 2022-10-09 02:31:46 | ./patterns/feedback.md | 16 | 9768 | 
+ | 2022-10-10 02:32:44 | ./patterns/file-management.md | 67 | 9984 | 
