@@ -1,0 +1,1 @@
+# **[patterns] going-full-screen**

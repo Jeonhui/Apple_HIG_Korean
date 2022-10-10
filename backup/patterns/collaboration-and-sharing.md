@@ -1,0 +1,1 @@
+# **[patterns] collaboration-and-sharing**
