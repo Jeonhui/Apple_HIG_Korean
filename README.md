@@ -5,6 +5,7 @@
 
 ![https://img.shields.io/badge/platfroms-9cf?style=for-the-badge&](https://img.shields.io/badge/platfroms-9cf?style=for-the-badge&)
 
+- [Overview](./platforms/overview.md)
 - [Designing for iOS ✔️](./platforms/designing-for-ios.md)
 - [Designing for iPadOS ✔️](./platforms/designing-for-ipados.md)
 - [Designing for macOS ✔️](./platforms/designing-for-macos.md)
@@ -15,6 +16,7 @@
 
 ![https://img.shields.io/badge/Foundations-9cf?style=for-the-badge&](https://img.shields.io/badge/Foundations-9cf?style=for-the-badge&)
 
+- [Overview](./foundations/overview.md)
 - [Accessibility](./foundations/accessibility.md)
 - [App icons](./foundations/app-icons.md)
 - [Branding](./foundations/branding.md)
@@ -65,16 +67,76 @@
 
 ![https://img.shields.io/badge/Components-9cf?style=for-the-badge&](https://img.shields.io/badge/Components-9cf?style=for-the-badge&)
 
-- [All components](./components/all-components.md)
-- [Content](./components/content.md)
-- [Layout and organization](./components/layout-and-organization.md)
-- [Menus and actions](./components/menus-and-actions.md)
-- [Navigation and search](./components/navigation-and-search.md)
-- [Presentation](./components/presentation.md)
-- [Selection and input](./components/selection-and-input.md)
-- [Status](./components/status.md)
-- [System experiences](./components/system-experiences.md)
-
+- Content
+  - [Charts](./components/charts.md)
+  - [Image views](./components/Content/image-views.md)
+  - [Text views](./components/Content/text-views.md)
+  - [Web views](./components/Content/web-views.md)
+- Layout and organization
+  - [Boxes](./components/layout-and-organization/boxes.md)
+  - [Collections](./components/layout-and-organization/collections.md)
+  - [Column views](./components/layout-and-organization/column-views.md)
+  - [Disclosure controls](./components/layout-and-organizationdisclosure-controls.md)
+  - [Labels](./components/layout-and-organization/labels.md)
+  - [Lists and tables](./components/layout-and-organization/list-and-tables.md)
+  - [Lockups](./components/layout-and-organization/lockups.md)
+  - [Outline views](./components/layout-and-organization/outline-views.md)
+  - [Split views](./components/layout-and-organization/split-views.md)
+  - [Tab views](./components/layout-and-organization/tab-views.md)
+- Menus and actions
+  - [Activity views](./components/menus-and-actions/activity-views.md)
+  - [Buttons](./components/menus-and-actions/buttons.md)
+  - [Context menus](./components/menus-and-actions/context-menus.md)
+  - [Dock menus](./components/menus-and-actions/dock-menus.md)
+  - [Edit menus](./components/menus-and-actions/edit-menus.md)
+  - [Menus](./components/menus-and-actions/menus.md)
+  - [Pop-up buttons](./components/menus-and-actions/pop-up-buttons.md)
+  - [Pull-down buttons](./components/menus-and-actions/pull-down-buttons.md)
+  - [Toolbars](./components/menus-and-actions/toolbars.md)
+- Navigation and search
+  - [Navigation bars](./components/navigation-and-search/navigation-bars.md)
+  - [Path controls](./components/navigation-and-search/path-controls.md)
+  - [Search fields](./components/navigation-and-search/search-fields.md)
+  - [Sidebars](./components/navigation-and-search/sidebars.md)
+  - [Tab bars](./components/navigation-and-search/tab-bars.md)
+  - [Token fields](./components/navigation-and-search/token-fields.md)
+- Presentation
+  - [Action sheets](./components/presentation/action-sheets.md)
+  - [Alerts](./components/presentation/alerts.md)
+  - [Page controls](./components/presentation/page-controls.md)
+  - [Panels](./components/presentation/panels.md)
+  - [Popovers](./components/presentation/popovers.md)
+  - [Scroll views](./components/presentation/scroll-views.md)
+  - [Sheets](./components/presentation/sheets.md)
+  - [Windows](windows.md)
+- Selection and input
+  - [Color wells](./components/selection-and-input/color-wells.md)
+  - [Combo boxes](./components/selection-and-input/combo-boxes.md)
+  - [Digit entry views](./components/selection-and-input/digit-entry-views.md)
+  - [Image wells](./components/selection-and-input/image-wells.md)
+  - [Onscreen keyboards](./components/selection-and-input/onscreen-keyboards.md)
+  - [Pickers](./components/selection-and-input/pickers.md)
+  - [Segmented controls](./components/selection-and-input/segmented-controls.md)
+  - [Sliders](./components/selection-and-input/sliders.md)
+  - [Steppers](./components/selection-and-input/steppers.md)
+  - [Text fields](./components/selection-and-input/text-fields.md)
+  - [Toggles](./components/selection-and-input/toggles.md)
+- Status
+  - [Activity rings](./components/status/acitivity-rings.md)
+  - [Gauges](./components/status/gauges.md)
+  - [Progress indicators](./components/status/progress-indicators.md)
+  - [Rating indicators](./components/status/rating-indicators.md)
+- System experiences
+  - [Complications](./components/status/complications.md)
+  - [Home Screen quick actions](./components/status/home-screen-quick-actions.md)
+  - [Live Activities](./components/status/live-activities.md)
+  - [The menu bar](./components/status/the-menu-bar.md)
+  - [Notifications](./components/status/notifications.md)
+  - [Status bars](./components/status/status-bars.md)
+  - [Top Shelf](./components/status/top-shelf.md)
+  - [Watch faces](./components/status/watch-faces.md)
+  - [Widgets](./components/status/widgets.md)
+  
 ---
 
 ![https://img.shields.io/badge/Inputs-9cf?style=for-the-badge&](https://img.shields.io/badge/Inputs-9cf?style=for-the-badge&)

@@ -290,7 +290,7 @@ see [Complications](https://developer.apple.com/design/human-interface-guideline
 | Link color | A link to other content. | linkColor |
 | Placeholder text color | A placeholder string in a control or text view. | placeholderTextColor |
 | Quaternary label color | The text of a label of lesser importance than a tertiary label, such as watermark text. | quaternaryLabelColor |
-| Scrubber textured background color | The background of a scrubber in the Touch Bar. For guidance, see Touch Bar > Visual Design > Color. | scrubberTexturedBackgroundColor |
+| Scrubber textured background color | The background of a scrubber in the Touch Bar. For guidance, see Touch Bar > Visual Design > Color. | scrubberTexturedBackgroundColor |
 | Secondary label color | The text of a label of lesser importance than a primary label, such as a label used to represent a subheading or additional information. | secondaryLabelColor |
 | Selected content background color | The background for selected content in a key window or view. | selectedContentBackgroundColor |
 | Selected control color | The surface of a selected control. | selectedControlColor |

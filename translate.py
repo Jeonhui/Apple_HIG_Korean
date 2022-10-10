@@ -48,7 +48,7 @@ def translate():
     print(lastLogFilePath, lastLogFileLine)
     # open README.md & get Lines containing paths
     README = open('./README.md', 'r')
-    lines = list(filter(lambda line: line[:2] == '- ', README.readlines()))
+    lines = list(filter(lambda line: line.strip()[:3] == '- [', README.readlines()))
     README.close()
 
     # for New log

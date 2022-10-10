@@ -16,13 +16,13 @@ As you create different types of images, consider the following recommendations.
 
 # **Best practices**
 
-**Supply high-resolution images for all artwork in your app, for every device you support.** You accomplish this by multiplying the number of pixels in each image by a specific scale factor. As you add each image to your project’s asset catalog, identify its scale factor by appending “@1x,” “@2x,” or “@3x” to its filename. Use the following values for guidance; for additional scale factors, see [Layout](https://developer.apple.com/design/human-interface-guidelines/foundations/layout).
+**Supply high-resolution images for all artwork in your app, for every device you support.** You accomplish this by multiplying the number of pixels in each image by a specific scale factor. As you add each image to your project’s asset catalog, identify its scale factor by appending “@1x,” “@2x,” or “@3x” to its filename. Use the following values for guidance; for additional scale factors, see [Layout](https://developer.apple.com/design/human-interface-guidelines/foundations/layout).
 
-**In general, design images at the lowest resolution and scale them up to create high-resolution assets.** When you use resizable vectorized shapes, you might want to position control points at whole values so that they’re cleanly aligned at 1x. This positioning allows the points to remain cleanly aligned to the raster grid at higher resolutions, because 2x and 3x are multiples of 1x. In contrast, there are times when you don’t want to keep a shape perfectly aligned to the raster grid; for example, aligning a circle to the grid can make it appear flattened at the top and bottom.
+**In general, design images at the lowest resolution and scale them up to create high-resolution assets.** When you use resizable vectorized shapes, you might want to position control points at whole values so that they’re cleanly aligned at 1x. This positioning allows the points to remain cleanly aligned to the raster grid at higher resolutions, because 2x and 3x are multiples of 1x. In contrast, there are times when you don’t want to keep a shape perfectly aligned to the raster grid; for example, aligning a circle to the grid can make it appear flattened at the top and bottom.
 
-**Include a color profile with each image.** Color profiles help ensure that your app’s colors appear as intended on different displays. For guidance, see [Color management](https://developer.apple.com/design/human-interface-guidelines/foundations/color/#color-management).
+**Include a color profile with each image.** Color profiles help ensure that your app’s colors appear as intended on different displays. For guidance, see [Color management](https://developer.apple.com/design/human-interface-guidelines/foundations/color/#color-management).
 
-**Always test images on a range of actual devices.** An image that looks great at design time may appear pixelated, stretched, or compressed when viewed on various devices.
+**Always test images on a range of actual devices.** An image that looks great at design time may appear pixelated, stretched, or compressed when viewed on various devices.
 
 # **Platform considerations**
 
@@ -34,33 +34,33 @@ Layered images are at the heart of the Apple TV user experience. The system comb
 
 ### **Parallax effect**
 
-*Parallax* is a subtle visual effect the system uses to convey depth and dynamism when an element is in focus. As an element comes into focus, the system elevates it to the foreground, gently swaying it while applying illumination that makes the element's surface appear to shine. After a period of inactivity, out-of-focus content dims and the focused element expands.
+*Parallax* is a subtle visual effect the system uses to convey depth and dynamism when an element is in focus. As an element comes into focus, the system elevates it to the foreground, gently swaying it while applying illumination that makes the element's surface appear to shine. After a period of inactivity, out-of-focus content dims and the focused element expands.
 
 Layered images are required to support the parallax effect.
 
 ### **Layered images**
 
-A *layered image* consists of two to five distinct layers that come together to form a single image. The separation between layers, along with use of transparency, creates a feeling of depth. As someone interacts with an image, layers closer to the surface elevate and scale, overlapping lower layers farther back and producing a 3D effect.
+A *layered image* consists of two to five distinct layers that come together to form a single image. The separation between layers, along with use of transparency, creates a feeling of depth. As someone interacts with an image, layers closer to the surface elevate and scale, overlapping lower layers farther back and producing a 3D effect.
 
-**IMPORTANT**Your tvOS [app icon](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons) must use a layered image. For other focusable images in your app, including [Top Shelf](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/top-shelf) images, layered images are strongly encouraged, but optional.
+**IMPORTANT**Your tvOS [app icon](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons) must use a layered image. For other focusable images in your app, including [Top Shelf](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/top-shelf) images, layered images are strongly encouraged, but optional.
 
-**Use standard interface elements to display layered images.** If you use standard views and system-provided focus APIs — such as [FocusState](https://developer.apple.com/documentation/swiftui/focusstate) — layered images automatically get the parallax treatment when people bring them into focus.
+**Use standard interface elements to display layered images.** If you use standard views and system-provided focus APIs — such as [FocusState](https://developer.apple.com/documentation/swiftui/focusstate) — layered images automatically get the parallax treatment when people bring them into focus.
 
-**Identify logical foreground, middle, and background elements.** In foreground layers, display prominent elements like a character in a game, or text on an album cover or movie poster. Middle layers are perfect for secondary content and effects like shadows. Background layers are opaque backdrops that showcase the foreground and middle layers without upstaging them.
+**Identify logical foreground, middle, and background elements.** In foreground layers, display prominent elements like a character in a game, or text on an album cover or movie poster. Middle layers are perfect for secondary content and effects like shadows. Background layers are opaque backdrops that showcase the foreground and middle layers without upstaging them.
 
-**Generally, keep text in the foreground.** Unless you want to obscure text, bring it to the foreground layer for clarity.
+**Generally, keep text in the foreground.** Unless you want to obscure text, bring it to the foreground layer for clarity.
 
-**Keep the background layer opaque.** Using varying levels of opacity to let content shine through higher layers is fine, but your background layer must be opaque — you’ll get an error if it’s not. An opaque background layer ensures your artwork looks great with parallax, drop shadows, and system backgrounds.
+**Keep the background layer opaque.** Using varying levels of opacity to let content shine through higher layers is fine, but your background layer must be opaque — you’ll get an error if it’s not. An opaque background layer ensures your artwork looks great with parallax, drop shadows, and system backgrounds.
 
-**Keep layering simple and subtle.** Parallax is designed to be almost unnoticeable. Excessive 3D effects can appear unrealistic and jarring. Keep depth simple to bring your content to life and add delight.
+**Keep layering simple and subtle.** Parallax is designed to be almost unnoticeable. Excessive 3D effects can appear unrealistic and jarring. Keep depth simple to bring your content to life and add delight.
 
-**Leave a safe zone around your content.** During focus and parallax, content around the edges of some layers may be cropped or difficult to see clearly as the image scales and moves. To ensure that your primary content is always visible, don’t put it too close to the edges. Be aware that the safe zone can vary, depending on the image size, layer depth, and motion, and that foreground layers are cropped more than background layers.
+**Leave a safe zone around your content.** During focus and parallax, content around the edges of some layers may be cropped or difficult to see clearly as the image scales and moves. To ensure that your primary content is always visible, don’t put it too close to the edges. Be aware that the safe zone can vary, depending on the image size, layer depth, and motion, and that foreground layers are cropped more than background layers.
 
 ![https://developer.apple.com/design/human-interface-guidelines/foundations/images/images/icons-and-images-icon-safe-zone_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/images/images/icons-and-images-icon-safe-zone_2x.png)
 
-**Always preview layered images.** To ensure your layered images look great on Apple TV, preview them throughout your design process using Xcode, the Parallax Previewer app for macOS, or the Parallax Exporter plug-in for Adobe Photoshop. Pay special attention as scaling and clipping occur, and readjust your images as needed to keep important content safe. After your layered images are final, preview them on an actual TV for the most accurate representation of what people will see. To download Parallax Previewer and Parallax Exporter, see [Resources](https://developer.apple.com/design/resources/#tvos-apps).
+**Always preview layered images.** To ensure your layered images look great on Apple TV, preview them throughout your design process using Xcode, the Parallax Previewer app for macOS, or the Parallax Exporter plug-in for Adobe Photoshop. Pay special attention as scaling and clipping occur, and readjust your images as needed to keep important content safe. After your layered images are final, preview them on an actual TV for the most accurate representation of what people will see. To download Parallax Previewer and Parallax Exporter, see [Resources](https://developer.apple.com/design/resources/#tvos-apps).
 
-**Use both the unfocused and focused states to determine the appropriate size for a layered image.** During the parallax effect, the system may crop background layers slightly, so keep essential content within a safe zone and include some additional space to make sure your content looks good.
+**Use both the unfocused and focused states to determine the appropriate size for a layered image.** During the parallax effect, the system may crop background layers slightly, so keep essential content within a safe zone and include some additional space to make sure your content looks good.
 
 ![https://developer.apple.com/design/human-interface-guidelines/foundations/images/images/layered-image-zones_2x.png](https://developer.apple.com/design/human-interface-guidelines/foundations/images/images/layered-image-zones_2x.png)
 
@@ -68,17 +68,17 @@ The following formulas can help you calculate sizing for a layered image based o
 
 You can embed layered images in your app or retrieve them from a content server at runtime. To create layered images for inclusion within your app, use one of the following tools:
 
-- **Parallax Previewer app for macOS.** Parallax Previewer can import PNG files to serve as individual layers, layered images (`.lsr`) created with the Parallax Exporter plug-in, and layered Photoshop images (`.psd`). Parallax Previewer can export LSR files that you can import directly into an Xcode project.
-- **Parallax Exporter Adobe Photoshop plug-in.** Use this plug-in to test your layered images in Photoshop and export them as LSR files that you can import directly into an Xcode project.
-- **Xcode.** Drag standard PNG files into your app’s asset catalog to serve as individual layers of an image stack in Xcode. Image stacks can be exported as LSR files. Xcode can also import LSR files.
+- **Parallax Previewer app for macOS.** Parallax Previewer can import PNG files to serve as individual layers, layered images (`.lsr`) created with the Parallax Exporter plug-in, and layered Photoshop images (`.psd`). Parallax Previewer can export LSR files that you can import directly into an Xcode project.
+- **Parallax Exporter Adobe Photoshop plug-in.** Use this plug-in to test your layered images in Photoshop and export them as LSR files that you can import directly into an Xcode project.
+- **Xcode.** Drag standard PNG files into your app’s asset catalog to serve as individual layers of an image stack in Xcode. Image stacks can be exported as LSR files. Xcode can also import LSR files.
 
-If your app retrieves layered images from a content server at runtime, you must provide those images in runtime layered image (`.lcr`) format. You don’t create runtime layered images directly; you generate them from LSR files or Photoshop files using the `layerutil` command-line tool that Xcode provides. Runtime layered images are intended to be downloaded — don’t embed them within your app.
+If your app retrieves layered images from a content server at runtime, you must provide those images in runtime layered image (`.lcr`) format. You don’t create runtime layered images directly; you generate them from LSR files or Photoshop files using the `layerutil` command-line tool that Xcode provides. Runtime layered images are intended to be downloaded — don’t embed them within your app.
 
 # **watchOS**
 
-**In general, avoid transparency to keep image files small.** If you always composite an image on the same solid background color, it’s more efficient to include the background in the image. However, transparency is necessary in complication images, menu icons, and other interface icons that serve as template images, because the system uses it to determine where to apply color.
+**In general, avoid transparency to keep image files small.** If you always composite an image on the same solid background color, it’s more efficient to include the background in the image. However, transparency is necessary in complication images, menu icons, and other interface icons that serve as template images, because the system uses it to determine where to apply color.
 
-**Use autoscaling PDFs to let you provide a single asset for all screen sizes.** Design your image for the 40mm and 42mm screens at 2x. When you load the PDF, WatchKit automatically scales the image based on the device’s screen size, using the values shown below:
+**Use autoscaling PDFs to let you provide a single asset for all screen sizes.** Design your image for the 40mm and 42mm screens at 2x. When you load the PDF, WatchKit automatically scales the image based on the device’s screen size, using the values shown below:
 
 | Image type | Format |
 | --- | --- |
