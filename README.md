@@ -6,10 +6,10 @@
 ![https://img.shields.io/badge/platfroms-9cf?style=for-the-badge&](https://img.shields.io/badge/platfroms-9cf?style=for-the-badge&)
 
 - [Overview](./platforms/overview.md)
-- [Designing for iOS ✔️](./platforms/designing-for-ios.md)
-- [Designing for iPadOS ✔️](./platforms/designing-for-ipados.md)
-- [Designing for macOS ✔️](./platforms/designing-for-macos.md)
-- [Designing for tvOS ✔️](./platforms/designing-for-tvos.md)
+- [Designing for iOS](./platforms/designing-for-ios.md)
+- [Designing for iPadOS](./platforms/designing-for-ipados.md)
+- [Designing for macOS](./platforms/designing-for-macos.md)
+- [Designing for tvOS](./platforms/designing-for-tvos.md)
 - [Designing for watchOS](./platforms/designing-for-watchos.md)
 
 ---
