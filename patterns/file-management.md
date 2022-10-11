@@ -187,3 +187,9 @@ For example, you can use a Finder Sync extension to:
 
 
 
+**When autosaving is off, make sure people know when a document has unsaved changes.** To show that there are unsaved changes, display a dot on the document window's close button and next to the document’s name in your app's Window menu. When autosaving is on, showing a dot in these locations is confusing, because it implies that people need to take action to avoid losing their work. Regardless of autosave status, you can append “Edited” to the document's title in the title bar, but be sure to remove this suffix as soon as autosave occurs or when people explicitly save their work.
+> 자동 저장이 해제되어 있는 경우, 문서에 저장되지 않은 변경사항이 있는 경우를 사용자에게 알려야 합니다. 저장되지 않은 변경사항이 있음을 표시하려면 앱의 창 메뉴에서 문서 창의 닫기 단추와 문서 이름 옆에 점을 표시합니다. 자동 저장이 켜져 있을 때, 이러한 위치에 점을 표시하는 것은 사람들이 일을 잃지 않기 위해 조치를 취해야 한다는 것을 의미하기 때문에 혼란스럽다. 자동 저장 상태에 관계없이 제목 표시줄에 있는 문서 제목에 "편집"을 추가할 수 있지만, 자동 저장 즉시 또는 사용자가 작업을 명시적으로 저장할 때 이 접미사를 삭제해야 합니다.
+>
+
+
+
