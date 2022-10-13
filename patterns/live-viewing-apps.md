@@ -161,3 +161,18 @@ If you support digital video recording (DVR) in the cloud, follow these guidelin
 
 
 
+**Consider offering a control that lets people manage cloud DVR settings.** For example, you might let people delete recordings they've already watched or content that's older than a certain number of days. Ideally, help people avoid running out of space by letting them set up automatic storage management, which overwrites the oldest or already viewed content.
+> 사람들이 클라우드 DVR 설정을 관리할 수 있는 컨트롤을 제공하는 것을 고려해 보십시오. 예를 들어, 사용자가 이미 시청한 녹화나 특정 일보다 오래된 콘텐츠를 삭제하도록 허용할 수 있습니다. 자동 스토리지 관리를 설정하여 가장 오래되었거나 이미 본 콘텐츠를 덮어쓰도록 하여 공간 부족을 방지하는 것이 이상적입니다.
+>
+
+
+
+
+# **Platform considerations**
+
+*Not supported in iOS, iPadOS, macOS, or watchOS.*
+> iOS, iPadOS, macOS 또는 watch에서 지원되지 않음OS.
+>
+
+
+
