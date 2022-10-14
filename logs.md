@@ -27,3 +27,4 @@
  | 2022-10-11 02:30:32 | ./patterns/launching.md | 13 | 9890 | 
  | 2022-10-12 02:39:42 | ./patterns/live-viewing-apps.md | 54 | 9830 | 
  | 2022-10-13 02:34:30 | ./patterns/managing-accounts.md | 62 | 9964 | 
+ | 2022-10-14 02:44:08 | ./patterns/modality.md | 18 | 9741 | 

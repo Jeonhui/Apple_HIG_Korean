@@ -180,3 +180,39 @@ Many popular TV providers let people sign in to their accounts at the system lev
 
 # **tvOS**
 
+Most people interact with Apple TV using a remote, not a keyboard, so ask for the minimum amount of information necessary.
+> 대부분의 사람들은 키보드가 아닌 리모컨을 사용하여 Apple TV와 상호 작용하므로 필요한 최소한의 정보를 요청하십시오.
+>
+
+
+
+
+**Prefer letting people use another device to sign up or authenticate.** When you configure your app’s associated domains, Apple TV can work with other devices to safely suggest sign-in credentials, including [Sign in with Apple](../technologies/sign-in-with-apple). For developer guidance, see [Configuring an associated domain](https://developer.apple.com/documentation/xcode/configuring-an-associated-domain/).
+> 사용자가 다른 장치를 사용하여 등록하거나 인증하도록 하는 것을 선호합니다. 앱의 관련 도메인을 구성하면 Apple TV가 다른 장치와 함께 작동하여 Apple에 로그인하는 등의 로그인 자격 증명을 안전하게 제안할 수 있습니다. 개발자 지침은 연결된 도메인 구성을 참조하십시오.
+>
+
+
+
+
+**When people are signed in to a shared account, avoid asking them to choose their profile every time they become the current user.** In tvOS 16 and later, your app can share its credentials with all users while storing each individual’s profile and user data separately. When you support this type of sharing, your app can automatically use the current user's profile without asking each person to sign in separately to a shared account. For developer guidance, see [kSecUseUserIndependentKeychain](https://developer.apple.com/documentation/security/ksecuseuserindependentkeychain/) and [User management entitlement](https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_developer_user-management).
+> 사용자가 공유 계정에 로그인한 경우 현재 사용자가 될 때마다 프로필을 선택하라는 요청을 피하십시오. tvOS 16 이상에서는 앱이 모든 사용자와 자격 증명을 공유하면서 각 개인의 프로필과 사용자 데이터를 별도로 저장할 수 있습니다. 이러한 유형의 공유를 지원하면 앱은 각 사용자에게 공유 계정에 개별적으로 로그인하도록 요청하지 않고 현재 사용자의 프로필을 자동으로 사용할 수 있습니다. 개발자 지침을 보려면 SecUseUserIndependentKeychain 및 사용자 관리 자격을 참조하십시오.
+>
+
+
+
+
+**Minimize data entry.** If you need to gather more than a small amount of information, ask people to visit a website from another device. If you need an email address, show the email keyboard screen, which includes a list of recently entered addresses.
+> 데이터 입력을 최소화합니다. 소량 이상의 정보를 수집해야 하는 경우 다른 장치에서 웹 사이트를 방문하도록 요청합니다. 전자 메일 주소가 필요한 경우 최근에 입력한 주소 목록이 포함된 전자 메일 키보드 화면을 표시합니다.
+>
+
+
+
+
+# **watchOS**
+
+Use iCloud synchronization to provide access to the Keychain, letting people autofill usernames and passwords and preserve app settings.
+> iCloud 동기화를 사용하여 키 체인에 대한 액세스를 제공하여 사용자가 사용자 이름과 암호를 자동으로 채우고 앱 설정을 보존할 수 있습니다.
+>
+
+
+
