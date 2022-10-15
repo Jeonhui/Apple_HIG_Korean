@@ -28,3 +28,4 @@
  | 2022-10-12 02:39:42 | ./patterns/live-viewing-apps.md | 54 | 9830 | 
  | 2022-10-13 02:34:30 | ./patterns/managing-accounts.md | 62 | 9964 | 
  | 2022-10-14 02:44:08 | ./patterns/modality.md | 18 | 9741 | 
+ | 2022-10-15 02:38:56 | ./patterns/multitasking.md | 106 | 9785 | 
