@@ -245,3 +245,65 @@ In iPadOS 15 and later, you can specify a presentation style that determines the
 
 
 
+**Use the prominent style to present a self-contained task people can complete without opening other parts of your app.** For example, the prominent style works well to enable document editing or another task that’s scoped to a specific file or collection of content. Be sure a prominent window is also useful on its own; avoid using it to present secondary tasks, supplemental actions, or choosing items that affect the main task.
+> 눈에 띄는 스타일을 사용하여 앱의 다른 부분을 열지 않고도 사람들이 완료할 수 있는 자체 포함 작업을 제시하십시오. 예를 들어, 눈에 띄는 스타일은 문서 편집이나 특정 파일 또는 내용 모음으로 범위를 지정하는 다른 작업을 가능하게 하는 데 적합합니다. 눈에 띄는 창은 그 자체로 유용해야 합니다. 보조 작업, 보조 작업 또는 주요 작업에 영향을 미치는 항목을 선택하는 데 사용하지 마십시오.
+>
+
+
+
+
+**Use the standard style to present multiple versions of the same task or content.** For example, Safari uses the standard style to help people view and interact with two browsing windows onscreen at the same time.
+> 표준 스타일을 사용하여 동일한 작업 또는 내용의 여러 버전을 표시할 수 있습니다. 예를 들어 Safari는 표준 스타일을 사용하여 사람들이 동시에 두 개의 검색 창을 보고 상호 작용할 수 있도록 도와줍니다.
+>
+
+
+
+
+**Open a new window only when people take an explicit action.** For example, people can tap the Add (+) button in the app shelf or App Exposé, or choose a menu item. Avoid surprising people by opening a new window they don’t request.
+> 사용자가 명시적 작업을 수행할 때만 새 창을 엽니다. 예를 들어, 앱 선반이나 앱 노출에서 추가(+) 버튼을 누르거나 메뉴 항목을 선택할 수 있습니다. 요청하지 않은 새 창을 열어 사람들을 놀라게 하는 것을 피하세요.
+>
+
+
+
+
+**Make sure your app’s primary windows support every task that you enable.** Multiple windows can offer convenient and efficient workflows, but people always need to be able to access every app feature in each primary window.
+> 앱의 기본 창이 활성화하는 모든 작업을 지원하는지 확인하십시오. 여러 개의 창이 편리하고 효율적인 워크플로우를 제공할 수 있지만, 사람들은 항상 각 기본 창의 모든 앱 기능에 액세스할 수 있어야 합니다.
+>
+
+
+
+
+**Preserve the state in each window that people open.** When people return to a window, they expect it to be in the same state in which they left it. For developer guidance, see [Restoring your app’s state](https://developer.apple.com/documentation/uikit/uiscenedelegate/restoring_your_app_s_state).
+> 사용자가 여는 각 창의 상태를 유지합니다. 사람들이 창으로 돌아갈 때, 그들은 창문이 그들이 창밖으로 떠난 것과 같은 상태일 것이라고 예상한다. 개발자 지침은 앱 상태 복원을 참조하십시오.
+>
+
+
+
+
+**Consider letting people use a gesture to open content in a new window.** For example, people can use the pinch gesture to expand a Notes item into a new window. A gesture-enabled transition always uses the prominent presentation style, making the resulting modal window feel like a natural consequence of expanding the item or task. For developer guidance, see [collectionView(_:sceneActivationConfigurationForItemAt:point:)](https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/3752185-collectionview) (to transition from a collection view item) or [UIWindowScene.ActivationInteraction](https://developer.apple.com/documentation/uikit/uiwindowscene/activationinteraction) (to transition from an item in any other view).
+> 사람들이 제스처를 사용하여 새 창에서 내용을 열 수 있도록 하는 것을 고려해 보십시오. 예를 들어, 사람들은 집기 제스처를 사용하여 Notes 항목을 새 창으로 확장할 수 있습니다. 제스처 사용 전환은 항상 눈에 띄는 프레젠테이션 스타일을 사용하므로 결과 모달 창이 항목이나 작업을 확장하는 자연스러운 결과처럼 느껴집니다. 개발자 지침은 collectionView(_:sceneActivationConfigurationForItemAt:point:) 또는 UIWindowsScene을 참조하십시오.활성화상호 작용(다른 보기의 항목에서 전환합니다.
+>
+
+
+
+
+**Consider providing a menu item that lets people open content in a new window.** When you enable this behavior, the menu presents an “Open in new window” item when your app runs on iPad or on a Mac using Mac Catalyst, but not when your app runs on iPhone. If it makes sense in your app, you can supply an alternative item to display when the app runs on iPhone, such as “Show details...”. You can add an “Open in new window” item to a context menu or to menus attached to buttons and bar button items. For developer guidance, see [UIWindowScene.ActivationAction](https://developer.apple.com/documentation/uikit/uiwindowscene/activationaction/).
+> 새 창에서 내용을 열 수 있는 메뉴 항목을 제공하는 것을 고려해 보십시오. 이 동작을 활성화하면 Mac Catalyst를 사용하여 iPad 또는 Mac에서 앱을 실행할 때는 메뉴에 "새 창에서 열기" 항목이 표시되지만 iPhone에서 앱을 실행할 때는 표시되지 않습니다. 당신의 앱에서 그것이 타당하다면, 당신은 "상세 정보 표시..."와 같이 앱이 아이폰에서 실행될 때 표시할 대체 항목을 제공할 수 있다. 상황에 맞는 메뉴 또는 단추 및 막대 단추 항목에 첨부된 메뉴에 "새 창에서 열기" 항목을 추가할 수 있습니다. 개발자 지침은 UI WindowsScene을 참조하십시오.활성화 작업.
+>
+
+
+
+
+**Avoid specifying a layout when providing a way to open content in a new window.** Because you don’t know which multitasking configuration people are using, avoid offering menu items like “Open in split view” or “Open in front.”
+> 새 창에서 내용을 여는 방법을 제공할 때 레이아웃을 지정하지 않도록 합니다. 사용자가 어떤 멀티태스킹 구성을 사용하는지 모르기 때문에 "분할 보기에서 열기" 또는 "앞에서 열기"와 같은 메뉴 항목은 제공하지 마십시오.
+>
+
+
+
+
+**Use the term *window* in user-facing content.** The system refers to app windows as *windows* regardless of type. Using different terms — including *scene*, which refers to window implementation — is likely to confuse people.
+> 사용자 대면 콘텐츠에서 용어 창을 사용합니다. 시스템은 유형에 관계없이 앱 창을 창으로 지칭한다. 창 구현을 의미하는 장면을 포함하여 다른 용어를 사용하면 사람들을 혼란스럽게 할 수 있습니다.
+>
+
+
+

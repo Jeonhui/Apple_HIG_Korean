@@ -29,3 +29,4 @@
  | 2022-10-13 02:34:30 | ./patterns/managing-accounts.md | 62 | 9964 | 
  | 2022-10-14 02:44:08 | ./patterns/modality.md | 18 | 9741 | 
  | 2022-10-15 02:38:56 | ./patterns/multitasking.md | 106 | 9785 | 
+ | 2022-10-16 02:45:15 | ./patterns/playing-audio.md | 7 | 9897 | 
