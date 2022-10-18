@@ -31,3 +31,4 @@
  | 2022-10-15 02:38:56 | ./patterns/multitasking.md | 106 | 9785 | 
  | 2022-10-16 02:45:15 | ./patterns/playing-audio.md | 7 | 9897 | 
  | 2022-10-17 02:47:11 | ./patterns/playing-haptics.md | 15 | 9667 | 
+ | 2022-10-18 02:37:21 | ./patterns/playing-video.md | 23 | 9885 | 
