@@ -66,3 +66,51 @@ Here are some examples that show how padding can affect video display on iPhone 
 
 
 
+• [Result of padding a 21:9 video](../patterns/playing-video#)
+> • 21:9 동영상 패딩 결과
+>
+
+
+
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/patterns/playing-video/images/video-fill-4-3-right.svg](https://developer.apple.com/design/human-interface-guidelines/patterns/playing-video/images/video-fill-4-3-right.svg)
+
+![https://developer.apple.com/design/human-interface-guidelines/images/checkmark_2x.png](https://developer.apple.com/design/human-interface-guidelines/images/checkmark_2x.png)
+
+4:3 video in full-screen viewing mode
+> 전체 화면 보기 모드에서 4:3 비디오
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/patterns/playing-video/images/video-fill-4-3-wrong.svg](https://developer.apple.com/design/human-interface-guidelines/patterns/playing-video/images/video-fill-4-3-wrong.svg)
+
+![https://developer.apple.com/design/human-interface-guidelines/images/crossout_2x.png](https://developer.apple.com/design/human-interface-guidelines/images/crossout_2x.png)
+
+4:3 video with embedded padding, in full-screen viewing mode
+> 전체 화면 보기 모드에서 내장 패딩 포함 4:3 비디오
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/patterns/playing-video/images/legend-letter-pillar.svg](https://developer.apple.com/design/human-interface-guidelines/patterns/playing-video/images/legend-letter-pillar.svg)
+
+
+**Provide additional information when it adds value.** In iOS, iPadOS, and tvOS, you can customize a video’s additional information by providing an image, title, description, and other useful information. In general, restrict this content so that it doesn’t obscure media playback. For developer guidance, see [externalMetadata](https://developer.apple.com/documentation/avfoundation/avplayeritem/1627623-externalmetadata).
+> 가치가 추가되면 추가 정보를 제공합니다. iOS, iPadOS 및 tvOS에서는 이미지, 제목, 설명 및 기타 유용한 정보를 제공하여 비디오의 추가 정보를 사용자 지정할 수 있습니다. 일반적으로 미디어 재생을 방해하지 않도록 이 콘텐츠를 제한합니다. 개발자 지침은 외부 메타데이터를 참조하십시오.
+>
+
+
+
+
+**Enable the interactions people expect, regardless of the device they’re using to control playback.** For example, people expect to press Space on a connected keyboard to play or pause media playback on Mac, iPhone, iPad, and Apple TV. Similarly, people expect to move through their media on Apple TV by making familiar, intuitive gestures with the Siri Remote. For guidance, see Keyboards and Remotes.
+> 재생을 제어하는 데 사용하는 장치에 관계없이 사용자가 기대하는 상호 작용을 활성화합니다. 예를 들어, 사람들은 Mac, iPhone, iPad 및 Apple TV에서 미디어 재생을 재생하거나 일시 중지하기 위해 연결된 키보드의 Space를 누릅니다. 비슷하게, 사람들은 시리 리모컨으로 친숙하고 직관적인 제스처를 취함으로써 애플 TV에서 그들의 미디어를 통해 이동할 것으로 기대한다. 자세한 내용은 키보드 및 원격을 참조하십시오.
+>
+
+
+
+
