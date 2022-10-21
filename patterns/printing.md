@@ -64,3 +64,23 @@
 
 
 
+**Separate advanced features from frequently used features.** Consider using a disclosure control to hide advanced options until they’re needed. Label advanced options as *Advanced Options*.
+> 고급 기능을 자주 사용하는 기능과 분리합니다. 공개 컨트롤을 사용하여 고급 옵션이 필요할 때까지 숨기는 것을 고려해 보십시오. 고급 옵션에 고급 옵션으로 레이블을 지정합니다.
+>
+
+
+
+
+**Consider letting people preview the effect of a setting.** For example, you could update a thumbnail image to show the effect of changing a tone control.
+> 사용자가 설정의 효과를 미리 볼 수 있도록 하는 것을 고려해 보십시오. 예를 들어 톤 컨트롤을 변경하는 효과를 표시하도록 미리 보기 이미지를 업데이트할 수 있습니다.
+>
+
+
+
+
+**Consider storing modified settings with the document.** At minimum, it makes sense to store print settings until the document is closed in case people want to print it again.
+> 수정된 설정을 문서와 함께 저장해 보십시오. 적어도, 사람들이 문서를 다시 인쇄하려고 할 때 문서를 닫을 때까지 인쇄 설정을 저장하는 것이 이치에 맞습니다.
+>
+
+
+
