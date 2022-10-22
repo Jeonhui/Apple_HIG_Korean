@@ -60,3 +60,71 @@ When it makes sense, you can offer context-specific settings within your app or 
 
 
 
+**Make your in-app settings easy to find, but not too prominent.** For example, consider making settings available within a profile or account view. In a watchOS app, you could make a very small number of essential options available at the bottom of the main view.
+> 앱 내 설정을 쉽게 찾을 수 있지만 너무 눈에 띄지 않도록 하십시오. 예를 들어 프로파일 또는 계정 보기 내에서 설정을 사용할 수 있도록 설정하는 것을 고려해 보십시오. 시계로OS 앱에서 기본 보기 하단에 매우 적은 수의 필수 옵션을 사용할 수 있습니다.
+>
+
+
+
+
+**In macOS and iPadOS apps, make settings available in ways people expect.** For example, people appreciate being able to use the standard Command-Comma (,) keyboard shortcut to open app-level settings. In an app that runs on a Mac, include an app-level settings item in the [App menu](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/the-menu-bar#app-menu) and, if you provide document-level options, add this item to the [File menu](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/the-menu-bar#file-menu). Avoid adding settings buttons to a macOS app’s toolbar, because doing so decreases the space available for essential commands that people use frequently.
+> macOS 및 iPadOS 앱에서 사람들이 기대하는 방식으로 설정을 사용할 수 있도록 합니다. 예를 들어, 표준 Command-Comma(,) 바로 가기 키를 사용하여 앱 수준 설정을 열 수 있다는 점을 높이 평가합니다. Mac에서 실행되는 앱에서 앱 메뉴에 앱 수준 설정 항목을 포함하고 문서 수준 옵션을 제공하는 경우 이 항목을 파일 메뉴에 추가합니다. 설정 단추를 macOS 앱의 도구 모음에 추가하지 마십시오. 이렇게 하면 사람들이 자주 사용하는 필수 명령에 사용할 수 있는 공간이 줄어들기 때문입니다.
+>
+
+
+
+
+# **Platform considerations**
+
+*No additional considerations for iOS, iPadOS, or tvOS.*
+> iOS, iPadOS 또는 tvOS에 대한 추가 고려 사항 없음.
+>
+
+
+
+
+# **macOS**
+
+An app-specific window opens when people choose the Settings item in the App menu. Typically, an app-specific settings window contains a toolbar that includes buttons for switching between views — called *panes* — that each contain a group of related settings.
+> 앱 메뉴에서 설정 항목을 선택하면 앱별 창이 열립니다. 일반적으로 앱별 설정 창에는 보기 간 전환(창이라고 함)을 위한 단추가 포함된 도구 모음이 있으며 각 도구 모음에는 관련 설정 그룹이 포함되어 있습니다.
+>
+
+
+
+
+**Disable a settings window’s minimize and maximize buttons.** It’s quick to open a settings window using the standard Command–Comma (,) keyboard shortcut, so there’s no need to keep the window in the Dock, and because a settings window accommodates the size of the current pane, people don’t need to expand the window to see more.
+> 설정 창의 최소화 및 최대화 버튼을 비활성화합니다. 표준 Command-Comma(,) 바로 가기 키를 사용하여 설정 창을 빨리 열 수 있으므로 창을 도크에 보관할 필요가 없으며 설정 창은 현재 창의 크기를 수용하므로 사용자가 창을 확장하여 더 많이 볼 필요가 없습니다.
+>
+
+
+
+
+**Provide a noncustomizable toolbar that remains visible and always indicates the active toolbar button.** A settings window’s toolbar identifies the areas people can customize and enables navigation among those areas. People rely on a stable settings interface to help them find what they need.
+> 사용자 정의할 수 없는 도구 모음을 제공하고 항상 활성 도구 모음 단추를 표시합니다. 설정 창의 도구 모음은 사용자가 사용자 정의할 수 있는 영역을 식별하고 해당 영역 사이를 탐색할 수 있도록 합니다. 사람들은 그들이 필요한 것을 찾는 것을 돕기 위해 안정적인 설정 인터페이스에 의존한다.
+>
+
+
+
+
+**Update the window's title to reflect the currently visible pane.** If your settings window doesn’t have multiple panes, use the title *App Name* Settings.
+> 창 제목을 업데이트하여 현재 표시된 창을 반영합니다. 설정 창에 여러 개의 창이 없으면 앱 이름 설정 제목을 사용하십시오.
+>
+
+
+
+
+**Restore the most recently viewed pane.** People often adjust related settings more than once, so it can be convenient when a settings window opens to the last pane people used.
+> 가장 최근에 본 창을 복원합니다. 사람들은 종종 관련 설정을 두 번 이상 조정하기 때문에 사람들이 마지막으로 사용한 창으로 설정 창이 열릴 때 편리할 수 있다.
+>
+
+
+
+
+# **watchOS**
+
+Avoid supplying app-specific settings to include in the watchOS Settings app.
+> 워치에 포함할 앱별 설정을 제공하지 마십시오.OS 설정 앱.
+>
+
+
+
