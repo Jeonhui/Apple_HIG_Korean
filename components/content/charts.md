@@ -212,3 +212,139 @@ In contrast, consider using a dynamic range when the possible data values can va
 
 
 
+**Make every chart in your app accessible.** Charts — like all infographics — need to be fully accessible to everyone, regardless of how they perceive content. For example, it’s essential to support VoiceOver, which describes onscreen content to help people get information and navigate without needing to see the screen (to learn more about VoiceOver, see [Vision](https://www.apple.com/accessibility/vision/)). In addition to supplying accessibility labels that describe the components of your chart, you can enhance the VoiceOver experience by also using Audio Graphs. [Audio Graphs](https://developer.apple.com/documentation/accessibility/audio_graphs) provides chart information to VoiceOver, which constructs a set of tones that audibly represent a chart’s data values and their trend; it also lets you present high-level text summaries that provide additional context. For guidance, see [Enhancing the accessibility of a chart](https://developer.apple.com/design/human-interface-guidelines/components/content/charts#enhancing-the-accessibility-of-a-chart).
+> 앱의 모든 차트에 액세스할 수 있도록 합니다. 차트는 모든 인포그래픽과 마찬가지로 콘텐츠를 인식하는 방식에 관계없이 모든 사용자가 완전히 액세스할 수 있어야 합니다. 예를 들어 VoiceOver에 대한 자세한 내용은 VoiceOver를 참조하십시오. VoiceOver에 대한 내용은 화면을 볼 필요 없이 정보를 얻고 탐색할 수 있도록 화면 콘텐츠를 설명하는 VoiceOver를 지원하는 것이 중요합니다. 차트의 구성 요소를 설명하는 접근성 레이블을 제공할 뿐만 아니라 오디오 그래프를 사용하여 VoiceOver 경험을 향상시킬 수 있습니다. 오디오 그래프는 차트의 데이터 값과 추세를 청각적으로 나타내는 톤 집합을 구성하는 VoiceOver에 차트 정보를 제공합니다. 또한 고급 텍스트를 표시할 수 있습니다.추가 컨텍스트를 제공하는 요약. 자세한 내용은 차트의 접근성 향상을 참조하십시오.
+>
+
+
+
+
+**Let people interact with the data when it makes sense, but don’t require interaction to reveal critical information.** In Stocks, for example, people are often most interested in a stock’s performance over time, so the app displays a line graph that depicts performance during the time period people choose, such as one day, three months, or five years. If people want to explore additional details, they can drag a vertical indicator through the line graph, revealing the value at the selected time.
+> 예를 들어 주식의 경우 사람들은 시간이 지남에 따라 주식의 성과에 가장 관심을 가지기 때문에 앱에는 하루, 3개월 또는 5년 등 사람들이 선택한 기간 동안의 성과를 보여주는 선 그래프가 표시됩니다.. 추가 세부 정보를 탐색하려는 경우 선 그래프를 통해 수직 표시기를 끌어서 선택한 시간에 값을 표시할 수 있습니다.
+>
+
+
+
+
+**Make it easy for everyone to interact with a chart.** Sometimes, chart marks are too small to target with a finger or a pointer, making your chart hard to use for people with reduced motor control and uncomfortable for everyone. When this is the case, consider expanding the hit target to include the entire plot area, letting people scrub across the area to reveal various values.
+> 모든 사람이 차트를 쉽게 사용할 수 있도록 합니다. 때로는 차트 표시가 너무 작아서 손가락이나 포인터로 표적을 표시할 수 없기 때문에 모터 제어 기능이 저하된 사람이 차트를 사용하기 어렵고 모든 사람이 불편합니다. 이 경우 적중 대상을 전체 플롯 영역을 포함하도록 확장하여 사람들이 영역을 가로질러 다양한 값을 나타낼 수 있도록 하는 것을 고려해 보십시오.
+>
+
+
+
+
+**Make an interactive chart easy to navigate when using keyboard commands (including full keyboard access) or Switch Control.** By default, these input types tend to visit individual onscreen elements in a linear sequence, such as the sequence of values in a data file. If you want to enable a custom navigation experience in your chart, here are two main ways to do so. The first way is to use accessibility APIs (such as [accessibilityRespondsToUserInteraction(_:)](https://developer.apple.com/documentation/swiftui/label/accessibilityrespondstouserinteraction(_:)/)) to specify a logical and predictable path through your chart’s information. For example, you might want to let people navigate along the X axis instead of jumping back and forth. The second way — which is particularly useful if you need to present a very large dataset — is to let people move focus among subsets of values instead of navigating through all individual data points. Note that both of these customizations can also enhance the VoiceOver experience, even when your chart isn’t interactive. For guidance, see [Accessibility > Navigation](https://developer.apple.com/design/human-interface-guidelines/foundations/accessibility#navigation).
+> 키보드 명령(전체 키보드 액세스 포함) 또는 스위치 제어를 사용할 때 대화형 차트를 쉽게 탐색할 수 있도록 합니다. 기본적으로 이러한 입력 유형은 데이터 파일의 값 순서와 같이 선형 순서로 개별 화면 요소를 방문하는 경향이 있습니다. 차트에서 사용자 지정 탐색 경험을 활성화하려면 다음과 같은 두 가지 주요 방법을 사용하십시오. 첫 번째 방법은 접근성 API(예: accessibilityResponseToUserInteraction(_:/))를 사용하여 차트의 정보를 통해 논리적이고 예측 가능한 경로를 지정하는 것입니다. 예를 들어, 사람들이 앞뒤로 점프하는 대신 X축을 따라 탐색하도록 할 수 있습니다. 매우 큰 데이터 세트를 제공해야 하는 경우 특히 유용한 두 번째 방법은 사람들이 모든 개별 데이터 지점을 탐색하는 대신 값의 하위 집합 간에 포커스를 이동할 수 있도록 하는 것입니다. 이러한 사용자 지정은 차트가 대화형으로 되어 있지 않은 경우에도 VoiceOver 환경을 향상시킬 수 있습니다. 자세한 내용은 내게 필요한 옵션 > 탐색을 참조하십시오.
+>
+
+
+
+
+**Help people notice important changes in a chart.** For example, if people don’t notice when marks or axes change, they can misread a chart. Animating such changes can help people notice them, but you need to highlight the changes in other ways, too, to ensure that VoiceOver users and people who turn off animations know about them. For developer guidance, see [UIAccessibility.Notification](https://developer.apple.com/documentation/uikit/uiaccessibility/notification) (UIKit) or [NSAccessibility.Notification](https://developer.apple.com/documentation/appkit/nsaccessibility/notification) (AppKit).
+> 사용자가 차트에서 중요한 변경 사항을 알아차릴 수 있도록 도와줍니다. 예를 들어, 표시나 축이 변경될 때 사용자가 알아차리지 못하면 차트를 잘못 읽을 수 있습니다. 이러한 변경 내용을 애니메이션으로 만들면 사람들이 해당 변경 내용을 알아차리는 데 도움이 될 수 있지만, VoiceOver 사용자와 애니메이션을 해제한 사용자가 해당 변경 내용을 알 수 있도록 다른 방법으로도 강조 표시해야 합니다. 개발자 지침은 UIAaccessibility를 참조하십시오.알림(UIKit) 또는 NSA 액세스 가능성.알림(AppKit).
+>
+
+
+
+
+**Align a chart with surrounding interface elements.** For example, it often works well to align the leading edge of a chart with the leading edge of other views in a screen. One way to maintain a clean leading edge in a chart is to display the label for each vertical grid line on its trailing side. You might also consider shifting the Y axis to the trailing side of the chart so that its tick labels don't protrude past the chart's leading edge. If you end up with a label that doesn't appear to be associated with anything, you can use a tick to anchor it to a grid line.
+> 차트를 주변 인터페이스 요소와 정렬합니다. 예를 들어 차트의 선행 모서리를 화면에서 다른 보기의 선행 모서리와 정렬하는 것이 좋습니다. 차트에서 깨끗한 선행 모서리를 유지하는 한 가지 방법은 각 수직 그리드 선의 레이블을 후행 측에 표시하는 것입니다. 눈금 레이블이 차트의 선행 모서리를 지나 돌출되지 않도록 Y축을 차트의 후행으로 이동하는 것도 고려할 수 있습니다. 레이블이 아무 것과도 연결되지 않은 것으로 나타나면 체크 표시를 사용하여 그리드 선에 고정할 수 있습니다.
+>
+
+
+
+
+# **Color**
+
+As in all other parts of your interface, using color in a chart can help you clarify information, evoke your brand, and provide visual continuity. For general guidance on using color in ways that everyone can appreciate, see [Inclusive color](https://developer.apple.com/design/human-interface-guidelines/foundations/color#inclusive-color).
+> 인터페이스의 다른 모든 부분과 마찬가지로 차트의 색상을 사용하면 정보를 명확히 하고 브랜드를 환기하며 시각적 연속성을 제공할 수 있습니다. 모든 사람이 인식할 수 있는 방법으로 색상을 사용하는 방법에 대한 일반적인 지침은 포함 색상을 참조하십시오.
+>
+
+
+
+
+**Avoid relying solely on color to differentiate between different pieces of data or communicate essential information in a chart.** Using meaningful color in a chart works well to highlight differences and elevate key details, but it’s crucial to include alternative ways to convey this information so that people can use your chart regardless of whether they can discern colors. One way to supplement color is to use different shapes or patterns to depict different parts of data. For example, in addition to using red and black colors, Health uses two different shapes in the point marks that represent the two components of blood pressure.
+> 서로 다른 데이터를 구별하거나 차트에서 필수적인 정보를 전달하기 위해 색상에만 의존하지 마십시오. 차트에서 의미 있는 색상을 사용하는 것은 차이를 강조하고 주요 세부 사항을 높이는 데 효과적이지만, 사람들이 이 정보를 전달할 수 있는 다른 방법을 포함하는 것이 중요합니다.그들은 색을 구별할 수 있다. 색상을 보완하는 한 가지 방법은 데이터의 다른 부분을 묘사하기 위해 다른 모양이나 패턴을 사용하는 것이다. 예를 들어, Health는 빨간색과 검은색 외에도 혈압의 두 가지 성분을 나타내는 점 표시에 두 가지 다른 모양을 사용합니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/components/content/charts/images/chart-colors_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/content/charts/images/chart-colors_2x.png)
+
+**Aid comprehension by adding visual separation between contiguous areas of color.** For example, in a bar chart that stacks marks in a single row or column, it’s common to assign a different color to each mark. In this design, adding separators between the marks can help people distinguish individual ones.
+> 인접한 색 영역 사이에 시각적 분리를 추가하여 이해를 돕습니다. 예를 들어, 단일 행 또는 열에 표시를 쌓는 막대 차트에서는 각 표시에 다른 색상을 지정하는 것이 일반적입니다. 이 설계에서, 표시 사이에 구분자를 추가하면 사람들이 개별 표시를 구별하는 데 도움이 될 수 있다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/components/content/charts/images/chart-colors-stacked_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/content/charts/images/chart-colors-stacked_2x.png)
+
+# **Enhancing the accessibility of a chart**
+> 차트의 접근성 향상
+>
+
+
+
+
+When you use Swift Charts to create a chart, you get a default implementation of [Audio Graphs](https://developer.apple.com/documentation/accessibility/audio_graphs), in addition to a default accessibility element for each mark (or group of marks) that describes its value.
+> 스위프트 차트를 사용하여 차트를 만들면 각 표시(또는 표시 그룹)에 대한 기본 접근성 요소와 함께 오디오 그래프의 기본 구현이 제공됩니다.
+>
+
+
+
+
+**Consider using Audio Graphs to give VoiceOver users more information about your chart.** You can customize the default Audio Graphs implementation that Swift Charts provides by supplying a chart title and descriptive summary that VoiceOver speaks to help people understand the purpose and main features of your chart. If you don’t use Audio Graphs, you need to provide an overview of the chart’s structure and purpose. For example, you need to identify the chart’s type — such as bar or line — explain what each axis represents, and describe details like the upper and lower axis bounds.
+> 오디오 그래프를 사용하여 VoiceOver 사용자에게 차트에 대한 자세한 정보를 제공하는 것을 고려해 보십시오. Swift Charts에서 제공하는 기본 오디오 그래프 구현을 사용자 지정할 수 있습니다. VoiceOver가 말하는 차트 제목과 설명 요약을 제공하여 차트의 목적과 주요 기능을 이해하는 데 도움이 됩니다. 오디오 그래프를 사용하지 않는 경우 차트의 구조와 목적에 대한 개요를 제공해야 합니다. 예를 들어 막대 또는 선과 같은 차트 유형을 식별하여 각 축이 무엇을 나타내는지 설명하고 위쪽 및 아래쪽 축 경계와 같은 세부 정보를 설명해야 합니다.
+>
+
+
+
+
+**IMPORTANT**Unlike an image — which requires one descriptive accessibility label — a chart often needs to offer an accessibility label for each important or interactive element. Depending on the purpose of your chart and the scope and density of its marks, you need to decide whether it’s essential to describe each mark or whether it improves the accessibility experience to describe groups of marks. In some cases, it can make sense to use a single accessibility label that provides a succinct, high-level description of the chart, such as when you use a small version of a chart in a button that reveals a more detailed version.
+> 중요 - 설명적 접근성 레이블이 하나 필요한 이미지와 달리, 차트는 종종 각 중요 요소 또는 대화형 요소에 대한 접근성 레이블을 제공해야 합니다. 차트의 목적과 표시 범위 및 농도에 따라 각 표시를 설명하는 것이 필수인지 또는 표시 그룹을 설명하는 접근성 환경을 개선하는지 여부를 결정해야 합니다. 경우에 따라서는 보다 자세한 버전이 표시되는 버튼에서 작은 버전의 차트를 사용하는 경우와 같이 차트에 대한 간결하고 높은 수준의 설명을 제공하는 단일 내게 필요한 옵션 레이블을 사용하는 것이 합리적일 수 있습니다.
+>
+
+
+
+
+**Write accessibility labels that support the purpose of your chart.** For example, Maps shows elevation changes for a cycling route using a set of individual bars that each represent the elevation for a small portion of the route. The purpose of the chart is to give people a sense of the terrain for the entire route, not to provide individual elevations. For this reason, Maps provides accessibility labels that summarize the elevation changes in a group of bars; it doesn’t provide an accessibility label per bar. In contrast, Health offers an accessibility label for each bar in the Steps chart, because the purpose of the chart is to give people their actual step count for each tracking period.
+> 차트의 목적을 지원하는 내게 필요한 옵션 레이블을 작성합니다. 예를 들어, 지도는 경로의 작은 부분에 대한 고도를 각각 나타내는 개별 막대를 사용하여 순환 경로에 대한 고도를 변경합니다. 이 차트의 목적은 사람들에게 전체 경로에 대한 지형을 감지하는 것이지 개별 고도를 제공하는 것이 아니다. 이러한 이유로 맵은 막대 그룹의 표고 변화를 요약하는 내게 필요한 옵션 레이블을 제공하지만 막대당 내게 필요한 옵션 레이블을 제공하지 않습니다. 대조적으로, 건강은 단계 차트의 각 막대에 대한 접근성 레이블을 제공합니다. 차트의 목적은 각 추적 기간에 대한 실제 단계 수를 제공하는 것이기 때문입니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/components/content/charts/images/bar-chart-with-voiceover-focus_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/content/charts/images/bar-chart-with-voiceover-focus_2x.png)
+
+For the focused section of this cycling elevation chart, VoiceOver provides the description "From 0.4 miles to 0.7 miles: Climb 70 feet."
+> 이 사이클링 표고 차트의 초점 부분에 대해 VoiceOver는 "0.4마일에서 0.7마일: 70피트를 오르세요."
+>
+
+
+
+
+The following guidelines can help you write useful accessibility labels for chart elements.
+> 다음 지침은 차트 요소에 대한 유용한 접근성 레이블을 작성하는 데 도움이 될 수 있습니다.
+>
+
+
+
+
+- **Prioritize clarity and comprehensiveness.** In general, it’s rarely enough to merely report a data value unless you also include context that helps people understand it, like the date or location that’s associated with it. Aim to concisely describe the context for a value without repeating information that people can get in other ways, like an axis name that Audio Graphs or your overview provides. Follow context-setting information with a succinct description of the element’s details.
+- >  명확성과 포괄성의 우선 순위를 지정합니다. 일반적으로 데이터 값과 관련된 날짜나 위치와 같이 데이터 값을 이해하는 데 도움이 되는 컨텍스트도 포함하지 않는 한 데이터 값을 보고하는 것만으로는 충분하지 않습니다. 오디오 그래프나 개요가 제공하는 축 이름과 같은 다른 방법으로 사람들이 얻을 수 있는 정보를 반복하지 않고 값의 컨텍스트를 간결하게 설명하는 것을 목표로 합니다. 컨텍스트 설정 정보에 따라 요소의 세부 정보를 간략하게 설명합니다.
+
+- **Avoid using subjective terms.** Subjective words — like rapidly, gradually, and almost — communicate your interpretation of the data. To help people form their own interpretations, use actual values in your descriptions.
+- >  주관적인 용어를 사용하지 마십시오. 주관적인 단어(예: 빠르고, 점진적으로, 그리고 거의)는 데이터에 대한 해석을 전달합니다. 사람들이 자신만의 해석을 형성하도록 돕기 위해 설명에서 실제 값을 사용하십시오.
+
+- **Maximize clarity in data descriptions by avoiding potentially ambiguous formats and abbreviations.** For example, using “June 6” is clearer than using “6/6”; similarly, spelling out “60 minutes” or “60 meters” is clearer than using the abbreviation “60m.”
+- >  예를 들어, "6/6"을 사용하는 것보다 "6/6"을 사용하는 것이 더 명확하고, "60분" 또는 "60m"를 사용하는 것이 약어 "60m"를 사용하는 것보다 더 명확하다.
+
+- **Focus on describing what the chart’s details represent, not on what they look like.** Consider a chart that uses red and blue colors to help people visually distinguish two different data series. It’s crucial to create accessibility labels that identify what each series represents, but describing the colors that visually represent them can add unnecessary information and be distracting.
+- >  차트의 세부 정보가 무엇을 나타내는지 설명하는 데 초점을 맞추십시오. 빨간색과 파란색을 사용하여 두 개의 서로 다른 데이터 열을 시각적으로 구별하는 데 도움이 되는 차트를 생각해 보십시오. 각 시리즈가 무엇을 나타내는지 식별하는 접근성 레이블을 만드는 것은 중요하지만, 시각적으로 이를 나타내는 색상을 설명하면 불필요한 정보가 추가되어 주의가 산만해질 수 있습니다.
+
+- **Be consistent throughout your app when referring to a specific axis.**For example, if you always mention the X axis first, people can spend less time figuring out which axis is relevant in a description.
+- >  특정 축을 언급할 때 앱 전체에서 일관성을 유지하십시오.예를 들어 항상 X축을 먼저 언급하면 설명과 관련된 축을 찾는 데 더 적은 시간을 할애할 수 있습니다.
+
+
