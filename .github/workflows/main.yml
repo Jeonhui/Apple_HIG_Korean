@@ -9,8 +9,8 @@ name: Python package
 on:
   schedule:
     - cron: '0 0 * * *'
-#   push:
-#     branches: [ main ]
+  push:
+    branches: [ main ]
 
 
 jobs:
