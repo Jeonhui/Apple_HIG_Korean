@@ -348,3 +348,27 @@ The following guidelines can help you write useful accessibility labels for char
 - >  특정 축을 언급할 때 앱 전체에서 일관성을 유지하십시오.예를 들어 항상 X축을 먼저 언급하면 설명과 관련된 축을 찾는 데 더 적은 시간을 할애할 수 있습니다.
 
 
+**Hide visible text labels for axes and ticks from assistive technologies.**Axis and tick labels help people visually assess trends in a chart and estimate mark values. VoiceOver users can get mark values and trend information through accessibility labels and Audio Graphs, so they don’t generally need the content in the visible labels.
+> 보조 기술에서 축 및 눈금에 대한 가시적인 텍스트 레이블을 숨깁니다.축 및 눈금 레이블은 차트의 추세를 시각적으로 평가하고 표시 값을 추정하는 데 도움이 됩니다. VoiceOver 사용자는 내게 필요한 옵션 레이블과 오디오 그래프를 통해 표시 값과 추세 정보를 얻을 수 있으므로 일반적으로 보이는 레이블에 있는 콘텐츠가 필요하지 않습니다.
+>
+
+
+
+
+# **Platform considerations**
+
+*No additional considerations for iOS, iPadOS, macOS, or tvOS.*
+> iOS, iPadOS, macOS 또는 tvOS에 대한 추가 고려 사항 없음.
+>
+
+
+
+
+# **watchOS**
+
+**In general, avoid requiring complex chart interactions in your watchOS app.** As much as possible, prefer displaying focused, useful information people can get at a glance and enabling simple interactions when they add value. If you also offer a version of your app in another platform, consider using it to display more details and to enable more interaction with your chart. For example, Heart Rate in watchOS displays a chart of the wearer’s heart-rate data for the current day, whereas the Health app on iPhone displays heart-rate data for several different periods of time and enables interactions that let people examine individual marks.
+> 일반적으로 시계에서 복잡한 차트 상호 작용이 필요하지 않습니다.OS 앱. 가능한 한 사람들이 한 눈에 볼 수 있는 집중적이고 유용한 정보를 표시하고 가치를 더할 때 간단한 상호 작용을 가능하게 하는 것을 선호합니다. 다른 플랫폼에서 앱 버전도 제공하는 경우, 자세한 정보를 표시하고 차트와의 상호 작용을 활성화하기 위해 앱을 사용하는 것을 고려해 보십시오. 예를 들어, 손목시계의 심박수OS는 현재 착용자의 심박수 데이터를 보여주는 차트를 표시하는 반면, 아이폰의 Health 앱은 여러 시간 동안 심박수 데이터를 표시하고 사람들이 개별 마크를 검사할 수 있는 상호 작용을 가능하게 한다.
+>
+
+
+
