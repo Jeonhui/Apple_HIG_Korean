@@ -69,9 +69,9 @@
 
 - Content
   - [Charts](./components/content/charts.md)
-  - [Image views](components/content/image-views.md)
-  - [Text views](components/content/text-views.md)
-  - [Web views](components/content/web-views.md)
+  - [Image views](./components/content/image-views.md)
+  - [Text views](./components/content/text-views.md)
+  - [Web views](./components/content/web-views.md)
 - Layout and organization
   - [Boxes](./components/layout-and-organization/boxes.md)
   - [Collections](./components/layout-and-organization/collections.md)
