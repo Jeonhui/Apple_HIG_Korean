@@ -34,3 +34,43 @@ By default, a box uses a visible border or background color to separate its cont
 
 # **Content**
 
+**Provide a succinct introductory title if it helps clarify the box’s contents.** The appearance of a box helps people understand that its contents are related, but it might make sense to provide more detail about the relationship. Also, a title can help VoiceOver users predict the content they encounter within the box.
+> 상자의 내용을 명확히 하는 데 도움이 되는 간단한 소개 제목을 제공하십시오. 상자의 모양은 사람들이 상자의 내용이 관련이 있다는 것을 이해하는 데 도움이 되지만 관계에 대해 더 자세히 설명하는 것이 이치에 맞을 수 있습니다. 또한 제목은 VoiceOver 사용자가 상자 내에서 접하는 내용을 예측하는 데 도움이 될 수 있습니다.
+>
+
+
+
+
+**If you need a title, write a brief phrase that describes the contents.** Use sentence-style capitalization. Avoid ending punctuation unless you use a box in a settings pane, where you append a colon to the title.
+> 제목이 필요하면 내용을 설명하는 간단한 구절을 쓰십시오. 문장 형식의 대문자를 사용하십시오. 제목에 콜론을 추가하는 설정 영역에서 상자를 사용하지 않는 경우 구두점을 종료하지 마십시오.
+>
+
+
+
+
+# **Platform considerations**
+
+*Not supported in tvOS or watchOS.*
+> tvOS 또는 시계에서 지원되지 않음OS.
+>
+
+
+
+
+# **iOS, iPadOS**
+
+By default, iOS and iPadOS use the secondary and tertiary background [colors](../foundations/color)in boxes.
+> 기본적으로 iOS 및 iPadOS는 박스에 2차 및 3차 배경색을 사용한다.
+>
+
+
+
+
+# **macOS**
+
+By default, macOS displays a box’s title above it.
+> 기본적으로 macOS는 상자 위에 상자 제목을 표시합니다.
+>
+
+
+
