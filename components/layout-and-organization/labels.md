@@ -111,3 +111,24 @@ In addition to using SwiftUI [Label](https://developer.apple.com/documentation/
 
 
 
+A [date label](https://developer.apple.com/documentation/watchkit/wkinterfacedate) (shown below on the left) displays the current date, the current time, or a combination of both. You can configure a date label to use a variety of formats, calendars, and time zones. After configuration, a date label updates its value without further input from your app. A [timer label](https://developer.apple.com/documentation/watchkit/wkinterfacetimer) (shown below on the right) displays a precise countdown or count-up timer. You can configure a timer label to display its count value in a variety of formats. After configuration, a timer label counts down or up without further input from your app.
+> 날짜 레이블(왼쪽 아래 표시)은 현재 날짜, 현재 시간 또는 둘의 조합을 표시합니다. 다양한 형식, 달력 및 표준시를 사용하도록 날짜 레이블을 구성할 수 있습니다. 구성 후 날짜 라벨은 앱에서 추가 입력 없이 해당 값을 업데이트합니다. 타이머 라벨(오른쪽 아래 표시)은 정확한 카운트다운 또는 카운트업 타이머를 표시합니다. 타이머 레이블을 구성하여 카운트 값을 다양한 형식으로 표시할 수 있습니다. 구성 후 타이머 라벨은 앱에서 추가 입력 없이 카운트다운하거나 카운트업합니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/components/layout-and-organization/labels/images/dates-timers-mail_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/layout-and-organization/labels/images/dates-timers-mail_2x.png)
+
+Date label
+
+![https://developer.apple.com/design/human-interface-guidelines/components/layout-and-organization/labels/images/dates-timers-stopwatch_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/layout-and-organization/labels/images/dates-timers-stopwatch_2x.png)
+
+Timer label
+
+**Consider using date and timer labels in complications.** When you use the system-provided date and timer labels, watchOS automatically adjusts the presentation of the label content to fit the available space. For guidance, see [Complications](../components/system-experiences/complications); for developer guidance, see [CLKRelativeDateTextProvider](https://developer.apple.com/documentation/clockkit/clkrelativedatetextprovider).
+> 복잡한 경우 날짜 및 타이머 라벨을 사용하는 것을 고려하십시오. 시스템에서 제공하는 날짜 및 타이머 라벨을 사용할 경우,OS는 사용 가능한 공간에 맞게 라벨 콘텐츠의 표시를 자동으로 조정합니다. 자세한 내용은 합병증을 참조하십시오. 개발자 지침은 CLKRelativeDateTextProvider를 참조하십시오.
+>
+
+
+
