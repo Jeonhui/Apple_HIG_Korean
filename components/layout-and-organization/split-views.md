@@ -127,3 +127,9 @@ In tvOS, a split view can work well to enable content filtering. When people cho
 
 
 
+**Choose the title’s alignment based on the type of content the secondary pane contains.** Specifically, when the secondary pane contains a content collection, consider centering the title in the window. In contrast, if the secondary pane contains a single main view of important content, consider placing the title above the primary view to give the content more room.
+> 보조 창에 포함된 내용 유형에 따라 제목의 정렬을 선택합니다. 특히 보조 창에 내용 모음이 있을 경우 창의 가운데에 제목을 지정하십시오. 이와는 대조적으로, 보조 영역에 중요한 내용의 기본 보기가 하나 포함되어 있는 경우, 제목을 기본 보기 위에 배치하여 내용에 더 많은 공간을 제공하십시오.
+>
+
+
+
