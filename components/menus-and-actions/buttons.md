@@ -284,3 +284,109 @@ Help buttons are circular, consistently sized buttons that contain a question ma
 
 
 
+**Include no more than one help button per window.** Multiple help buttons in the same context make it hard for people to predict the result of clicking one.
+> 한 창당 도움말 단추를 하나만 포함하십시오. 동일한 컨텍스트에 있는 여러 개의 도움말 단추는 사용자가 한 개의 도움말 단추를 클릭하는 결과를 예측하기 어렵게 합니다.
+>
+
+
+
+
+**Position help buttons where people expect to find them.** Use the following locations for guidance.
+> 도움말 버튼을 찾을 수 있는 위치에 놓으십시오. 안내를 위해 다음 위치를 사용하십시오.
+>
+
+
+
+
+| View style | Help button location |
+| --- | --- |
+| Dialog with dismissal buttons (like OK and Cancel) | Lower corner, opposite to the dismissal buttons and vertically aligned with them |
+| Dialog without dismissal buttons | Lower-left or lower-right corner |
+| Settings window or pane | Lower-left or lower-right corner |
+
+**Use a help button within a view, not in the window frame.** For example, avoid placing a help button in a toolbar or status bar.
+> 창 프레임이 아닌 보기 내에서 도움말 단추를 사용합니다. 예를 들어, 도구 모음이나 상태 표시줄에 도움말 단추를 배치하지 마십시오.
+>
+
+
+
+
+**Avoid displaying text that introduces a help button.** People know what a help button does, so they don’t need additional descriptive text.
+> 도움말 단추가 포함된 텍스트를 표시하지 않도록 합니다. 도움말 단추의 기능을 알고 있으므로 추가 설명 텍스트가 필요하지 않습니다.
+>
+
+
+
+
+### **Image buttons**
+
+An image button appears in a view and displays an image, symbol, or interface icon. You can configure an image button to behave like a push button, toggle, or pop-up button.
+> 이미지 단추는 보기에 나타나고 이미지, 기호 또는 인터페이스 아이콘을 표시합니다. 누름 단추, 전환 단추 또는 팝업 단추처럼 동작하도록 이미지 단추를 구성할 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/components/menus-and-actions/buttons/images/image-buttons-macos_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/menus-and-actions/buttons/images/image-buttons-macos_2x.png)
+
+**Use an image button in a view, not in the window frame.** For example, avoid placing an image button in a toolbar or status bar. If you need to use an image as a button in a toolbar, use a toolbar item. See [Toolbars](../components/menus-and-actions/toolbars).
+> 창 프레임이 아닌 보기에서 이미지 단추를 사용합니다. 예를 들어, 도구 모음이나 상태 표시줄에 이미지 단추를 배치하지 마십시오. 이미지를 도구 모음에서 단추로 사용해야 하는 경우 도구 모음 항목을 사용합니다. 도구 모음을 참조하십시오.
+>
+
+
+
+
+**Include about 10 pixels of padding between the edges of the image and the button edges.** An image button’s edges define its clickable area even when they aren’t visible. Including padding ensures that a click registers correctly even if it’s not precisely within the image. In general, avoid including a system-provided border in an image button; for developer guidance, see [isBordered](https://developer.apple.com/documentation/appkit/nsbutton/1525565-isbordered/).
+> 이미지의 가장자리와 단추 가장자리 사이에 약 10픽셀의 패딩을 포함합니다. 이미지 단추의 가장자리는 보이지 않을 때에도 클릭 가능한 영역을 정의합니다. 패딩을 포함하면 클릭 한 번이 정확하게 이미지 내에 있지 않더라도 올바르게 등록됩니다. 일반적으로 이미지 단추에 시스템이 제공하는 테두리를 포함하지 마십시오. 개발자 지침은 경계선을 참조하십시오.
+>
+
+
+
+
+**If you need to include a label, position it below the image button.** For related guidance, see [Labels](../components/layout-and-organization/labels).
+> 레이블을 포함해야 하는 경우 이미지 단추 아래에 레이블을 배치합니다. 관련 지침은 레이블을 참조하십시오.
+>
+
+
+
+
+# **watchOS**
+
+**Prefer buttons that span the width of the screen.** Full-width buttons look better and are easier for people to tap. If two buttons must share the same horizontal space, use the same height for both, and use images or short text titles for each button’s content.
+> 화면 너비에 걸쳐 있는 단추를 선택합니다. 전체 너비의 단추가 더 보기 좋고 사람들이 누르기 쉽습니다. 두 단추가 동일한 수평 공간을 공유해야 하는 경우 두 단추 모두에 동일한 높이를 사용하고 각 단추의 내용에 대해 이미지 또는 짧은 텍스트 제목을 사용합니다.
+>
+
+
+
+
+**Use the same height for vertical stacks of one- and two-line text buttons.** As much as possible, use identical button heights for visual consistency.
+> 한 줄과 두 줄 텍스트 단추의 수직 스택에 동일한 높이를 사용합니다. 시각적 일관성을 위해 가능한 한 동일한 단추 높이를 사용하십시오.
+>
+
+
+
+
+**Use the system-defined corner radius.** The system defines corner radius values that provide a consistent visual style across apps and reinforce the interactivity of buttons. In Apple Watch Series 4 and later, corner radius values differ depending on whether the button is in a scrolling or nonscrolling view.
+> 시스템 정의 코너 반지름을 사용합니다. 시스템은 앱 전체에서 일관된 시각적 스타일을 제공하고 버튼의 상호 작용을 강화하는 코너 반지름 값을 정의합니다. Apple Watch 시리즈 4 이상에서는 버튼이 스크롤 보기인지 아니면 비스크롤 보기인지에 따라 코너 반지름 값이 달라집니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/components/menus-and-actions/buttons/images/buttons-pinned-watchos_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/menus-and-actions/buttons/images/buttons-pinned-watchos_2x.png)
+
+In nonscrolling views, buttons use a 22-point corner radius.
+> 스크롤하지 않는 뷰에서 버튼은 22포인트 모서리 반경을 사용합니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/components/menus-and-actions/buttons/images/buttons-scroll-view-watchos_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/menus-and-actions/buttons/images/buttons-scroll-view-watchos_2x.png)
+
+In scrolling views, buttons use a 9-point corner radius.
+> 스크롤 보기에서 버튼은 9점 코너 반지름을 사용합니다.
+>
+
+
+

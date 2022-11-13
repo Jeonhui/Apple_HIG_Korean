@@ -57,3 +57,4 @@
  | 2022-11-10 02:05:25 | ./components/layout-and-organization/split-views.md | 53 | 9774 | 
  | 2022-11-11 02:05:15 | ./components/menus-and-actions/buttons.md | 9 | 9968 | 
  | 2022-11-12 02:00:38 | ./components/menus-and-actions/buttons.md | 108 | 9967 | 
+ | 2022-11-13 02:00:23 | ./components/menus-and-actions/dock-menus.md | 9 | 9801 | 
