@@ -127,15 +127,15 @@
   - [Progress indicators](./components/status/progress-indicators.md)
   - [Rating indicators](./components/status/rating-indicators.md)
 - System experiences
-  - [Complications](./components/status/complications.md)
-  - [Home Screen quick actions](./components/status/home-screen-quick-actions.md)
-  - [Live Activities](./components/status/live-activities.md)
-  - [The menu bar](./components/status/the-menu-bar.md)
-  - [Notifications](./components/status/notifications.md)
-  - [Status bars](./components/status/status-bars.md)
-  - [Top Shelf](./components/status/top-shelf.md)
-  - [Watch faces](./components/status/watch-faces.md)
-  - [Widgets](./components/status/widgets.md)
+  - [Complications](./components/system-experiences/complications.md)
+  - [Home Screen quick actions](./components/system-experiences/home-screen-quick-actions.md)
+  - [Live Activities](./components/system-experiences/live-activities.md)
+  - [The menu bar](./components/system-experiences/the-menu-bar.md)
+  - [Notifications](./components/system-experiences/notifications.md)
+  - [Status bars](./components/system-experiences/status-bars.md)
+  - [Top Shelf](./components/system-experiences/top-shelf.md)
+  - [Watch faces](./components/system-experiences/watch-faces.md)
+  - [Widgets](./components/system-experiences/widgets.md)
   
 ---
 
