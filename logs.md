@@ -37,18 +37,6 @@
  | 2022-10-21 02:06:17 | ./patterns/settings.md | 21 | 9784 | 
  | 2022-10-22 02:24:20 | ./components/content/charts.md | 46 | 9848 | 
  | 2022-10-23 02:34:15 | ./components/content/charts.md | 0 | 0 | 
- | 2022-10-24 02:48:36 | ./components/content/charts.md | 0 | 0 | 
- | 2022-10-25 02:40:39 | ./components/content/charts.md | 0 | 0 | 
- | 2022-10-26 02:18:10 | ./components/content/charts.md | 0 | 0 | 
- | 2022-10-27 02:10:29 | ./components/content/charts.md | 0 | 0 | 
- | 2022-10-28 02:24:07 | ./components/content/charts.md | 0 | 0 | 
- | 2022-10-29 02:05:20 | ./components/content/charts.md | 0 | 0 | 
- | 2022-10-30 02:29:15 | ./components/content/charts.md | 0 | 0 | 
- | 2022-10-31 02:27:35 | ./components/content/charts.md | 0 | 0 | 
- | 2022-11-01 02:34:55 | ./components/content/charts.md | 0 | 0 | 
- | 2022-11-02 02:24:30 | ./components/content/charts.md | 0 | 0 | 
- | 2022-11-03 02:05:23 | ./components/content/charts.md | 0 | 0 | 
- | 2022-11-04 02:10:36 | ./components/content/charts.md | 0 | 0 | 
  | 2022-11-05 02:04:05 | ./components/content/charts.md | 83 | 9380 | 
  | 2022-11-06 02:09:33 | ./components/content/charts.md | 129 | 9700 | 
  | 2022-11-07 03:17:55 | ./components/layout-and-organization/boxes.md | 15 | 8544 | 
@@ -56,3 +44,10 @@
  | 2022-11-09 02:12:17 | ./components/layout-and-organization/lockups.md | 31 | 9879 | 
  | 2022-11-10 02:05:25 | ./components/layout-and-organization/split-views.md | 53 | 9774 | 
  | 2022-11-11 02:05:15 | ./components/menus-and-actions/buttons.md | 9 | 9968 | 
+ | 2022-11-12 02:00:38 | ./components/menus-and-actions/buttons.md | 108 | 9967 | 
+ | 2022-11-13 02:00:23 | ./components/menus-and-actions/dock-menus.md | 9 | 9801 | 
+ | 2022-11-14 01:59:17 | ./components/menus-and-actions/menus.md | 26 | 9892 | 
+ | 2022-11-15 01:58:36 | ./components/menus-and-actions/pull-down-buttons.md | 5 | 9900 | 
+ | 2022-11-16 01:58:23 | ./components/menus-and-actions/toolbars.md | 60 | 9650 | 
+ | 2022-11-17 01:58:43 | ./components/menus-and-actions/toolbars.md | 126 | 9491 | 
+ | 2022-11-18 02:01:53 | ./components/navigation-and-search/search-fields.md | 15 | 9969 | 
