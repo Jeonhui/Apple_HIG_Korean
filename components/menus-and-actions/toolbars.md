@@ -331,3 +331,20 @@ Toolbar buttons are available in watchOS 7 and later; for developer guidance, se
 
 
 
+**Use a toolbar button for an important action that isn’t a primary app function.** A toolbar button gives you the flexibility to offer important functionality in a view whose primary purpose is related to that functionality, but may not be the same. For example, Mail provides the essential New Message action in a toolbar button at the top of the Inbox view. The primary purpose of the Inbox is to display a scrollable list of email messages, so it makes sense to offer the closely related compose action in a toolbar button at the top of the view.
+> 기본 앱 기능이 아닌 중요한 작업에는 도구 모음 단추를 사용합니다. 도구 모음 단추를 사용하면 해당 기능과 관련된 주요 목적을 가진 보기에서 중요한 기능을 제공할 수 있지만 동일하지 않을 수도 있습니다. 예를 들어, 메일은 받은 문서 보기의 맨 위에 있는 도구줄 단추에서 기본적인 새 메시지 수행을 제공합니다. 받은 편지함의 기본 목적은 스크롤 가능한 전자 메일 메시지 목록을 표시하는 것이므로 보기 맨 위의 도구 모음 단추에서 밀접하게 관련된 작성 작업을 제공하는 것이 좋습니다.
+>
+
+
+
+
+**Prefer a single, full-width toolbar button.** Displaying multiple toolbar buttons — whether stacked or side by side — can complicate the view and require people to make sure they’ve discovered the full set of actions before making a choice. If you’re considering more than one toolbar button, also consider whether your app needs a separate view to enable these essential actions.
+> 여러 개의 도구 모음 단추를 겹치거나 나란히 표시하면 보기가 복잡해지고 사용자가 선택하기 전에 전체 작업 집합을 발견했는지 확인해야 합니다. 두 개 이상의 도구 모음 단추를 고려하는 경우 이러한 필수 작업을 활성화하기 위해 앱에 별도의 보기가 필요한지 여부도 고려하십시오.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/components/menus-and-actions/toolbars/images/toolbar-button-hidden_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/menus-and-actions/toolbars/images/toolbar-button-hidden_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/components/menus-and-actions/toolbars/images/toolbar-button-revealed_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/menus-and-actions/toolbars/images/toolbar-button-revealed_2x.png)
