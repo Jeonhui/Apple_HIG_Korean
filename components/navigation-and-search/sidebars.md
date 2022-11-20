@@ -142,3 +142,30 @@ A sidebar’s row height, text, and glyph size depend on its overall size, which
 
 
 
+**Avoid stylizing your app by specifying a fixed color for all sidebar icons.** By default, sidebar icons use the current [accent color](https://developer.apple.com/design/human-interface-guidelines/foundations/color/#app-accent-colors) and people expect to see their chosen accent color throughout all the apps they use. Although a fixed color can help clarify the meaning of an icon, you want to make sure that most sidebar icons display the color people choose.
+> 기본적으로 사이드바 아이콘은 현재 액센트 색상을 사용하며 사용하는 모든 앱에서 사용자가 선택한 액센트 색상을 볼 수 있습니다. 고정된 색상은 아이콘의 의미를 명확히 하는 데 도움이 될 수 있지만 대부분의 사이드바 아이콘은 사용자가 선택한 색상을 표시합니다.
+>
+
+
+
+
+**If necessary, apply the correct background appearance to a sidebar.** If you’re not using SwiftUI to create a sidebar in your macOS app, you may need to specify an opaque background for when the window contains more than one sidebar, or when using a sidebar in a panel or settings window. In all other use cases, use a translucent background for the sidebar.
+> 필요한 경우 사이드바에 올바른 배경 모양을 적용합니다. Swift를 사용하지 않는 경우UI를 사용하여 macOS 앱에 사이드바를 만들려면 창에 둘 이상의 사이드바가 있거나 패널 또는 설정 창에서 사이드바를 사용할 때 불투명한 배경을 지정해야 할 수 있습니다. 다른 모든 사용 사례에서는 사이드바에 반투명 배경을 사용하십시오.
+>
+
+
+
+
+**Consider automatically hiding and revealing a sidebar when its container window resizes.** For example, reducing the size of a Mail viewer window can automatically collapse its sidebar, making more room for message content.
+> 메일 뷰어 창의 크기를 줄이면 사이드바가 자동으로 축소되어 메시지 내용을 저장할 수 있는 공간이 늘어날 수 있습니다.
+>
+
+
+
+
+**In an editable sidebar, avoid placing edit buttons at the bottom edge of the view.** Consider providing buttons that add, remove, manipulate, or get information about items. Buttons at the bottom of the sidebar can hide when the bottom edge of the window is offscreen. To let people add a new sidebar group, include an Add (+) button on the trailing side of the group’s label, next to the [disclosure triangle](https://developer.apple.com/design/human-interface-guidelines/components/layout-and-organization/disclosure-controls/#disclosure-triangles). Enable other actions, like remove, in a context menu or in a menu bar menu. For example, in addition to providing the New Mailbox command in a context menu, Mail also lists it in the Mailbox menu.
+> 편집 가능한 사이드바에서는 편집 단추를 보기의 아래쪽 가장자리에 배치하지 마십시오. 항목에 대한 정보를 추가, 제거, 조작 또는 가져오는 단추를 제공하는 것이 좋습니다. 창의 하단 가장자리가 화면 밖에 있을 때 사이드바 하단의 단추를 숨길 수 있습니다. 사용자가 새 사이드바 그룹을 추가할 수 있도록 하려면 그룹 레이블의 뒤에 있는 공개 삼각형 옆에 추가(+) 단추를 포함합니다. 상황에 맞는 메뉴 또는 메뉴 모음 메뉴에서 제거와 같은 다른 작업을 활성화합니다. 예를 들어, 상황에 맞는 메뉴에서 새 사서함 명령을 제공하는 것 외에도 메일은 사서함 메뉴에도 이 명령을 나열합니다.
+>
+
+
+
