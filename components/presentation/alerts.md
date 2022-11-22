@@ -114,3 +114,84 @@ In all platforms, alerts display a title, optional informative text, and up to t
 
 # **Buttons**
 
+**Create succinct, logical button titles.** Aim for a one- or two-word title that describes the result of selecting the button. Prefer verbs and verb phrases that relate directly to the alert text — for example, “View All,” “Reply,” or “Ignore.” In informational alerts only, you can use “OK” for acceptance, avoiding “Yes” and “No.” Always use “Cancel” to title a button that cancels the alert’s action. As with all button titles, use [title-style capitalization](https://help.apple.com/applestyleguide/#/apsgb744e4a3?sub=apdca93e113f1d64) and no ending punctuation.
+> 간결하고 논리적인 단추 제목을 만듭니다. 단추를 선택한 결과를 설명하는 한 두 단어 제목을 목표로 합니다. 경고 텍스트와 직접 관련된 동사 및 동사 구(예: "모두 보기", "응답" 또는 "무시")를 선호합니다. 정보 알림에서만 "확인"을 사용하여 "예"와 "아니오"를 피하도록 허용할 수 있습니다. 경고 작업을 취소하는 단추의 제목을 지정하려면 항상 "취소"를 사용하십시오. 모든 단추 제목과 마찬가지로 제목 스타일의 대문자를 사용하고 끝 문장 부호를 사용하지 마십시오.
+>
+
+
+
+
+**Avoid using OK as the default button title unless the alert is purely informational.** The meaning of “OK” can be unclear even in alerts that ask people to confirm that they want to do something. For example, does “OK” mean “OK, I want to complete the action” or “OK, I now understand the negative results my action would have caused”? A specific button title like “Erase,” “Convert,” “Clear,” or “Delete” helps people understand the action they’re taking.
+> 경고가 순전히 정보를 제공하는 경우가 아니면 확인을 기본 단추 제목으로 사용하지 마십시오. "확인"의 의미는 사람들에게 무언가를 하고 싶은지 묻는 경고에서도 불분명할 수 있습니다. 예를 들어, "OK"는 "OK, 작업을 완료하고 싶다" 또는 "OK, 이제 내 작업이 초래했을 부정적인 결과를 이해한다"를 의미합니까? "지우기", "변환", "지우기" 또는 "삭제"와 같은 특정 단추 제목은 사용자가 수행하는 작업을 이해하는 데 도움이 됩니다.
+>
+
+
+
+
+**Place buttons where people expect.** In general, place the button people are most likely to choose on the trailing side in a row of buttons or at the top in a stack of buttons. Always place the default button on the trailing side of a row or at the top of a stack. Cancel buttons are typically on the leading side of a row or at the bottom of a stack.
+> 사람들이 예상하는 곳에 버튼을 놓습니다. 일반적으로, 사람들이 선택할 가능성이 가장 높은 버튼을 버튼의 열에 놓거나 버튼의 맨 위에 배치합니다. 기본 버튼은 항상 행의 뒤쪽 또는 스택의 맨 위에 배치하십시오. 취소 단추는 일반적으로 행의 맨 앞이나 스택의 맨 아래에 있습니다.
+>
+
+
+
+
+**Identify destructive buttons.** If an alert button results in a destructive action, like deleting content, specify the destructive button style to help people recognize it.
+> 삭제 단추를 식별합니다. 경고 단추로 인해 내용 삭제와 같은 삭제 작업이 발생할 경우 사용자가 쉽게 인식할 수 있도록 삭제 단추 스타일을 지정하십시오.
+>
+
+
+
+
+**Include a Cancel button when there’s a destructive action.** A Cancel button provides a clear, safe way to avoid a destructive action. Consider making the Cancel button the default button so that people must intentionally choose a button other than the default to continue with the destructive action. Always use the title “Cancel” for a button that cancels an alert’s action.
+> 파괴 작업이 있을 때 취소 단추를 포함합니다. 취소 단추는 파괴 작업을 방지하는 명확하고 안전한 방법을 제공합니다. 삭제 작업을 계속하려면 사용자가 의도적으로 기본값이 아닌 다른 단추를 선택해야 하므로 취소 단추를 기본 단추로 설정하는 것을 고려하십시오. 알림 작업을 취소하는 단추에는 항상 "취소"라는 제목을 사용하십시오.
+>
+
+
+
+
+**Enable alternative ways to cancel an alert when it makes sense.** In addition to choosing a Cancel button, people appreciate using keyboard shortcuts or other quick ways to cancel an onscreen alert. For example:
+> 다른 방법으로 알림을 취소할 수 있습니다. 취소 단추를 선택하는 것 외에도 키보드 단축키나 다른 빠른 방법으로 알림을 취소할 수 있습니다. 예:
+>
+
+
+
+
+| Action | Platform |  |
+| --- | --- | --- |
+| Exit to the Home Screen | iOS, iPadOS |  |
+| Pressing Escape (Esc) or Command-Period (.) on an attached keyboard | macOS, iOS, iPadOS |  |
+| Pressing Menu on the remote | tvOS |  |
+
+# **Platform considerations**
+
+*No additional considerations for tvOS or watchOS.*
+> TVOS 또는 시계에 대한 추가 고려 사항 없음운영 체제
+>
+
+
+
+
+# **iOS, iPadOS**
+
+**Use an action sheet — not an alert — to offer choices related to an intentional action.** For example, when people cancel the Mail message they’re editing, an action sheet provides three choices: delete the edits (or the entire draft), save the draft, or return to editing. Although an alert can also help people confirm or cancel an action that has destructive consequences, it doesn’t provide additional choices related to the action. For guidance, see [Action sheets](../components/presentation/action-sheets).
+> 사용자가 편집 중인 메일 메시지를 취소할 때 작업 시트는 편집 내용 삭제(또는 전체 초안 저장) 또는 편집으로 돌아가기의 세 가지 선택사항을 제공합니다. 경고는 또한 사람들이 파괴적인 결과를 초래하는 작업을 확인하거나 취소하는 데 도움이 될 수 있지만, 해당 작업과 관련된 추가 선택을 제공하지는 않습니다. 자세한 내용은 작업 시트를 참조하십시오.
+>
+
+
+
+
+**When possible, avoid displaying an alert that scrolls.** Although an alert might scroll if the text size is large enough, be sure to minimize the potential for scrolling by keeping alert titles short and including a brief message only when necessary.
+> 텍스트 크기가 충분히 크면 경보가 스크롤될 수 있지만 필요한 경우에만 경고 제목을 짧게 유지하고 간단한 메시지를 포함하여 스크롤 가능성을 최소화해야 합니다.
+>
+
+
+
+
+# **macOS**
+
+**Use a caution symbol sparingly.** Using a caution symbol like `exclamationmark.triangle` too frequently in your alerts diminishes its significance. Use the symbol only when extra attention is really needed, as when confirming an action that might result in unexpected loss of data. Don’t use the symbol for tasks whose only purpose is to overwrite or remove data, such as a save or empty trash.
+> 경고에 느낌표.삼각형과 같은 주의 기호를 너무 자주 사용하면 경고의 중요성이 감소합니다. 예기치 않은 데이터 손실을 초래할 수 있는 작업을 확인할 때와 같이, 추가적인 주의가 필요한 경우에만 기호를 사용하십시오. 저장 또는 휴지통 비우기와 같이 데이터를 덮어쓰거나 제거하는 것이 유일한 목적인 태스크에는 기호를 사용하지 마십시오.
+>
+
+
+
