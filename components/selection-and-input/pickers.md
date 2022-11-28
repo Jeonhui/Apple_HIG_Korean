@@ -213,3 +213,18 @@ You can configure a picker to display an outline, caption, and scrolling indicat
 
 
 
+**Use captions to clarify the meaning of items or of the picker itself.** You can assign unique captions to an item if it helps to clarify its meaning. Alternatively, you can assign the same caption to all items to clarify the purpose of the picker itself.
+> 캡션을 사용하여 항목 또는 선택 도구 자체의 의미를 명확히 합니다. 항목의 의미를 명확히 하는 데 도움이 되는 경우 항목에 고유한 캡션을 할당할 수 있습니다. 또는 모든 항목에 동일한 캡션을 할당하여 선택 도구 자체의 목적을 명확히 할 수 있습니다.
+>
+
+
+
+
+**Display a scroll indicator when the total number of items might not be obvious.** A scroll indicator reflects the total number of items in a picker and indicates the current position within the list. A scroll indicator is unnecessary when the sequence and number of items is obvious, such as when specifying the number of seconds for a timer.
+> 총 항목 수가 명확하지 않을 때 스크롤 표시기를 표시합니다. 스크롤 표시기는 선택기의 총 항목 수를 나타내며 목록 내의 현재 위치를 나타냅니다. 타이머에 초를 지정하는 경우와 같이 순서와 항목 수가 명확한 경우에는 스크롤 표시기가 필요하지 않습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/components/selection-and-input/pickers/images/pickers-scroller_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/selection-and-input/pickers/images/pickers-scroller_2x.png)
