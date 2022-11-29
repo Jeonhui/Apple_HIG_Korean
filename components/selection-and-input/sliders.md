@@ -137,3 +137,9 @@ A slider is a horizontal track — appearing as a set of discrete steps or as a 
 
 ![https://developer.apple.com/design/human-interface-guidelines/components/selection-and-input/sliders/images/sliders-watchos_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/selection-and-input/sliders/images/sliders-watchos_2x.png)
 
+**If necessary, create custom glyphs to communicate what the slider does.** The system displays plus and minus signs by default.
+> 필요한 경우 슬라이더가 수행하는 작업을 전달하는 사용자 지정 글리프를 만듭니다. 시스템에는 기본적으로 더하기 및 빼기 기호가 표시됩니다.
+>
+
+
+
