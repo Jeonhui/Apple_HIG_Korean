@@ -57,3 +57,77 @@ Circular and linear gauges in both standard and capacity styles are also availab
 
 # **Platform considerations**
 
+*No additional considerations for iOS, iPadOS, or watchOS. Not supported in tvOS.*
+> iOS, iPadOS 또는 watchOS에 대한 추가 고려 사항은 없습니다. TVOS에서 지원되지 않습니다.
+>
+
+
+
+
+# **macOS**
+
+In addition to supporting gauges, macOS also defines a level indicator that displays a specific numerical value within a range. You can configure a level indicator to convey capacity, rating, or — rarely — relevance.
+> MacOS는 게이지를 지원하는 것 외에도 범위 내의 특정 수치를 표시하는 레벨 표시기를 정의합니다. 용량, 등급 또는 드물게 관련성을 전달하도록 수준 표시기를 구성할 수 있습니다.
+>
+
+
+
+
+The capacity style can depict discrete or continuous values.
+> 용량 스타일은 이산 또는 연속 값을 나타낼 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/components/status/gauges/images/indicators-continuous_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/status/gauges/images/indicators-continuous_2x.png)
+
+**Continuous.** A horizontal translucent track that fills with a solid bar to indicate the current value.
+> 연속. 현재 값을 나타내기 위해 실선으로 채워진 수평 반투명 트랙.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/components/status/gauges/images/indicators-discrete_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/status/gauges/images/indicators-discrete_2x.png)
+
+**Discrete.** A horizontal row of separate, equally sized, rectangular segments. The number of segments matches the total capacity, and the segments fill completely — never partially — with color to indicate the current value.
+> 이산형. 동일한 크기의 직사각형 세그먼트로 이루어진 수평 행입니다. 세그먼트 수는 총 용량과 일치하며, 세그먼트는 부분적이 아니라 현재 값을 나타내는 색상으로 완전히 채웁니다.
+>
+
+
+
+
+**Consider using the continuous style for large ranges.** A large value range can make the segments of a discrete capacity indicator too small to be useful.
+> 큰 범위에 연속 스타일을 사용하는 것을 고려해 보십시오. 값 범위가 크면 개별 용량 표시기의 세그먼트가 너무 작아서 유용하지 않을 수 있습니다.
+>
+
+
+
+
+**Consider changing the fill color to inform people about significant parts of the range.** By default, the fill color for both capacity indicator styles is green. If it makes sense in your app, you can change the fill color when the current value reaches certain levels, such as very low, very high, or just past the middle. You can change the fill color of the entire indicator or you can use the tiered state to show a sequence of several colors in one indicator, as shown below.
+> 사람들에게 범위의 중요한 부분을 알리기 위해 채우기 색을 변경하는 것을 고려해 보십시오. 기본적으로 두 용량 표시기 스타일의 채우기 색은 녹색입니다. 앱에서 사용할 수 있는 경우 현재 값이 매우 낮음, 매우 높음 또는 중간을 조금 지났을 때와 같은 특정 수준에 도달하면 채우기 색을 변경할 수 있습니다. 아래와 같이 전체 표시기의 채우기 색을 변경하거나 계층화 상태를 사용하여 하나의 표시기에 여러 색의 순서를 표시할 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/components/status/gauges/images/indicators-continuous-tiered_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/status/gauges/images/indicators-continuous-tiered_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/components/status/gauges/images/indicators-discrete-tiered_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/status/gauges/images/indicators-discrete-tiered_2x.png)
+
+Tiered level appearance
+
+For guidance using the rating style to help people rank something, see [Rating indicators](../components/status/rating-indicators).
+> 등급 스타일을 사용하여 순위를 매기는 방법은 등급 표시기를 참조하십시오.
+>
+
+
+
+
+Although rarely used, the relevance style can communicate relevancy using a shaded horizontal bar. For example, a relevance indicator might appear in a list of search results, helping people visualize the relevancy of the results when sorting or comparing multiple items.
+> 거의 사용되지 않지만 관련 스타일은 음영 처리된 수평 막대를 사용하여 관련성을 전달할 수 있습니다. 예를 들어, 여러 항목을 정렬하거나 비교할 때 결과의 관련성을 시각화하는 데 도움이 되는 관련성 표시기가 검색 결과 목록에 나타날 수 있습니다.
+>
+
+
+

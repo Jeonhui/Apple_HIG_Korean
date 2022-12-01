@@ -63,3 +63,4 @@
  | 2022-11-28 01:45:37 | ./components/selection-and-input/sliders.md | 63 | 9956 | 
  | 2022-11-29 01:45:47 | ./components/selection-and-input/toggles.md | 49 | 9946 | 
  | 2022-11-30 01:46:04 | ./components/status/gauges.md | 23 | 9951 | 
+ | 2022-12-01 01:58:05 | ./inputs/apple-pencil-and-scribble.md | 20 | 9604 | 
