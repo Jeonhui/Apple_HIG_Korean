@@ -141,6 +141,7 @@
 
 ![https://img.shields.io/badge/Inputs-9cf?style=for-the-badge&](https://img.shields.io/badge/Inputs-9cf?style=for-the-badge&)
 
+- [Action button](./inputs/action-button.md)
 - [Apple Pencil and Scribble](./inputs/apple-pencil-and-scribble.md)
 - [Digital Crown](./inputs/digital-crown.md)
 - [Focus and selection](./inputs/focus-and-selection.md)
