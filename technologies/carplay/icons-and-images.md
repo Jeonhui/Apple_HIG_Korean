@@ -1,0 +1,1 @@
+# **[technologies-carplay] icons-and-images**

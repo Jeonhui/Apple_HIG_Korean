@@ -1,0 +1,1 @@
+# **[technologies-apple-pay] offering-apple-pay**

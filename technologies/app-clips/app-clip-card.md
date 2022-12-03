@@ -1,0 +1,1 @@
+# **[technologies-app-clips] app-clip-card**

@@ -1,0 +1,1 @@
+# **[technologies-mac-catalyst] mac-idiom**

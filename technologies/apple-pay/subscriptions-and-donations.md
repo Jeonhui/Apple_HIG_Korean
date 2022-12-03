@@ -1,0 +1,1 @@
+# **[technologies-apple-pay] subscriptions-and-donations**

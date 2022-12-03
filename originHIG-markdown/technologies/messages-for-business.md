@@ -1,1 +1,0 @@
-# **[technologies] messages-for-business**
