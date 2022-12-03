@@ -1,1 +1,0 @@
-# **[components-status] rating-indicators**

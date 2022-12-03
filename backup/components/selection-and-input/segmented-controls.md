@@ -1,1 +1,0 @@
-# **[components-selection-and-input] segmented-controls**

@@ -1,1 +1,0 @@
-# **[inputs] spatial-interactions**

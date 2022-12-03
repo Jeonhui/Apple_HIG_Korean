@@ -1,1 +1,0 @@
-# **[patterns] ratings-and-reviews**

@@ -1,1 +1,0 @@
-# **[inputs] apple-pencil-and-scribble**

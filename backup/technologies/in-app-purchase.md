@@ -1,1 +1,0 @@
-# **[technologies] in-app-purchase**

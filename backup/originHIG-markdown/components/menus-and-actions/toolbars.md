@@ -1,1 +1,0 @@
-# **[components-menus-and-actions] toolbars**

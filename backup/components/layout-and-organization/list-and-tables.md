@@ -1,1 +1,0 @@
-# **[components-layout-and-organization] list-and-tables**

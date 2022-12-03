@@ -1,1 +1,0 @@
-# **[technologies] app-clips**
