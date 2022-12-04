@@ -410,3 +410,439 @@ As you design images for a corner complication, use the following values for gui
 
 
 
+Use the following values to create no-content placeholder images for your corner-family complications.
+> 다음 값을 사용하여 코너 패밀리 합병증에 대한 내용 없는 자리 표시자 이미지를 만듭니다.
+>
+
+
+
+
+| 38mm | 40mm/42mm | 41mm | 44mm | 45mm /49mm |
+| --- | --- | --- | --- | --- |
+| – | 20x20 pt (40x40 px @2x) | 21x21 pt (42x42 px @2x) | 22x22 pt (44x44 px @2x) | 24x24 pt (48x48 px @2x) |
+
+A SwiftUI view that implements a corner layout uses the following default text values:
+> 모서리 레이아웃을 구현하는 SwiftUI 보기는 다음과 같은 기본 텍스트 값을 사용합니다.
+>
+
+
+
+
+- Style: Rounded
+- Weight: Semibold
+- Text size: 10pt (40mm), 10.5pt (41mm), 11pt (44mm), 12pt (45mm/49mm)
+- >  문자크기 : 10pt(40mm), 10.5pt(41mm), 11pt(44mm), 12pt(45mm/49mm)
+
+
+# **Inline**
+
+Inline layouts include utilitarian small and large layouts.
+> 인라인 레이아웃에는 실용적인 소형 및 대형 레이아웃이 포함됩니다.
+>
+
+
+
+
+Utilitarian small layouts are intended to occupy a rectangular area in the corner of a watch face, such as the Chronograph and Simple watch faces. The content can include an image, interface icon, or a circular graph.
+> 실용적인 작은 레이아웃은 크로노그래프 및 단순 시계 면과 같이 시계 면의 모서리에 있는 직사각형 영역을 차지하기 위한 것이다. 콘텐츠는 이미지, 인터페이스 아이콘 또는 원형 그래프를 포함할 수 있다.
+>
+
+
+
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-utility-small-flat_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-utility-small-flat_2x.png)
+
+Flat
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-utility-small-ring-image_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-utility-small-ring-image_2x.png)
+
+Ring image
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-utility-small-ring-text_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-utility-small-ring-text_2x.png)
+
+Ring text
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-utility-small-square_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-utility-small-square_2x.png)
+
+Square
+
+
+As you design images for a utilitarian small layout, use the following values for guidance.
+> 실용적인 작은 레이아웃을 위해 이미지를 설계할 때 다음 값을 지침으로 사용하십시오.
+>
+
+
+
+
+| Content | 38mm | 40mm/42mm | 41mm | 44mm | 45mm/49mm |
+| --- | --- | --- | --- | --- | --- |
+| Flat | 9-21x9 pt (18-42x18 px @2x) | 10-22x10 pt (20-44x20 px @2x) | 10.5-23.5x21 pt (21-47x21 @2x) | N/A | 12-26x12 pt (24-52x24 px @2x) |
+| Ring | 14x14 pt (28x28 px @2x) | 14x14 pt (28x28 px @2x) | 15x15 pt (30x30 px @2x) | 16x16 pt (32x32 px @2x) | 16.5x16.5 pt (33x33 px @2x) |
+| Square | 20x20 pt (40x40 px @2x) | 22x22 pt (44x44 px @2x) | 23.5x23.5 pt (47x47 px @2x) | 25x25 pt (50x50 px @2x) | 26x26 pt (52x52 px @2x) |
+
+The utilitarian large layout is primarily text-based, but also supports an interface icon placed on the leading side of the text. This layout spans the bottom of a watch face, like the Utility or Motion watch faces.
+> 실용적인 대형 레이아웃은 주로 텍스트 기반이지만 텍스트의 앞쪽에 배치된 인터페이스 아이콘도 지원합니다. 이 레이아웃은 유틸리티 또는 모션 워치 페이스와 같이 워치 페이스 하단에 걸쳐 있습니다.
+>
+
+
+
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-utility-large-flat_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-utility-large-flat_2x.png)
+
+Large flat
+
+
+As you design images for a utilitarian large layout, use the following values for guidance.
+> 실용적인 대규모 레이아웃을 위해 이미지를 설계할 때 다음 값을 지침으로 사용하십시오.
+>
+
+
+
+
+| Content | 38mm | 40mm/42mm | 41mm | 44mm | 45mm /49mm |
+| --- | --- | --- | --- | --- | --- |
+| Flat | 9-21x9 pt (18-42x18 px @2x) | 10-22x10 pt (20-44x20 px @2x) | 10.5-23.5x10.5 pt (21-47x21 px @2x) | N/A | 12-26x12 pt (24-52x24 px @2x) |
+
+# **Rectangular**
+
+Rectangular layouts can display full-color images, text, a gauge, and an optional title in a large rectangular region. Some of the text fields can support multicolor text.
+> 직사각형 레이아웃은 큰 직사각형 영역에 전체 색상 이미지, 텍스트, 게이지 및 선택적 제목을 표시할 수 있습니다. 일부 텍스트 필드는 다색 텍스트를 지원할 수 있습니다.
+>
+
+
+
+
+The large rectangular region works well for showing details about a value or process that changes over time, because it provides room for information-rich charts, graphs, and diagrams. For example, the Heart Rate complication displays a graph of heart-rate values within a 24-hour period. The graph uses high-contrast white and red for the primary content and a lower-contrast gray for the graph lines and labels, making the data easy to understand at a glance.
+> 큰 직사각형 영역은 정보가 풍부한 차트, 그래프 및 다이어그램을 위한 공간을 제공하기 때문에 시간이 지남에 따라 변경되는 값 또는 공정에 대한 세부 정보를 표시하는 데 적합합니다. 예를 들어, 심박수 합병증은 24시간 내의 심박수 값을 그래프로 표시합니다. 그래프는 기본 내용에 대비가 높은 흰색과 빨간색을 사용하고 그래프 선과 레이블에 대비가 낮은 회색을 사용하여 데이터를 한 눈에 쉽게 이해할 수 있습니다.
+>
+
+
+
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/Rectangular-Standard-Body_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/Rectangular-Standard-Body_2x.png)
+
+Standard body
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/Rectangular-Text-Gauge_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/Rectangular-Text-Gauge_2x.png)
+
+Text gauge
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/RectangularLargeImage_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/RectangularLargeImage_2x.png)
+
+Large image
+
+
+Use the following values for guidance as you create images for a rectangular layout.
+> 직사각형 레이아웃에 대한 영상을 만들 때 지침으로 다음 값을 사용합니다.
+>
+
+
+
+
+| Content | 40mm | 41mm | 44mm | 45mm/49mm |
+| --- | --- | --- | --- | --- |
+| Large image with title * | 150x47 pt (300x94 px @2x) | 159x50 pt (318x100 px @2x) | 171x54 pt (342x108 px @2x) | 178.5x56 pt (357x112 px @2x) |
+| Large image without title * | 162x69 pt (324x138 px @2x) | 171.5x73 pt (343x146 px @2x) | 184x78 pt (368x156 px @2x) | 193x82 pt (386x164 px @2x) |
+| Standard body | 12x12 pt (24x24 px @2x) | 12.5x12.5 pt (25x25 px @2x) | 13.5x13.5 pt (27x27 px @2x) | 14.5x14.5 pt (29x29 px @2x) |
+| Text gauge | 12x12 pt (24x24 px @2x) | 12.5x12.5 pt (25x25 px @2x) | 13.5x13.5 pt (27x27 px @2x) | 14.5x14.5 pt (29x29 px @2x) |
+
+**NOTE**Both large-image layouts automatically include a four-point corner radius.
+> 참고 큰 이미지 레이아웃에는 모두 자동으로 4점 코너 반지름이 포함됩니다.
+>
+
+
+
+
+A SwiftUI view that implements a rectangular layout uses the following default text values:
+> 직사각형 레이아웃을 구현하는 SwiftUI 보기는 다음과 같은 기본 텍스트 값을 사용합니다.
+>
+
+
+
+
+- Style: Rounded
+- Weight: Medium
+- Text size: 16.5pt (40mm), 17.5pt (41mm), 18pt (44mm), 19.5pt (45mm/49mm)
+- >  문자크기 : 16.5pt(40mm), 17.5pt(41mm), 18pt(44mm), 19.5pt(45mm/49mm)
+
+
+# **Legacy templates**
+
+# **Circular small**
+
+Circular small templates display a small image or a few characters of text. They appear in the corner of the watch face (for example, in the Color watch face).
+> 원형의 작은 템플릿은 작은 이미지 또는 몇 글자의 텍스트를 표시합니다. 시계 면의 모서리에 나타납니다(예: 색상 시계 면).
+>
+
+
+
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-circular-small-ring-image_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-circular-small-ring-image_2x.png)
+
+Ring image
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-circular-small-ring-text_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-circular-small-ring-text_2x.png)
+
+Ring text
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-circular-small-simple-image_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-circular-small-simple-image_2x.png)
+
+Simple image
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-circular-small-simple-text_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-circular-small-simple-text_2x.png)
+
+Simple text
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-circular-small-stack-image_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-circular-small-stack-image_2x.png)
+
+Stack image
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-circular-small-stack-text_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-circular-small-stack-text_2x.png)
+
+Stack text
+
+
+As you design images for a circular small complication, use the following values for guidance.
+> 원형의 작은 합병증에 대한 이미지를 설계할 때 다음 값을 지침으로 사용하십시오.
+>
+
+
+
+
+| Image | 38mm | 40mm/42mm | 41mm | 44mm | 45mm/49mm |
+| --- | --- | --- | --- | --- | --- |
+| Ring | 20x20 pt (40x40 px @2x) | 22x22 pt (44x44 px @2x) | 23.5x23.5 pt (47x47 px @2x) | 24x24 pt (48x48 px @2x) | 26x26 pt (52x52 px @2x) |
+| Simple | 16x16 pt (32x32 px @2x) | 18x18 pt (36x36 px @2x) | 19x19 pt (38x38 px @2x) | 20x20 pt (40x40 px @2x) | 21.5x21.5 pt (43x43 px @2x) |
+| Stack | 16x7 pt (32x14 px @2x) | 17x8 pt (34x16 px @2x) | 18x8.5 pt (36x17 px @2x) | 19x9 pt (38x18 px @2x) | 19x9.5 pt (38x19 px @2x) |
+| Placeholder | 16x16 pt (32x32 px @2x) | 18x18x pt (36x36 px @2x) | 19x19 pt (38x38 px @2x) | 20x20 pt (40x40 px @2x) | 21.5x21.5 pt (43x43 px @2x) |
+
+**NOTE**In each stack measurement, the width value represents the maximum size.
+> 참고 각 스택 측정에서 너비 값은 최대 크기를 나타냅니다.
+>
+
+
+
+
+# **Modular small**
+
+Modular small templates display two stacked rows consisting of an icon and content, a circular graph, or a single larger item (for example, the bottom row of complications on the Modular watch face).
+> 모듈식 작은 템플릿은 아이콘과 내용, 원형 그래프 또는 하나의 더 큰 항목으로 구성된 두 개의 쌓인 행을 표시합니다(예: 모듈식 시계 면의 복잡도 맨 아래 행).
+>
+
+
+
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-small-columns-text_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-small-columns-text_2x.png)
+
+Columns text
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-small-ring-image_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-small-ring-image_2x.png)
+
+Ring image
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-small-ring-text_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-small-ring-text_2x.png)
+
+Ring text
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-small-simple-image_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-small-simple-image_2x.png)
+
+Simple image
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-small-simple-text_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-small-simple-text_2x.png)
+
+Simple text
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-small-stack-image_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-small-stack-image_2x.png)
+
+Stack image
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-small-stack-text_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-small-stack-text_2x.png)
+
+Stack text
+
+
+As you design glyphs and images for a modular small complication, use the following values for guidance.
+> 모듈식 작은 합병증에 대한 글리프 및 이미지를 설계할 때 다음 값을 지침으로 사용하십시오.
+>
+
+
+
+
+| Image | 38mm | 40mm/42mm | 41mm | 44mm | 45mm/49mm |
+| --- | --- | --- | --- | --- | --- |
+| Ring | 18x18 pt (36x36 px @2x) | 19x19 pt (38x38 px @2x) | 20x20 pt (40x40 px @2x) | 21x21 pt (42x42 px @2x) | 22.5x22.5 pt (45x45 px @2x) |
+| Simple | 26x26 pt (52x52 px @2x) | 29x29 pt (58x58 px @2x) | 30.5x30.5 pt (61x61 px @2x) | 32x32 pt (64x64 px @2x) | 34.5x34.5 pt (69x69 px @2x) |
+| Stack | 26x14 pt (52x28 px @2x) | 29x15 pt (58x30 px @2x) | 30.5x16 pt (61x32 px @2x) | 32x17 pt (64x34 px @2x) | 34.5x18 pt (69x36 px @2x) |
+| Placeholder | 26x26 pt (52x52 px @2x) | 29x29 pt (58x58 px @2x) | 30.5x30.5 pt (61x61 px @2x) | 32x32 pt (64x64 px @2x) | 34.5x34.5 pt (69x69 px @2x) |
+
+**NOTE**In each stack measurement, the width value represents the maximum size.
+> 참고 각 스택 측정에서 너비 값은 최대 크기를 나타냅니다.
+>
+
+
+
+
+# **Modular large**
+
+Modular large templates offer a large canvas for displaying up to three rows of content (for example, in the center of the Modular watch face).
+> 모듈식 대형 템플릿은 최대 세 줄의 콘텐츠를 표시할 수 있는 대형 캔버스를 제공합니다(예: 모듈식 워치 페이스 중앙).
+>
+
+
+
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-large-columns_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-large-columns_2x.png)
+
+Columns
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-large-standard-body_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-large-standard-body_2x.png)
+
+Standard body
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-large-table_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-large-table_2x.png)
+
+Table
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-large-tall-body_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-modular-large-tall-body_2x.png)
+
+Tall body
+
+
+As you design glyphs and images for a modular large complication, use the following values for guidance.
+> 모듈식 대형 합병증에 대한 글리프 및 이미지를 설계할 때 다음 값을 지침으로 사용하십시오.
+>
+
+
+
+
+| Content | 38mm | 40mm/42mm | 41mm | 44mm | 45mm/49mm |
+| --- | --- | --- | --- | --- | --- |
+| Columns | 11-32x11 pt (22-64x22 px @2x) | 12-37x12 pt (24-74x24 px @2x) | 12.5-39x12.5 pt (25-78x25 px @2x) | 14-42x14 pt (28-84x28 px @2x) | 14.5-44x14.5 pt (29-88x29 px @2x) |
+| Standard body | 11-32x11 pt (22-64x22 px @2x) | 12-37x12 pt (24-74x24 px @2x) | 12.5-39x12.5 pt (25-78x25 px @2x) | 14-42x14 pt (28-84x28 px @2x) | 14.5-44x14.5 pt (29-88x29 px @2x) |
+| Table | 11-32x11 pt (22-64x22 px @2x) | 12-37x12 pt (24-74x24 px @2x) | 12.5-39x12.5 pt (25-78x25 px @2x) | 14-42x14 pt (28-84x28 px @2x) | 14.5-44x14.5 pt (29-88x29 px @2x) |
+
+# **Extra large**
+
+Extra large templates display larger text and images (for example, on the X-Large watch faces).
+> 초대형 템플릿은 텍스트와 이미지를 더 크게 표시합니다(예: X-Large 워치 페이스).
+>
+
+
+
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-extralarge-ring-image_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-extralarge-ring-image_2x.png)
+
+Ring image
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-extralarge-ring-text_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-extralarge-ring-text_2x.png)
+
+Ring text
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-extralarge-simple-image_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-extralarge-simple-image_2x.png)
+
+Simple image
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-extralarge-simple-text_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-extralarge-simple-text_2x.png)
+
+Simple text
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-extralarge-stack-image_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-extralarge-stack-image_2x.png)
+
+Stack image
+
+-
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-extralarge-stack-text_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications/images/complication-extralarge-stack-text_2x.png)
+
+Stack text
+
+
+As you design glyphs and images for an extra large complication, use the following values for guidance.
+> 큰 합병증에 대한 글리프 및 영상을 설계할 때 다음 값을 지침으로 사용하십시오.
+>
+
+
+
+
+| Image | 38mm | 40mm/42mm | 41mm | 44mm | 45mm/49mm |
+| --- | --- | --- | --- | --- | --- |
+| Ring | 63x63 pt (126x126 px @2x) | 66.5x66.5 pt (133x133 px @2x) | 70.5x70.5 pt (141x141 px @2x) | 73x73 pt (146x146 px @2x) | 79x79 pt (158x158 px @2x) |
+| Simple | 91x91 pt (182x182 px @2x) | 101.5x101.5 pt (203x203 px @2x) | 107.5x107.5 pt (215x215 px @2x) | 112x112 pt (224x224 px @2x) | 121x121 pt (242x242 px @2x ) |
+| Stack | 78x42 pt (156x84 px @2x) | 87x45 pt (174x90 px @2x) | 92x47.5 pt (184x95 px @2x) | 96x51 pt (192x102 px @2x) | 103.5x53.5 pt (207x107 px @2x) |
+| Placeholder | 91x91 pt (182x182 px @2x) | 101.5x101.5 pt (203x203 px @2x) | 107.5x107.5 pt (215x215 px @2x) | 112x112 pt (224x224 px @2x) | 121x121 pt (242x242 px @2x) |
+
+**NOTE**In each stack measurement, the width value represents the maximum size.
+> 참고 각 스택 측정에서 너비 값은 최대 크기를 나타냅니다.
+>
+
+
+
+
+# **Platform considerations**
+
+*Not supported in iOS, iPadOS, macOS, or tvOS.*
+> iOS, iPadOS, macOS 또는 tvOS에서는 지원되지 않습니다.
+>
+
+
+
