@@ -531,3 +531,55 @@ A menu bar extra exposes app-specific functionality using an icon that appears i
 
 
 
+When necessary, the system hides menu bar extras to make room for app menus. Similarly, if there are too many menu bar extras, the system may hide some to avoid crowding app menus.
+> 필요한 경우, 시스템은 앱 메뉴를 위한 공간을 확보하기 위해 메뉴 모음 추가 사항을 숨깁니다. 마찬가지로, 메뉴 모음 추가 항목이 너무 많으면 시스템이 앱 메뉴가 붐비지 않도록 일부 항목을 숨길 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/the-menu-bar/images/menu-bar-extras_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/the-menu-bar/images/menu-bar-extras_2x.png)
+
+**Consider using a symbol to represent your menu bar extra.** You can create an [interface icon](../foundations/icons) or you can choose a [symbol](../foundations/sf-symbols) from the SF Symbols app, using it as-is or customizing it to suit your needs. Both interface icons and symbols use black and clear colors to define their shapes; the system can apply other colors to the black areas in each image so it looks good on both dark and light menu bars, and when your menu bar extra is selected.
+> 기호를 사용하여 메뉴 모음을 추가로 나타낼 수 있습니다. 인터페이스 아이콘을 만들거나 SF 기호 앱에서 기호를 선택하여 그대로 사용하거나 필요에 따라 사용자 정의할 수 있습니다. 인터페이스 아이콘과 기호 모두 검은색과 선명한 색상을 사용하여 모양을 정의합니다. 시스템은 각 이미지의 검은색 영역에 다른 색상을 적용할 수 있기 때문에 어두운 메뉴 모음과 밝은 메뉴 모음 모두에서 보기 좋으며 추가 메뉴 모음을 선택할 때도 좋습니다.
+>
+
+
+
+
+**Display a menu — not a popover — when people click your menu bar extra.** Unless the app functionality you want to expose is too complex for a menu, avoid presenting it in a [popover](../components/presentation/popovers).
+> 다른 사람이 메뉴 모음을 추가로 클릭할 때 팝업이 아닌 메뉴를 표시합니다. 표시할 앱 기능이 메뉴에 비해 너무 복잡하지 않은 경우 팝업에 표시하지 마십시오.
+>
+
+
+
+
+**Let people — not your app — decide whether to enable your menu bar extra.** Typically, people add a menu bar extra to the menu bar by changing a setting in an app’s settings window. To ensure discoverability, however, consider giving people the option of enabling the menu bar extra during setup.
+> 일반적으로 사용자는 앱의 설정 창에서 설정을 변경하여 메뉴 모음에 메뉴 모음을 추가로 추가합니다. 그러나 검색 가능성을 보장하려면 설치 중에 추가로 메뉴 모음을 사용할 수 있는 옵션을 사용자에게 제공하는 것을 고려하십시오.
+>
+
+
+
+
+**Avoid relying on the presence of menu bar extras.** The system hides and shows menu bar extras regularly, and you can’t be sure which other menu bar extras people have chosen to display or predict the location of your menu bar extra.
+> 시스템은 메뉴 모음 추가 정보를 숨기고 정기적으로 표시하며, 다른 사용자가 메뉴 모음 추가 정보를 표시하거나 예측하기 위해 선택한 다른 메뉴 모음 추가 정보를 확인할 수 없습니다.
+>
+
+
+
+
+**Consider exposing app-specific functionality in other ways, too.** For example, you can provide a [Dock menu](../components/menus-and-actions/dock-menus) that appears when people Control-click your app’s Dock icon. People can hide or choose not to use your menu bar extra, but a Dock menu is aways available when your app is running.
+> 예를 들어, 사용자가 앱의 도킹 아이콘을 클릭할 때 나타나는 도킹 메뉴를 제공할 수 있습니다. 메뉴 모음을 숨기거나 추가로 사용하지 않도록 선택할 수 있지만 앱이 실행 중일 때 도킹 메뉴를 사용할 수 있습니다.
+>
+
+
+
+
+# **Platform considerations**
+
+*Not supported in iOS, iPadOS, tvOS, or watchOS.*
+> iOS, iPadOS, tvOS 또는 watch에서 지원되지 않음운영 체제
+>
+
+
+
