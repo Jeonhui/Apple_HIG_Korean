@@ -160,3 +160,156 @@ A notification can present a customizable detail view that contains up to four b
 
 
 
+**Provide a simple, recognizable interface icon for each notification action.** An interface icon reinforces an action’s meaning, helping people instantly understand what it does. The system displays your interface icon on the trailing side of the action title. When you use [SF Symbols](../foundations/sf-symbols), you can choose an existing symbol that represents your command or edit a related symbol to create a custom icon.
+> 각 통지 작업에 대해 단순하고 인식 가능한 인터페이스 아이콘을 제공합니다. 인터페이스 아이콘은 작업의 의미를 강화하여 사용자가 작업을 즉시 이해할 수 있도록 도와줍니다. 시스템은 작업 제목의 뒷부분에 인터페이스 아이콘을 표시합니다. SF 기호를 사용할 때 명령을 나타내는 기존 기호를 선택하거나 관련 기호를 편집하여 사용자 지정 아이콘을 만들 수 있습니다.
+>
+
+
+
+
+# **Badging**
+
+A badge is a small, filled oval containing a number that can appear on an app icon to indicate the number of unread notifications that are available. After people address unread notifications, the badge disappears from the app icon, reappearing when new notifications arrive. People can choose whether to allow an app to display badges in their notification settings.
+> 배지는 앱 아이콘에 표시할 수 있는 번호가 포함된 채워진 작은 타원형으로, 사용 가능한 읽지 않은 알림 수를 나타냅니다. 사람들이 읽지 않은 알림을 수신인 지정하면 배지가 앱 아이콘에서 사라지고 새 알림이 도착하면 다시 나타납니다. 사용자는 앱이 알림 설정에 배지를 표시하도록 허용할지 여부를 선택할 수 있습니다.
+>
+
+
+
+
+**Use a badge only to show people how many unread notifications they have.** Don’t use a badge to convey numeric information that isn’t related to notifications, such as weather-related data, dates and times, stock prices, or game scores.
+> 배지는 사람들에게 읽지 않은 알림의 수를 표시할 때만 사용합니다. 배지는 날씨 관련 데이터, 날짜 및 시간, 주가 또는 게임 점수와 같은 알림과 관련이 없는 숫자 정보를 전달할 때 사용하지 마십시오.
+>
+
+
+
+
+**Make sure badging isn’t the only method you use to communicate essential information.** People can turn off badging for your app, so if you rely on it to show people when there’s important information, people can miss the message. Always make sure that you make important information easy for people to find as soon as they open your app.
+> 사람들은 앱에 대한 배깅을 해제할 수 있으므로 중요한 정보가 있을 때 사람들에게 보여주기 위해 사용하면 메시지를 놓칠 수 있습니다. 항상 중요한 정보를 사용자가 앱을 열자마자 쉽게 찾을 수 있도록 하십시오.
+>
+
+
+
+
+**Keep badges up to date.** Update your app’s badge as soon as people open the corresponding notifications. You don’t want people to think there are new notifications available, only to find that they’ve already viewed them all. Note that reducing a badge’s count to zero removes all related notifications from Notification Center.
+> 배지를 최신 상태로 유지하고, 사람들이 해당 알림을 여는 즉시 앱의 배지를 업데이트하십시오. 사용자가 새 알림을 사용할 수 있다고 생각하지 않고 모든 알림을 이미 봤다는 사실만 알고 있으면 됩니다. 배지 수를 0으로 줄이면 Notification Center에서 모든 관련 통지가 제거됩니다.
+>
+
+
+
+
+**Avoid creating a custom image or component that mimics the appearance or behavior of a badge.** People can turn off notification badges if they choose, and will become frustrated if they have done so and then see what appears to be a badge.
+> 배지의 모양이나 동작을 모방하는 사용자 지정 이미지 또는 구성 요소를 만들지 마십시오. 사용자가 원하는 경우 알림 배지를 끌 수 있으며, 사용자가 이를 해제한 다음 배지로 표시되는 것을 확인하면 사용자 지정이 취소됩니다.
+>
+
+
+
+
+# **Platform considerations**
+
+*No additional considerations for iOS, iPadOS, macOS, or tvOS.*
+> iOS, iPadOS, macOS 또는 tvOS에 대한 추가 고려 사항은 없습니다.
+>
+
+
+
+
+# **watchOS**
+
+On Apple Watch, notifications occur in two stages: *short look* and *long look*. People can also view notifications in Notification Center.
+> 애플 워치에서 알림은 쇼트 룩과 롱 룩의 두 단계로 발생한다. 또한 Notification Center에서 통지를 볼 수 있습니다.
+>
+
+
+
+
+You can help people have a great notification experience by designing app-specific assets and actions that are relevant on Apple Watch. If your watchOS app has an iPhone companion that supports notifications, watchOS can automatically provide default short-look and long-look interfaces if necessary.
+> Apple Watch와 관련된 앱별 자산 및 작업을 설계하여 사용자가 우수한 알림 환경을 가질 수 있도록 지원할 수 있습니다. 네 시계라면OS 앱에는 알림, 워치를 지원하는 아이폰 동반자가 있습니다.OS는 필요한 경우 자동으로 기본 숏룩 및 롱룩 인터페이스를 제공할 수 있습니다.
+>
+
+
+
+
+### **Short looks**
+
+A short look appears when the wearer’s wrist is raised and disappears when it’s lowered.
+> 짧은 표정은 착용자의 손목이 위로 들어올릴 때 나타나고 아래로 내려갈 때 사라진다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/notifications/images/notifications-short-looks_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/notifications/images/notifications-short-looks_2x.png)
+
+**Avoid using a short look as the only way to communicate important information.** A short look appears only briefly, giving people just enough time to see what the notification is about and which app sent it. If your notification information is critical, make sure you deliver it in other ways, too.
+> 짧은 모양을 중요한 정보를 전달하는 유일한 방법으로 사용하는 것을 피하십시오. 짧은 모양은 짧게만 표시되므로 알림의 내용과 보낸 앱을 확인할 수 있는 충분한 시간을 제공합니다. 알림 정보가 중요한 경우 다른 방법으로도 알림 정보를 전달해야 합니다.
+>
+
+
+
+
+**Keep privacy in mind.** Short looks are intended to be discreet, so it’s important to provide only basic information. Avoid including potentially sensitive information in the notification’s title.
+> 짧은 외모는 신중하게 하기 위한 것이므로 기본적인 정보만 제공하는 것이 중요합니다. 통지 제목에 잠재적으로 중요한 정보가 포함되지 않도록 합니다.
+>
+
+
+
+
+### **Long looks**
+
+Long looks provide more detail about a notification. If necessary, people can swipe vertically or use the Digital Crown to scroll a long look. After viewing a long look, people can dismiss it by tapping it or simply by lowering their wrist.
+> 긴 모양은 알림에 대한 자세한 정보를 제공합니다. 필요한 경우, 사람들은 세로로 스와이프하거나 디지털 크라운을 사용하여 긴 모양을 스크롤할 수 있습니다. 길게 본 후에, 사람들은 그것을 두드리거나 단순히 손목을 내리는 것으로 그것을 없앨 수 있다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/notifications/images/notifications-long-looks_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/notifications/images/notifications-long-looks_2x.png)
+
+A custom long-look interface can be static or dynamic. The *static* interface lets you display a notification’s message along with additional static text and images. The *dynamic* interface gives you access to the notification’s full content and offers more options for configuring the appearance of the interface.
+> 사용자 지정 롱 룩 인터페이스는 정적 또는 동적일 수 있습니다. 정적 인터페이스를 사용하여 추가 정적 텍스트 및 이미지와 함께 통지 메시지를 표시할 수 있습니다. 동적 인터페이스를 사용하면 알림의 전체 내용에 액세스할 수 있으며 인터페이스 모양을 구성하기 위한 추가 옵션을 제공합니다.
+>
+
+
+
+
+You can customize the content area for both static and dynamic long looks, but you can’t change the overall structure of the interface. The system-defined structure includes a *sash* at the top of the interface and a Dismiss button at the bottom, below all custom buttons.
+> 정적 및 동적 긴 모양 모두에 대해 내용 영역을 사용자 정의할 수 있지만 인터페이스의 전체 구조를 변경할 수는 없습니다. 시스템 정의 구조에는 인터페이스 상단의 새시와 모든 사용자 정의 버튼 아래의 해제 버튼이 포함됩니다.
+>
+
+
+
+
+**Consider using a rich, custom long-look notification to let people get the information they need without launching your app.** You can use [SwiftUI](https://developer.apple.com/documentation/swiftui/animations) to create engaging, interruptible animations; alternatively, you can use [SpriteKit](https://developer.apple.com/documentation/spritekit) or [SceneKit](https://developer.apple.com/documentation/scenekit).
+> 앱을 실행하지 않고도 사람들이 필요한 정보를 얻을 수 있도록 풍부한 사용자 지정 롱룩 알림을 사용하는 것을 고려해 보십시오. Swift를 사용할 수 있습니다.UI를 사용하여 매력적이고 중단 가능한 애니메이션을 만들 수 있습니다. 또는 SpriteKit 또는 SceneKit을 사용할 수도 있습니다.
+>
+
+
+
+
+**At the minimum, provide a static interface; prefer providing a dynamic interface too.** The system defaults to the static interface when the dynamic interface is unavailable, such as when there is no network or the iPhone companion app is unreachable. Be sure to create the resources for your static interface in advance and package them with your app.
+> 최소한 정적 인터페이스를 제공합니다. 동적 인터페이스도 제공합니다. 네트워크가 없거나 iPhone 지원 앱에 연결할 수 없는 경우와 같이 동적 인터페이스를 사용할 수 없을 때 시스템은 기본적으로 정적 인터페이스를 사용합니다. 정적 인터페이스에 대한 리소스를 미리 생성하고 앱으로 패키지화하십시오.
+>
+
+
+
+
+**Choose a background appearance for the sash.** The system-provided sash, at the top of the long-look interface, displays your app icon and name. You can customize the sash’s color or give it a blurred appearance. If you display a photo at the top of the content area, you’ll probably want to use the blurred sash, which has a light, translucent appearance that gives the illusion of overlapping the image.
+> 새시의 배경 모양을 선택하십시오. 시스템이 제공하는 새시는 롱 룩 인터페이스의 맨 위에 앱 아이콘과 이름을 표시합니다. 새시의 색상을 사용자 지정하거나 흐릿한 모양을 지정할 수 있습니다. 콘텐츠 영역 상단에 사진을 표시하면 이미지가 겹쳐지는 듯한 느낌을 주는 가볍고 반투명한 외관의 흐릿한 새시를 사용하고 싶을 것이다.
+>
+
+
+
+
+**Choose a background color for the content area.** By default, the long look’s background is transparent. If you want to match the background color of other system notifications, use white with 18% opacity; otherwise, you can use a custom color, such as a color within your brand’s palette.
+> 내용 영역의 배경색을 선택합니다. 기본적으로 긴 모양의 배경은 투명합니다. 다른 시스템 알림의 배경색을 일치시키려면 불투명도가 18%인 흰색을 사용하십시오. 그렇지 않으면 브랜드 팔레트 내 색상과 같은 사용자 지정 색상을 사용할 수 있습니다.
+>
+
+
+
+
+**Provide up to four custom actions below the content area.** For each long look, the system uses the notification’s type to determine which of your custom actions to display as buttons in the notification UI. In addition, the system always displays a Dismiss button at the bottom of the long-look interface, below all custom buttons. If your watchOS app has an iPhone companion that supports notifications, the system shares the actionable notification types already registered by your iPhone app and uses them to configure your custom action buttons.
+> 콘텐츠 영역 아래에 최대 4개의 사용자 지정 작업을 제공합니다. 시스템은 각 긴 모양에 대해 알림 유형을 사용하여 알림 UI에서 단추로 표시할 사용자 지정 작업을 결정합니다. 또한 시스템은 항상 모든 사용자 지정 버튼 아래에 롱 룩 인터페이스의 하단에 해제 버튼을 표시합니다. 네 시계라면OS 앱에는 알림을 지원하는 iPhone 지원 기능이 있으며, 시스템은 iPhone 앱에 이미 등록된 실행 가능한 알림 유형을 공유하고 이를 사용하여 사용자 지정 작업 버튼을 구성합니다.
+>
+
+
+
