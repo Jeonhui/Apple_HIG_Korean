@@ -229,3 +229,240 @@ Widgets use vivid colors, rich images, and clear, crisp text that’s easy to re
 
 
 
+**Support Dark Mode.** Ideally, a widget looks great in both the light and dark appearances. In general, avoid displaying dark text on a light background for the dark appearance, or light text on a dark background for the light appearance. When you use the semantic system colors for text and backgrounds, the colors dynamically adapt to the current appearance. You can also support different appearances by putting color variants in your asset catalog. For guidance, see [Dark Mode](../foundations/dark-mode); see [Asset management](https://developer.apple.com/documentation/xcode/asset-management) and [Supporting Dark Mode in your interface](https://developer.apple.com/documentation/uikit/appearance_customization/supporting_dark_mode_in_your_interface).
+> 다크 모드를 지원합니다. 이상적인 경우 위젯은 밝은 모양과 어두운 모양 모두에 적합합니다. 일반적으로 어두운 배경에는 어두운 텍스트를 표시하거나 밝은 배경에는 밝은 텍스트를 표시하지 마십시오. 텍스트 및 배경에 시맨틱 시스템 색상을 사용하면 색상이 현재 모양에 동적으로 적용됩니다. 또한 자산 카탈로그에 색상 변형을 넣어 다양한 모양을 지원할 수 있습니다. 자세한 내용은 다크 모드를 참조하십시오. 인터페이스에서 자산 관리 및 지원 다크 모드를 참조하십시오.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets/images/notes-small-light_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets/images/notes-small-light_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets/images/notes-small-dark_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets/images/notes-small-dark_2x.png)
+
+**Consider using the system font and SF Symbols.** Using the system font helps your widget look at home on any platform, while making it easier for you to display great-looking text in a variety of weights, styles, and sizes. Use SF Symbols to align and scale symbols with text that uses the system font. If you need to use a custom font, consider using it sparingly, and be sure it’s easy for people to read at a glance. It often works well to use a custom font for the large text in a widget and SF Pro for the smaller text. For guidance, see [Typography](../foundations/typography) and [SF Symbols](../foundations/sf-symbols).
+> 시스템 글꼴 및 SF 기호를 사용하는 것을 고려해 보십시오. 시스템 글꼴을 사용하면 위젯이 모든 플랫폼에서 집을 보는 데 도움이 되며 다양한 무게, 스타일 및 크기로 보기 좋은 텍스트를 쉽게 표시할 수 있습니다. SF 기호를 사용하여 기호를 시스템 글꼴을 사용하는 텍스트와 정렬하고 축척합니다. 사용자 정의 글꼴을 사용해야 하는 경우 사용자 정의 글꼴을 사용하지 말고 사용자가 쉽게 한 눈에 볼 수 있도록 하십시오. 위젯의 큰 텍스트에는 사용자 정의 글꼴을 사용하고 작은 텍스트에는 SF Pro를 사용하는 것이 좋습니다. 자세한 내용은 타이포그래피 및 SF 기호를 참조하십시오.
+>
+
+
+
+
+**Avoid using very small font sizes.** In general, display text using fonts at 11 points or larger. Text in a font that’s smaller than 11 points can be too small for most people to read at a glance.
+> 글꼴 크기가 매우 작으면 안 됩니다. 일반적으로 글꼴을 11포인트 이상 사용하여 텍스트를 표시합니다. 11포인트보다 작은 글꼴의 텍스트는 너무 작아서 대부분의 사용자가 한 눈에 볼 수 없습니다.
+>
+
+
+
+
+**Always use text elements in a widget to ensure that your text scales well.** In particular, don’t rasterize text — doing so prevents VoiceOver from speaking your content.
+> 위젯의 텍스트 요소를 항상 사용하여 텍스트 크기를 적절하게 조정하십시오. 특히 텍스트를 래스터화하지 마십시오. 이렇게 하면 VoiceOver에서 내용을 말할 수 없습니다.
+>
+
+
+
+
+**Design a realistic preview to display in the widget gallery.** Highlighting your widget’s capabilities — and clearly representing the experiences each widget type or size can provide — helps people make an informed decision. You can display real data in your widget preview, but if the data takes too long to generate or load, display realistic simulated data instead.
+> 위젯 갤러리에 표시할 사실적인 미리보기를 설계합니다. 위젯의 기능을 강조하고 각 위젯 유형 또는 크기가 제공할 수 있는 경험을 명확하게 나타내면 정보에 입각한 결정을 내리는 데 도움이 됩니다. 위젯 미리보기에 실제 데이터를 표시할 수 있지만 데이터를 생성하거나 로드하는 데 너무 오래 걸리는 경우에는 실제 시뮬레이션 데이터를 대신 표시합니다.
+>
+
+
+
+
+**Design placeholder content that helps people recognize your widget.**An installed widget displays placeholder content while its data loads. You can create an effective placeholder appearance by combining static interface components with semi-opaque shapes that stand in for dynamic content. For example, you can use rectangles of different widths to suggest lines of text, and circles or squares in place of glyphs and images.
+> 사람들이 위젯을 인식할 수 있도록 도와주는 플레이스홀더 내용을 설계합니다.설치된 위젯은 데이터를 로드하는 동안 자리 표시자 콘텐츠를 표시합니다. 정적 인터페이스 구성요소를 동적 내용을 나타내는 반투명 모양과 결합하여 효과적인 자리 표시자 모양을 만들 수 있습니다. 예를 들어, 너비가 다른 직사각형을 사용하여 문자의 선을 제안하고 글리프와 이미지 대신 원 또는 사각형을 제안할 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets/images/tips-placeholder_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets/images/tips-placeholder_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets/images/tips_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets/images/tips_2x.png)
+
+**Avoid mirroring your widget’s appearance within your app.** If your app displays an element that looks like your widget but doesn’t behave like it, people can be confused when the element responds differently when they interact with it. Also, people may be less likely to try other ways to interact with such an element in your app because they expect it to behave like a widget.
+> 앱에서 위젯 모양을 미러링하지 않도록 합니다. 위젯과 유사하지만 동작이 다른 요소를 표시하는 경우 해당 요소와 상호 작용할 때 다른 반응을 보일 때 사람들이 혼동할 수 있습니다. 또한, 사람들은 위젯처럼 동작할 것으로 예상하기 때문에 앱에서 이러한 요소와 상호 작용하기 위한 다른 방법을 시도할 가능성이 적을 수 있습니다.
+>
+
+
+
+
+**Write a succinct description of your widget.** The widget gallery displays descriptions that help people understand what each widget does. It generally works well to begin a description with an action verb — for example, “See the current weather conditions and forecast for a location” or “Keep track of your upcoming events and meetings.” Avoid including unnecessary phrases that reference the widget itself, like “This widget shows...,” “Use this widget to...,” or “Add this widget.” Use approachable language and [sentence-style capitalization](https://support.apple.com/guide/applestyleguide/c-apsgb744e4a3/web#apdca93e113f1d64).
+> 위젯에 대한 간단한 설명을 작성합니다. 위젯 갤러리에는 각 위젯의 기능을 이해하는 데 도움이 되는 설명이 표시됩니다. 일반적으로 작업 동사로 설명을 시작하는 것이 좋습니다. 예를 들어 "현재 날씨 상태 및 위치 예측 보기" 또는 "예정된 이벤트 및 회의를 추적하십시오."입니다. 위젯 자체를 참조하는 불필요한 구(예: "이 위젯 표시...", "이 위젯을 사용하여..." 또는 "이 위젯 추가")는 포함하지 마십시오. 접근 가능한 언어와 문장 스타일의 대문자를 사용합니다.
+>
+
+
+
+
+**Group your widget’s sizes together, and provide a single description.** If your widget is available in multiple sizes, group the sizes together so people don’t think each size is a different widget. Provide a single description of your widget — regardless of how many sizes you offer — to avoid repetition and to help people understand how each size provides a slightly different perspective on the same content and functionality.
+> 위젯의 크기를 그룹화하고 하나의 설명을 제공합니다. 위젯의 크기가 여러 개인 경우 크기를 그룹화하여 사용자가 각 크기를 다른 위젯이라고 생각하지 않도록 합니다. 제공하는 크기에 관계없이 위젯에 대한 단일 설명을 제공하여 반복을 방지하고 각 크기가 동일한 내용과 기능에 대해 어떻게 다른 관점을 제공하는지 이해할 수 있도록 합니다.
+>
+
+
+
+
+**Consider coloring the Add button.** After people choose your app in the widget gallery, an Add button appears below the group of widgets you offer. You can specify a color for this button to help remind people of your brand.
+> 위젯 갤러리에서 사용자의 앱을 선택하면 제공하는 위젯 그룹 아래에 추가 단추가 나타납니다. 이 단추의 색상을 지정하여 사용자의 브랜드를 알릴 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets/images/add-button-custom-color-1_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets/images/add-button-custom-color-1_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets/images/add-button-custom-color-2_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets/images/add-button-custom-color-2_2x.png)
+
+# **Adapting to different screen sizes**
+> 다양한 화면 크기에 맞게 조정
+>
+
+
+
+
+Widgets scale to adapt to the screen sizes of different devices and onscreen areas. Ensure that your widget looks great on every device by supplying content at appropriate sizes.
+> 위젯은 다양한 장치 및 화면 영역의 화면 크기에 맞게 확장됩니다. 콘텐츠를 적절한 크기로 제공하여 모든 장치에서 위젯이 잘 보이도록 합니다.
+>
+
+
+
+
+**Design content to look great on all devices and scale factors, letting the system resize or scale as necessary.** In iOS, the system ensures that your widget looks good on small devices by resizing the content you design for large devices. In iPadOS, the system renders your widget at a large size before scaling it down for display on the Home Screen. As you create design comprehensives for various devices and scale factors, use the values listed in [Specifications](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets#specifications) for guidance; for your production widget, use [SwiftUI](https://developer.apple.com/documentation/SwiftUI) to ensure flexibility.
+> 모든 장치와 스케일 팩터에서 보기 좋게 컨텐츠를 디자인합니다. 필요에 따라 시스템 크기를 조정하거나 조정할 수 있습니다. iOS에서 시스템은 대형 장치용으로 디자인한 컨텐츠의 크기를 조정하여 소형 장치에서 위젯이 보기 좋게 보이도록 합니다. iPadOS에서 시스템은 홈 스크린에 표시하기 위해 위젯을 축소하기 전에 위젯을 큰 크기로 렌더링합니다. 다양한 장치 및 스케일 팩터에 대한 설계 종합을 생성할 때 사양에 나열된 값을 지침으로 사용하고 프로덕션 위젯의 경우 Swift를 사용합니다.UI를 통해 유연성을 보장합니다.
+>
+
+
+
+
+**Coordinate the corner radius of your content with the corner radius of the widget.** To ensure that your content looks good within a widget’s rounded corners, use a SwiftUI container to apply the correct corner radius. For developer guidance, see [ContainerRelativeShape](https://developer.apple.com/documentation/swiftui/containerrelativeshape).
+> 콘텐츠의 모서리 반지름을 위젯의 모서리 반지름과 조정합니다. 위젯의 둥근 모서리 내에서 콘텐츠가 잘 보이도록 하려면 Swift를 사용하십시오.올바른 모서리 반지름을 적용하기 위한 UI 컨테이너입니다. 개발자 지침은 컨테이너 상대 모양을 참조하십시오.
+>
+
+
+
+
+**NOTE**In iOS, widgets support [Dynamic Type sizes](https://developer.apple.com/design/human-interface-guidelines/foundations/typography#specifications) from Large to AX5 when you use [Font](https://developer.apple.com/documentation/swiftui/font) to choose a system font or [custom(_:size:)](https://developer.apple.com/documentation/swiftui/font/custom(_:size:)) to choose a custom font.
+> 참고 iOS에서 위젯은 글꼴을 사용하여 시스템 글꼴을 선택하거나 사용자 정의 글꼴을 선택하기 위해 사용자 정의(_:size:))할 때 동적 유형 크기를 지원합니다.
+>
+
+
+
+
+**In general, use standard margins to ensure your content is comfortably legible.** The standard margin width is 16 points. If your widget displays content like text, glyphs, and graphs, use the standard margins to avoid crowding the edges and creating a cluttered appearance. For developer guidance, see [padding(`_:`_:)](https://developer.apple.com/documentation/swiftui/view/padding(_:_:)). If you use background shapes to create visual content groupings, or if you display button backgrounds, you might need to use tight margins. Tight margins — which measure 11 points in width — can also help make graphics that contain information easier for people to read.
+> 일반적으로 내용이 읽기 쉽도록 표준 여백을 사용하십시오. 표준 여백 폭은 16포인트입니다. 위젯에서 텍스트, 글리프 및 그래프와 같은 내용을 표시하는 경우 가장자리가 혼잡하거나 모양이 흐트러지지 않도록 표준 여백을 사용합니다. 개발자 지침은 패딩(`_:`_:)을 참조하십시오. 배경 모양을 사용하여 시각적 내용 그룹을 만들거나 단추 배경을 표시하는 경우 여백을 좁게 표시해야 할 수 있습니다. 너비가 11포인트인 좁은 여백은 사람들이 정보를 포함하는 그래픽을 더 쉽게 읽을 수 있도록 도와줄 수도 마찬가지입니다.
+>
+
+
+
+
+# **Platform considerations**
+
+*No additional considerations for iPadOS or macOS. Not supported in tvOS or watchOS.*
+> iPad에 대한 추가 고려 사항 없음OS 또는 macOS. TVOS 또는 워치에서 지원되지 않음운영 체제
+>
+
+
+
+
+# **iOS**
+
+Widgets on the Lock Screen are functionally similar to watch complications and follow design principles for [complications](../components/system-experiences/complications/) in addition to design principles for widgets. Both support Always-On display and emphasize glanceable content within their limited space. Provide useful information in your Lock Screen widget, and don’t treat it only as an additional way for people to launch into your app. Additionally, the vibrant rendering mode that widgets on the Lock Screen use is similar to the accented rendering mode for watch complications because they both communicate information without relying on color only. In many cases, a design for complications also works well for widgets on the Lock Screen (and vice versa), so consider creating them in tandem.
+> 잠금 화면의 위젯은 기능적으로 복잡도를 관찰하는 것과 유사하며 위젯의 설계 원칙 외에도 복잡도에 대한 설계 원칙을 따릅니다. 둘 다 Always-On 디스플레이를 지원하며 제한된 공간 내에서 눈에 띄는 콘텐츠를 강조합니다. 잠금 화면 위젯에 유용한 정보를 제공하고, 사용자가 앱을 실행하는 추가적인 방법으로만 취급하지 마십시오. 또한 잠금 화면의 위젯이 사용하는 선명한 렌더링 모드는 색상에만 의존하지 않고 정보를 전달하기 때문에 시계 복잡성에 대한 악센트 렌더링 모드와 유사합니다. 대부분의 경우, 복잡한 설계는 잠금 화면의 위젯에도 잘 적용되므로, 함께 작성하는 것을 고려해 보십시오.
+>
+
+
+
+
+Your app can offer widgets on the Lock Screen in three different shapes: as inline text that appears above the clock and circular and rectangular shapes that appear below the clock.
+> 앱은 잠금 화면에 시계 위에 나타나는 인라인 텍스트와 시계 아래에 나타나는 원형 및 직사각형 모양의 세 가지 모양으로 위젯을 제공할 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets/images/weather-widget-lock-screen_2x.png](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets/images/weather-widget-lock-screen_2x.png)
+
+As with complications, aim to create widgets on the Lock Screen that are informative, dynamic, and display up-to-date information.
+> 복잡한 경우와 마찬가지로 잠금 화면에 정보를 제공하고 동적이며 최신 정보를 표시하는 위젯을 만드는 것을 목표로 합니다.
+>
+
+
+
+
+**Adjust colors and images for the vibrant rendering mode.** The system renders widgets on the Lock Screen using a vibrant, blurred appearance. The opacity of pixels within your image determines the strength of the blurred material effect. Fully transparent pixels let the background wallpaper pass through as is. When creating assets for the Lock Screen, render content like images, numbers, or text at full opacity. The brightness of pixels determines how vibrant they appear on the Lock Screen: Brighter gray values provide more contrast, and darker values provide less contrast. To establish hierarchy, use white or light gray for the most prominent content and darker grayscale values for secondary elements.
+> 선명한 렌더링 모드에 맞게 색상과 이미지를 조정합니다. 시스템은 선명하고 흐릿한 모양을 사용하여 잠금 화면에서 위젯을 렌더링합니다. 이미지 내 픽셀의 불투명도에 따라 흐릿한 재료 효과의 강도가 결정됩니다. 완전히 투명한 픽셀은 배경 벽지를 그대로 통과하게 한다. 잠금 화면에 대한 자산을 만들 때 이미지, 숫자 또는 텍스트와 같은 내용을 최대 불투명도로 렌더링합니다. 픽셀의 밝기에 따라 잠금 화면에 선명하게 표시되는 정도가 결정됩니다. 회색 값이 밝으면 더 큰 대비를 제공하고 어두운 값은 더 적은 대비를 제공합니다. 계층을 설정하려면 가장 눈에 띄는 내용에는 흰색 또는 밝은 회색을 사용하고 보조 요소에는 어두운 회색 척도 값을 사용하십시오.
+>
+
+
+
+
+To make sure images look great in the vibrant rendering mode:
+> 선명한 렌더링 모드에서 이미지가 멋지게 보이도록 하려면:
+>
+
+
+
+
+- Confirm that your images' content has sufficient contrast in grayscale.
+- >  이미지 내용의 대비가 회색조로 충분한지 확인합니다.
+
+- Use opaque grayscale values, rather than opacities of white, to achieve the best vibrant material effect.
+- >  흰색의 불투명도 대신 불투명 그레이스케일 값을 사용하면 최상의 선명한 재료 효과를 얻을 수 있습니다.
+
+
+**Support Always-On display.** Devices with Always-On display render widgets on the Lock Screen with reduced luminance. Use levels of gray that provide enough contrast in Always-On display, and make sure your content is legible.
+> Always-On 디스플레이 지원. Always-On 디스플레이가 있는 장치는 잠금 화면에 위젯을 렌더링하여 휘도를 낮춥니다. Always-On 디스플레이에서 충분한 대비를 제공하는 회색 수준을 사용하고 내용을 읽을 수 있는지 확인합니다.
+>
+
+
+
+
+For developer guidance, see [Creating Lock Screen widgets and watch complications](https://developer.apple.com/documentation/widgetkit/creating-lock-screen-widgets-and-watch-complications), [WidgetRenderingMode](https://developer.apple.com/documentation/widgetkit/widgetrenderingmode), and [vibrant](https://developer.apple.com/documentation/widgetkit/widgetrenderingmode/vibrant).
+> 개발자 지침은 잠금 화면 위젯 작성 및 복잡한 화면 보기, 위젯 렌더링 모드 및 선명한 화면 보기를 참조하십시오.
+>
+
+
+
+
+# **Specifications**
+
+# **iOS widget design comprehensives**
+
+| Screen size (portrait, pts) | Small (pts) | Medium (pts) | Large (pts) | Circular (pts) | Rectangular (pts) | Inline (pts) |
+| --- | --- | --- | --- | --- | --- | --- |
+| 430×932 | 170x170 | 364x170 | 364x382 | 76x76 | 172x76 | 257x26 |
+| 428x926 | 170x170 | 364x170 | 364x382 | 76x76 | 172x76 | 257x26 |
+| 414x896 | 169x169 | 360x169 | 360x379 | 76x76 | 160x72 | 248x26 |
+| 414x736 | 159x159 | 348x157 | 348x357 | 76x76 | 170x76 | 248x26 |
+| 393x852 | 158x158 | 338x158 | 338x354 | 72x72 | 160x72 | 234x26 |
+| 390x844 | 158x158 | 338x158 | 338x354 | 72x72 | 160x72 | 234x26 |
+| 375x812 | 155x155 | 329x155 | 329x345 | 72x72 | 157x72 | 225x26 |
+| 375x667 | 148x148 | 321x148 | 321x324 | 68x68 | 153x68 | 225x26 |
+| 360x780 | 155x155 | 329x155 | 329x345 | 72x72 | 157x72 | 225x26 |
+| 320x568 | 141x141 | 292x141 | 292x311 | n/a | n/a | n/a |
+
+# **iPadOS widget design comprehensives**
+
+| Screen size (portrait, pts) | Target | Small (pts) | Medium (pts) | Large (pts) | Extra large (pts) |
+| --- | --- | --- | --- | --- | --- |
+| 768x1024 | Canvas | 141x141 | 305.5x141 | 305.5x305.5 | 634.5x305.5 |
+| Device | 120x120 | 260x120 | 260x260 | 540x260 |  |
+| 744x1133 | Canvas | 141x141 | 305.5x141 | 305.5x305.5 | 634.5x305.5 |
+| Device | 120x120 | 260x120 | 260x260 | 540x260 |  |
+| 810x1080 | Canvas | 146x146 | 320.5x146 | 320.5x320.5 | 669x320.5 |
+| Device | 124x124 | 272x124 | 272x272 | 568x272 |  |
+| 820x1180 | Canvas | 155x155 | 342x155 | 342x342 | 715.5x342 |
+| Device | 136x136 | 300x136 | 300x300 | 628x300 |  |
+| 834x1112 | Canvas | 150x150 | 327.5x150 | 327.5x327.5 | 682x327.5 |
+| Device | 132x132 | 288x132 | 288x288 | 600x288 |  |
+| 834x1194 | Canvas | 155x155 | 342x155 | 342x342 | 715.5x342 |
+| Device | 136x136 | 300x136 | 300x300 | 628x300 |  |
+| 954x1373 * | Canvas | 162x162 | 350x162 | 350x350 | 726x350 |
+| Device | 162x162 | 350x162 | 350x350 | 726x350 |  |
+| 970x1389 * | Canvas | 162x162 | 350x162 | 350x350 | 726x350 |
+| Device | 162x162 | 350x162 | 350x350 | 726x350 |  |
+| 1024x1366 | Canvas | 170x170 | 378.5x170 | 378.5x378.5 | 795x378.5 |
+| Device | 160x160 | 356x160 | 356x356 | 748x356 |  |
+| 1192x1590 * | Canvas | 188x188 | 412x188 | 412x412 | 860x412 |
+| Device | 188x188 | 412x188 | 412x412 | 860x412 |  |
+- When Display Zoom is set to More Space.
+- >  디스플레이 확대/축소가 추가 공간으로 설정된 경우.
+
