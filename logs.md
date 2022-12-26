@@ -75,17 +75,4 @@
  | 2022-12-10 01:34:03 | ./components/system-experiences/widgets.md | 85 | 9512 | 
  | 2022-12-11 01:46:51 | ./inputs/action-button.md | 5 | 9751 | 
  | 2022-12-12 01:41:08 | ./inputs/apple-pencil-and-scribble.md | 28 | 3899 | 
- | 2022-12-13 01:43:53 | ./inputs/apple-pencil-and-scribble.md | 0 | 0 | 
- | 2022-12-14 01:40:20 | ./inputs/apple-pencil-and-scribble.md | 0 | 0 | 
- | 2022-12-15 01:41:49 | ./inputs/apple-pencil-and-scribble.md | 0 | 0 | 
- | 2022-12-16 01:27:17 | ./inputs/apple-pencil-and-scribble.md | 0 | 0 | 
- | 2022-12-17 01:24:35 | ./inputs/apple-pencil-and-scribble.md | 0 | 0 | 
- | 2022-12-18 01:34:29 | ./inputs/apple-pencil-and-scribble.md | 0 | 0 | 
- | 2022-12-19 01:25:08 | ./inputs/apple-pencil-and-scribble.md | 0 | 0 | 
- | 2022-12-20 01:34:41 | ./inputs/apple-pencil-and-scribble.md | 0 | 0 | 
- | 2022-12-21 01:24:59 | ./inputs/apple-pencil-and-scribble.md | 0 | 0 | 
- | 2022-12-22 01:33:49 | ./inputs/apple-pencil-and-scribble.md | 0 | 0 | 
- | 2022-12-23 01:26:42 | ./inputs/apple-pencil-and-scribble.md | 0 | 0 | 
- | 2022-12-24 01:21:58 | ./inputs/apple-pencil-and-scribble.md | 0 | 0 | 
- | 2022-12-25 01:38:10 | ./inputs/apple-pencil-and-scribble.md | 0 | 0 | 
- | 2022-12-26 01:33:57 | ./inputs/apple-pencil-and-scribble.md | 0 | 0 | 
+ | 2022-12-13 01:43:53 | ./inputs/apple-pencil-and-scribble.md | 0 | 0 |
