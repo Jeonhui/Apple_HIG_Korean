@@ -195,3 +195,55 @@ With Scribble and Apple Pencil, people can simply write wherever text is accepte
 
 # **Custom drawing**
 
+Using [PencilKit](https://developer.apple.com/documentation/pencilkit), you can let people take notes, annotate documents and images, and draw with the same low-latency experience that iOS provides. PencilKit also makes it easy to create a custom drawing canvas in your app and offer a state-of-the-art tool picker and ink palette.
+> PencilKit을 사용하면 iOS가 제공하는 것과 동일한 낮은 대기 시간으로 사람들이 메모를 하고, 문서와 이미지에 주석을 달며, 그림을 그릴 수 있습니다. PencilKit는 또한 앱에서 사용자 지정 드로잉 캔버스를 쉽게 만들고 최첨단 도구 선택기와 잉크 팔레트를 제공합니다.
+>
+
+
+
+
+**Help people draw on top of existing content.** By default, the colors on your PencilKit canvas dynamically adjust to Dark Mode, so people can create content in either mode and the results will look great in both. However, when people draw on top of existing content like a PDF or a photo, you want to prevent the dynamic adjustment of colors so that the markup remains sharp and visible.
+> 사람들이 기존 콘텐츠 위에 그림을 그릴 수 있도록 도와줍니다. 기본적으로 PencilKit 캔버스의 색상은 동적으로 다크 모드로 조정되므로 사람들은 어느 모드에서나 콘텐츠를 만들 수 있고 결과는 두 모드 모두에서 훌륭합니다. 그러나 PDF나 사진과 같은 기존 콘텐츠 위에 그림을 그릴 때는 마크업이 선명하고 잘 보이도록 색상이 동적으로 조정되지 않도록 해야 합니다.
+>
+
+
+
+
+**Make sure the tool picker doesn’t obscure content when your app runs in a compact environment.** In a regular environment, the tool picker floats above the content so people can move it out of the way, but in a compact environment the tool picker stays pinned to the bottom edge of the screen. To avoid obscuring people’s content, you can adjust the content view’s frame or the scroll view insets to account for the height of the tool picker.
+> 일반적인 환경에서는 도구 선택기가 콘텐츠 위로 이동하여 사용자가 이동할 수 있지만, 컴팩트한 환경에서는 도구 선택기가 화면 아래쪽 가장자리에 고정되어 있습니다. 사용자의 내용을 흐리지 않도록 도구 선택기 높이를 고려하여 내용 보기의 프레임이나 스크롤 보기를 세트로 조정할 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/apple-pencil-and-scribble/images/compact-layout-right_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/apple-pencil-and-scribble/images/compact-layout-right_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/images/checkmark_2x.png](https://developer.apple.com/design/human-interface-guidelines/images/checkmark_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/apple-pencil-and-scribble/images/compact-layout-wrong_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/apple-pencil-and-scribble/images/compact-layout-wrong_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/images/crossout_2x.png](https://developer.apple.com/design/human-interface-guidelines/images/crossout_2x.png)
+
+**Consider displaying custom undo and redo buttons when your app runs in a compact environment.** In a regular environment, the tool picker includes undo and redo buttons, but in a compact environment it doesn't. In a compact environment, you could display undo and redo buttons in a navigation bar or toolbar. You might also consider supporting the standard 3-finger undo/redo gesture, so people can use it in any environment. For guidance, see [Undo and redo](../patterns/undo-and-redo).
+> 일반적인 환경에서는 도구 선택기에 실행 취소 및 재실행 단추가 포함되어 있지만, 압축 환경에서는 실행 취소 및 재실행 단추가 포함되어 있지 않습니다. 소형 환경에서는 탐색 모음이나 도구 모음에 실행 취소 및 다시 실행 버튼을 표시할 수 있습니다. 사람들이 어떤 환경에서도 사용할 수 있도록 표준 3-손가락 실행 취소/다시 실행 제스처를 지원하는 것을 고려할 수도 있습니다. 자세한 내용은 실행 취소 및 다시 실행을 참조하십시오.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/apple-pencil-and-scribble/images/apple-pencil-undo-redo-buttons-iPadPro_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/apple-pencil-and-scribble/images/apple-pencil-undo-redo-buttons-iPadPro_2x.png)
+
+Regular environment
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/apple-pencil-and-scribble/images/apple-pencil-undo-redo-buttons-iPhone_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/apple-pencil-and-scribble/images/apple-pencil-undo-redo-buttons-iPhone_2x.png)
+
+Compact environment
+
+# **Platform considerations**
+
+*Not supported in iOS, macOS, tvOS, or watchOS.*
+> iOS, macOS, tvOS 또는 watch에서 지원되지 않음운영 체제
+>
+
+
+
