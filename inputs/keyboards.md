@@ -133,3 +133,299 @@ Here are the modifier keys and the symbols that represent them.
 
 
 
+**Avoid creating a new shortcut by adding a modifier to an existing shortcut for an unrelated command.** For example, because people are accustomed to using Command-Z for undoing an action, it would be confusing to use Shift-Command-Z as the shortcut for a command that’s unrelated to undo and redo.
+> 관련이 없는 명령에 대한 기존 바로 가기에 수정자를 추가하여 새 바로 가기를 만들지 마십시오. 예를 들어, 작업을 실행 취소하는 데 Command-Z를 사용하는 데 익숙하기 때문에 실행 취소 및 다시 실행과 관련이 없는 명령에 대한 바로 가기로 Shift-Command-Z를 사용하면 혼란스러울 수 있습니다.
+>
+
+
+
+
+**List modifier keys in the correct order.** If you use more than one modifier key in a custom shortcut, always list them in this order: Control, Option, Shift, Command.
+> 수정자 키를 올바른 순서로 나열합니다. 사용자 지정 바로 가기에서 두 개 이상의 수정자 키를 사용하는 경우 항상 다음 순서로 나열하십시오. 제어, 옵션, 시프트, 명령.
+>
+
+
+
+
+**Identify a two-character key by its lower character unless Shift is part of the shortcut.** For example, the keyboard shortcut for Hide Status Bar is Command-Slash (/). If the Shift key is part of the keyboard shortcut, identify the key using the upper of the two characters. For example, the keyboard shortcut for Help is Command-Question Mark (?), not Shift-Command-Slash.
+> Shift가 바로 가기의 일부가 아닌 경우 두 문자 키를 소문자로 식별합니다. 예를 들어, 상태 숨기기 표시줄의 바로 가기 키는 명령 슬래시(/)입니다. Shift 키가 바로 가기 키의 일부인 경우 두 문자 중 위쪽을 사용하여 키를 식별합니다. 예를 들어, 도움말의 바로 가기 키는 Shift-Command-Slash가 아니라 명령-질문 표시(?)입니다.
+>
+
+
+
+
+**TIP**Some languages require modifier keys to generate certain characters. For example, on a French keyboard, Option-5 generates the “{“ character. It’s usually safe to use the Command key as a modifier, but avoid using an additional modifier with characters that aren’t available on all keyboards. If you must use a modifier other than Command, prefer using it only with the alphabetic characters.
+> 팁 일부 언어에서는 특정 문자를 생성하기 위해 수식자 키가 필요합니다. 예를 들어 프랑스어 키보드에서 옵션-5는 "{" 문자를 생성합니다. 일반적으로 명령 키를 한정자로 사용하는 것이 안전하지만 일부 키보드에서는 사용할 수 없는 문자와 함께 추가 한정자를 사용하지 않도록 합니다. 명령 이외의 수식어를 사용해야 하는 경우, 영문자로만 사용하는 것을 선호합니다.
+>
+
+
+
+
+**Let the system localize and mirror your keyboard shortcuts as needed.**For example, iPadOS automatically localizes a shortcut’s primary key and modifier keys to support the currently connected keyboard. Also, if your app switches to a right-to-left layout, the system automatically mirrors the shortcut. For guidance, see [Right to left](../foundations/right-to-left).
+> 시스템이 필요에 따라 키보드 단축키를 현지화하고 미러링하도록 합니다.예를 들어, iPadOS는 자동으로 단축키의 기본 키와 수정자 키를 현지화하여 현재 연결된 키보드를 지원합니다. 또한 앱이 오른쪽에서 왼쪽 레이아웃으로 전환되면 시스템이 자동으로 바로 가기를 미러링합니다. 자세한 내용은 오른쪽에서 왼쪽을 참조하십시오.
+>
+
+
+
+
+# **Platform considerations**
+
+*No additional considerations for iOS, macOS, or tvOS. Not supported in watchOS.*
+> iOS, macOS 또는 tvOS에 대한 추가 고려사항은 없습니다. 워치에서 지원되지 않음운영 체제
+>
+
+
+
+
+# **iPadOS**
+
+**Help people discover available actions in your iPadOS app.** Because the iPad shortcut interface displays a flat list of all items in each category, submenu titles aren’t available to provide context for their child items. For example, the item titles Name and Date Added don’t make sense without the context of the submenu title Sort Bookmarks By. You can enhance each item’s title by including the necessary context, such as Sort Bookmarks by Name and Sort Bookmarks by Date Added. For developer guidance, see [discoverabilityTitle](https://developer.apple.com/documentation/uikit/uikeycommand/1621094-discoverabilitytitle).
+> iPad 바로 가기 인터페이스는 각 범주의 모든 항목을 표시하므로 하위 메뉴 제목을 사용하여 하위 항목의 컨텍스트를 제공할 수 없습니다. 예를 들어, 항목 제목 이름 및 추가된 날짜는 하위 메뉴 제목 정렬 기준의 컨텍스트 없이는 의미가 없습니다. 이름별 책갈피 정렬 및 추가된 날짜별 책갈피 정렬과 같은 필요한 컨텍스트를 포함하여 각 항목의 제목을 향상시킬 수 있습니다. 개발자 지침은 검색 가능성을 참조하십시오.제목.
+>
+
+
+
+
+### **Keyboard navigation on iPad**
+
+By default, iPadOS 15 and later enables keyboard navigation in text fields, text views, and sidebars, providing APIs you can use to enable it in various types of collection views and other custom views in your app. For developer guidance, see [Focus-based navigation](https://developer.apple.com/documentation/uikit/focus-based_navigation).
+> 기본적으로 iPadOS 15 이상은 텍스트 필드, 텍스트 보기 및 사이드바에서 키보드 탐색을 활성화하여 앱의 다양한 유형의 컬렉션 보기 및 기타 사용자 지정 보기에서 활성화하는 데 사용할 수 있는 API를 제공합니다. 개발자 지침은 포커스 기반 탐색을 참조하십시오.
+>
+
+
+
+
+**IMPORTANT**Avoid enabling keyboard navigation for controls, such as buttons, segmented controls, and switches. Full keyboard-access mode already helps people activate controls, navigate to all onscreen components, and even perform gesture-based interactions like drag and drop.
+> 중요 단추, 세그먼트화된 컨트롤 및 스위치와 같은 컨트롤에 대해 키보드 탐색을 활성화하지 마십시오. 전체 키보드 액세스 모드는 이미 사용자가 컨트롤을 활성화하고 모든 화면 구성 요소로 이동하며 드래그 앤 드롭과 같은 제스처 기반 상호 작용을 수행하는 데 도움이 됩니다.
+>
+
+
+
+
+The iPadOS and tvOS focus systems are similar. People perform actions by moving a focus indicator to an item and then selecting it (for guidance, see [Focus and selection](../inputs/focus-and-selection)). Although the underlying system is the same, the user experiences are a little different. tvOS uses *directional focus*, which means that people can use the same interaction — that is, swiping the Siri Remote or using only the arrow keys on a connected keyboard — to navigate to every onscreen component. In contrast, iPadOS defines *focus groups*, which represent specific areas within an app, like a sidebar, grid, or list. Using focus groups, iPadOS can support two different keyboard interactions.
+> 아이패드OS와 TVOS 포커스 시스템은 비슷하다. 사용자는 포커스 표시기를 항목으로 이동한 다음 선택하여 작업을 수행합니다(자세한 내용은 포커스 및 선택 참조). 기본 시스템은 동일하지만 사용자 경험은 약간 다릅니다. 즉, 사람들은 동일한 상호 작용, 즉 연결된 키보드의 화살표 키만 사용하여 모든 화면 구성 요소로 이동할 수 있습니다. 대조적으로, iPadOS는 사이드바, 그리드 또는 목록과 같은 앱 내의 특정 영역을 나타내는 포커스 그룹을 정의합니다. 포커스 그룹을 사용하여 iPadOS는 두 가지 다른 키보드 상호 작용을 지원할 수 있습니다.
+>
+
+
+
+
+- Pressing the Tab key moves focus among focus groups, letting people navigate to sidebars, grids, and other app areas.
+- >  Tab 키를 누르면 포커스 그룹 간에 포커스가 이동하여 사이드바, 그리드 및 기타 앱 영역으로 이동할 수 있습니다.
+
+- Pressing an arrow key enables a directional focus interaction that’s similar to tvOS, but limited to navigation among items in the same focus group. For example, people can use an arrow key to move through the items in a list or a sidebar.
+- >  화살표 키를 누르면 TVOS와 유사하지만 동일한 포커스 그룹의 항목 간 탐색으로 제한되는 방향 포커스 상호 작용이 가능합니다. 예를 들어, 사용자는 화살표 키를 사용하여 목록이나 사이드바의 항목을 이동할 수 있습니다.
+
+
+Onscreen components can indicate focus by using the halo effect or the highlighted appearance.
+> 화면 구성 요소는 후광 효과 또는 강조 표시된 모양을 사용하여 초점을 나타낼 수 있습니다.
+>
+
+
+
+
+The *halo* focus effect — also known as the *focus ring* — displays a customizable outline around the component. You can apply the halo effect to custom views and to fully opaque content within a collection or list cell, such as an image.
+> 초점 링이라고도 하는 후광 초점 효과는 구성 요소 주위에 사용자 정의 가능한 윤곽선을 표시합니다. 이미지와 같은 컬렉션 또는 목록 셀 내의 완전히 불투명한 내용과 사용자 정의 보기에 후광 효과를 적용할 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/keyboards/images/halo-focus-effect_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/keyboards/images/halo-focus-effect_2x.png)
+
+Photos uses the halo effect to indicate the focused photo in a collection.
+> 사진은 컬렉션에서 초점을 맞춘 사진을 나타내기 위해 후광 효과를 사용합니다.
+>
+
+
+
+
+**Customize the halo focus effect when necessary.** By default, the system uses an item’s shape to infer the shape of its halo. If the system-provided halo doesn’t give you the appearance you want, you can refine it to match contours like rounded corners or shapes defined by Bézier paths. You can also adjust a halo’s position if another component occludes or clips it. For example, you might need to ensure that a badge appears above the halo or that a parent view doesn’t clip it. For developer guidance, see [UIFocusHaloEffect](https://developer.apple.com/documentation/uikit/uifocushaloeffect).
+> 필요한 경우 후광 초점 효과를 사용자 지정합니다. 기본적으로 시스템은 항목의 모양을 사용하여 후광의 모양을 유추합니다. 시스템에서 제공한 후광이 원하는 모양을 제공하지 않는 경우 둥근 모서리나 Bézier 경로에서 정의한 모양과 같은 윤곽선에 맞게 다듬을 수 있습니다. 다른 구성 요소가 후광을 막거나 잘라내는 경우 후광의 위치를 조정할 수도 있습니다. 예를 들어 배지가 후광 위에 나타나는지 또는 상위 보기가 배지를 클리핑하지 않는지 확인해야 할 수 있습니다. 개발자 지침은 UIFocus HaloEffect를 참조하십시오.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/keyboards/images/customized-halo_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/keyboards/images/customized-halo_2x.png)
+
+Photos uses a rounded-corner halo to match the corners of the focused album’s thumbnail.
+> 사진은 초점이 맞춰진 앨범 썸네일의 모서리와 일치하도록 둥근 모서리의 후광을 사용한다.
+>
+
+
+
+
+The *highlighted* appearance — in which the component’s background uses the app’s accent color — also indicates focus, but it’s not a focus effect. The highlight appearance occurs automatically when people select a collection view cell on which you’ve set background and content configurations (for developer guidance, see [UICollectionViewCell](https://developer.apple.com/documentation/uikit/uicollectionviewcell)).
+> 구성 요소의 배경에서 앱의 액센트 색상을 사용하는 강조 표시된 모양도 포커스를 나타내지만 포커스 효과는 아닙니다. 사용자가 배경 및 내용 구성을 설정한 컬렉션 보기 셀을 선택하면 사용자가 강조 표시됩니다(개발자 지침은 UICollection ViewCell 참조).
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/keyboards/images/highlighted-appearance_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/keyboards/images/highlighted-appearance_2x.png)
+
+Photos uses the highlighted appearance to indicate the selected item in the sidebar.
+> 사진은 사이드바에서 선택한 항목을 나타내기 위해 강조 표시된 모양을 사용합니다.
+>
+
+
+
+
+**Ensure that focus moves through your custom views in ways that make sense.** As people continue pressing the Tab key, focus moves through focus groups in reading order: leading to trailing, and top to bottom. Although focus moves through system-provided views in ways that people expect, you might need to adjust the order in which the focus system visits your custom views. For example, if you want focus to move down through a vertical stack of custom views before it moves in the trailing direction to the next view, you need to identify the stack container as a single focus group. For developer guidance, see [focusGroupIdentifier](https://developer.apple.com/documentation/uikit/uifocusenvironment/3601224-focusgroupidentifier).
+> 포커스가 사용자 정의 보기를 통해 적절한 방식으로 이동하는지 확인하십시오. 사람들이 Tab 키를 계속 누르면 포커스 그룹에서 읽기 순서로 이동합니다. 포커스는 사람들이 예상하는 방식으로 시스템에서 제공한 보기를 통해 이동하지만 포커스 시스템이 사용자 정의 보기를 방문하는 순서를 조정해야 할 수도 있습니다. 예를 들어, 포커스가 다음 뷰의 후행 방향으로 이동하기 전에 사용자 정의 뷰의 수직 스택을 통해 아래로 이동하려면 스택 컨테이너를 단일 포커스 그룹으로 식별해야 합니다. 개발자 지침은 focusGroupIdentifier를 참조하십시오.
+>
+
+
+
+
+**Adjust the priority of an item to reflect its importance within a focus group.** When a group receives focus, its *primary item* automatically receives focus too, making it easy for people to select the item they’re most likely to want. You can make an item primary by increasing its priority. For developer guidance, see [UIFocusGroupPriority](https://developer.apple.com/documentation/uikit/uifocusgrouppriority/).
+> 포커스 그룹 내에서 중요도를 반영하도록 항목의 우선 순위를 조정합니다. 그룹이 포커스를 받으면 기본 항목도 자동으로 포커스를 받아 사람들이 원하는 항목을 쉽게 선택할 수 있습니다. 우선 순위를 높여 항목을 주 항목으로 만들 수 있습니다. 개발자 지침은 UIFocusGroupPriority를 참조하십시오.
+>
+
+
+
+
+# **Specifications**
+
+# **Reserved keyboard shortcuts**
+
+The following keyboard shortcuts are either reserved by the system or well-known to people.
+> 다음 키보드 단축키는 시스템에 의해 예약되었거나 사람들에게 잘 알려져 있습니다.
+>
+
+
+
+
+| Primary Key | Keyboard Shortcut | Used by the System | Action |
+| --- | --- | --- | --- |
+| Space | Command-Space | ● | Show or hide the Spotlight search field. |
+|  | Shift-Command-Space | ● | Varies. Apple reserved. |
+|  | Option-Command-Space | ● | Show the Spotlight search results window. |
+|  | Control-Command-Space | ● | Show the Special Characters window. |
+| Tab | Shift-Tab | ● | Navigate through controls in a reverse direction. |
+|  | Command-Tab | ● | Move forward to the next most recently used app in a list of open apps. |
+|  | Shift-Command-Tab | ● | Move backward through a list of open apps (sorted by recent use). |
+|  | Control-Tab | ● | Move focus to the next group of controls in a dialog or the next table (when Tab moves to the next cell). |
+|  | Control-Shift-Tab | ● | Move focus to the previous group of controls. |
+| Esc | Option-Command-Esc | ● | Open the Force Quit dialog. |
+| Eject | Control-Command-Eject | ● | Quit all apps (after changes have been saved to open documents) and restart the computer. |
+|  | Control-Option-Command-Eject | ● | Quit all apps (after changes have been saved to open documents) and shut the computer down. |
+| F1 | Control-F1 | ● | Toggle full keyboard access on or off. |
+| F2 | Control-F2 | ● | Move focus to the menu bar. |
+| F3 | Control- F3 | ● | Move focus to the Dock. |
+| F4 | Control-F4 | ● | Move focus to the active (or next) window. |
+|  | Control-Shift-F4 | ● | Move focus to the previously active window. |
+| F5 | Control-F5 | ● | Move focus to the toolbar. |
+|  | Command-F5 | ● | Turn VoiceOver on or off. |
+| F6 | Control-F6 | ● | Move focus to the first (or next) panel. |
+|  | Control-Shift-F6 | ● | Move focus to the previous panel. |
+| F7 | Control-F7 | ● | Temporarily override the current keyboard access mode in windows and dialogs. |
+| F8 |  | ● | Varies. Apple reserved. |
+| F9 |  | ● | Varies. Apple reserved. |
+| F10 |  | ● | Varies. Apple reserved. |
+| F11 |  | ● | Show desktop. |
+| F12 |  | ● | Hide or display Dashboard. |
+| Grave accent (`) | Command-Grave accent | ● | Activate the next open window in the frontmost app. |
+|  | Shift-Command-Grave accent | ● | Activate the previous open window in the frontmost app. |
+|  | Option-Command-Grave accent | ● | Move focus to the window drawer. |
+| Hyphen (-) | Command-Hyphen | ● | Decrease the size of the selection. |
+|  | Option-Command-Hyphen | ● | Zoom out when screen zooming is on. |
+| Left bracket ({) | Command-Left bracket |  | Left-align a selection. |
+| Right bracket (}) | Command-Right bracket |  | Right-align a selection. |
+| Pipe (|) | Command-Pipe |  | Center-align a selection. |
+| Colon (:) | Command-Colon |  | Display the Spelling window. |
+| Semicolon (;) | Command-Semicolon |  | Find misspelled words in the document. |
+| Comma (,) | Command-Comma |  | Open the app’s settings window. |
+|  | Control-Option-Command-Comma | ● | Decrease screen contrast. |
+| Period (.) | Control-Option-Command-Period | ● | Increase screen contrast. |
+| Question mark (?) | Command-Question mark |  | Open the app’s Help menu. |
+| Forward slash (/) | Option-Command-Forward slash | ● | Turn font smoothing on or off. |
+| Equal sign (=) | Shift-Command-Equal sign | ● | Increase the size of the selection. |
+|  | Option-Command-Equal sign | ● | Zoom in when screen zooming is on. |
+| 3 | Shift-Command-3 | ● | Capture the screen to a file. |
+|  | Control-Shift-Command-3 | ● | Capture the screen to the Clipboard. |
+| 4 | Shift-Command-4 | ● | Capture a selection to a file. |
+|  | Control-Shift-Command-4 | ● | Capture a selection to the Clipboard. |
+| 8 | Option-Command-8 | ● | Turn screen zooming on or off. |
+|  | Control-Option-Command-8 | ● | Invert the screen colors. |
+| A | Command-A |  | Selects every item in a document or window, or all characters in a text field. |
+|  | Shift-Command-A |  | Deselects all selections or characters. |
+| B | Command-B |  | Boldface the selected text or toggle boldfaced text on and off. |
+| C | Command-C |  | Copy the selection to the Clipboard. |
+|  | Shift-Command-C |  | Display the Colors window. |
+|  | Option-Command-C |  | Copy the style of the selected text. |
+|  | Control-Command-C |  | Copy the formatting settings of the selection and store on the Clipboard. |
+| D | Option-Command-D | ● | Show or hide the Dock. |
+|  | Control-Command-D |  | Display the definition of the selected word in the Dictionary app. |
+| E | Command-E |  | Use the selection for a find operation. |
+| F | Command-F |  | Open a Find window. |
+|  | Option-Command-F |  | Jump to the search field control. |
+|  | Control-Command-F |  | Enter full screen. |
+| G | Command-G |  | Find the next occurrence of the selection. |
+|  | Shift-Command-G |  | Find the previous occurrence of the selection. |
+| H | Command-H |  | Hide the windows of the currently running app. |
+|  | Option-Command-H |  | Hide the windows of all other running apps. |
+| I | Command-I |  | Italicize the selected text or toggle italic text on or off. |
+|  | Command-I |  | Display an Info window. |
+|  | Option-Command-I |  | Display an inspector window. |
+| J | Command-J |  | Scroll to a selection. |
+| M | Command-M |  | Minimize the active window to the Dock. |
+|  | Option-Command-M |  | Minimize all windows of the active app to the Dock. |
+| N | Command-N |  | Open a new document. |
+| O | Command-O |  | Display a dialog for choosing a document to open. |
+| P | Command-P |  | Display the Print dialog. |
+|  | Shift-Command-P |  | Display the Page Setup dialog. |
+| Q | Command-Q |  | Quit the app. |
+|  | Shift-Command-Q | ● | Log out the current user. |
+|  | Option-Shift-Command-Q | ● | Log out the current user without confirmation. |
+| S | Command-S |  | Save a new document or save a version of a document. |
+|  | Shift-Command-S |  | Duplicate the active document or initiate a Save As. |
+| T | Command-T |  | Display the Fonts window. |
+|  | Option-Command-T |  | Show or hide a toolbar. |
+| U | Command-U |  | Underline the selected text or turn underlining on or off. |
+| V | Command-V |  | Paste the Clipboard contents at the insertion point. |
+|  | Shift-Command-V |  | Paste as (Paste as Quotation, for example). |
+|  | Option-Command-V |  | Apply the style of one object to the selection. |
+|  | Option-Shift-Command-V |  | Paste the Clipboard contents at the insertion point and apply the style of the surrounding text to the inserted object. |
+|  | Control-Command-V |  | Apply formatting settings to the selection. |
+| W | Command-W |  | Close the active window. |
+|  | Shift-Command-W |  | Close a file and its associated windows. |
+|  | Option-Command-W |  | Close all windows in the app. |
+| X | Command-X |  | Remove the selection and store on the Clipboard. |
+| Z | Command-Z |  | Undo the previous operation. |
+|  | Shift-Command-Z |  | Redo (when Undo and Redo are separate commands rather than toggled using Command-Z). |
+| Right arrow | Command-Right arrow | ● | Change the keyboard layout to current layout of Roman script. |
+|  | Shift-Command-Right arrow | ● | Extend selection to the next semantic unit, typically the end of the current line. |
+|  | Shift-Right arrow | ● | Extend selection one character to the right. |
+|  | Option-Shift-Right arrow | ● | Extend selection to the end of the current word, then to the end of the next word. |
+|  | Control-Right arrow | ● | Move focus to another value or cell within a view, such as a table. |
+| Left arrow | Command-Left arrow | ● | Change the keyboard layout to current layout of system script. |
+|  | Shift-Command-Left arrow | ● | Extend selection to the previous semantic unit, typically the beginning of the current line. |
+|  | Shift-Left arrow | ● | Extend selection one character to the left. |
+|  | Option-Shift-Left arrow | ● | Extend selection to the beginning of the current word, then to the beginning of the previous word. |
+|  | Control-Left arrow | ● | Move focus to another value or cell within a view, such as a table. |
+| Up arrow | Shift-Command-Up arrow | ● | Extend selection upward in the next semantic unit, typically the beginning of the document. |
+|  | Shift-Up arrow | ● | Extend selection to the line above, to the nearest character boundary at the same horizontal location. |
+|  | Option-Shift-Up arrow | ● | Extend selection to the beginning of the current paragraph, then to the beginning of the next paragraph. |
+|  | Control-Up arrow | ● | Move focus to another value or cell within a view, such as a table. |
+| Down arrow | Shift-Command-Down arrow | ● | Extend selection downward in the next semantic unit, typically the end of the document. |
+|  | Shift-Down arrow | ● | Extend selection to the line below, to the nearest character boundary at the same horizontal location. |
+|  | Option-Shift-Down arrow | ● | Extend selection to the end of the current paragraph, then to the end of the next paragraph (include the paragraph terminator, such as Return, in cut, copy, and paste operations). |
+|  | Control-Down arrow | ● | Move focus to another value or cell within a view, such as a table. |
+
+# **Reserved international keyboard shortcuts**
+
+The system reserves several key combinations for use with localized versions of the system, localized keyboard, keyboard layouts, and input methods. These shortcuts don’t correspond directly to menu commands.
+> 시스템은 현지화된 버전의 시스템, 현지화된 키보드, 키보드 레이아웃 및 입력 방법과 함께 사용하기 위해 몇 가지 키 조합을 예약합니다. 이러한 바로 가기는 메뉴 명령과 직접 일치하지 않습니다.
+>
+
+
+
+
+| Keyboard shortcut | Action |
+| --- | --- |
+| Control-Space | Toggle between the current and last input source. |
+| Control-Option-Space | Switch to the next input source in the list. |
+| [Modifier key]-Command-Space | Varies. Apple reserved. |
+| Command-Right arrow | Change keyboard layout to current layout of Roman script. |
+| Command-Left arrow | Change keyboard layout to current layout of system script. |
