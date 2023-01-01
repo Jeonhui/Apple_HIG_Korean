@@ -317,3 +317,48 @@ The system also applies magnetism to text-entry areas, where it can help people 
 
 
 
+**Consider the interplay of shadow, scale, and element spacing when defining custom hover effects.** In general, reserve scaling for elements that can increase in size without crowding nearby elements. For example, scaling doesn’t work well for a table row because a row can’t expand without overlapping adjacent rows. For an element that has little space around it, consider using a hover effect that includes tint, but not scale and shadow. Note that it doesn’t work well to use shadow without including scale, because an unscaled element doesn’t appear to get closer to the viewer even when its shadow implies that it’s elevated above the screen.
+> 사용자 지정 호버 효과를 정의할 때 섀도, 스케일 및 요소 간격의 상호 작용을 고려하십시오. 일반적으로 주변 요소에 혼잡하지 않고 크기를 늘릴 수 있는 요소에 대해 스케일링을 예약하십시오. 예를 들어 테이블 행의 경우 인접한 행이 겹치지 않으면 행을 확장할 수 없기 때문에 축척이 제대로 작동하지 않습니다. 주변에 공간이 거의 없는 요소의 경우 색조를 포함하지만 척도와 그림자는 포함하지 않는 호버 효과를 사용하는 것이 좋습니다. 스케일을 포함하지 않고 그림자를 사용하는 것은 잘 작동하지 않습니다. 스케일이 없는 요소는 그림자가 화면 위로 올라간다는 것을 암시하더라도 뷰어에 더 가까이 접근하지 않기 때문입니다.
+>
+
+
+
+
+# **macOS**
+
+macOS supports a wide range of standard mouse and trackpad interactions that people can customize. For example, when a click or gesture isn’t a primary way to interact with content, people can often turn it on or off based on their current workflow. People can also choose specific regions of a mouse or trackpad to invoke secondary clicks, and select specific finger combinations and movements for certain gestures.
+> macOS는 사용자 지정이 가능한 광범위한 표준 마우스 및 트랙패드 상호 작용을 지원합니다. 예를 들어 클릭이나 제스처가 콘텐츠와 상호 작용하는 기본 방법이 아닌 경우 사용자는 현재 워크플로우를 기준으로 콘텐츠를 설정하거나 해제할 수 있습니다. 또한 마우스나 트랙패드의 특정 영역을 선택하여 보조 클릭을 호출하고 특정 제스처에 대한 특정 손가락 조합 및 동작을 선택할 수 있습니다.
+>
+
+
+
+
+| Click or gesture | Expected behavior | Mouse | Trackpad |
+| --- | --- | --- | --- |
+| Primary click | Select or activate an item, such as a file or button. | ● | ● |
+| Secondary click | Reveal contextual menus. | ● | ● |
+| Scrolling | Move content up, down, left, or right within a view. | ● | ● |
+| Smart zoom | Zoom in or out on content, such as a web page or PDF. | ● | ● |
+| Swipe between pages | Navigate forward or backward between individually displayed pages. | ● | ● |
+| Swipe between full-screen apps | Navigate forward or backward between full-screen apps and spaces. | ● | ● |
+| Mission Control (double-tap the mouse with two fingers or swipe up on the trackpad with three or four fingers) | Activate Mission Control. | ● | ● |
+| Lookup and data detectors (force click with one finger or tap with three fingers) | Display a lookup window above selected content. |  | ● |
+| Tap to click | Perform the primary click action using a tap rather than a click. |  | ● |
+| Force click | Click then press firmly to display a Quick Look window or lookup window above selected content. Apply a variable amount of pressure to affect pressure-sensitive controls, such as variable speed media controls. |  | ● |
+| Zoom in or out (pinch with two fingers) | Zoom in or out. |  | ● |
+| Rotate (move two fingers in a circular motion) | Rotate content, such as an image. |  | ● |
+| Notification Center (swipe from the edge of the trackpad) | Display Notification Center. |  | ● |
+| App Exposé (swipe down with three or four fingers) | Display the current app’s windows in Exposé. |  | ● |
+| Launchpad (pinch with thumb and three fingers) | Display the Launchpad. |  | ● |
+| Show Desktop (spread with thumb and three fingers) | Slide all windows out of the way to reveal the desktop. |  | ● |
+
+### **Pointers**
+
+macOS offers a variety of standard pointer styles, which your app can use to communicate the interactive state of an interface element or the result of a drag operation.
+> macOS는 다양한 표준 포인터 스타일을 제공하며, 이를 통해 인터페이스 요소의 대화형 상태나 드래그 작업 결과를 전달할 수 있습니다.
+>
+
+
+
+
+[제목 없음](https://www.notion.so/be8067b1636b49388bc4f29da7aef908)
