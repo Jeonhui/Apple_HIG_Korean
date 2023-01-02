@@ -46,3 +46,73 @@ Spatial interactions are available on devices that support Ultra Wideband techno
 
 
 
+**Provide continuous feedback.** Continuous feedback reflects the dynamism of the physical world and strengthens the connection between a spatial interaction and the task people are performing. For example, when looking for a lost item in Find My, people get continuous updates that communicate the item’s direction and proximity. Keep people engaged by providing uninterrupted feedback that responds to their movements.
+> 지속적인 피드백을 제공합니다. 지속적인 피드백은 물리적 세계의 역동성을 반영하고 공간적 상호작용과 사람들이 수행하는 작업 사이의 연결을 강화합니다. 예를 들어, 내 찾기에서 분실물을 찾을 때 사람들은 그 물건의 방향과 근접성을 알려주는 지속적인 업데이트를 받는다. 사용자의 움직임에 반응하는 중단 없는 피드백을 제공하여 사용자를 참여시킵니다.
+>
+
+
+
+
+**Consider using multiple feedback types to create a holistic experience.**Fluidly transitioning among visual, audible, and haptic feedback can help a spatial interaction’s task feel more engaging and real. Using more than one type of feedback also lets you vary the experience to coordinate with both the task and the current context. For example, while people are interacting with the device screen, visual feedback makes sense; while people are interacting with their environment, audible and haptic feedback complement their shift in focus.
+> 전체적인 경험을 만들기 위해 여러 피드백 유형을 사용하는 것을 고려해 보십시오.시각적, 청각적 및 촉각적 피드백 사이에서 유동적으로 전환하면 공간 상호 작용의 작업이 더 매력적이고 실제적으로 느낄 수 있다. 두 가지 이상의 피드백 유형을 사용하면 작업 및 현재 컨텍스트와 조정할 수 있는 환경을 변경할 수도 있습니다. 예를 들어, 사람들이 기기 화면과 상호작용하는 동안 시각적 피드백은 의미가 있다. 사람들이 환경과 상호작용하는 동안 청각적 및 촉각적 피드백은 초점의 변화를 보완한다.
+>
+
+
+
+
+**Avoid using a spatial interaction as the only way to perform a task.** You can’t assume that everyone can experience a spatial interaction, so it’s essential to provide alternative ways to get things done in your app.
+> 작업을 수행하는 유일한 방법으로 공간 상호 작용을 사용하는 것을 피하십시오. 모든 사람이 공간 상호 작용을 경험할 수 있다고 가정할 수는 없으므로 앱에서 작업을 수행할 수 있는 다른 방법을 제공하는 것이 필수적입니다.
+>
+
+
+
+
+# **Device usage**
+
+**Encourage people to hold the device in portrait orientation.** Holding a device in landscape can decrease the accuracy and availability of information about the distance and relative direction of other devices. If you support only portrait orientation while your spatial interaction feature runs, prefer giving people implicit, visual feedback on how to hold the device for an optimal experience; when possible, avoid explicitly telling people to hold the device in portrait.
+> 사람들이 장치를 세로 방향으로 잡도록 권장합니다. 가로 방향으로 잡으면 다른 장치의 거리와 상대적 방향에 대한 정보의 정확성과 가용성이 저하될 수 있습니다. 공간 상호 작용 기능이 실행되는 동안 세로 방향만 지원하는 경우 최적의 경험을 위해 장치를 잡는 방법에 대해 암시적이고 시각적인 피드백을 사람들에게 제공하는 것이 좋습니다. 가능하면 사람들에게 장치를 세로 방향으로 고정하라고 명시적으로 말하지 마십시오.
+>
+
+
+
+
+**Design for the device’s directional field of view.** Nearby interaction relies on a hardware sensor with a specific field of view similar to that of the Ultra Wide camera in iPhone 11 and later. If a participating device is outside of this field of view, your app might receive information about its distance, but not its relative direction.
+> 장치의 방향 시야를 위한 디자인. 근처 상호 작용은 아이폰 11 이상의 울트라 와이드 카메라와 유사한 특정 시야를 가진 하드웨어 센서에 의존한다. 참여 단말기가 이 시야 밖에 있는 경우 앱은 상대적인 방향이 아닌 거리에 대한 정보를 수신할 수 있습니다.
+>
+
+
+
+
+**Help people understand how intervening objects can affect the nearby interaction experience in your app.** When other people, animals, or sufficiently large objects come between two participating devices, the accuracy or availability of distance and direction information can decrease. Consider adding advice on avoiding this situation to onboarding or tutorial content you present.
+> 다른 사람, 동물 또는 충분히 큰 개체가 두 개의 참여 장치 사이에 있으면 거리 및 방향 정보의 정확성이나 가용성이 저하될 수 있습니다. 이러한 상황을 피하는 방법에 대한 조언을 제공하는 온보딩 또는 튜토리얼 콘텐츠에 추가하는 것을 고려해 보십시오.
+>
+
+
+
+
+# **Platform considerations**
+
+*No additional considerations for iPadOS. Not supported in macOS or tvOS.*
+> iPadOS에 대한 추가 고려 사항은 없습니다. macOS 또는 tvOS에서는 지원되지 않습니다.
+>
+
+
+
+
+# **iOS**
+
+On iPhone, Nearby Interaction APIs provide a peer device’s distance and direction.
+> 아이폰에서 근거리 상호작용 API는 피어 장치의 거리와 방향을 제공한다.
+>
+
+
+
+
+# **watchOS**
+
+On Apple Watch, Nearby Interaction APIs provide a peer device’s distance. Also, all watchOS apps participating in a nearby interaction experience must be in the foreground.
+> Apple Watch에서 Neighbor Interaction API는 피어 장치의 거리를 제공합니다. 또한, 모든 시계가까운 상호 작용 경험에 참여하는 OS 앱이 전면에 있어야 합니다.
+>
+
+
+
