@@ -215,3 +215,415 @@ Keep the following guidance in mind as you design your app’s Touch Bar interfa
 
 # **Color**
 
+**Prefer standard controls and system icons.** The standard controls and system icons already use colors that work well in the Touch Bar. For a list of available system icons, see [Interface icons](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar#interface-icons).
+> 표준 컨트롤과 시스템 아이콘을 선호합니다. 표준 컨트롤과 시스템 아이콘은 이미 터치 바에서 잘 작동하는 색을 사용합니다. 사용 가능한 시스템 아이콘 목록은 인터페이스 아이콘을 참조하십시오.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/TB_visualDesign_colorOne_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/TB_visualDesign_colorOne_2x.png)
+
+**Use color tastefully and minimally.** In general, make the Touch Bar similar in appearance to the physical keyboard. Monochromatic colors work best. If you must use colors in your controls, do so tastefully and primarily in temporary states. Colors shouldn’t appear overwhelming or out of place.
+> 일반적으로 터치 바는 실제 키보드와 모양이 비슷하도록 합니다. 단색 컬러가 가장 잘 어울린다. 컨트롤에서 색상을 사용해야 하는 경우에는 주로 임시 상태에서 맛깔스럽게 사용하십시오. 색상이 압도적으로 보이거나 어울리지 않아야 합니다.
+>
+
+
+
+
+**Use color to denote prominence.** Color can draw the eye to important controls. Reserve blue for default controls and red for destructive controls.
+> 색상을 사용하여 눈에 띄는 부분을 표시합니다. 색상은 중요한 컨트롤로 눈을 끌 수 있습니다. 기본 컨트롤의 경우 파란색으로, 파괴 컨트롤의 경우 빨간색으로 예약합니다.
+>
+
+
+
+
+**If you use color, choose a limited palette that coordinates with your app.** Subtle use of color is one way to communicate your brand.
+> 색상을 사용하는 경우 앱과 조화를 이루는 한정된 팔레트를 선택하십시오. 색상의 미묘한 사용은 브랜드를 전달하는 한 가지 방법입니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/TB_visualDesign_colorTwo_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/TB_visualDesign_colorTwo_2x.png)
+
+**Provide wide color artwork.** The Touch Bar supports a P3 color space that can produce richer, more saturated colors than sRGB. Use the Display P3 color profile at 16 bits per pixel (per channel) and export your artwork in the PNG format. For guidance, see [Color management](https://developer.apple.com/design/human-interface-guidelines/foundations/color#color-management).
+> 넓은 컬러 아트워크를 제공합니다. 터치바는 SRGB보다 더 풍부하고 더 포화된 컬러를 생성할 수 있는 P3 컬러 공간을 지원합니다. 디스플레이 P3 색상 프로파일을 픽셀당 16비트(채널당)로 사용하고 아트워크를 PNG 형식으로 내보냅니다. 자세한 내용은 색 관리를 참조하십시오.
+>
+
+
+
+
+**TIP**On a Mac that features a wide color display, you can use the system color picker to select and preview P3 colors, and to compare them with sRGB colors.
+> 팁넓은 색 디스플레이를 갖춘 Mac에서는 시스템 색 선택기를 사용하여 P3 색을 선택하고 미리 보고 sRGB 색과 비교할 수 있습니다.
+>
+
+
+
+
+### **System colors**
+
+macOS offers a range of standard system colors that respond automatically to system white-point changes based on factors such as ambient light and keyboard backlight level.
+> macOS는 주변 조도와 키보드 백라이트 레벨과 같은 요소를 기반으로 시스템 화이트포인트 변화에 자동으로 반응하는 다양한 표준 시스템 색상을 제공한다.
+>
+
+
+
+
+| Color | API |
+| --- | --- |
+| Blue | systemBlueColor |
+| Brown | systemBrownColor |
+| Gray | systemGrayColor |
+| Green | systemGreenColor |
+| Orange | systemOrangeColor |
+| Pink | systemPinkColor |
+| Purple | systemPurpleColor |
+| Red | systemRedColor |
+| Yellow | systemYellowColor |
+
+**Don't replicate system colors.** System color values may fluctuate from release to release and based on various environmental variables. Instead of trying to create custom colors that match the system colors, just use the system colors.
+> 시스템 색상을 복제하지 마십시오. 시스템 색상 값은 다양한 환경 변수에 따라 릴리즈마다 변동될 수 있습니다. 시스템 색상과 일치하는 사용자 지정 색상을 만드는 대신 시스템 색상을 사용하십시오.
+>
+
+
+
+
+For developer guidance, see [NSColor](https://developer.apple.com/documentation/appkit/nscolor).
+
+### **Dynamic system colors**
+
+macOS defines a range of system colors that dynamically match the color scheme of standard interface controls such as buttons and labels. The following system colors are ideal for use in the Touch Bar.
+> macOS는 버튼과 레이블과 같은 표준 인터페이스 컨트롤의 색상 체계와 동적으로 일치하는 시스템 색상 범위를 정의합니다. 다음 시스템 색상은 터치 바에 사용하기에 적합합니다.
+>
+
+
+
+
+| Color | Description | API |
+| --- | --- | --- |
+| Control Color | The system color for the surface of a control. | controlColor |
+| Label Color | The system color for the text of a label. | labelColor |
+| Secondary Label Color | The system color for label text of lesser importance than labelColor text, for example, a subheading or additional information. | secondaryLabelColor |
+| Tertiary Label Color | The system color for label text of lesser importance than secondaryLabelColor, for example, disabled text. | tertiaryLabelColor |
+| Quaternary Label Color | The system color for label text of lesser importance than tertiaryLabelColor, for example, disabled text. | quaternaryLabelColor |
+
+# **Layout**
+
+The width of the Touch Bar display differs depending on the device.
+> 터치 바 디스플레이의 폭은 장치에 따라 다릅니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-b-layout-total_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-b-layout-total_2x.png)
+
+Touch Bar (2nd generation)
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-layout-total_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-layout-total_2x.png)
+
+Touch Bar (1st generation)
+
+### **Touch Bar areas**
+
+In its standard configuration, the Touch Bar display consists of either two or three areas, depending on the device. The system enforces a 16pt separation between areas.
+> 표준 구성에서 터치 바 디스플레이는 장치에 따라 두 개 또는 세 개의 영역으로 구성됩니다. 이 시스템은 영역 간에 16pt의 분리를 시행합니다.
+>
+
+
+
+
+The Touch Bar (2nd generation) display contains two areas: the app region and the Control Strip. Although the second generation Touch Bar doesn’t include a system button area, you can display a system button within your app region.
+> 터치 바(2세대) 디스플레이에는 앱 영역과 컨트롤 스트립이라는 두 가지 영역이 있습니다. 2세대 터치 바에는 시스템 버튼 영역이 없지만 앱 영역 내에 시스템 버튼을 표시할 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-b-layout-regions_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-b-layout-regions_2x.png)
+
+The Touch Bar (1st generation) display includes three areas: the system button area, the app region, and the Control Strip.
+> 터치 바(1세대) 디스플레이에는 시스템 버튼 영역, 앱 영역 및 제어 스트립의 세 가지 영역이 포함됩니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-layout-regions_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-layout-regions_2x.png)
+
+| Area | Contains | User configurable? |
+| --- | --- | --- |
+| Control Strip | System-level controls for performing actions, like initiating Siri or adjusting the volume level. | Yes. People can extend the Control Strip to the full width of the Touch Bar, collapse it to the right side of the Touch Bar, reduce it in size, or hide it entirely. By default, the Control Strip appears in its collapsed state and contains four controls. |
+| App region | Your app’s controls. | Yes. People can hide this area entirely. When the Control Strip is visible, the app region has a minimum width of 685pt. |
+| System button (available on some models) | A contextually relevant button, like Esc, Cancel, or Done. | No. When present, this area's width is 64pt. In Touch Bar (2nd generation), you can use 8pt spacing to display the relevant button in the app region, where it's disabled by default. |
+
+**Assume that the default Control Strip is visible.** Although people can reconfigure the Control Strip, reduce its size, or hide it completely, don’t rely on the availability of this space for your design.
+> 기본 컨트롤 스트립이 표시된다고 가정합니다. 컨트롤 스트립을 재구성하거나, 크기를 줄이거나, 완전히 숨길 수 있지만, 이 공간을 설계에 사용할 수 있는지 여부에 의존하지 마십시오.
+>
+
+
+
+
+### **Positioning app controls**
+
+You have several options for adding visual separation between app controls in the Touch Bar.
+> 터치 바에서 앱 컨트롤 간에 시각적 분리를 추가할 수 있는 몇 가지 옵션이 있습니다.
+>
+
+
+
+
+| Spacing type | Width between controls |
+| --- | --- |
+| Default | 8pt |
+| Small fixed space | 16pt |
+| Large fixed space | 32pt |
+| Flexible space | Varies to match the available space. |
+
+**Position controls logically and intuitively.** If your app offers a control that persists across different modalities, it can work well to put the control in the left side of the app region. For example, the Compose button in Notes always appears in the far left of the Touch Bar, regardless of whether people are navigating notes, editing a note, or browsing attachments.
+> 컨트롤을 논리적이고 직관적으로 배치합니다. 앱이 여러 양식에 걸쳐 지속되는 컨트롤을 제공하는 경우 해당 컨트롤을 앱 영역의 왼쪽에 배치하는 것이 좋습니다. 예를 들어, Notes의 작성 단추는 사용자가 노트를 탐색하는지, 노트를 편집하는지 또는 첨부 파일을 검색하는지 여부에 관계없이 항상 터치 막대의 맨 왼쪽에 나타납니다.
+>
+
+
+
+
+On the other hand, primary controls that command people’s attention — such as an alert or the suggested items in the QuickType bar — work best centered in the app region, with secondary options on the left. Consider using the order of controls in your app’s toolbar to inform the order of Touch Bar controls in the app region. When you use consistent control positions in both areas, people can rely on their familiarity with your onscreen controls to help them use your Touch Bar controls.
+> 반면에 경고나 QuickType 표시줄의 제안된 항목과 같이 사람들의 주의를 명령하는 기본 컨트롤은 왼쪽에 보조 옵션이 있는 앱 영역을 중심으로 가장 잘 작동합니다. 앱의 도구 모음에서 컨트롤 순서를 사용하여 앱 영역의 터치 바 컨트롤 순서를 알려 보십시오. 두 영역 모두에서 일관된 제어 위치를 사용하면 화면에 표시되는 컨트롤에 익숙해져 있어 터치 바 컨트롤을 사용하는 데 도움이 됩니다.
+>
+
+
+
+
+**IMPORTANT**If the order of your Touch Bar controls mirrors the order of controls in your app’s window, make sure to adjust the control order in the app region when your app uses a right-to-left layout.
+> 중요 터치 바 컨트롤의 순서가 앱 창의 컨트롤 순서와 일치하는 경우 앱이 오른쪽에서 왼쪽 레이아웃을 사용할 때 앱 영역에서 컨트롤 순서를 조정해야 합니다.
+>
+
+
+
+
+**Construct a flexible layout.** The app region varies in width depending on the configuration of the Control Strip and the device, so consider allowing certain controls — such as sliders and scrubbers — to stretch when additional space becomes available.
+> 유연한 레이아웃을 구성합니다. 앱 영역은 제어 스트립과 장치의 구성에 따라 너비가 다르므로, 추가 공간을 사용할 수 있을 때 슬라이더 및 스크러버와 같은 특정 컨트롤을 확장할 수 있도록 허용하는 것을 고려해 보십시오.
+>
+
+
+
+
+**Strive for consistent spacing.** As much as possible, make controls in the Touch Bar equidistant, except when spacing variations are necessary for clarity or to cluster related controls.
+> 일정한 간격을 유지하도록 노력하십시오. 가능한 한 간격 변경이 명확하거나 관련 컨트롤을 클러스터링하기 위해 필요한 경우를 제외하고 터치 바에서 컨트롤을 동일한 거리로 만듭니다.
+>
+
+
+
+
+**Use flexible spaces and grouping to aid alignment.** Flexible space between items pushes the items on the left toward the left side of the Touch Bar and the items on the right toward the right side of the Touch Bar. Grouping lets you position multiple controls at once. For example, you can center a control or group by marking it as the principal item in the Touch Bar.
+> 정렬에 도움이 되도록 유연한 공간과 그룹화를 사용합니다. 항목 사이의 유연한 공간은 왼쪽의 항목을 터치 바의 왼쪽으로, 오른쪽의 항목을 터치 바의 오른쪽으로 밀어줍니다. 그룹화를 통해 여러 컨트롤을 한 번에 배치할 수 있습니다. 예를 들어 컨트롤 또는 그룹을 터치 막대에서 주 항목으로 표시하여 가운데에 배치할 수 있습니다.
+>
+
+
+
+
+**Avoid repositioning controls automatically.** People can become frustrated and confused if a control changes position by itself. If it makes sense in your app, consider letting people customize control positioning.
+> 컨트롤의 위치가 자동으로 변경되지 않도록 합니다. 컨트롤이 자동으로 위치를 변경하면 사람들이 좌절하고 혼란스러워할 수 있습니다. 만약 당신의 앱에서 그것이 타당하다면, 사람들이 컨트롤 위치를 사용자 지정하도록 하는 것을 고려해보세요.
+>
+
+
+
+
+**Avoid manually reversing controls in right-to-left locales.** The system already reverses certain controls, such as segmented controls and sliders. Manually reversing controls can cause problems with Touch Bar customization features.
+> 오른쪽에서 왼쪽 로케일의 컨트롤을 수동으로 반전시키지 마십시오. 시스템은 세그먼트화된 컨트롤 및 슬라이더와 같은 특정 컨트롤을 이미 반전시킵니다. 수동으로 컨트롤을 뒤집으면 터치 바 사용자 지정 기능에 문제가 발생할 수 있습니다.
+>
+
+
+
+
+For developer guidance, see [NSTouchBarItem](https://developer.apple.com/documentation/appkit/nstouchbaritem).
+
+### **Common layout styles**
+
+Touch Bar layouts can vary significantly from app to app because of factors like configuration options, various control sizes, and the device your app is running on. When possible, use one of the following common layout styles for your controls.
+> 터치 바 레이아웃은 구성 옵션, 다양한 제어 크기 및 앱이 실행 중인 장치와 같은 요소 때문에 앱마다 크게 다를 수 있습니다. 가능한 경우 컨트롤에 다음과 같은 공통 레이아웃 스타일 중 하나를 사용하십시오.
+>
+
+
+
+
+**Layout with one principal item.** The center of the Touch Bar contains a single large control, such as a [candidate list](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar#candidate-lists). Additional controls, such as buttons and segmented controls, are on the left. In Touch Bar (2nd generation), layouts with one principal item can look like this:
+> 하나의 주요 항목이 있는 레이아웃. 터치 바의 중앙에는 후보 목록과 같은 하나의 대형 컨트롤이 포함되어 있습니다. 버튼 및 세그먼트 컨트롤과 같은 추가 컨트롤은 왼쪽에 있습니다. 터치 바(2세대)에서 주 항목이 하나인 레이아웃은 다음과 같을 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-b-layout-1principal1_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-b-layout-1principal1_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-b-layout-1principal2_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-b-layout-1principal2_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-b-layout-1principal3_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-b-layout-1principal3_2x.png)
+
+**NOTE**In Touch Bar (2nd generation), a principal candidate list control typically remains centered with respect to the device, whereas other types of principal controls may appear off-center in some circumstances. For example, an item might be too large to center in the current configuration, but may become centered when people customize the Control Strip.
+> 참고 터치 바(2세대)에서 주요 후보 목록 제어는 일반적으로 기기에 대해 중심이 유지되는 반면, 일부 상황에서는 다른 유형의 주요 제어가 중심에서 벗어난 것으로 나타날 수 있다. 예를 들어, 항목이 너무 커서 현재 구성에서 중심을 맞출 수 없지만 사용자가 제어 스트립을 사용자 정의할 때 중심이 될 수 있습니다.
+>
+
+
+
+
+In Touch Bar (1st generation), layouts with one principal item can look like this:
+> 터치 바(1세대)에서 주 항목이 하나인 레이아웃은 다음과 같을 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-layout-1principal1_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-layout-1principal1_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-layout-1principal2_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-layout-1principal2_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-layout-1principal3_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-layout-1principal3_2x.png)
+
+**Layout with two principal items.** The center of the Touch Bar contains two consistently sized controls. Additional controls are on the left.
+> 두 개의 주요 항목이 있는 레이아웃. 터치 바의 중앙에는 두 개의 일관된 크기의 컨트롤이 있습니다. 추가 컨트롤은 왼쪽에 있습니다.
+>
+
+
+
+
+In Touch Bar (2nd generation), a layout with two principal items can look like this:
+> 터치 바(2세대)에서는 두 가지 주요 항목이 있는 레이아웃이 다음과 같이 표시될 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-b-layout-2principal_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-b-layout-2principal_2x.png)
+
+In Touch Bar (1st generation), a layout with two principal items can look like this:
+> 터치 바(1세대)에서 두 개의 주요 항목이 있는 레이아웃은 다음과 같을 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-layout-2principal_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-layout-2principal_2x.png)
+
+**Layout with three principal items.** The center of the Touch Bar contains three consistently sized controls. Additional controls are on the left.
+> 세 가지 주요 항목으로 구성된 레이아웃. 터치 바의 중앙에는 세 가지 크기의 컨트롤이 일관되게 포함되어 있습니다. 추가 컨트롤은 왼쪽에 있습니다.
+>
+
+
+
+
+In Touch Bar (2nd generation), a layout with three principal items can look like this:
+> 터치 바(2세대)에서 세 가지 주요 항목이 있는 레이아웃은 다음과 같을 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-b-layout-3principal_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-b-layout-3principal_2x.png)
+
+In Touch Bar (1st generation), a layout with three principal items can look like this:
+> 터치 바(1세대)에서 세 가지 주요 항목이 있는 레이아웃은 다음과 같을 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-layout-3principal_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-layout-3principal_2x.png)
+
+**Fluid layout.** This layout includes consistently-sized controls, such as buttons.
+> 유체 레이아웃. 이 레이아웃에는 버튼과 같은 일정한 크기의 컨트롤이 포함됩니다.
+>
+
+
+
+
+In Touch Bar (2nd generation), a fluid layout can look like this:
+> 터치 바(2세대)에서 유체 레이아웃은 다음과 같습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-b-layout-fluid_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-b-layout-fluid_2x.png)
+
+In Touch Bar (1st generation), a fluid layout can look like this:
+> 터치 바(1세대)에서 유체 레이아웃은 다음과 같습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-layout-fluid_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-layout-fluid_2x.png)
+
+# **Typography**
+
+The Touch Bar uses a variant of San Francisco, the system font in macOS. Standard Touch Bar controls, such as buttons and segmented controls, automatically use this variant. For guidance, see [Typography](../foundations/typography); for developer guidance, see [NSFont](https://developer.apple.com/documentation/appkit/nsfont).
+> 터치 바는 맥 OS의 시스템 글꼴인 샌프란시스코의 변형을 사용한다. 버튼 및 세그먼트 컨트롤과 같은 표준 터치 바 컨트롤은 자동으로 이 변형을 사용합니다. 자세한 내용은 타이포그래피를 참조하고, 개발자 지침은 NSFont를 참조하십시오.
+>
+
+
+
+
+# **Interface icons**
+
+macOS provides many interface icons you can use to represent common tasks and types of content in your app’s Touch Bar controls.
+> macOS는 앱의 터치 바 컨트롤에서 일반적인 작업과 콘텐츠 유형을 나타내는 데 사용할 수 있는 많은 인터페이스 아이콘을 제공합니다.
+>
+
+
+
+
+When you use AppKit API to display a system-provided glyph, you automatically get an image in the format that’s appropriate for the version of macOS in which your app is running. For example, if your app runs in macOS 11 and later, you get an [SF Symbol](../foundations/sf-symbols/); if your app runs in Catalina or earlier, AppKit continues to provide the existing template image. For developer guidance, see [NSTouchBarItem](https://developer.apple.com/documentation/appkit/nstouchbaritem).
+> AppKit API를 사용하여 시스템에서 제공하는 글리프를 표시하면 앱이 실행 중인 macOS 버전에 적합한 형식의 이미지가 자동으로 표시됩니다. 예를 들어, 앱이 macOS 11 이상에서 실행되면 SF 기호가 표시되고, 앱이 카탈리나 이하에서 실행되면 AppKit는 기존 템플릿 이미지를 계속 제공합니다. 개발자 지침은 NSTouchBarItem을 참조하십시오.
+>
+
+
+
+
+**IMPORTANT**By default, the system APIs return SF symbols configured as 13 pt, large scale, and medium weight.In some cases, a symbol might not have the same size or alignment as the image it replaces, so it’s important to check your layout.
+> 중요 기본적으로 시스템 API는 13pt, 대규모 및 중간 무게로 구성된 SF 기호를 반환합니다.경우에 따라 기호의 크기나 정렬이 바꿀 이미지와 다를 수 있으므로 레이아웃을 확인하는 것이 중요합니다.
+>
+
+
+
+
+**Prefer system images because people are familiar with them.** Also, system-provided glyphs automatically receive appropriate coloring, respond to system white-point changes based on factors such as ambient light and keyboard backlight level, and respond to user interactions.
+> 시스템 이미지에 익숙하기 때문에 시스템 이미지를 선호하며, 시스템이 제공하는 글리프는 자동으로 적절한 컬러링을 받고, 주변 조도 및 키보드 백라이트 레벨 등의 요소를 기반으로 시스템 화이트 포인트 변화에 대응하며, 사용자 상호작용에 대응한다.
+>
+
+
+
+
+**Use each system-defined glyph according to its meaning — not its appearance.** When you choose an image for its meaning, your app can remain visually consistent with the system even if the appearance of the image changes.
+> 각 시스템 정의 글리프는 모양이 아니라 의미에 따라 사용합니다. 의미에 맞게 이미지를 선택하면 이미지 모양이 변경되더라도 앱이 시스템과 시각적으로 일관되게 유지될 수 있습니다.
+>
+
+
+
+
+**Use only system images that are designed for the Touch Bar.** Don’t use other types of images in the Touch Bar, such as toolbar glyphs.
+> 터치 막대에 맞게 설계된 시스템 이미지만 사용하십시오. 도구 모음 글리프와 같은 다른 유형의 이미지는 사용하지 마십시오.
+>
+
+
+
+
+**Design a custom symbol or image if you can’t find a system-defined one that meets your needs.** Designing a custom symbol or image lets you communicate unique details that help people use your app; repurposing a system-defined image can cause confusion. For guidance, see [Custom Touch Bar icons](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar#custom-touch-bar-icons); for general design guidance, see [Icons](../foundations/icons/).
+> 사용자의 요구에 맞는 시스템 정의 기호나 이미지를 찾을 수 없으면 사용자 지정 기호나 이미지를 디자인하십시오. 사용자 지정 기호나 이미지를 디자인하면 사용자가 앱을 사용하는 데 도움이 되는 고유한 세부 정보를 전달할 수 있습니다. 시스템 정의 이미지의 용도를 변경하면 혼란이 발생할 수 있습니다. 자세한 내용은 사용자 지정 터치 막대 아이콘을 참조하고, 일반적인 설계 지침은 아이콘을 참조하십시오.
+>
+
+
+
+
+**NOTE**Some system icons, like Go Back and Go Forward, automatically reverse direction in right-to-left locales.
+> 참고뒤로 이동 및 앞으로 이동과 같은 일부 시스템 아이콘은 오른쪽에서 왼쪽 로케일의 방향을 자동으로 반대로 바꿉니다.
+>
+
+
+
+
+[제목 없음](https://www.notion.so/e1afda82c9da492c8a5bf4520deb1955)
+
+# **Custom Touch Bar icons**
+
