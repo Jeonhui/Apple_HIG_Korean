@@ -627,3 +627,418 @@ When you use AppKit API to display a system-provided glyph, you automatically ge
 
 # **Custom Touch Bar icons**
 
+If your app includes tasks or modes that can’t be represented by a system-provided Touch Bar image, you can create your own. [Apple Design Resources](https://developer.apple.com/design/resources/#macos-apps)provides downloadable Photoshop and Sketch templates you can use to design properly scaled icons for the Touch Bar. For guidance, see [Icons](../foundations/icons).
+> 앱에 시스템에서 제공하는 터치바 이미지로 나타낼 수 없는 작업이나 모드가 포함되어 있으면 직접 만들 수 있습니다. Apple Design Resources는 다운로드 가능한 Photoshop 및 Sketch 템플릿을 제공하여 터치바의 아이콘 크기를 적절하게 조정하는 데 사용할 수 있습니다. 자세한 내용은 아이콘을 참조하십시오.
+>
+
+
+
+
+In general, create icons that look similar to the icons on the physical keyboard keys. Supply high-resolution images with a scale factor of @2x for all artwork that appears in the Touch Bar. To learn about image resolutions, see [Scale factors](https://developer.apple.com/design/human-interface-guidelines/foundations/images#scale-factors).
+> 일반적으로 실제 키보드 키의 아이콘과 유사한 모양의 아이콘을 만듭니다. 터치 바에 나타나는 모든 아트워크에 대해 @2x 배율의 고해상도 이미지를 제공합니다. 이미지 해상도에 대한 자세한 내용은 배율을 참조하십시오.
+>
+
+
+
+
+**Design recognizable icons that clearly relate to your app on the main screen.** If necessary, you can vary the images to match the style of the Touch Bar.
+> 기본 화면에서 앱과 명확하게 관련된 인식 가능한 아이콘을 디자인합니다. 필요한 경우 터치 바의 스타일에 맞게 이미지를 변경할 수 있습니다.
+>
+
+
+
+
+**Avoid icons that extend to the full height of the Touch Bar.** In general, icons shouldn’t exceed 44px in height (36px for circular icons).
+> 일반적으로 아이콘의 높이가 44px(원형 아이콘의 경우 36px)를 초과하면 안 됩니다.
+>
+
+
+
+
+|  |  |
+| --- | --- |
+| Ideal icon size | 18x18 pt (36x36 px @2x) |
+| Maximum icon size | 22x22 pt (44x44 px @2x) |
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/TB_custom_icon_example_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/TB_custom_icon_example_2x.png)
+
+**Keep icons optically centered.** Crop artwork to match the icon’s width, then add padding as needed to keep the icon optically centered when it’s displayed in a control.
+> 아이콘을 광학적으로 가운데로 유지합니다. 아이콘의 너비에 맞게 그림을 잘라낸 다음 컨트롤에 표시될 때 아이콘을 광학적으로 가운데로 유지하기 위해 필요에 따라 패딩을 추가합니다.
+>
+
+
+
+
+**Prefer a 45-degree angle for diagonal elements.** Using the same angle as in system icons like [Audio Input Mute](https://developer.apple.com/documentation/appkit/nsimage/2646941-touchbaraudioinputmutetemplatena) and [Compose](https://developer.apple.com/documentation/appkit/nsimage/2544716-touchbarcomposetemplatename) helps your custom icons look at home in the Touch Bar.
+> 대각선 요소의 경우 45도 각도를 사용하는 것이 좋습니다. 오디오 입력 음소거 및 작곡과 같은 시스템 아이콘과 동일한 각도를 사용하면 사용자 지정 아이콘이 터치 바에서 집을 보는 데 도움이 됩니다.
+>
+
+
+
+
+**Avoid using color to communicate on and off states.** The system already changes the background appearance of standard controls that are in an off state.
+> 색상을 사용하여 켜짐 및 꺼짐 상태를 통신하지 마십시오. 시스템이 이미 꺼짐 상태인 표준 컨트롤의 배경 모양을 변경합니다.
+>
+
+
+
+
+**Give most icons a 100% opacity fill.** To optimize readability, you might want to use a 70% opacity fill in combination with a 100% opacity fill. Use midtones only for improving readability and balance.
+> 대부분의 아이콘에 100% 불투명 채우기를 지정합니다. 가독성을 최적화하려면 70% 불투명 채우기를 100% 불투명 채우기와 함께 사용할 수 있습니다. 가독성과 균형을 개선하기 위해 중간 톤만 사용하십시오.
+>
+
+
+
+
+For guidance, see [Color](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar#color).
+
+**To match the style of the physical keyboard, give most icons a 2px stroke.** If your design requires more visual weight, consider a 3px stroke.
+> 실제 키보드의 스타일과 일치하려면 대부분의 아이콘에 2px 스트로크를 지정하십시오. 디자인에 더 많은 시각적 무게가 필요한 경우 3px 스트로크를 고려하십시오.
+>
+
+
+
+
+**As much as possible, match the corner styles of the system images.**For example, use square corners for icons with a 2px stroke, rounded corners with a 1px radius for icons with a 3px stroke, and rounded corners with a 4px radius for solid shapes.
+> 가능한 한 시스템 이미지의 모서리 스타일을 일치시킵니다.예를 들어 2px 스트로크 아이콘의 경우 사각형 모서리를, 3px 스트로크 아이콘의 경우 반지름이 1px인 둥근 모서리를, 솔리드 모양의 경우 반지름이 4px인 둥근 모서리를 사용합니다.
+>
+
+
+
+
+# **Controls and views**
+
+The system offers a range of standard controls you can provide in the app region of the Touch Bar. For consistency, use these controls when possible.
+> 이 시스템은 터치 바의 앱 영역에서 제공할 수 있는 다양한 표준 컨트롤을 제공합니다. 일관성을 위해 가능한 경우 이 컨트롤을 사용하십시오.
+>
+
+
+
+
+# **Buttons**
+
+Buttons initiate app-specific actions, and can include an icon and a title.
+> 단추는 앱별 작업을 시작하며 아이콘과 제목을 포함할 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-buttons_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-buttons_2x.png)
+
+**Prefer icons over titles.** Strive to design clear icons that stand on their own without supporting text.
+> 제목보다 아이콘을 선호합니다. 텍스트를 지원하지 않고도 스스로 서 있는 명확한 아이콘을 디자인하도록 노력하십시오.
+>
+
+
+
+
+**Keep titles short.** Lengthy titles can crowd the Touch Bar.
+> 제목을 짧게 유지합니다. 제목이 길면 터치 바가 붐빌 수 있습니다.
+>
+
+
+
+
+**Customize a button’s bezel color if necessary.** The system-provided button bezel looks similar to the physical keyboard buttons and contributes to a unified visual experience. If your app requires a custom bezel color, consider using a dark color, which tends to look good in the Touch Bar.
+> 필요한 경우 버튼의 베젤 색상을 사용자 지정합니다. 시스템에서 제공하는 버튼 베젤은 실제 키보드 버튼과 유사하게 보이며 통합된 시각적 경험에 기여합니다. 앱에 사용자 지정 베젤 색상이 필요한 경우 터치 바에 잘 어울리는 어두운 색상을 사용하는 것이 좋습니다.
+>
+
+
+
+
+For guidance, see [Buttons](../components/menus-and-actions/buttons). For developer guidance, see [NSButton](https://developer.apple.com/documentation/appkit/nsbutton).
+> 자세한 내용은 단추를 참조하십시오. 개발자 지침은 NSButton을 참조하십시오.
+>
+
+
+
+
+### **Toggles**
+
+A toggle switches between on and off states.
+> 토글은 켜짐과 꺼짐 상태를 전환합니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-toggle-on_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-toggle-on_2x.png)
+
+On
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-toggle-off_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-toggle-off_2x.png)
+
+Off
+
+**Let the background indicate a toggle’s state.** The system automatically changes the background appearance of buttons in an off state, so there’s no need to indicate the state using color, text, or a different icon.
+> 배경이 토글의 상태를 나타내도록 합니다. 시스템은 자동으로 꺼짐 상태의 버튼의 배경 모양을 변경하므로 색상, 텍스트 또는 다른 아이콘을 사용하여 상태를 나타낼 필요가 없습니다.
+>
+
+
+
+
+**Use toggles in place of checkboxes and radio buttons.** If you need a control that lets people choose between two states, use a toggle button.
+> 확인란과 라디오 단추 대신 토글을 사용합니다. 두 상태 중 하나를 선택할 수 있는 컨트롤이 필요한 경우 토글 단추를 사용하십시오.
+>
+
+
+
+
+For developer guidance, see the [state](https://developer.apple.com/documentation/appkit/nsbutton/1528907-state) property of [NSButton](https://developer.apple.com/documentation/appkit/nsbutton).
+> 개발자 지침은 NSButton의 상태 속성을 참조하십시오.
+>
+
+
+
+
+# **Candidate lists**
+
+A candidate list offers autocompletion suggestions during text entry. People can tap a suggestion to accept and insert it into the active text field or text view on the main screen. People can also expand or collapse a candidate list. An expanded candidate list replaces other controls that reside within the expansion area.
+> 후보 목록은 텍스트 입력 중에 자동 완성 제안을 제공합니다. 사용자는 제안을 눌러 수락하고 기본 화면의 활성 텍스트 필드 또는 텍스트 보기에 삽입할 수 있습니다. 사람들은 후보자 목록을 확장하거나 축소할 수도 있습니다. 확장된 후보 목록은 확장 영역 내에 있는 다른 컨트롤을 대체합니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-candidate-list_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-candidate-list_2x.png)
+
+For developer guidance, see [NSCandidateListTouchBarItem](https://developer.apple.com/documentation/appkit/nscandidatelisttouchbaritem).
+
+# **Character pickers**
+
+A character picker opens a popover that includes a list of special characters, such as emoji. People can tap a character in the picker to insert it into the active text area on the main screen.
+> 문자 선택기는 이모티콘과 같은 특수 문자 목록이 포함된 팝업을 엽니다. 선택 도구에서 문자를 눌러 기본 화면의 활성 텍스트 영역에 삽입할 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-character-picker-collapsed_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-character-picker-collapsed_2x.png)
+
+Closed
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-character-picker-expanded_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-character-picker-expanded_2x.png)
+
+Open
+
+For developer guidance, see [NSCandidateListTouchBarItem](https://developer.apple.com/documentation/appkit/nscandidatelisttouchbaritem).
+
+# **Color pickers**
+
+A color picker opens a popover that includes controls for selecting a color. You can configure a color picker to display an icon for a color picker, a stroke color picker, or a text color picker. Regardless of the icon, all color pickers display the same popover.
+> 색상 선택기는 색상을 선택하기 위한 컨트롤이 포함된 팝업을 엽니다. 색 선택기, 획 색 선택기 또는 텍스트 색 선택기의 아이콘을 표시하도록 색 선택기를 구성할 수 있습니다. 아이콘에 상관없이 모든 색상 선택기는 동일한 팝업을 표시합니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-color-picker-collapsed_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-color-picker-collapsed_2x.png)
+
+Closed
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-color-picker-expanded_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-color-picker-expanded_2x.png)
+
+Open
+
+**Use icons as intended.** Use the stroke color picker icon for selecting a stroke color. Use the text color picker icon for selecting a text color. For other color selection scenarios, use the color picker icon.
+> 원하는 대로 아이콘을 사용합니다. 스트로크 색상을 선택하려면 스트로크 색상 선택 아이콘을 사용하십시오. 텍스트 색상을 선택하려면 텍스트 색상 선택기 아이콘을 사용합니다. 다른 색상 선택 시나리오의 경우 색상 선택 아이콘을 사용합니다.
+>
+
+
+
+
+For developer guidance, see [NSColorPickerTouchBarItem](https://developer.apple.com/documentation/appkit/nscolorpickertouchbaritem).
+
+# **Labels**
+
+A label displays read-only text that doesn’t appear within a control.
+> 레이블은 컨트롤 내에 나타나지 않는 읽기 전용 텍스트를 표시합니다.
+>
+
+
+
+
+**In general, avoid labels.** Although the Touch Bar can display labels, it’s generally best to avoid them because they’re not interactive. Instead, focus on designing meaningful icons for your controls. If you must include a label, keep it as short as possible.
+> 일반적으로 레이블을 사용하지 마십시오. 터치 바에 레이블이 표시될 수 있지만 상호 작용하지 않으므로 레이블을 사용하지 않는 것이 좋습니다. 대신, 컨트롤에 대한 의미 있는 아이콘을 디자인하는 데 집중하십시오. 레이블을 포함해야 하는 경우 가능한 짧게 유지하십시오.
+>
+
+
+
+
+**Prefer titles over labels when supplementing complex icons.** If the meaning of a control’s icon isn’t clear on its own, consider including a short title within the control to provide context.
+> 복잡한 아이콘을 보완할 때는 레이블보다 제목을 선호합니다. 컨트롤 아이콘의 의미 자체가 명확하지 않은 경우 컨트롤에 짧은 제목을 포함하여 컨텍스트를 제공하는 것을 고려하십시오.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-buttons-with-titles_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-buttons-with-titles_2x.png)
+
+For guidance, see [Labels](../components/layout-and-organization/labels). For developer guidance, see [NSTextField](https://developer.apple.com/documentation/appkit/nstextfield).
+> 자세한 내용은 레이블을 참조하십시오. 개발자 지침은 NSTextField를 참조하십시오.
+>
+
+
+
+
+# **Popovers**
+
+A closed popover looks like a single button in the Touch Bar.
+> 닫힌 팝업은 터치 바의 단일 버튼처럼 보입니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-popover-closed_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-popover-closed_2x.png)
+
+Closed
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-popover-open_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-popover-open_2x.png)
+
+Open
+
+When it’s open, the popover replaces the current set of controls in the app region with a modal overlay containing a transient set of controls. In this modal overlay, people make a selection or tap a close button to return to the collapsed state and the previous set of controls.
+> 열려 있으면 팝업이 앱 영역의 현재 컨트롤 집합을 일시적인 컨트롤 집합이 포함된 모달 오버레이로 대체합니다. 이 모달 오버레이에서 사람들은 축소된 상태와 이전 컨트롤 세트로 돌아가기 위해 선택하거나 닫기 버튼을 누릅니다.
+>
+
+
+
+
+**TIP**In Touch Bar (2nd generation), the popover’s close button appears within the app region; in Touch Bar (1st generation), the close button replaces the system button. The second generation Touch Bar decreases the space available for popovers by 64 points and the system may display controls closer together to avoid clipping controls.
+> TIPIn 터치 바(2세대)에서는 팝업의 닫기 버튼이 앱 영역 내에 나타납니다. 터치 바(1세대)에서는 닫기 버튼이 시스템 버튼을 대체합니다. 2세대 터치 바를 사용하면 팝오버에 사용할 수 있는 공간이 64포인트 감소하며, 컨트롤이 클리핑되지 않도록 시스템이 컨트롤을 더 가깝게 표시할 수 있습니다.
+>
+
+
+
+
+Collapsed popovers open when people tap them. Optionally, popovers can also open in response to a touch and hold gesture. Popovers that support touch and hold include a trailing carat decoration.
+> 무너진 팝오버는 사람들이 두드릴 때 열립니다. 선택적으로, 팝오버는 터치 및 홀드 제스처에 응답하여 열릴 수도 있습니다. 터치 앤 홀드를 지원하는 팝오버에는 후행 캐럿 장식이 포함됩니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-collapsed-popover-closed_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-collapsed-popover-closed_2x.png)
+
+Closed
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-collapsed-popover-open_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-collapsed-popover-open_2x.png)
+
+Open
+
+A popover can present the same overlay regardless of the gesture people use to expand it, or it can present a different overlay for each gesture. In a touch and hold overlay, people make a selection by sliding their holding finger to a control, and collapse the popover by lifting their finger.
+> 팝오버는 사람들이 확장할 때 사용하는 제스처에 관계없이 동일한 오버레이를 표시하거나 각 제스처에 대해 다른 오버레이를 표시할 수 있습니다. 터치 앤 홀드 오버레이에서, 사람들은 그들의 잡는 손가락을 컨트롤로 미끄러뜨려 선택하고, 그들의 손가락을 들어 팝오버를 접는다.
+>
+
+
+
+
+**Use popovers sparingly.** Most controls in the Touch Bar should perform an action with a single tap.
+> 팝오버는 거의 사용하지 마십시오. 터치 바의 대부분의 컨트롤은 한 번만 누르면 동작을 수행합니다.
+>
+
+
+
+
+**Avoid nesting popovers.** In general, people should rarely need to navigate more than one level in the Touch Bar.
+> 팝업 중첩을 피하십시오. 일반적으로 사람들은 터치 바에서 두 개 이상의 수준을 탐색할 필요가 거의 없습니다.
+>
+
+
+
+
+**Reserve touch and hold for simple popovers.** Use touch and hold primarily to display an overlay that includes a simple set of options — such as a single segmented control — from which people can make a selection.
+> 간단한 팝오버를 위해 터치 홀드를 예약합니다. 터치 홀드는 주로 사용자가 선택할 수 있는 단일 세그먼트 컨트롤과 같은 간단한 옵션 집합이 포함된 오버레이를 표시합니다.
+>
+
+
+
+
+**Indicate choice selection in a collapsed popover.** When an expanded popover includes a list of options, the collapsed state should show the currently selected option.
+> 축소된 팝업에서 선택 항목을 나타냅니다. 확장된 팝업에 옵션 목록이 포함되어 있으면 축소 상태에 현재 선택된 옵션이 표시됩니다.
+>
+
+
+
+
+**Provide an obvious exit path.** Make sure people always know how to collapse a popover and return to the previous set of controls.
+> 사람들이 팝오버를 접고 이전 컨트롤로 돌아가는 방법을 항상 알고 있는지 확인하십시오.
+>
+
+
+
+
+For developer guidance, see [NSPopoverTouchBarItem](https://developer.apple.com/documentation/appkit/nspopovertouchbaritem).
+
+# **Scrubbers**
+
+A scrubber lets people swipe left and right to navigate through content like a list of dates or a group of photos. Scrubbers can be fixed or free, and are highly customizable — but should retain an appearance that doesn’t feel out of place in the Touch Bar.
+> 스크러버를 사용하면 날짜 목록이나 사진 그룹과 같은 콘텐츠를 좌우로 스크롤할 수 있습니다. 스크러버는 고정하거나 자유롭게 사용할 수 있으며 사용자 지정이 매우 용이하지만 터치 바의 모양이 이상하지 않아야 합니다.
+>
+
+
+
+
+For developer guidance, see [NSScrubber](https://developer.apple.com/documentation/appkit/nsscrubber).
+
+### **Fixed scrubbers**
+
+A fixed scrubber allows for fluid, continuous interaction with a set of arranged content, such as open Safari tabs. As people swipe across the scrubber, items beneath their finger become highlighted. Depending on the scrubber’s configuration, people make a selection by moving a finger to the item, or by lifting their finger from the scrubber. If the amount of content exceeds the size of a fixed scrubber, the scrubber automatically scrolls to reveal additional items as the finger nears the edge of the control. In a fixed scrubber, people use a finger to move the selection, rather than the content.
+> 고정 스크러버를 사용하면 열려 있는 Safari 탭과 같은 정렬된 콘텐츠 세트와 유동적이고 지속적인 상호 작용을 할 수 있습니다. 사람들이 스크러버를 문지르면 손가락 아래의 항목이 강조 표시됩니다. 스크러버의 구성에 따라, 사람들은 손가락을 항목으로 옮기거나 스크러버에서 손가락을 들어 선택한다. 내용물의 양이 고정된 스크러버의 크기를 초과하면 손가락이 컨트롤 가장자리에 가까워지면 스크러버가 자동으로 스크롤하여 추가 항목을 표시합니다. 고정된 스크러버에서 사람들은 내용물이 아닌 손가락을 사용하여 선택 영역을 이동합니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-fixed-scrubber_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-fixed-scrubber_2x.png)
+
+### **Free scrubbers**
+
+A free scrubber presents content in a scrollable list — such as a list of Calendar dates — that people swipe to scroll. Depending on the scrubber’s configuration, people select an item by moving it to a specific location, like the center of the scrubber, or by tapping the item while the scrubber is stationary.
+> 무료 스크러버는 스크롤 가능한 목록(예: 달력 날짜 목록)에 내용을 표시하여 사용자가 스크롤할 수 있습니다. 스크러버의 구성에 따라, 사람들은 스크러버의 중앙과 같은 특정 위치로 항목을 이동하거나 스크러버가 정지해 있는 동안 항목을 눌러 항목을 선택합니다.
+>
+
+
+
+
+**Use predictable and logically ordered values.** When the scrollable list in a free scrubber is stationary, some values may be hidden. If the list displays items in a logical order that follows an obvious progression, people can predict the hidden values and move through the list quickly. When viewing a list of country or region names, for example, people are generally better at predicting hidden values in an alphabetized list than in a list ordered by population size.
+> 예측 가능하고 논리적으로 정렬된 값을 사용하십시오. 빈 스크러버에서 스크롤 가능한 목록이 고정되어 있으면 일부 값이 숨겨질 수 있습니다. 목록이 명백한 진행을 따르는 논리적 순서로 항목을 표시하면, 사람들은 숨겨진 값을 예측하고 목록을 빠르게 이동할 수 있다. 예를 들어, 국가 또는 지역 이름 목록을 볼 때, 사람들은 일반적으로 인구 크기에 따라 정렬된 목록보다 알파벳 순으로 숨겨진 값을 예측하는 데 더 능숙합니다.
+>
+
+
+
+
+**Keep lists of values as short as possible.** People can find it tedious to navigate long lists in the Touch Bar. If you have a large list of values, consider presenting it on the main screen instead of the Touch Bar, so people can use the keyboard or trackpad for navigation.
+> 값 목록을 가능한 한 짧게 유지하십시오. 터치 바에서 긴 목록을 탐색하는 것이 지루할 수 있습니다. 값 목록이 많은 경우 사람들이 키보드나 트랙패드를 사용하여 탐색할 수 있도록 터치 막대 대신 기본 화면에 값을 표시하는 것을 고려됩니다.
+>
+
+
+
+
+# **Segmented controls**
+
+A segmented control is a linear set of two or more segments, each of which functions as a button — usually configured as a toggle. Within the control, all segments are equal in width. Like buttons, segments can contain text and icons.
+> 세그먼트 제어는 두 개 이상의 세그먼트로 구성된 선형 집합으로, 각 세그먼트는 버튼(일반적으로 토글로 구성됨)으로 기능합니다. 컨트롤 내에서 모든 세그먼트의 너비는 동일합니다. 단추와 마찬가지로 세그먼트에는 텍스트와 아이콘이 포함될 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-segmented-controls_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-segmented-controls_2x.png)
+
+**Limit the number of segments to improve usability.** Wider segments are easier for people to tap.
+> 세그먼트의 수를 제한하여 사용 편의성을 향상시킵니다. 세그먼트가 넓을수록 쉽게 탭할 수 있습니다.
+>
+
+
+
+
+**Prefer icons over titles.** Strive to design clear icons that stand on their own without requiring supporting text.
+> 제목보다 아이콘을 선호합니다. 지원 텍스트 없이도 스스로 서 있는 명확한 아이콘을 디자인하도록 노력하십시오.
+>
+
+
+
+
