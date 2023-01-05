@@ -85,3 +85,4 @@
  | 2023-01-02 01:34:32 | ./inputs/touch-bar.md | 81 | 9791 | 
  | 2023-01-03 01:34:59 | ./inputs/touch-bar.md | 268 | 9782 | 
  | 2023-01-04 01:36:31 | ./inputs/touch-bar.md | 453 | 9955 | 
+ | 2023-01-05 01:39:28 | ./technologies/airplay/introduction.md | 12 | 9760 | 

@@ -1042,3 +1042,119 @@ A segmented control is a linear set of two or more segments, each of which funct
 
 
 
+**Try to keep segment content size consistent.** Because segments match in width, it’s visually coherent if the content in the segments is also equal in length.
+> 세그먼트 콘텐츠의 크기를 일정하게 유지하십시오. 세그먼트의 너비가 일치하기 때문에 세그먼트의 콘텐츠 길이도 동일하면 시각적으로 일관됩니다.
+>
+
+
+
+
+**Keep titles short.** Lengthy titles can crowd the Touch Bar.
+> 제목을 짧게 유지합니다. 제목이 길면 터치 바가 붐빌 수 있습니다.
+>
+
+
+
+
+**Prefer darker colors for bezel color changes.** The appearance of the system-provided bezel resembles physical keyboard buttons. If your app requires a custom bezel color, dark colors are recommended.
+> 베젤 색상 변경은 어두운 색상을 선호합니다. 시스템에서 제공하는 베젤의 외관은 실제 키보드 버튼과 비슷합니다. 앱에 사용자 지정 베젤 색상이 필요한 경우 어두운 색상을 사용하는 것이 좋습니다.
+>
+
+
+
+
+For developer guidance, see [NSSegmentedControl](https://developer.apple.com/documentation/appkit/nssegmentedcontrol).
+
+# **Sharing service pickers**
+
+People use sharing service pickers to share text, images, and other content with apps, social media accounts, and other services. When people tap a sharing service picker, it displays a popover that contains sharing buttons.
+> 사람들은 공유 서비스 피커를 사용하여 텍스트, 이미지 및 기타 콘텐츠를 앱, 소셜 미디어 계정 및 기타 서비스와 공유합니다. 공유 서비스 선택기를 누르면 공유 버튼이 포함된 팝업이 표시됩니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-sharing-picker-closed_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-sharing-picker-closed_2x.png)
+
+Closed
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-sharing-picker-open_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-sharing-picker-open_2x.png)
+
+Open
+
+**Enable a sharing service picker only when there’s content to share.** If people haven’t selected text, images, or other sharable content, the sharing service picker should be disabled.
+> 공유할 콘텐츠가 있는 경우에만 공유 서비스 선택기를 사용하도록 설정합니다. 텍스트, 이미지 또는 기타 공유 가능한 콘텐츠를 선택하지 않은 경우 공유 서비스 선택기를 사용하지 않도록 설정해야 합니다.
+>
+
+
+
+
+For developer guidance, see [NSSharingServicePicker](https://developer.apple.com/documentation/appkit/nssharingservicepicker).
+
+# **Sliders**
+
+A slider is a horizontal track with a control called a thumb, which people can slide to move between a minimum and maximum value, such as screen brightness level, or position during media playback. As a slider’s value changes, the portion of track between the minimum value and the thumb fills with color.
+> 슬라이더는 엄지라고 하는 컨트롤이 있는 수평 트랙으로, 화면 밝기 수준과 같은 최소값과 최대값 사이를 이동하거나 미디어 재생 중에 위치할 수 있습니다. 슬라이더의 값이 변경되면 최소값과 엄지손가락 사이의 트랙 부분이 색으로 채워집니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-slider_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-slider_2x.png)
+
+**Customize a slider’s appearance to match your app and add value.**Consider coordinating a slider’s track color with your app’s color scheme.
+> 앱과 일치하도록 슬라이더 모양을 사용자 지정하고 값을 추가합니다.슬라이더의 트랙 색상을 앱의 색 구성표와 조정해 보십시오.
+>
+
+
+
+
+**Consider using a stepper instead of a slider when space is tight.** If a slider’s values cover a limited range and it’s possible to move through them in discrete steps, it might make sense to use a stepper. For guidance, see [Steppers](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar#steppers).
+> 공간이 부족할 때 슬라이더 대신 스테퍼를 사용하는 것을 고려해 보십시오. 슬라이더의 값이 제한된 범위를 포함하고 개별 단계로 이동할 수 있는 경우 스테퍼를 사용하는 것이 합리적일 수 있습니다. 자세한 내용은 스테퍼를 참조하십시오.
+>
+
+
+
+
+**Provide left and right icons that illustrate the meaning of the minimum and maximum values.** A slider that adjusts image size, for example, could show a small image icon on the left and a large image icon on the right.
+> 이미지 크기를 조정하는 슬라이더를 사용하면 왼쪽에 작은 이미지 아이콘이 표시되고 오른쪽에 큰 이미지 아이콘이 표시될 수 있습니다.
+>
+
+
+
+
+For developer guidance, see [NSSlider](https://developer.apple.com/documentation/appkit/nsslider).
+
+# **Steppers**
+
+Steppers provide a set of continuous — usually numeric — values from which people can choose. A stepper displays the current value centered between a decrementing control and an incrementing control. People tap the controls or swipe the current value left or right to change the value by an amount you specify.
+> 스테퍼는 사용자가 선택할 수 있는 연속형(일반적으로 숫자) 값 집합을 제공합니다. 스테퍼는 감소 컨트롤과 증가 컨트롤 사이의 중심에 있는 전류 값을 표시합니다. 사용자가 지정한 양만큼 값을 변경하려면 사용자가 컨트롤을 누르거나 현재 값을 왼쪽 또는 오른쪽으로 스와이프합니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-steppers_2x.png](https://developer.apple.com/design/human-interface-guidelines/inputs/touch-bar/images/tb-cv-steppers_2x.png)
+
+**Display the item’s current value in the center view.** By default, a stepper uses text to display the current value. You can use a formatter to style the text — for example, in a stepper that lets people choose dates, you might make today’s date red. In some cases, it might make sense to use images instead of text, but it can be tricky to create images that convey a logical progression from which people can predict the values that precede and follow the current value. For example, a stepper that controls the line weight of a marking tool could use a set of images that vary in thickness to help people understand the effect of incrementing and decrementing the value.
+> 항목의 현재 값을 가운데 보기에 표시합니다. 기본적으로 스테퍼는 텍스트를 사용하여 현재 값을 표시합니다. 형식 지정기를 사용하여 텍스트 스타일을 지정할 수 있습니다. 예를 들어, 사용자가 날짜를 선택할 수 있는 스테퍼에서 오늘의 날짜를 빨간색으로 만들 수 있습니다. 경우에 따라 텍스트 대신 이미지를 사용하는 것이 합리적일 수 있지만 현재 값의 앞뒤 값을 예측할 수 있는 논리적인 진행을 전달하는 이미지를 만드는 것은 까다로울 수 있다. 예를 들어, 표시 도구의 선 무게를 제어하는 스테퍼는 두께가 다양한 이미지 세트를 사용하여 값의 증가 및 감소 효과를 이해할 수 있다.
+>
+
+
+
+
+**Avoid using a stepper when people are likely to make large adjustments to an item’s value.** Because a stepper changes an item’s value by one discrete step per swipe or tap, people would have to swipe or tap a lot to make a large value change.
+> 사람들이 항목의 값을 크게 조정할 가능성이 있을 때는 스테퍼를 사용하지 마십시오. 스테퍼는 스와이프 또는 탭할 때마다 항목의 값을 한 단계씩 개별적으로 변경하기 때문에 큰 값을 변경하려면 사람들이 많이 스와이프하거나 탭해야 합니다.
+>
+
+
+
+
+# **Platform considerations**
+
+*Not supported in iOS, iPadOS, tvOS, or watchOS.*
+> iOS, iPadOS, tvOS 또는 watch에서 지원되지 않음운영 체제.
+>
+
+
+
