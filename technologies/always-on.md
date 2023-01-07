@@ -39,3 +39,39 @@ On both devices, the system displays notifications while in Always On, and peopl
 
 
 
+**Keep other types of personal information glanceable when it makes sense.** On Apple Watch, for example, people typically appreciate getting pace and heart rate updates while they’re working out; on iPhone, people appreciate getting a glanceable update on a flight arrival or a notification when a ride-sharing service arrives. If people don’t want any information to be visible, they can turn off Always On.
+> 예를 들어, Apple Watch에서는 일반적으로 운동하는 동안 속도 및 심박수 업데이트를 받는 것을 좋아하고, iPhone에서는 비행기 도착에 대한 업데이트나 승차 공유 서비스가 도착할 때 알림을 받는 것을 좋아합니다. 정보를 표시하지 않으려면 항상 설정을 해제할 수 있습니다.
+>
+
+
+
+
+**Keep important content legible and dim nonessential content.** You can increase dimming on secondary text, images, and color fills to give more prominence to the information that’s important to people. For example, a to-do list app might remove row backgrounds and dim each item’s additional details to highlight its title. Also, if you display rich images or large areas of color, consider removing the images and using dimmed colors.
+> 중요한 내용을 읽기 쉽고 어둡게 유지합니다. 보조 텍스트, 이미지 및 색 채우기의 조광을 높여 사람에게 중요한 정보를 더 잘 나타낼 수 있습니다. 예를 들어, 할 일 목록 앱은 행 배경을 제거하고 각 항목의 추가 세부 정보를 흐리게 하여 제목을 강조 표시할 수 있습니다. 또한 풍부한 이미지를 표시하거나 색상이 큰 영역을 표시하는 경우 이미지를 제거하고 흐리게 표시되는 색상을 사용하는 것이 좋습니다.
+>
+
+
+
+
+**Maintain a consistent layout.** Avoid making distracting interface changes when Always On begins or ends and throughout the Always On experience. For example, when Always On begins, prefer transitioning an interactive component to an unavailable appearance — don’t just remove it. Within the Always On context, aim to make infrequent, subtle updates to the interface. For example, a sports app might pause granular play-by-play updates while in Always On, only updating the score when it changes. Note that unnecessary changes during Always On can be especially distracting on iPhone, because people often put their device face up on a surface, making motion on the screen visible even when they’re not looking directly at it.
+> 일관된 레이아웃을 유지합니다. Always On이 시작되거나 끝날 때 그리고 Always On 환경 전체에서 주의를 산만하게 하는 인터페이스 변경을 피하십시오. 예를 들어 항상 설정이 시작되면 대화형 구성 요소를 사용할 수 없는 모양으로 전환하는 것을 선호합니다. 제거만 하지 마십시오. Always On 컨텍스트 내에서 인터페이스를 자주 업데이트하지 않고 미묘한 업데이트를 수행하는 것을 목표로 합니다. 예를 들어 스포츠 앱은 항상 켜져 있는 동안 세부적인 재생별 업데이트를 일시 중지하고 점수가 변경될 때만 업데이트할 수 있습니다. 사람들은 종종 장치를 표면 위에 올려놓고 직접 보지 않을 때에도 화면의 움직임을 볼 수 있도록 하기 때문에 항상 켜져 있는 동안의 불필요한 변경은 특히 iPhone에서 주의를 산만하게 할 수 있습니다.
+>
+
+
+
+
+**Gracefully transition motion to a resting state; don’t stop it instantly.** Smoothly finishing the current motion helps communicate the transition and avoids making people think that something went wrong.
+> 동작을 정지 상태로 우아하게 전환합니다. 즉시 중지하지 마십시오. 현재 동작을 부드럽게 완료하면 전환을 전달하는 데 도움이 되고 사람들이 무언가 잘못되었다고 생각하지 않도록 합니다.
+>
+
+
+
+
+# **Platform considerations**
+
+*No additional considerations for iOS or watchOS. Not supported in iPadOS, macOS, or tvOS.*
+> iOS 또는 watch OS에 대한 추가 고려 사항은 없습니다. iPadOS, macOS 또는 tvOS에서는 지원되지 않습니다.
+>
+
+
+

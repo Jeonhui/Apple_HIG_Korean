@@ -87,3 +87,4 @@
  | 2023-01-04 01:36:31 | ./inputs/touch-bar.md | 453 | 9955 | 
  | 2023-01-05 01:39:28 | ./technologies/airplay/introduction.md | 12 | 9760 | 
  | 2023-01-06 01:40:55 | ./technologies/always-on.md | 16 | 9595 | 
+ | 2023-01-07 01:35:35 | ./technologies/app-clips/user-experience.md | 56 | 9981 | 
