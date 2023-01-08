@@ -164,3 +164,95 @@ In addition, you can display an overlay in your App Clip that allows people to d
 
 
 
+**Pick the right time to recommend your app.** Give people the opportunity to try out your App Clip and understand its value. Only recommend the full app to people who use your App Clip repeatedly, or after they complete a task.
+> 당신의 앱을 추천할 적절한 시기를 선택하세요. 사람들에게 당신의 앱 클립을 사용해보고 그것의 가치를 이해할 수 있는 기회를 주세요. 앱 클립을 반복적으로 사용하거나 작업을 완료한 후에만 전체 앱을 추천하십시오.
+>
+
+
+
+
+**Recommend your app in a nonintrusive, polite way.** Don’t ask people to install the full app repeatedly or interrupt them during a task. Push notifications aren’t a good way to ask people to install the app either. Clearly communicate your app’s additional features.
+> 방해하지 않고 정중한 방법으로 앱을 추천하십시오. 사람들에게 전체 앱을 반복적으로 설치하도록 요청하거나 작업 중에 앱을 방해하지 마십시오. 푸시 알림은 사람들에게 앱 설치를 요청하는 좋은 방법도 아니다. 앱의 추가 기능을 명확하게 전달합니다.
+>
+
+
+
+
+For developer guidance, see [Recommending your app to App Clip users](https://developer.apple.com/documentation/app_clips/recommending_your_app_to_app_clip_users).
+> 개발자 지침은 App Clip 사용자에게 앱 추천을 참조하십시오.
+>
+
+
+
+
+# **Limiting notifications**
+
+App Clips provide the option to schedule and receive notifications for up to 8 hours after launch, enough time to follow up and complete most common tasks.
+> 앱 클립은 실행 후 최대 8시간 동안 알림을 예약하고 수신할 수 있는 옵션을 제공하며, 대부분의 일반적인 작업을 추적하고 완료할 수 있는 충분한 시간을 제공합니다.
+>
+
+
+
+
+**Only ask for permission to use notifications for an extended period of time if it’s really needed.** If your App Clip’s functionality spans more than a day, explicitly request the user’s permission to schedule and receive notifications. For example, a car rental company’s App Clip can ask for permission to send a notification that reminds people that they need to return a rented car soon.
+> 실제로 필요한 경우에만 알림을 장기간 사용할 수 있는 권한을 요청하십시오. 앱 클립의 기능이 하루 이상 지속되는 경우 알림을 예약하고 수신할 수 있는 사용자 권한을 명시적으로 요청하십시오. 예를 들어, 렌터카 회사의 앱 클립은 사람들에게 곧 렌터카를 반납해야 한다는 것을 상기시키는 알림을 보내는 것에 대한 허가를 요청할 수 있다.
+>
+
+
+
+
+**Keep notifications focused.** App Clips don’t have an ongoing relationship with the user, making it especially important to only send relevant notifications. Don’t send purely promotional notifications, and only use notifications in response to an explicit user action. If a person completes their task without leaving the App Clip, notifications might not be needed at all.
+> 알림에 집중하십시오. 앱 클립은 사용자와 지속적인 관계가 없으므로 관련 알림만 보내는 것이 특히 중요합니다. 순수하게 프로모션 알림을 보내지 말고 명시적인 사용자 작업에 대한 응답으로만 알림을 사용하십시오. 앱 클립을 떠나지 않고 작업을 완료하면 알림이 전혀 필요하지 않을 수 있습니다.
+>
+
+
+
+
+**Use notifications to help people complete a task.** An App Clip’s notifications relate directly to the task the App Clip helps to accomplish. For example, an App Clip that allows people to order food could send notifications related to a scheduled delivery.
+> 알림을 사용하여 사람들이 작업을 완료하도록 도와줍니다. 앱 클립의 알림은 앱 클립이 수행하는 데 도움이 되는 작업과 직접적인 관련이 있습니다. 예를 들어, 사람들이 음식을 주문할 수 있는 앱 클립은 배달 예정과 관련된 알림을 보낼 수 있다.
+>
+
+
+
+
+For developer guidance, see [Enabling notifications in App Clips](https://developer.apple.com/documentation/app_clips/enabling_notifications_in_app_clips).
+> 개발자 지침은 앱 클립에서 알림 사용을 참조하십시오.
+>
+
+
+
+
+# **Creating App Clips for businesses**
+> 기업용 앱 클립 생성
+>
+
+
+
+
+If you’re a platform provider who services businesses, you may create several App Clip experiences in [App Store Connect](https://appstoreconnect.apple.com/) and use a single App Clip to power them all. To people using the App Clip, it appears with the branding of an individual business or location instead of your own branding.
+> 비즈니스에 서비스를 제공하는 플랫폼 공급자인 경우 앱 스토어 커넥트에서 여러 개의 앱 클립 환경을 생성하고 단일 앱 클립을 사용하여 모든 기능을 강화할 수 있습니다. 앱 클립을 사용하는 사람들에게, 그것은 당신 자신의 브랜딩 대신에 개별 사업체나 위치의 브랜딩과 함께 나타난다.
+>
+
+
+
+
+**Use consistent branding.** When people see the App Clip card for a business, the brand for that business is front and center. Tone down your own branding and make sure the branding for the business is clearly visible to avoid confusing people when they enter the App Clip experience.
+> 일관된 브랜드를 사용하라. 사람들이 사업을 위한 앱 클립 카드를 볼 때, 그 사업을 위한 브랜드는 전면과 중앙에 있다. 앱 클립 경험에 참여할 때 사람들을 혼란스럽게 하지 않도록 자신의 브랜딩을 줄이고 비즈니스를 위한 브랜딩이 명확하게 보이는지 확인하십시오.
+>
+
+
+
+
+**Consider multiple businesses.** An App Clip may power many different businesses or a business that has multiple locations. In both scenarios, people may end up using the App Clip for more than one business or location at a time. The App Clip must handle this use case and update its user interface accordingly. For example, consider a way to switch between recent businesses or locations within your App Clip, and verify the user’s location when they launch it.
+> 여러 비즈니스를 고려해 보십시오. 앱 클립은 여러 다양한 비즈니스 또는 여러 위치를 가진 비즈니스에 전원을 공급할 수 있습니다. 두 시나리오 모두에서 사람들은 한 번에 하나 이상의 회사나 장소에서 앱 클립을 사용하게 될 수 있다. App Clip은 이 사용 사례를 처리하고 그에 따라 사용자 인터페이스를 업데이트해야 합니다. 예를 들어, App Clip 내에서 최근 업체 또는 위치를 전환하고 사용자가 해당 업체를 시작할 때 위치를 확인하는 방법을 고려해 보십시오.
+>
+
+
+
+
+For developer guidance, see [Configuring the launch experience of your App Clip](https://developer.apple.com/documentation/app_clips/configuring_the_launch_experience_of_your_app_clip).
+> 개발자 지침은 앱 클립의 시작 환경 구성을 참조하십시오.
+>
+
+
+
