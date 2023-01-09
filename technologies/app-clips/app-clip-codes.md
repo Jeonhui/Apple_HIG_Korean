@@ -192,3 +192,112 @@ When determining the dimensions of your App Clip Codes, consider a distance to c
 
 
 
+If you display an App Clip Code near a QR Code or other scannable item, choose a size for the App Clip Code that’s at least the other code’s or item’s size.
+> QR 코드 또는 다른 스캔 가능한 항목 근처에 앱 클립 코드를 표시하는 경우 다른 코드 또는 항목 크기 이상의 앱 클립 코드 크기를 선택합니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/app-clips/images/appclip-with-qr-code_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/app-clips/images/appclip-with-qr-code_2x.png)
+
+**Provide enough space between an App Clip Code and adjacent App Clip Codes, graphics, or materials.** The minimum clear space around an App Clip Code is equal to the space between the center glyph and the circular code. If you place your App Clip Code next to another App Clip Code or other machine-readable code, leave enough clear space to allow for reliable scanning of each code.
+> 앱 클립 코드와 인접한 앱 클립 코드, 그래픽 또는 재료 사이에 충분한 공간을 제공하십시오. 앱 클립 코드 주위의 최소 빈 공간은 가운데 글리프와 원형 코드 사이의 공간과 같습니다. 앱 클립 코드를 다른 앱 클립 코드 또는 다른 컴퓨터에서 읽을 수 있는 코드 옆에 배치하는 경우 각 코드를 안정적으로 검색할 수 있도록 충분한 공간을 확보하십시오.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/app-clips/images/spacing_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/app-clips/images/spacing_2x.png)
+
+# **Using clear messaging**
+
+Add clear messaging that informs people how they can use the App Clip Code to launch your App Clip, especially if you use the design without the App Clip logo. For example, add a call to action next to an App Clip Code you display in an email or on a poster. Use the suggested call-to-action messaging or your own copy. Always use a simple, clear call to action.
+> 특히 앱 클립 로고 없이 디자인을 사용하는 경우 앱 클립 코드를 사용하여 앱 클립을 시작하는 방법을 알려주는 명확한 메시지를 추가합니다. 예를 들어 전자 메일이나 포스터에 표시하는 앱 클립 코드 옆에 작업 호출을 추가합니다. 제안된 Call-to-Action 메시징 또는 사용자 자신의 사본을 사용합니다. 항상 간단하고 명확한 행동 요청을 사용하십시오.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/app-clips/images/clear-messaging_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/app-clips/images/clear-messaging_2x.png)
+
+For a scan-only App Clip Code, you can use the following call to action:
+> 검색 전용 앱 클립 코드의 경우 다음 작업 호출을 사용할 수 있습니다:
+>
+
+
+
+
+- Scan to [describe what users can do with your App Clip].
+- >  [사용자가 앱 클립으로 수행할 수 있는 작업 설명]을 검색합니다.
+
+- Scan using the camera on your iPhone or iPad to [describe what users can do with your App Clip].
+- >  iPhone 또는 iPad의 카메라를 사용하여 [사용자가 앱 클립으로 수행할 수 있는 작업 설명]을 스캔합니다.
+
+
+For an NFC-integrated App Clip Code, you can use the following call to action:
+> NFC 통합 앱 클립 코드의 경우 다음과 같은 작업 호출을 사용할 수 있습니다:
+>
+
+
+
+
+- Scan to [describe what users can do with your App Clip].
+- >  [사용자가 앱 클립으로 수행할 수 있는 작업 설명]을 검색합니다.
+
+- Hold your iPhone near the [object name] to launch an App Clip that [describe what a user can do with your App Clip].
+- >  [오브젝트 이름] 근처에서 아이폰을 잡고 [사용자가 앱 클립으로 수행할 수 있는 작업을 설명하는] 앱 클립을 실행합니다.
+
+
+For more information, see [Near-field communication](../technologies/near-field-communication).
+
+**Adhere to [Guidelines for Using Apple Trademarks](https://www.apple.com/legal/intellectual-property/guidelinesfor3rdparties.html) when referring to your App Clip and App Clip Codes.** For example, Apple trademarks shouldn’t appear in your app name or imagery, always use title case when using the terms App Clips or App Clip Code, and so on. For additional information, see [Legal requirements](../technologies/app-clips/legal-requirements/).
+> 예를 들어 Apple 상표는 앱 이름이나 이미지에 표시되지 않아야 하며 App Clip 또는 App Clip 코드 등의 용어를 사용할 때는 항상 제목 대소문자를 사용해야 합니다. 자세한 내용은 법적 요구 사항을 참조하십시오.
+>
+
+
+
+
+# **Customizing your App Clip Code**
+> 앱 클립 코드 사용자 지정
+>
+
+
+
+
+Use [App Store Connect](https://appstoreconnect.apple.com/) or the [App Clip Code Generator](https://developer.apple.com/app-clips/resources/) command-line tool to create App Clip Codes, and follow best practices to ensure a reliable scanning experience.
+> App Store Connect 또는 App Clip Code Generator 명령줄 도구를 사용하여 App Clip Code를 만들고 모범 사례를 따라 신뢰할 수 있는 검색 환경을 제공합니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/app-clips/images/customizing_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/app-clips/images/customizing_2x.png)
+
+**Always use the generated App Clip Code.** Don’t create your own App Clip Code design or modify a generated App Clip Code in any way. Don’t apply filters, augment its colors, or add glows, shadows, gradients, or reflections. They negatively impact people’s scanning experience. When scaling a generated App Clip Code, don’t change the generated code’s aspect ratio, and be sure to scale all attributes of the App Clip Code — for example the stroke widths.
+> 항상 생성된 앱 클립 코드를 사용하십시오. 자신만의 앱 클립 코드 디자인을 만들거나 생성된 앱 클립 코드를 수정하지 마십시오. 필터를 적용하거나 색상을 늘리거나 글로우, 그림자, 그라데이션 또는 반사를 추가하지 마십시오. 그것들은 사람들의 스캔 경험에 부정적인 영향을 미친다. 생성된 앱 클립 코드의 크기를 조정할 때는 생성된 코드의 가로 세로 비율을 변경하지 말고 앱 클립 코드의 모든 속성(예: 스트로크 너비)을 조정해야 합니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/app-clips/images/customizing-wrong-1_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/app-clips/images/customizing-wrong-1_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/images/crossout_2x.png](https://developer.apple.com/design/human-interface-guidelines/images/crossout_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/app-clips/images/customizing-wrong-2_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/app-clips/images/customizing-wrong-2_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/images/crossout_2x.png](https://developer.apple.com/design/human-interface-guidelines/images/crossout_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/app-clips/images/customizing-wrong-3_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/app-clips/images/customizing-wrong-3_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/images/crossout_2x.png](https://developer.apple.com/design/human-interface-guidelines/images/crossout_2x.png)
+
+**Choose colors with enough contrast that ensure accurate scanning.** Each App Clip Code uses three colors: a foreground color, a background color, and a third color that’s generated for you based on the foreground and background colors. Both [App Store Connect](https://appstoreconnect.apple.com/) and the [App Clip Code Generator](https://developer.apple.com/app-clips/resources/) command-line tool offer a selection of default color pairs. Alternatively, you can choose custom foreground and background colors. Note that you can’t choose custom colors that will lead to a suboptimal scanning experience. If your color selection doesn’t work well, neither App Store Connect nor the command-line tool will generate an App Clip Code. To help you choose a color combination that works well, both tools contain functionality to suggest a different foreground color based on your custom background color. For more information, see [Creating App Clip Codes with the App Clip Code Generator](https://developer.apple.com/documentation/app_clips/creating_app_clip_codes/creating_app_clip_codes_with_the_app_clip_code_generator) and [Creating App Clip Codes with App Store Connect](https://developer.apple.com/documentation/app_clips/creating_app_clip_codes/creating_app_clip_codes_with_app_store_connect/).
+> 각 앱 클립 코드는 전경색, 배경색 및 배경색을 기준으로 생성된 세 가지 색을 사용합니다. App Store Connect와 App Clip Code Generator 명령줄 도구 모두 기본 색상 쌍을 선택할 수 있습니다. 또는 사용자 정의 전경색과 배경색을 선택할 수 있습니다. 최적의 검색 환경이 아닌 사용자 지정 색상은 선택할 수 없습니다. 색상 선택이 제대로 작동하지 않으면 앱 스토어 연결이나 명령줄 도구에서 앱 클립 코드를 생성하지 않습니다. 잘 작동하는 색상 조합을 선택할 수 있도록 두 도구 모두 사용자 지정 배경색에 따라 다른 전경색을 제안하는 기능이 포함되어 있습니다. 자세한 내용은 App Clip Code Generator를 사용하여 App Clip Code 만들기 및 App Store Connect.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/app-clips/images/colors_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/app-clips/images/colors_2x.png)

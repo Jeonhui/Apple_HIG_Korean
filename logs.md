@@ -89,3 +89,4 @@
  | 2023-01-06 01:40:55 | ./technologies/always-on.md | 16 | 9595 | 
  | 2023-01-07 01:35:35 | ./technologies/app-clips/user-experience.md | 56 | 9981 | 
  | 2023-01-08 01:42:44 | ./technologies/app-clips/app-clip-codes.md | 85 | 9912 | 
+ | 2023-01-09 01:35:44 | ./technologies/app-clips/legal-requirements.md | 13 | 9964 | 
