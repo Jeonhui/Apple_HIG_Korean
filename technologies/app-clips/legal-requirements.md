@@ -37,3 +37,30 @@ The App Clip Codes described in these guidelines must not be used in any manner 
 
 
 
+Apple retains all rights to its trademarks, copyrights, or other intellectual property rights contained in the materials provided for use hereunder, including, without limitation, the App Clip Codes and any elements contained therein.
+> Apple은 App Clip Code 및 App Clip Code에 포함된 모든 요소를 포함하여 본 계약에 따라 제공된 자료에 포함된 상표, 저작권 또는 기타 지적 재산권에 대한 모든 권리를 보유합니다.
+>
+
+
+
+
+Do not add a symbol to App Clip Codes created in App Store Connect or with the App Clip Code Generator command-line tool.
+> App Clip Code Generator 명령줄 도구를 사용하여 App Store Connector에서 만든 App Clip Code에 기호를 추가하지 마십시오.
+>
+
+
+
+
+Do not translate any Apple trademark. Apple trademarks must remain in English even when they appear within text in a language other than English. With Apple’s approval, a translation of the legal notice and credit lines (but not the trademarks) can be used in materials distributed outside the U.S.
+> Apple 상표를 번역하지 마십시오. 애플 상표는 영어가 아닌 다른 언어로 텍스트 내에 표시되는 경우에도 영어로 유지되어야 한다. 애플의 승인으로 법적 고지와 크레딧 라인(상표는 제외)의 번역본을 미국 밖에서 배포되는 자료에 사용할 수 있다.
+>
+
+
+
+
+For more information about using Apple trademarks, see [Guidelines for Using Apple Trademarks](https://www.apple.com/legal/intellectual-property/guidelinesfor3rdparties.html).
+> Apple 상표 사용에 대한 자세한 내용은 Apple 상표 사용 지침서를 참조하십시오.
+>
+
+
+
