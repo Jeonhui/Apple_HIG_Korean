@@ -65,3 +65,25 @@ For developer guidance, see [PKPaymentAuthorizationViewControllerDelegate](http
 
 
 
+**Provide accurate status reporting to the system.** When a problem occurs, it’s essential that your app or website accurately indicate the type of problem so the system can show the most relevant error message on the payment sheet. This is done by accompanying your custom error message with the correct status code. For developer guidance, see [PKPaymentError](https://developer.apple.com/documentation/passkit/pkpaymenterror) (iOS, watchOS) and [Apple Pay status codes](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/apple_pay_status_codes) (web).
+> 시스템에 정확한 상태 보고를 제공합니다. 문제가 발생할 경우, 시스템이 가장 관련성이 높은 오류 메시지를 지불 시트에 표시할 수 있도록 앱이나 웹 사이트에서 문제 유형을 정확하게 표시해야 합니다. 이 작업은 사용자 정의 오류 메시지와 올바른 상태 코드를 함께 제공하여 수행됩니다. 개발자 지침은 PKPaymentError(iOS, watch)를 참조하십시오OS) 및 Apple Pay 상태 코드(웹).
+>
+
+
+
+
+**Succinctly and specifically describe the problem when data is invalid or incorrectly formatted.** Reference the relevant field and indicate exactly what’s expected. For example, if people enter an invalid zip code, instead of showing “Address is invalid”, show a specific message like “Zip code doesn’t match city”. If the shipping address is unserviceable, indicate why with a message like “Shipping not available for this state”. Use noun phrases with sentence-style capitalization and no ending punctuation. Aim to keep messages at 128 characters or fewer to avoid truncation.
+> 데이터가 잘못되었거나 형식이 잘못되었을 때의 문제를 간결하고 구체적으로 설명합니다. 관련 필드를 참조하여 예상되는 내용을 정확하게 표시하십시오. 예를 들어, 사람들이 잘못된 우편 번호를 입력한 경우 "주소가 잘못되었습니다"를 표시하는 대신 "우편 번호가 도시와 일치하지 않습니다"와 같은 특정 메시지를 표시합니다. 배송 주소를 사용할 수 없는 경우 "이 상태에서는 배송할 수 없습니다"와 같은 메시지를 사용하여 이유를 표시합니다. 명사구는 문장형 대문자와 끝 문장부호가 없는 것을 사용한다. 잘리지 않도록 메시지를 128자 이하로 유지합니다.
+>
+
+
+
+
+# **Payment processing**
+
+**Handle interruptions correctly.** A user-driven event like a cancellation or a system-driven event like a timeout could cause an interruption in the payment flow, resulting in the payment sheet being dismissed. When such an event occurs, you must cancel any in-progress payment. After the payment sheet dismisses, people can restart the process by choosing the Apple Pay button again. For developer guidance, see [PKPaymentAuthorizationViewControllerDelegate](https://developer.apple.com/documentation/passkit/pkpaymentauthorizationviewcontrollerdelegate) (iOS, watchOS) and [oncancel](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaysession/1778029-oncancel) (web).
+> 중단을 올바르게 처리합니다. 취소와 같은 사용자 주도 이벤트나 타임아웃과 같은 시스템 주도 이벤트는 결제 흐름에 중단을 초래하여 결제 시트가 해지될 수 있습니다. 이러한 이벤트가 발생하면 진행 중인 결제를 취소해야 합니다. 결제 시트가 해제된 후, 사람들은 애플 페이 버튼을 다시 선택하여 프로세스를 다시 시작할 수 있다. 개발자 지침은 PK 지불을 참조하십시오권한 부여 보기컨트롤러 위임(iOS, watch)OS) 및 취소 시(웹).
+>
+
+
+
