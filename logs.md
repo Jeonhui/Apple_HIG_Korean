@@ -93,3 +93,4 @@
  | 2023-01-10 01:41:10 | ./technologies/apple-pay/checkout-and-payment.md | 13 | 9949 | 
  | 2023-01-11 01:38:48 | ./technologies/apple-pay/error-handling.md | 36 | 9637 | 
  | 2023-01-12 01:39:11 | ./technologies/apple-pay/editorial.md | 3 | 9650 | 
+ | 2023-01-13 01:41:57 | ./technologies/augmented-reality.md | 53 | 9773 | 
