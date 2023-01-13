@@ -1,1 +1,23 @@
 # **[technologies-machine-learning] implicit-feedback**
+
+Implicit feedback is information that arises as people interact with your app’s features. Unlike the specific responses you get from [explicit feedback](https://developer.apple.com/design/human-interface-guidelines/technologies/machine-learning/explicit-feedback), implicit feedback gives you a wide range of information about user behavior and preferences. Although incorporating implicit feedback isn’t required for a great machine learning app, the feedback can help you improve your app’s user experience without asking people to do any extra work.
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/machine-learning/images/implicit-feedback_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/machine-learning/images/implicit-feedback_2x.png)
+
+**Always secure people’s information.** Implicit feedback can gather potentially sensitive user information, so you must be particularly careful to maintain strict controls on user privacy.
+
+**Help people control their information.** As an app developer, you know that the more you understand about the behavior of your users — both within your app and in other apps — the more you can improve the experience your app provides. Although most people understand the benefits of making their information available to multiple apps, they may still be surprised when things they do in one app affect experiences they have in a different app. Worse, people may assume that apps are sharing their private information, which can cause them to lose trust in the apps. It’s important to tell people how your app gets and shares their information and to give people ways to restrict the flow of their information.
+
+**Don’t let implicit feedback decrease people’s opportunities to explore.** Implicit feedback tends to reinforce people’s behavior, which can improve the user experience in the short term, but may worsen it in the long term. For example, it might seem like a good idea to give people a set of suggestions that matches all the things they’re interested in now, but doing so doesn’t encourage them to explore new things.
+
+**When possible, use multiple feedback signals to improve suggestions and mitigate mistakes.** Implicit feedback is indirect, so it can be difficult to discern the user’s actual intent in the information you gather. For example, if someone views a photo, shares it in a message, and adds it to a shared album, it doesn’t necessarily mean they have positive feelings about the photo. Incorporate implicit feedback from multiple sources and interactions to help you avoid misinterpreting people’s intentions.
+
+**Consider withholding private or sensitive suggestions.** People often share their accounts and devices with others, or switch from using a personal device to a communal one. If your app receives implicit feedback related to private or sensitive topics, avoid offering recommendations based on that feedback.
+
+**Prioritize recent feedback.** People’s tastes change frequently, so base your recommendations on recent implicit feedback. For example, Face ID prioritizes recent facial input because it’s most likely to represent what the user looks like now. If recent feedback isn’t available, you can fall back to historical feedback.
+
+**Use feedback to update predictions on a cadence that matches the user’s mental model of the feature.** For example, people expect typing suggestions to update immediately as they’re typing. On the other hand, giving people continuously updated song recommendations makes it hard to consider individual songs and could make them feel rushed or overwhelmed.
+
+**Be prepared for changes in implicit feedback when you make changes to your app’s UI.** Even small UI changes can lead to noticeable changes in the amount and types of implicit feedback. For example, changing the location of a button can affect how people use it, even if there’s no change in the benefit they get from the button’s action. Take such changes into account when interpreting the implicit feedback you receive from interactions in your app.
+
+**Beware of confirmation bias.** Implicit feedback is constrained by what users can actually see and do in your app and other apps — it rarely gives you insight into new things people might like to do. Avoid relying solely on implicit feedback to inform your results.

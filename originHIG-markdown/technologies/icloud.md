@@ -1,1 +1,25 @@
 # **[technologies] icloud**
+
+# iCloud is a service that lets people seamlessly access the content they care about—photos, videos, documents, and more—from any device, without performing explicit synchronization.
+
+![https://developer.apple.com/design/human-interface-guidelines/images/intro/technologies/technology-iCloud-intro_2x.png](https://developer.apple.com/design/human-interface-guidelines/images/intro/technologies/technology-iCloud-intro_2x.png)
+
+A fundamental aspect of iCloud is transparency. People don’t need to know where content resides. They can just assume they’re always accessing the latest version.
+
+**Make it easy to use your app with iCloud.** People enable iCloud in Settings and expect apps to work with it automatically. If you think people might want to choose whether to use iCloud with your app, show a simple option the first time your app opens that provides a choice between using iCloud for all data or not at all.
+
+**Avoid asking which documents to keep in iCloud.** Most people expect all of their content to be available in iCloud and don’t want to manage the storage of individual documents. Consider how your app handles and exposes content, and try to perform more file-management tasks automatically.
+
+**Keep content up to date when possible.** In iCloud-enabled apps, its best when people always have access to the most recent content. However, you need to balance this experience with respect to device storage and bandwidth constraints. If your app works with very large documents, it may be better to let people control when updated content is downloaded. If your app fits in this category, design a way to indicate that a more recent version of a document is available in iCloud. When a document is updating, provide subtle feedback if the download takes more than a few seconds.
+
+**Respect iCloud storage space.** iCloud is a finite resource for which people pay. Use iCloud to store information people create and understand, and avoid using it for app resources or content you can regenerate. Even if your app doesn’t implement iCloud support, remember that iCloud backups include the contents of every app’s Documents folder. To avoid using up too much space, be picky about the content you place in the Documents folder.
+
+**Make sure your app behaves appropriately when iCloud is unavailable.** If someone manually disables iCloud or turns on Airplane Mode, you don’t need to display an alert notifying them the iCloud is unavailable. They already know this. However, it may still be helpful to unobtrusively let them know that changes they make won’t be available on other devices until iCloud access is restored.
+
+**Keep app state information in iCloud.** In addition to storing documents and other files, you can use iCloud to store settings and information about the state of your app. For example, a magazine app might store the last page viewed so when the app is opened on another device, someone can continue reading from where they left off. If you use iCloud to store settings, make sure it’s for ones people want applied to all of their devices. For example, some settings might be more useful at work than at home.
+
+**Warn about the consequences of deleting a document.** When someone deletes a document in an iCloud-enabled app, the document is removed from iCloud and all other devices too. Show a warning and ask for confirmation before performing the deletion.
+
+**Make conflict resolution prompt and easy.** To the extent possible, try to detect and resolve version conflicts automatically. If this can’t be done, display an unobtrusive notification that makes it easy to differentiate and choose between the conflicting versions. Conflict resolution should always occur as early as possible, so time isn’t wasted in the wrong version.
+
+**Include iCloud content in search results.** People with iCloud accounts assume their content is universally available, and they expect search results to reflect this perspective.
