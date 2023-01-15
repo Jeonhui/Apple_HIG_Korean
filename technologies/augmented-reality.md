@@ -411,3 +411,152 @@ ARKit can't track device position and orientation during an interruption, such a
 
 ![https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/arkit-vertical-orientation_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/arkit-vertical-orientation_2x.png)
 
+**Consider hiding previously placed virtual objects during relocalization.** To avoid flickering or other unpleasant visual effects during relocalization, it can be best to hide virtual objects and redisplay them in their new positions.
+> 위치 조정 중에 이전에 배치된 가상 개체를 숨기는 것을 고려하십시오. 위치 조정 중 깜박임이나 기타 불쾌한 시각적 효과를 방지하려면 가상 개체를 숨기고 새 위치에 다시 표시하는 것이 가장 좋습니다.
+>
+
+
+
+
+**Minimize interruptions if your app supports both AR and non-AR experiences.** One way to avoid interruptions is by embedding a non-AR experience within an AR experience so that people can handle the task without exiting and re-entering AR. For example, if your app helps people decide on a piece of furniture to purchase by placing the item in a room, you might let them change the upholstery without leaving the AR experience.
+> 당신의 앱이 AR과 비 AR 경험을 모두 지원하는 경우 중단을 최소화한다. 중단을 피하는 한 가지 방법은 AR 경험 내에 비 AR 경험을 내장하여 사람들이 AR을 종료하고 다시 입력하지 않고 작업을 처리할 수 있도록 하는 것이다. 예를 들어, 당신의 앱이 사람들이 물건을 방에 놓아 구매할 가구를 결정하는 것을 도와주는 경우, 당신은 AR 경험을 남기지 않고 가구를 바꾸도록 할 수 있다.
+>
+
+
+
+
+**Allow people to cancel relocalization.** If people don’t position and orient their device near where it was before an interruption, relocalization continues indefinitely without success. If coaching people to resume their session isn’t successful, consider providing a reset button or other way to restart the AR experience.
+> 사용자가 장치를 중단 전 위치에 배치하고 방향을 지정하지 않으면 장치의 위치를 변경할 수 없습니다. 사람들에게 세션을 다시 시작하도록 코칭하는 데 성공하지 못한 경우, AR 경험을 다시 시작할 수 있는 재설정 버튼이나 다른 방법을 제공하는 것을 고려해 보십시오.
+>
+
+
+
+
+**Indicate when the front-facing camera is unable to track a face for more than about half a second.** Use a visual indicator to indicate that the camera can no longer track the person’s face. If you need to provide text instructions in this situation, keep them to a minimum.
+> 전면 카메라가 약 0.5초 이상 얼굴을 추적할 수 없을 때를 나타냅니다. 시각적 표시기를 사용하여 카메라가 더 이상 사람의 얼굴을 추적할 수 없음을 나타냅니다. 이 상황에서 텍스트 지시사항을 제공해야 하는 경우 최소한으로 유지하십시오.
+>
+
+
+
+
+# **Suggesting ways to resolve problems**
+> 문제 해결 방법 제안
+>
+
+
+
+
+**Let people reset the experience if it doesn’t meet their expectations.** Don't force people to wait for conditions to improve or struggle with object placement. Give them a way to start over again and see if they have better results.
+> 사람들이 자신의 기대에 미치지 못하면 경험을 재설정하도록 합니다. 사람들이 개선될 때까지 기다리거나 객체 배치에 어려움을 겪도록 강요하지 마십시오. 그들에게 다시 시작할 수 있는 방법을 주고 그들이 더 나은 결과를 가지고 있는지 확인하세요.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/ARKit_01.svg](https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/ARKit_01.svg)
+
+Sufficient lighting
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/ARKit_02.svg](https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/ARKit_02.svg)
+
+Insufficient lighting
+
+**Suggest possible fixes if problems occur.** Analysis of the real-world environment and surface detection can fail or take too long for a variety of reasons — insufficient light, an overly reflective surface, a surface without enough detail, or too much camera motion. If your app is notified of these problems, use straightforward, friendly language to offer suggestions for resolving them.
+> 문제가 발생할 경우 가능한 해결책을 제안합니다. 실제 환경과 표면 감지에 대한 분석은 빛 부족, 반사 표면, 세부 사항이 충분하지 않은 표면 또는 카메라 모션이 너무 많은 등 다양한 이유로 실패하거나 너무 오래 걸릴 수 있습니다. 앱에 이러한 문제가 통보되면 간단하고 친근한 언어를 사용하여 문제 해결을 위한 제안을 제공하십시오.
+>
+
+
+
+
+| Problem | Possible suggestion |
+| --- | --- |
+| Insufficient features detected. | Try turning on more lights and moving around. |
+| Excessive motion detected. | Try moving your phone slower. |
+| Surface detection takes too long. | Try moving around, turning on more lights, and making sure your phone is pointed at a sufficiently textured surface. |
+
+# **AR icon**
+
+Apps can display an AR icon in controls that launch ARKit-based experiences. You can download this icon in [Resources](https://developer.apple.com/design/resources/#ios-apps).
+> 앱은 ARKit 기반 경험을 시작하는 컨트롤에 AR 아이콘을 표시할 수 있습니다. 이 아이콘은 리소스에서 다운로드할 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/ARKit_Glyph.svg](https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/ARKit_Glyph.svg)
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/ARKit_Glyph_Button.svg](https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/ARKit_Glyph_Button.svg)
+
+**Use the AR glyph as intended.** The glyph should be used strictly for initiating an ARKit-based experience. Never alter the glyph (other than adjusting its size and color), use it for other purposes, or use it in conjunction with AR experiences not created using ARKit.
+> AR 글리프는 ARKit 기반의 경험을 시작하기 위해 엄격하게 사용되어야 합니다. 글리프를 변경하거나(크기와 색상을 조정하는 것 외에는) 다른 용도로 사용하거나 ARKit를 사용하지 않는 AR 경험과 함께 사용하지 마십시오.
+>
+
+
+
+
+**Maintain minimum clear space.** The minimum amount of clear space required around an AR glyph is 10% of the glyph's height. Don’t let other elements infringe on this space or occlude the glyph in any way.
+> AR 글리프 주변에 필요한 최소 공간은 글리프 높이의 10%입니다. 다른 요소들이 이 공간을 침해하거나 어떤 식으로든 글리프를 가리지 않도록 하세요.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/ARKit_Glyph_Clear.svg](https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/ARKit_Glyph_Clear.svg)
+
+# **AR badges**
+
+Apps that include collections of products or other objects can use badging to identify specific items that can be viewed in AR using ARKit. For example, a department store app might use a badge to mark furniture that people can preview in their home before making a purchase.
+> 제품 모음이나 다른 객체가 포함된 앱은 ARKit를 사용하여 AR에서 볼 수 있는 특정 항목을 식별하기 위해 배지를 사용할 수 있습니다. 예를 들어, 백화점 앱은 사람들이 구매하기 전에 집에서 미리 볼 수 있는 가구를 표시하기 위해 배지를 사용할 수 있다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/arkit-badging.svg](https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/arkit-badging.svg)
+
+**Use the AR badges as intended and don’t alter them.** You can download AR badges, available in collapsed and expanded form, in [Resources](https://developer.apple.com/design/resources/#ios-apps). Use these images exclusively to identify products or other objects that can be viewed in AR using ARKit. Never alter the badges, change their color, use them for other purposes, or use them in conjunction with AR experiences not created with ARKit.
+> AR 배지를 의도한 대로 사용하고 변경하지 마십시오. 축소 및 확장 형식으로 제공되는 AR 배지는 리소스에서 다운로드할 수 있습니다. ARKit를 사용하여 AR에서 볼 수 있는 제품 또는 기타 객체를 식별하는 데에만 이 이미지를 사용합니다. 배지를 변경하거나 색상을 변경하거나 다른 용도로 사용하거나 ARKit에서 생성되지 않은 AR 경험과 함께 사용하지 마십시오.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/ARKit_Badge_IconAndText.svg](https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/ARKit_Badge_IconAndText.svg)
+
+AR badge
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/ARKit_Badge_Icon.svg](https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/ARKit_Badge_Icon.svg)
+
+Glyph-only AR badge
+
+**Prefer the AR badge to the glyph-only badge.** In general, use the glyph-only badge for constrained spaces that can't accommodate the AR badge. Both badges work well at their default size.
+> 글리프 전용 배지보다 AR 배지를 선호합니다. 일반적으로 AR 배지를 수용할 수 없는 제한된 공간에 대해서는 글리프 전용 배지를 사용합니다. 두 배지 모두 기본 크기에서 잘 작동합니다.
+>
+
+
+
+
+**Use badging only when your app contains a mixture of objects that can be viewed in AR and objects that cannot.** If all objects in your app can be viewed in AR, then badging is redundant.
+> 앱에 AR에서 볼 수 있는 객체와 볼 수 없는 객체가 혼합된 경우에만 배지를 사용하십시오. 앱의 모든 객체를 AR에서 볼 수 있다면 배지는 중복됩니다.
+>
+
+
+
+
+**Keep badge placement consistent and clear.** A badge looks best when displayed in one corner of an object's photo. Always place it in the same corner and make sure it's large enough to be seen clearly (but not so large that it occludes important detail in the photo).
+> 배지 배치를 일관적이고 명확하게 유지합니다. 배지는 개체 사진의 한쪽 모서리에 표시될 때 가장 잘 보입니다. 항상 동일한 모서리에 배치하고 선명하게 보일 정도로 충분히 크지만 사진에서 중요한 세부 정보를 가릴 정도로 크지는 않습니다.
+>
+
+
+
+
+**Maintain minimum clear space.** The minimum amount of clear space required around an AR badge is 10% of the badge's height. Other elements shouldn't infringe on this space and occlude the badge in any way.
+> AR 배지 주변에 필요한 최소 공간은 배지 높이의 10%입니다. 다른 요소들이 이 공간을 침해해서는 안 되며 어떤 식으로든 배지를 가려서는 안 됩니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/ARKit_Badge_IconAndText_Clear.svg](https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/ARKit_Badge_IconAndText_Clear.svg)
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/ARKit_Badge_Icon_Clear.svg](https://developer.apple.com/design/human-interface-guidelines/technologies/augmented-reality/images/ARKit_Badge_Icon_Clear.svg)
