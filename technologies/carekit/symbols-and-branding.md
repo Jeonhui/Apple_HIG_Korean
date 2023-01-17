@@ -44,3 +44,9 @@ Using SF Symbols in your app gives you:
 
 
 
+**Incorporate refined, unobtrusive branding.** People use CareKit apps to help them achieve their health and wellness goals; they don't want to see advertising. To avoid distracting people from their care plan, subtly incorporate your brand through your app’s use of color and communication style.
+> 세련되고 눈에 띄지 않는 브랜드를 통합합니다. 사람들은 건강과 웰빙 목표를 달성하도록 돕기 위해 CareKit 앱을 사용합니다. 그들은 광고를 보고 싶어하지 않습니다. 관리 계획에서 사람들의 주의를 산만하게 하는 것을 방지하기 위해, 당신의 앱의 색상과 의사소통 스타일을 통해 당신의 브랜드를 미묘하게 통합하세요.
+>
+
+
+

@@ -97,3 +97,4 @@
  | 2023-01-14 01:26:42 | ./technologies/augmented-reality.md | 152 | 9788 | 
  | 2023-01-15 01:42:15 | ./technologies/carekit/views.md | 23 | 9938 | 
  | 2023-01-16 01:37:34 | ./technologies/carekit/symbols-and-branding.md | 16 | 9796 | 
+ | 2023-01-17 01:37:01 | ./technologies/carplay/architecture.md | 13 | 9556 | 
