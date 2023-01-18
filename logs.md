@@ -98,3 +98,4 @@
  | 2023-01-15 01:42:15 | ./technologies/carekit/views.md | 23 | 9938 | 
  | 2023-01-16 01:37:34 | ./technologies/carekit/symbols-and-branding.md | 16 | 9796 | 
  | 2023-01-17 01:37:01 | ./technologies/carplay/architecture.md | 13 | 9556 | 
+ | 2023-01-18 01:40:08 | ./technologies/carplay/interaction.md | 45 | 9740 | 
