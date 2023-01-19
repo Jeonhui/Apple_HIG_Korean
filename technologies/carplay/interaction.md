@@ -129,3 +129,82 @@ Vehicles that support CarPlay have physical controls (buttons, knobs, and touchp
 
 ### **Focus-based navigation**
 
+CarPlay has a focus model that helps people move through onscreen interface elements using a knob or touchpad when the built-in display doesn’t support touch interactions. By rotating a knob or swiping a touchpad, focus moves from element to element, stopping on a specific one. The user can then press the knob, tap the touchpad, or press a button to activate or interact with the element.
+> CarPlay에는 내장 디스플레이가 터치 상호 작용을 지원하지 않을 때 노브 또는 터치 패드를 사용하여 화면 인터페이스 요소를 이동할 수 있도록 도와주는 포커스 모델이 있습니다. 노브를 돌리거나 터치 패드를 스와이프하면 포커스가 요소에서 요소로 이동하여 특정 요소에서 멈춥니다. 그런 다음 사용자는 노브를 누르거나 터치 패드를 가볍게 두드리거나 버튼을 눌러 요소를 활성화하거나 상호 작용할 수 있습니다.
+>
+
+
+
+
+Play
+
+**Position onscreen elements so the user can navigate logically from item to item.** Changes in focus should be predictable.
+> 사용자가 항목 간에 논리적으로 탐색할 수 있도록 화면 요소를 배치합니다. 초점의 변화는 예측 가능해야 합니다.
+>
+
+
+
+
+For developer guidance, see [UIFocusEnvironment](https://developer.apple.com/documentation/uikit/uifocusenvironment).
+
+# **Touchscreen**
+
+Users can interact with a CarPlay app by performing gestures on the car’s built-in touchscreen display. CarPlay supports both low-fidelity and high-fidelity touchscreen displays. High-fidelity screens have lower finger-tracking latency than low-fidelity screens, and therefore support more gestures. Depending on the display, CarPlay apps can respond single-finger gestures, as follows.
+> 사용자는 자동차의 내장 터치스크린 디스플레이에서 제스처를 수행하여 카플레이 앱과 상호 작용할 수 있다. 카플레이는 저충실도와 고충실도 터치스크린 디스플레이를 모두 지원한다. 충실도가 높은 화면은 충실도가 낮은 화면보다 손가락 추적 지연 시간이 낮기 때문에 더 많은 제스처를 지원한다. 디스플레이에 따라 CarPlay 앱은 다음과 같이 한 손가락 제스처에 응답할 수 있습니다.
+>
+
+
+
+
+| Gesture | Usage | Low-fidelity screen | High-fidelity screen |
+| --- | --- | --- | --- |
+| Tap | Activates a control or selects an item. | ● | ● |
+| Double-tap | Zooms in and centers content. | ● | ● |
+| Touch and hold | Activates a control for a period of time. For example, touching and holding the Next Track button in the Music app fast-forwards the currently playing track. | ● | ● |
+| Flick | Scrolls or pans quickly. |  | ● |
+| Drag | Moves an element from side-to-side or drags an element across the screen. |  | ● |
+
+**Minimize touchscreen interactions.** Don’t expect people to keep reaching out to touch the screen, especially while the car is in motion. Require as few manual interactions as possible to reach content and initiate functions.
+> 터치 스크린 상호 작용을 최소화합니다. 특히 자동차가 움직이는 동안 사람들이 계속 손을 뻗어 스크린을 만지는 것을 기대하지 마십시오. 콘텐츠에 접근하고 기능을 시작하기 위해 가능한 한 적은 수의 수동 상호 작용이 필요합니다.
+>
+
+
+
+
+# **Siri**
+
+Siri is an essential feature of CarPlay that facilitates distraction-free, voice-driven app interactions. Certain types of apps can integrate with Siri to perform tasks in response to spoken commands and questions from users.
+> 시리는 카플레이의 필수 기능으로, 산만함이 없고 음성으로 구동되는 앱 상호작용을 촉진한다. 특정 유형의 앱은 Siri와 통합하여 음성 명령과 사용자의 질문에 응답하여 작업을 수행할 수 있습니다.
+>
+
+
+
+
+| Type of app | Supported Siri interactions |
+| --- | --- |
+| Automaker apps | Change the audio source.Change the climate.Change the defroster settings.Change seat settings.Change the radio station.Save and load driver profiles. |
+| Messaging apps | Send messages.Read received messages. |
+| Voice over Internet Protocol (VoIP) apps | Start audio calls. |
+
+A voice command button on the steering wheel activates Siri, even when CarPlay isn’t visible on the car’s built-in display. Once activated, Siri handles the language processing and semantic analysis needed to turn spoken requests into actionable instructions your app can handle. You’re responsible for defining the tasks your app handles. Your app must validate the information it receives, provide information for Siri to present, and take action. While validating information, if something is missing or unclear, your app can instruct Siri to request confirmation or more information.
+> 자동차의 내장 디스플레이에 CarPlay가 보이지 않을 때에도 스티어링 휠의 음성 명령 버튼이 Siri를 활성화합니다. 일단 활성화되면, Siri는 음성 요청을 당신의 앱이 처리할 수 있는 실행 가능한 명령으로 바꾸는 데 필요한 언어 처리와 의미 분석을 처리한다. 사용자는 앱에서 처리하는 작업을 정의할 책임이 있습니다. 당신의 앱은 그것이 받는 정보를 검증하고, Siri가 제시할 정보를 제공하고, 조치를 취해야 한다. 정보를 확인하는 동안, 무언가가 누락되거나 불분명한 경우, 당신의 앱은 시리에게 확인이나 더 많은 정보를 요청하도록 지시할 수 있다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/carplay/images/Siri_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/carplay/images/Siri_2x.png)
+
+**Respond quickly and minimize interaction.** People use Siri for convenience, so don't make them wait for a response. Your app should validate information and take action as quickly as possible after receiving a request. When clarification or additional information is needed, present efficient, focused choices that reduce the possibility of additional prompting.
+> 신속하게 응답하고 상호작용을 최소화하십시오. 사람들은 편의상 시리를 사용하므로 응답을 기다리게 하지 마십시오. 당신의 앱은 정보를 확인하고 요청을 받은 후 가능한 한 빨리 조치를 취해야 한다. 명확한 설명이나 추가 정보가 필요한 경우, 추가적인 프롬프트의 가능성을 줄이는 효율적이고 집중적인 선택을 제시한다.
+>
+
+
+
+
+**Increase accuracy with custom vocabulary.** Help Siri learn more about the actions your app performs by defining specific terms people might use in requests. These terms should be nongeneric and unique to your app. Never include other app names, terms that are obviously connected with other apps, inappropriate language, or reserved phrases, such as “Hey Siri.” Note that any terms you define are used by Siri to help resolve requests, but aren’t guaranteed to be recognized.
+> 사용자 지정 어휘를 사용하여 정확도를 높입니다. Siri가 사용자가 요청할 때 사용할 수 있는 특정 용어를 정의하여 앱이 수행하는 작업에 대해 자세히 알아볼 수 있도록 도와줍니다. 이러한 용어는 일반적이지 않고 앱에 고유해야 합니다. 다른 앱 이름, 다른 앱과 분명히 연결된 용어, 부적절한 언어 또는 예약된 문구(예: "안녕 시리")를 포함하지 마십시오 사용자가 정의한 용어는 Siri가 요청을 해결하는 데 도움을 주기 위해 사용되지만 인식된다는 보장은 없습니다.
+>
+
+
+
