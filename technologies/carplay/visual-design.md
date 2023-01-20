@@ -219,3 +219,79 @@ San Francisco (SF) is the CarPlay system typeface. Use SF Pro Text for text 19 p
 
 
 
+**Avoid custom fonts.** San Francisco is optimized for legibility, which is critically important while driving.
+> 사용자 지정 글꼴을 피하십시오. 샌프란시스코는 운전 중 매우 중요한 가독성에 최적화되어 있습니다.
+>
+
+
+
+
+**Use built-in text styles whenever possible.** The built-in text styles use the system typeface and let you express content in ways that are visually distinct, while retaining optimal legibility.
+> 가능하면 기본 제공 텍스트 스타일을 사용하십시오. 기본 제공 텍스트 스타일은 시스템 서체를 사용하여 최적의 가독성을 유지하면서 시각적으로 구별되는 방식으로 내용을 표현할 수 있습니다.
+>
+
+
+
+
+**Use the Body text style for primary content.** Use the Subhead and Footnote text styles for labels and secondary content.
+> 기본 내용에는 본문 텍스트 스타일을 사용하고 레이블 및 보조 내용에는 부제목 및 각주 텍스트 스타일을 사용합니다.
+>
+
+
+
+
+### **Font usage and tracking**
+
+When you use San Francisco for text in labels and other interface elements, CarPlay automatically applies the most appropriate tracking (the spacing between letters) value based on the size of the text.
+> 레이블 및 기타 인터페이스 요소의 텍스트에 대해 샌프란시스코를 사용하는 경우 CarPlay는 텍스트 크기를 기준으로 가장 적합한 추적(문자 간 간격) 값을 자동으로 적용합니다.
+>
+
+
+
+
+iOS uses San Francisco as the system font for Latin, Greek and Cyrillic alphabets, and a variety of other typefaces for other scripts.
+> iOS는 라틴 문자, 그리스 문자, 키릴 문자를 위한 시스템 글꼴로 샌프란시스코를 사용하며, 다른 스크립트를 위한 다양한 서체를 사용한다.
+>
+
+
+
+
+**Use the correct variant in interface mockups.** Use SF Pro Text for text 19 points or smaller. Use SF Pro Display for text 20 points or larger. Adjust tracking appropriately, according to the following charts:
+> 인터페이스 목업에서 올바른 변형을 사용하십시오. 텍스트 19점 이하의 경우 SF Pro Text를 사용하십시오. 20포인트 이상의 텍스트에는 SF Pro Display를 사용합니다. 다음 차트에 따라 추적을 적절하게 조정하십시오:
+>
+
+
+
+
+### **SF Pro Text**
+
+| Size (Points) | Tracking (1/1000em) |
+| --- | --- |
+| 11 | +6 |
+| 12 | 0 |
+| 13 | -6 |
+| 14 | -11 |
+| 15 | -16 |
+| 16 | -20 |
+| 17 | -24 |
+| 18 | -25 |
+
+### **SF Pro Display**
+
+| Size (Points) | Tracking (1/1000em) |
+| --- | --- |
+| 20 | +19 |
+| 22 | +16 |
+| 28 | +13 |
+| 32 | +12 |
+| 36 | +11 |
+| 50 | +7 |
+| 64 | +3 |
+| 80 and up | 0 |
+
+Not all apps express tracking values as 1/1000em. Point size based on image resolution of 144ppi for @2x and 216ppi for @3x designs.
+> 모든 앱이 추적 값을 1/1000em으로 표현하는 것은 아닙니다. @2x의 경우 144ppi, @3x의 경우 216ppi의 이미지 해상도를 기반으로 한 점 크기.
+>
+
+
+
