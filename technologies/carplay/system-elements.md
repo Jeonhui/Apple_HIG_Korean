@@ -401,3 +401,117 @@ A table presents data as a scrolling, single-column list of rows. Use a table to
 
 
 
+**Update table content regularly to reflect newer data, but don’t change the scrolling position.** Add new content to the beginning or end of the table, and let people scroll to it when they’re ready. Some apps display an indicator when new data has been added, and provide a control for jumping right to it.
+> 테이블 콘텐츠를 정기적으로 업데이트하여 새 데이터를 반영하되 스크롤 위치는 변경하지 마십시오. 테이블의 처음이나 끝에 새 콘텐츠를 추가하고 사용자가 준비되면 스크롤할 수 있습니다. 일부 앱은 새 데이터가 추가되었을 때 표시기를 표시하고 바로 이동할 수 있는 컨트롤을 제공합니다.
+>
+
+
+
+
+For developer guidance, see [UITableView](https://developer.apple.com/documentation/uikit/uitableview).
+
+### **Table rows**
+
+You use standard table cell styles to define how content appears in table rows.
+> 표준 표 셀 스타일을 사용하여 표 행에 내용이 표시되는 방식을 정의할 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/carplay/images/Table_Row-default_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/carplay/images/Table_Row-default_2x.png)
+
+**Default.** An optional image on the left side of the row, followed by a left-aligned title. It’s a good option for displaying items that don’t require supplementary information. For developer guidance, see the [UITableViewCellStyleDefault](https://developer.apple.com/documentation/uikit/uitableviewcellstyle/uitableviewcellstyledefault) constant of [UITableViewCell](https://developer.apple.com/documentation/uikit/uitableviewcell).
+> 기본값. 행 왼쪽에 있는 선택적 이미지와 왼쪽으로 정렬된 제목입니다. 보충 정보가 필요 없는 항목을 표시할 때 좋은 옵션입니다. 개발자 지침은 UITableViewCell의 UITableViewCellStyle 기본 상수를 참조하십시오.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/carplay/images/Table_Row_sub_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/carplay/images/Table_Row_sub_2x.png)
+
+**Subtitle.** A left-aligned title on one line and a left-aligned subtitle on the next. This style works well in a table where rows are visually similar. The additional subtitle helps distinguish rows from one another. For developer guidance, see the [UITableViewCellStyleSubtitle](https://developer.apple.com/documentation/uikit/uitableviewcellstyle/uitableviewcellstylesubtitle) constant of [UITableViewCell](https://developer.apple.com/documentation/uikit/uitableviewcell).
+> 부제. 한 줄에 왼쪽으로 정렬된 제목과 다음 줄에 왼쪽으로 정렬된 부제. 이 스타일은 행이 시각적으로 유사한 표에서 잘 작동합니다. 추가 부제는 행을 서로 구별하는 데 도움이 됩니다. 개발자 지침은 UITableViewCell의 UITableViewCellStyle 부제 상수를 참조하십시오.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/carplay/images/Table_Row-V1_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/carplay/images/Table_Row-V1_2x.png)
+
+**Value 1.** A left-aligned title with a right-aligned subtitle in a lighter font on the same line. For developer guidance, see the [UITableViewCellStyleValue1](https://developer.apple.com/documentation/uikit/uitableviewcellstyle/uitableviewcellstylevalue1) constant of [UITableViewCell](https://developer.apple.com/documentation/uikit/uitableviewcell).
+> 값 1. 같은 줄에 더 가벼운 글꼴로 오른쪽으로 정렬된 부제가 있는 왼쪽으로 정렬된 제목. 개발자 지침은 UITableViewCell의 UITableViewCellStyleValue1 상수를 참조하십시오.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/carplay/images/Table_Row-V2_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/carplay/images/Table_Row-V2_2x.png)
+
+**Value 2.** A right-aligned title, followed by a left-aligned subtitle in a lighter font on the same line. For developer guidance, see [UITableViewCellStyleValue2](https://developer.apple.com/documentation/uikit/uitableviewcellstyle/uitableviewcellstylevalue2) constant of [UITableViewCell](https://developer.apple.com/documentation/uikit/uitableviewcell).
+> 값 2. 오른쪽으로 정렬된 제목 다음에 같은 줄에 더 가벼운 글꼴로 왼쪽으로 정렬된 부제가 표시됩니다. 개발자 지침은 UITableViewCell의 UITableViewCellStyleValue2 상수를 참조하십시오.
+>
+
+
+
+
+**Keep text succinct to avoid clipping.** Truncated words and phrases are hard to scan and decipher. Text truncation is automatic in all table cell styles, but it can present more or less of a problem depending on which cell style you use and where truncation occurs.
+> 잘라내기를 방지하려면 텍스트를 간결하게 유지하십시오. 잘린 단어와 구문은 스캔하고 해독하기 어렵습니다. 텍스트 잘라내기는 모든 테이블 셀 스타일에서 자동으로 수행되지만, 사용하는 셀 스타일과 잘라내기가 발생하는 위치에 따라 다소 문제가 발생할 수 있습니다.
+>
+
+
+
+
+**Provide feedback when a selection is made.** People expect a row to highlight briefly when its content is tapped. Then, people expect a new view to appear or something to change, such as a checkmark appearing, that indicates a selection has been made.
+> 선택할 때 피드백을 제공합니다. 사용자는 해당 내용을 누르면 행이 짧게 강조 표시됩니다. 그런 다음, 사람들은 새로운 보기가 나타나거나 선택이 이루어졌음을 나타내는 확인 표시가 나타나는 것과 같은 변경 사항을 기대합니다.
+>
+
+
+
+
+**Design a custom table cell style for nonstandard table rows.** Standard styles are great for use in a variety of common scenarios, but some content or your overall app design may call for a heavily customized table appearance.
+> 표준이 아닌 테이블 행에 대한 사용자 지정 테이블 셀 스타일을 설계하십시오. 표준 스타일은 다양한 일반적인 시나리오에서 사용하기에 좋지만 일부 콘텐츠 또는 전체 앱 디자인은 사용자 지정된 테이블 모양을 요구할 수 있습니다.
+>
+
+
+
+
+For developer guidance, see [UITableViewCell](https://developer.apple.com/documentation/uikit/uitableviewcell).
+
+# **Text views**
+
+A text view displays multiline, styled text content. Text views can be any height and enable scrolling when the content extends outside of the view. By default, content within a text view is left-aligned and uses the system typeface in white. CarPlay doesn’t support text editing and selection.
+> 텍스트 보기는 여러 줄의 스타일이 지정된 텍스트 내용을 표시합니다. 텍스트 보기는 높이와 상관없이 내용이 보기 외부로 확장될 때 스크롤을 사용할 수 있습니다. 기본적으로 텍스트 보기의 내용은 왼쪽으로 정렬되며 흰색으로 표시된 시스템 글꼴을 사용합니다. CarPlay는 텍스트 편집 및 선택을 지원하지 않습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/carplay/images/Textview_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/carplay/images/Textview_2x.png)
+
+**Keep text legible.** Although you can use multiple fonts, colors, and alignments in creative ways, it’s essential to maintain the readability of your content. Be sure to test your text legibility at different times of day.
+> 텍스트를 읽기 쉽게 유지합니다. 여러 글꼴, 색 및 정렬을 창의적인 방법으로 사용할 수 있지만 콘텐츠의 가독성을 유지하는 것이 중요합니다. 하루 중 다른 시간에 텍스트 가독성을 테스트하십시오.
+>
+
+
+
+
+For developer guidance, see [UITextView](https://developer.apple.com/documentation/uikit/uitextview).
+
+# **Web views**
+
+A web view loads and displays rich, static content, such as HTML embedded within your app.
+> 웹 보기는 앱에 내장된 HTML과 같은 풍부한 정적 콘텐츠를 로드하고 표시합니다.
+>
+
+
+
+
+**Use a web view to present static content only.** Do not use a web view to display dynamic content or to offer web browsing capabilities.
+> 정적 내용만 표시하려면 웹 보기를 사용하십시오. 동적 내용을 표시하거나 웹 검색 기능을 제공하려면 웹 보기를 사용하지 마십시오.
+>
+
+
+
+
+For developer guidance, see [WKWebView](https://developer.apple.com/documentation/webkit/wkwebview).
