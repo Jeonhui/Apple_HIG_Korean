@@ -218,3 +218,23 @@ The Apple Health icon shows that an app works with HealthKit and the Health app.
 
 
 
+**Don't use the term *HealthKit*.** *HealthKit* is a developer-facing term that names the framework your app uses to access health data. If you need to explain to people how your app works with their data, use the term *the Apple Health app*. For example, you might say that your app “works with the Apple Health app” or “uses data from the Apple Health app.”
+> HealthKit라는 용어를 사용하지 마십시오. HealthKit은 앱이 상태 데이터에 액세스하기 위해 사용하는 프레임워크의 이름을 지정하는 개발자 대상 용어입니다. 앱이 데이터와 함께 작동하는 방식을 사람들에게 설명해야 할 경우 Apple Health 앱이라는 용어를 사용하십시오. 예를 들어, 앱이 "Apple Health 앱과 함께 작동한다"거나 "Apple Health 앱의 데이터를 사용한다"고 말할 수 있습니다
+>
+
+
+
+
+**Use correct capitalization when using the term *Apple Health*.** *Apple Health* is two words, with an uppercase A and uppercase H, followed by lowercase letters. You can display *Apple Health*entirely in uppercase only when you need to conform to an established typographic interface style, such as in an app that capitalizes all text.
+> Apple Health라는 용어를 사용할 때는 올바른 대문자를 사용하십시오. Apple Health는 대문자 A와 대문자 H 다음에 소문자를 사용합니다. 모든 텍스트를 대문자로 표시하는 앱과 같이 설정된 타이포그래피 인터페이스 스타일을 준수해야 하는 경우에만 Apple Health를 전체적으로 대문자로 표시할 수 있습니다.
+>
+
+
+
+
+**Use the system-provided translation of *Health* to avoid confusing people.** It's best to refer to the Apple Health app using the translation that people view on their device.
+> 시스템에서 제공하는 Health 번역을 사용하면 사람들이 기기에서 보는 번역을 사용하여 Apple Health 앱을 참조하는 것이 가장 좋습니다.
+>
+
+
+
