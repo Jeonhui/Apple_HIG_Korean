@@ -106,3 +106,4 @@
  | 2023-01-23 01:37:03 | ./technologies/game-center/custom-dashboard-links.md | 5 | 9829 | 
  | 2023-01-24 01:38:33 | ./technologies/healthkit.md | 79 | 9755 | 
  | 2023-01-25 01:35:30 | ./technologies/homekit/setup.md | 13 | 9897 | 
+ | 2023-01-26 01:37:38 | ./technologies/homekit/editorial.md | 7 | 9761 | 

@@ -37,3 +37,47 @@ The Home app makes it easy for people to discover, add, name, and specify the lo
 
 
 
+**Carefully consider how and when to provide a custom accessory setup experience.** Always begin by presenting the system-provided setup flow. Then, after the accessory's basic functionality is enabled, offer a custom post-setup experience that highlights the unique features of your accessory and helps people get the most out of it. For example, a light manufacturer's app could help people create personalized light scenes in their homes using key colors scanned in from photos in their library.
+> 사용자 지정 액세서리 설정 경험을 제공하는 방법과 시기를 신중하게 고려하십시오. 항상 시스템에서 제공하는 설정 흐름을 제시하는 것부터 시작하십시오. 그런 다음 액세서리의 기본 기능을 활성화한 후 액세서리의 고유한 기능을 강조하고 사용자가 액세서리를 최대한 활용할 수 있도록 지원하는 사용자 지정 설정 후 환경을 제공합니다. 예를 들어, 한 조명 제조업체의 앱은 사람들이 도서관의 사진에서 스캔한 주요 색상을 사용하여 가정에서 개인화된 조명 장면을 만들 수 있도록 도와줄 수 있다.
+>
+
+
+
+
+# **Help people choose useful names**
+> 사용자가 유용한 이름을 선택할 수 있도록 도와줍니다
+>
+
+
+
+
+**Suggest service names that suit your accessory.** If your app detects that the user has created a suboptimal name for Siri voice controls, recommend alternatives that you know will work well for most people. Never suggest company names or model numbers for use as service names.
+> 당신의 액세서리에 맞는 서비스 이름을 제안하세요. 만약 당신의 앱이 사용자가 Siri 음성 컨트롤을 위한 차선의 이름을 만든 것을 감지한다면, 대부분의 사람들에게 잘 작동할 것이라는 것을 알고 있는 대안을 추천하세요. 서비스 이름으로 사용할 회사 이름이나 모델 번호를 제안하지 마십시오.
+>
+
+
+
+
+**Check that user-provided names follow HomeKit naming rules.** If your app lets people rename services, make sure that the new names follow the rules. (The system-provided setup flow automatically checks the original names.) If people enter a name that breaks one or more rules, briefly explain the problem and suggest some alternative names that work. Here are the rules:
+> 사용자가 제공한 이름이 HomeKit 이름 지정 규칙을 따르는지 확인하십시오. 앱에서 사용자가 서비스 이름을 변경할 수 있도록 허용하는 경우 새 이름이 규칙을 따르는지 확인하십시오. (시스템에서 제공하는 설정 흐름은 자동으로 원래 이름을 확인합니다.) 사용자가 하나 이상의 규칙을 위반하는 이름을 입력하는 경우 문제를 간단히 설명하고 사용할 수 있는 몇 가지 대체 이름을 제안합니다. 규칙은 다음과 같습니다:
+>
+
+
+
+
+- Use only alphanumeric, space, and apostrophe characters.
+- >  영숫자, 공백 및 아포스트로피 문자만 사용하십시오.
+
+- Start and end with an alphabetic or numeric character.
+- >  알파벳 또는 숫자 문자로 시작하고 끝냅니다.
+
+- Don't include emojis.
+
+[제목 없음](https://www.notion.so/68e813d76fe24a30a363bc385014cf0c)
+
+**Help people avoid creating names that include location information.** It’s natural for someone to use “kitchen light” to name a light in the kitchen, but including the room name in the service name can lead to unpredictable results when controlling the accessory by voice. Your app should detect service names that duplicate location information and help people fix them. For example, you might present a post-setup experience that removes the room or zone from a service name and encourages people to assign the accessory to that room or zone instead.
+> 위치 정보가 포함된 이름을 만드는 것을 피할 수 있도록 도와줍니다. 누군가가 부엌에서 조명 이름을 짓는 데 "주방 조명"을 사용하는 것은 당연하지만, 서비스 이름에 룸 이름을 포함하면 음성으로 액세서리를 제어할 때 예측할 수 없는 결과를 초래할 수 있습니다. 당신의 앱은 위치 정보를 복제하는 서비스 이름을 감지하고 사람들이 그것을 고치는 것을 도와야 한다. 예를 들어, 서비스 이름에서 룸 또는 영역을 제거하고 대신 사용자가 해당 룸 또는 영역에 부속품을 할당하도록 하는 설정 후 환경을 제공할 수 있습니다.
+>
+
+
+
