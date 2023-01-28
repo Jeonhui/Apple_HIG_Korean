@@ -108,3 +108,4 @@
  | 2023-01-25 01:35:30 | ./technologies/homekit/setup.md | 13 | 9897 | 
  | 2023-01-26 01:37:38 | ./technologies/homekit/editorial.md | 7 | 9761 | 
  | 2023-01-27 01:42:12 | ./technologies/in-app-purchase.md | 40 | 9929 | 
+ | 2023-01-28 01:41:42 | ./technologies/in-app-purchase.md | 140 | 9592 | 
