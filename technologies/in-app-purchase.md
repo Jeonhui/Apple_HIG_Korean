@@ -367,3 +367,174 @@ For technical details and business guidance on using both types of offer codes, 
 
 
 
+**Consider supporting offer redemption within your app.** The system automatically provides screens that enable the offer-redemption flow, whether people redeem the offer in your app or in the App Store. When you use StoreKit API to let people redeem offer codes within your app, the only custom UI you need to create is one that initiates the system-provided flow (for developer guidance, see [presentCodeRedemptionSheet](https://developer.apple.com/documentation/storekit/skpaymentqueue/3566726-presentcoderedemptionsheet)). There are several natural places to provide this custom UI. For example, you could add a “Redeem Code” button to your paywall, onboarding screens, or your app’s settings screen.
+> 앱 내에서 오퍼 상환을 지원하는 것을 고려해 보십시오. 시스템은 자동으로 오퍼 상환 흐름을 가능하게 하는 화면을 제공합니다. 사람들이 당신의 앱에서 또는 앱 스토어에서 오퍼를 상환하는지 여부에 관계없이. StoreKit API를 사용하여 사람들이 앱 내에서 오퍼 코드를 상환할 수 있도록 할 때, 시스템에서 제공하는 흐름을 시작하는 사용자 지정 UI만 생성하면 됩니다(개발자 지침은 현재 코드 상환 참조)시트). 이 사용자 지정 UI를 제공할 수 있는 몇 가지 자연스러운 장소가 있습니다. 예를 들어, 당신은 당신의 페이월, 탑승 화면 또는 당신의 앱의 설정 화면에 "코드 상환" 버튼을 추가할 수 있다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/redeem-button-on-free-trial_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/redeem-button-on-free-trial_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/subscription-management_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/subscription-management_2x.png)
+
+After people tap your custom redeem button, the system automatically provides a series of code-redemption screens like the ones shown below.
+> 사용자가 사용자 정의 상환 버튼을 누르면 시스템은 아래와 같은 일련의 코드 상환 화면을 자동으로 제공합니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/system-provided-redemption-1_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/system-provided-redemption-1_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/system-provided-redemption-2_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/system-provided-redemption-2_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/system-provided-redemption-3_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/system-provided-redemption-3_2x.png)
+
+**Supply an engaging and informative promotional image.** Creating this optional image can help people understand the value of your content. If you don’t supply a promotional image, the code redemption screens use your app icon by default. To learn more, see [Promoting your in-app purchases](https://developer.apple.com/app-store/promoting-in-app-purchases/).
+> 매력적이고 유익한 홍보 이미지를 제공하십시오. 이 선택적 이미지를 만들면 사람들이 콘텐츠의 가치를 이해하는 데 도움이 될 수 있습니다. 만약 당신이 홍보 이미지를 제공하지 않는다면, 코드 상환 화면은 기본적으로 당신의 앱 아이콘을 사용한다. 자세한 내용은 앱 내 구매 촉진을 참조하십시오.
+>
+
+
+
+
+**Help people benefit from unlocked content as soon as they complete the redemption flow.**Think about ways to align the post-redemption experience in your app with the subscriber’s new status. For example, you might provide a welcome experience for new subscribers or a brief tour of new features for an existing subscriber who’s unlocked additional functionality. In particular, be prepared to welcome people who subscribe before they open your app for the first time. For example, if you require people to create an account or sign in before they can use your app, make this process as smooth as possible for new subscribers who haven’t experienced it before.
+> 사용자가 상환 흐름을 완료하는 즉시 잠금 해제된 콘텐츠의 이점을 누릴 수 있도록 지원합니다.당신의 앱에서 상환 후 경험을 가입자의 새로운 상태에 맞추는 방법을 생각해보세요. 예를 들어, 새 가입자에게 환영 인사를 하거나 추가 기능을 잠금 해제한 기존 가입자에게 새 기능에 대한 간단한 둘러보기를 제공할 수 있습니다. 특히, 앱을 처음 열기 전에 구독하는 사람들을 환영할 준비를 하세요. 예를 들어, 사용자가 앱을 사용하기 전에 계정을 만들거나 로그인하도록 요구하는 경우 이전에 이를 경험하지 않은 신규 가입자를 위해 이 프로세스를 최대한 부드럽게 만드십시오.
+>
+
+
+
+
+# **Helping people manage their subscriptions**
+> 사용자의 헤드라인 등록 관리 지원
+>
+
+
+
+
+Supporting subscription management means people can upgrade, downgrade, or cancel a subscription without leaving your app. Offering subscription management within your app also gives you a natural place to provide help for common subscriber issues and present alternative offers for people to consider.
+> 구독 관리를 지원한다는 것은 사용자가 앱을 떠나지 않고도 구독을 업그레이드, 다운그레이드 또는 취소할 수 있다는 것을 의미합니다. 또한 앱 내에서 구독 관리를 제공하면 일반적인 구독자 문제에 대한 도움말을 제공하고 사람들이 고려할 수 있는 대안을 제시할 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/subscription-management_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/subscription-management_2x.png)
+
+**Provide summaries of the customer’s subscriptions.** In particular, people appreciate viewing the upcoming renewal date without having to search for it. Consider displaying this information in a settings or account screen, near the subscription-management option. For developer guidance, see [Product.SubscriptionInfo](https://developer.apple.com/documentation/storekit/product/subscriptioninfo).
+> 고객의 구독 요약을 제공합니다. 특히, 사람들은 검색할 필요 없이 다가오는 갱신 날짜를 보는 것을 좋아합니다. 구독 관리 옵션 근처의 설정 또는 계정 화면에 이 정보를 표시하는 것이 좋습니다. 개발자 지침은 제품을 참조하십시오.구독 정보.
+>
+
+
+
+
+**Consider using the system-provided subscription-management UI.** Using StoreKit APIs lets you present a consistent experience that helps people manage or cancel their subscriptions without leaving your app. For developer guidance, see [showManageSubscriptions(in:)](https://developer.apple.com/documentation/storekit/appstore/3803198-showmanagesubscriptions).
+> 시스템에서 제공하는 구독 관리 UI를 사용해 보십시오. StoreKit API를 사용하면 사용자가 앱을 떠나지 않고도 구독을 관리하거나 취소할 수 있는 일관된 환경을 제공할 수 있습니다. 개발자 지침은 showManageSubscriptions(가입 관리)(in:)를 참조하십시오.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/system-cancel-flow-1_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/system-cancel-flow-1_2x.png)
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/system-cancel-flow-2_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/system-cancel-flow-2_2x.png)
+
+**Consider ways to encourage a subscriber to keep their subscription or resubscribe later.**When you use StoreKit APIs, your app is notified when someone chooses to cancel their subscription. In this scenario, you might want to extend a personalized offer as an alternative to cancellation or invite people to describe their reasons for canceling in an exit survey. In addition to giving you insights into various customer problems, survey feedback can also help inform messaging for retention and win-back strategies.
+> 가입자가 구독을 유지하거나 나중에 다시 구독하도록 권장하는 방법을 고려하십시오.StoreKit API를 사용할 때 누군가가 구독을 취소하기로 선택하면 앱에 알림이 표시됩니다. 이 시나리오에서는 취소의 대안으로 개인화된 제안을 확장하거나 출구 조사에서 취소 이유를 설명하도록 사람들을 초대할 수 있습니다. 설문 조사 피드백을 통해 다양한 고객 문제에 대한 통찰력을 얻을 수 있을 뿐만 아니라 유지 및 복구 전략에 대한 메시지를 제공할 수도 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/promotional-offer_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/promotional-offer_2x.png)
+
+**Always make it easy for customers to cancel an auto-renewable subscription.** If the manage subscription action is deep within an app — or hard to recognize — subscribers can feel they’re being discouraged or prevented from canceling.
+> 항상 고객이 자동 갱신 구독을 쉽게 취소할 수 있도록 하십시오. 구독 관리 작업이 앱 내에 있거나 인식하기 어려운 경우 구독자는 자신이 취소하는 것을 막거나 방해받고 있다고 느낄 수 있습니다.
+>
+
+
+
+
+**Consider creating a branded, contextual experience to complement the system-provided management UI.** Within your custom UI, you might offer a popular premium tier or provide personalized suggestions for alternative plans based on what you know about the customer’s preferences or how they use your app. For example, you can create a promotional offer that provides a discounted price for a specific period of time. You might also consider subscription [offer codes](https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase#supporting-offer-codes) to help you win back lapsed subscribers and encourage existing subscribers to upgrade.
+> 시스템에서 제공하는 관리 UI를 보완하기 위해 브랜드 환경을 구축하는 것을 고려해 보십시오. 사용자 지정 UI 내에서 고객의 선호도나 앱 사용 방법에 대해 알고 있는 내용에 따라 인기 있는 프리미엄 계층을 제공하거나 대체 요금제에 대한 맞춤형 제안을 제공할 수 있습니다. 예를 들어, 특정 기간 동안 할인된 가격을 제공하는 판촉 행사를 만들 수 있습니다. 만료된 구독자를 되찾고 기존 구독자의 업그레이드를 장려하기 위해 구독 제안 코드를 고려할 수도 있습니다.
+>
+
+
+
+
+# **Platform considerations**
+
+*No additional considerations for iOS, iPadOS, macOS, or tvOS.*
+> iOS, iPadOS, macOS 또는 tvOS에 대한 추가 고려 사항은 없습니다.
+>
+
+
+
+
+# **watchOS**
+
+The sign-up screen in your watchOS app needs to display the same set of information about your subscription options that you display in other versions of your app. For the complete list of required items, see [Making signup effortless](https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase#making-signup-effortless). The following guidelines can help you design a sign-up screen that feels at home on Apple Watch.
+> 시계의 가입 화면OS 앱은 다른 버전의 앱에 표시하는 것과 동일한 구독 옵션 정보 집합을 표시해야 합니다. 필수 항목의 전체 목록은 쉽게 등록하기를 참조하십시오. 다음 지침은 Apple Watch에서 편안한 느낌의 등록 화면을 설계하는 데 도움이 될 수 있습니다.
+>
+
+
+
+
+**Clearly describe the differences between versions of your app that run on different devices.**If your watchOS app supports different functionality or provides a subset of the content that’s available on other devices, be sure to clarify these differences in your description. Be straightforward about the advantages of accessing subscription content through your watchOS app without implying that the experience is identical to the ones in other versions of your app.
+> 다른 장치에서 실행되는 앱 버전 간의 차이를 명확히 설명하십시오.네 시계라면OS 앱은 다른 기능을 지원하거나 다른 장치에서 사용할 수 있는 콘텐츠의 하위 집합을 제공하므로 설명에서 이러한 차이점을 명확히 해야 합니다. 시계를 통해 구독 컨텐츠에 액세스할 때의 이점을 직접 확인하십시오OS 앱은 다른 버전의 앱과 동일한 경험을 제공하지 않습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/clarify-description-before_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/clarify-description-before_2x.png)
+
+A description that might lead people to expect access to 90,000 maps on their Apple Watch
+> Apple Watch에서 90,000개의 지도에 대한 액세스를 기대할 수 있는 설명
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/clarify-description-after_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/clarify-description-after_2x.png)
+
+A description that clarifies how the subscription works on Apple Watch in contrast with other devices
+> 다른 장치와 비교하여 Apple Watch에서 구독이 작동하는 방식을 설명하는 설명
+>
+
+
+
+
+**Consider using a modal sheet to display the required information.** After people respond to your call to action to learn more about your subscription offers, you can use a modal sheet to present all required items in a single, focused view. Even though people must scroll the view to access all the information, displaying it in a modal sheet helps your app UI remain streamlined and concise. Also, a modal sheet’s default Close button makes it easy for people to return to your free content with one tap. If you create a custom sign-up view instead of using a modal sheet, design a focused experience that includes a Close or Cancel button that lets people return to your free content.
+> 필요한 정보를 표시하기 위해 모달 시트를 사용하는 것을 고려해 보십시오. 구독 제안에 대해 자세히 알아보기 위해 사람들이 사용자의 요청에 응답한 후 모달 시트를 사용하여 모든 필수 항목을 하나의 초점 뷰로 표시할 수 있습니다. 모든 정보에 액세스하려면 보기를 스크롤해야 하지만 모달 시트로 표시하면 앱 UI가 간소화되고 간결하게 유지됩니다. 또한 모달 시트의 기본 닫기 버튼을 사용하면 한 번의 탭으로 자유로운 콘텐츠로 쉽게 돌아갈 수 있습니다. 모달 시트를 사용하는 대신 사용자 정의 등록 보기를 만드는 경우, 사용자가 무료 콘텐츠로 돌아갈 수 있는 닫기 또는 취소 단추를 포함하는 집중적인 환경을 설계하십시오.
+>
+
+
+
+
+**Make subscription options easy to compare on a small screen.** People need to understand the terms of each subscription option before they can choose one. Aim to display the duration and discount information for each option in a compact way that’s easy to scan and compare. Here are two ways you might present subscription options in your watchOS app:
+> 작은 화면에서 쉽게 비교할 수 있는 구독 옵션을 만듭니다. 사람들은 각 구독 옵션을 선택하기 전에 각 구독 옵션의 조건을 이해해야 합니다. 각 옵션의 기간 및 할인 정보를 검색하고 비교하기 쉬운 간결한 방식으로 표시하는 것을 목표로 합니다. 다음은 시계에서 구독 옵션을 표시할 수 있는 두 가지 방법입니다OS 앱:
+>
+
+
+
+
+- Display each option in a separate button. Using one button per payment option lets people start the signup process with one tap. In this design, it’s important to lock up each button with its description so that people can see how these elements are related, especially while scrolling.
+- >  각 옵션을 별도의 단추에 표시합니다. 결제 옵션당 버튼 하나를 사용하면 한 번의 탭으로 가입 절차를 시작할 수 있습니다. 이 설계에서는 특히 스크롤하는 동안 이러한 요소들이 어떻게 관련되어 있는지 사람들이 볼 수 있도록 각 단추를 설명과 함께 잠그는 것이 중요합니다.
+
+- Display a list of options, followed by a button people tap to start the signup process. Using a list to display one option per row gives you a compact design that minimizes scrolling while making subscription choices easy to scan and understand. In this design, the button’s title can update to reflect the chosen option.
+- >  옵션 목록을 표시한 다음 사용자가 버튼을 눌러 등록 프로세스를 시작합니다. 목록을 사용하여 행당 하나의 옵션을 표시하면 스크롤을 최소화하는 동시에 헤드라인 등록 선택사항을 쉽게 검색하고 이해할 수 있는 소형 설계가 가능합니다. 이 설계에서는 선택한 옵션을 반영하도록 버튼 제목을 업데이트할 수 있습니다.
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/lock-up-option-information_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/lock-up-option-information_2x.png)
+
+One payment option per button
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/list-option-information_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/in-app-purchase/images/list-option-information_2x.png)
+
+One payment option per list row, followed by a button that updates to display the chosen option
+> 목록 행당 하나의 결제 옵션을 선택한 후 선택한 옵션을 표시하도록 업데이트하는 단추
+>
+
+
+
