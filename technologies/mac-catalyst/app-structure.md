@@ -45,3 +45,37 @@ Regardless of how you adapt the tab bar, be sure to give people quick access to 
 
 
 
+**If your app uses a nested top-level navigation structure, think about ways to create a flatter navigation hierarchy.** Many iPad apps that originated on iPhone use deeply nested navigation controllers, making it difficult for people to navigate within the app. When possible, avoid a nested top-level navigation hierarchy. Instead, adopt a split view with a sidebar and create a flatter hierarchy by making use of the additional screen space on iPad and Mac.
+> 앱이 중첩된 최상위 탐색 구조를 사용하는 경우 더 평평한 탐색 계층을 만드는 방법을 생각해 보십시오. iPhone에서 시작된 많은 iPad 앱은 깊게 중첩된 탐색 컨트롤러를 사용하므로 앱 내에서 사람들이 탐색하기 어렵습니다. 가능한 경우 중첩된 최상위 탐색 계층을 피하십시오. 대신 사이드바가 있는 분할 보기를 채택하고 iPad와 Mac의 추가 화면 공간을 활용하여 더 평평한 계층 구조를 만듭니다.
+>
+
+
+
+
+**If you use a split view in your Mac app and can’t avoid a deep content hierarchy, include a back button.** If your content hierarchy is deeper than the number of columns supported by the split view, the middle levels between the primary view and the current content pane may not be visible. On iPad, people can use gestures to navigate to a hidden middle level in the content hierarchy. To ensure that people can retrace their steps on the Mac, include a back button in the toolbar and a corresponding navigation item in the View menu.
+> Mac 앱에서 분할 보기를 사용하고 깊은 콘텐츠 계층을 피할 수 없는 경우 뒤로 단추를 포함하십시오. 분할 보기에서 지원하는 열 수보다 콘텐츠 계층이 더 깊으면 기본 보기와 현재 콘텐츠 창 사이의 중간 수준이 표시되지 않을 수 있습니다. iPad에서는 제스처를 사용하여 콘텐츠 계층의 숨겨진 중간 수준으로 이동할 수 있습니다. Mac에서 사용자가 자신의 단계를 다시 추적할 수 있도록 도구 모음에 뒤로 버튼을 포함하고 보기 메뉴에 해당하는 탐색 항목을 포함합니다.
+>
+
+
+
+
+**If you use a segmented control in your Mac app, place it at the top of the Mac app’s layout.**Mac users are accustomed to a top-down user flow and the bottom of a Mac app’s window isn’t always visible.
+> Mac 앱에서 세그먼트화된 컨트롤을 사용하는 경우 Mac 앱 레이아웃의 맨 위에 배치합니다.Mac 사용자는 하향식 사용자 흐름에 익숙하며 Mac 앱의 창 하단이 항상 보이지는 않습니다.
+>
+
+
+
+
+**If you use horizontal paging for navigation, offer Mac users specific controls to navigate between pages.** While flicking or dragging laterally with a finger to navigate is easy, holding down a mouse button and dragging laterally is cumbersome. This is especially the case for people who use a mouse without a horizontal scroll wheel. If you support this type of lateral navigation, help people navigate through pages in your Mac app by putting navigation commands into a menu. In addition, display buttons in the toolbar that allow people to navigate to the next or previous page. For example, Stocks in macOS displays both a Back button in the toolbar and Next Story and Previous Story commands in the View menu.
+> 탐색을 위해 수평 페이징을 사용하는 경우 Mac 사용자에게 페이지 사이를 탐색할 수 있는 특정 컨트롤을 제공합니다. 탐색을 위해 손가락으로 가로로 긋거나 끄는 것은 쉽지만 마우스 버튼을 누르고 가로로 끄는 것은 번거롭습니다. 특히 가로 스크롤 휠이 없는 마우스를 사용하는 사람의 경우에 해당한다. 이러한 가로 방향 탐색을 지원하는 경우 메뉴에 탐색 명령을 입력하여 Mac 앱의 페이지를 탐색할 수 있도록 도와줍니다. 또한 사용자가 다음 페이지 또는 이전 페이지로 이동할 수 있는 단추를 도구 모음에 표시합니다. 예를 들어, MacOS의 재고는 도구 모음에 뒤로 버튼을 표시하고 보기 메뉴에 다음 스토리 및 이전 스토리 명령을 표시합니다.
+>
+
+
+
+
+**Add support for tabs.** Users expect macOS apps to let them open documents or other content in a new tab instead of in a new window. In addition, they can use System Settings to prefer tabs over windows. In this case, the system dynamically adds the relevant menu items to an app’s menus, such as View > Show Tab Bar and Window > Show Next Tab.
+> 탭에 대한 지원을 추가합니다. 사용자들은 MacOS 앱이 문서나 다른 콘텐츠를 새 창이 아닌 새 탭에서 열 수 있기를 기대합니다. 또한 시스템 설정을 사용하여 창보다 탭을 선호할 수 있습니다. 이 경우 시스템은 View > Show Tab Bar 및 Window > Show Next Tab과 같은 앱의 메뉴에 관련 메뉴 항목을 동적으로 추가합니다.
+>
+
+
+

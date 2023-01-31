@@ -111,3 +111,4 @@
  | 2023-01-28 01:41:42 | ./technologies/in-app-purchase.md | 140 | 9592 | 
  | 2023-01-29 01:43:24 | ./technologies/mac-catalyst/introduction.md | 7 | 9938 | 
  | 2023-01-30 01:34:39 | ./technologies/mac-catalyst/app-structure.md | 16 | 9562 | 
+ | 2023-01-31 01:42:27 | ./technologies/mac-catalyst/user-interaction.md | 65 | 9799 | 
