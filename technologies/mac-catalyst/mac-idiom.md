@@ -42,13 +42,11 @@ Below are two versions of an image asset. One version illustrates how the asset 
 
 
 
-• [iPad idiom](../technologies/mac-catalyst/mac-idiom#)
-• [Mac idiom](../technologies/mac-catalyst/mac-idiom#)
-
--
-
+• iPad idiom
 ![https://developer.apple.com/design/human-interface-guidelines/technologies/mac-catalyst/images/ipad-idiom_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/mac-catalyst/images/ipad-idiom_2x.png)
 
+• Mac idiom
+![https://developer.apple.com/design/human-interface-guidelines/technologies/mac-catalyst/images/mac-idiom_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/mac-catalyst/images/mac-idiom_2x.png)
 
 In addition to displaying unscaled text and images, selecting the Mac idiom further optimizes your app to provide the best possible experience on the Mac; for example:
 > 스케일이 지정되지 않은 텍스트와 이미지를 표시하는 것 외에도 Mac 관용구를 선택하면 Mac에서 가능한 최상의 환경을 제공할 수 있도록 앱이 더욱 최적화됩니다. 예를 들어 다음과 같습니다:
