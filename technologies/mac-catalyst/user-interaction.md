@@ -174,3 +174,46 @@ To give Mac users the best experience, look for additional places to support con
 
 
 
+In iOS 14 and later, a button can display a pull-down menu, or simply *menu*, that lists items or actions people can choose. When you create a Mac app with Mac Catalyst, a menu automatically becomes a macOS menu. For guidance, see [Pull-down buttons](../components/menus-and-actions/pull-down-buttons).
+> iOS 14 이상에서 버튼은 사람들이 선택할 수 있는 항목이나 동작을 나열하는 풀다운 메뉴 또는 간단히 메뉴를 표시할 수 있다. Mac Catalyst로 Mac 앱을 만들면 메뉴가 자동으로 MacOS 메뉴가 됩니다. 자세한 내용은 풀다운 단추를 참조하십시오.
+>
+
+
+
+
+# **Gestures**
+
+Most iOS gestures convert automatically when you create your Mac app with Mac Catalyst; for example:
+> 대부분의 iOS 제스처는 Mac Catalyst로 Mac 앱을 만들 때 자동으로 변환됩니다. 예:
+>
+
+
+
+
+| iOS gesture... | Translates to mouse interaction |
+| --- | --- |
+| Tap | Left or right click |
+| Touch and hold | Click and hold |
+| Pan | Left click and drag |
+
+| iOS gesture... | Translates to trackpad gesture |
+| --- | --- |
+| Tap | Click |
+| Touch and hold | Click and hold |
+| Pan | Click and drag |
+| Pinch | Pinch |
+| Rotate | Rotate |
+
+As a concrete example, consider an iOS app that allows people to tap an object and drag it around. In macOS, people might click and hold the object and then drag it around. As a general rule, try to use standard controls and views in your Mac app, because they automatically respond to most standard clicks and gestures. Avoid redefining systemwide inter-app gestures, and define custom gestures cautiously. Additionally, don’t rely on the availability of specific devices and gestures, because not everyone has a mouse or trackpad. People may also disable and redefine gestures without your knowledge. For guidance, see [Pointing devices](../inputs/pointing-devices).
+> 구체적인 예로, 사람들이 물체를 탭하고 끌고 다닐 수 있는 iOS 앱을 생각해보자. macOS에서, 사람들은 물체를 클릭한 채로 끌고 다닐 수 있다. Mac 앱은 대부분의 표준 클릭과 제스처에 자동으로 응답하므로 일반적으로 Mac 앱에서 표준 컨트롤과 보기를 사용해 보십시오. 시스템 전체의 앱 간 제스처를 재정의하지 말고 사용자 지정 제스처를 신중하게 정의하십시오. 또한 모든 사용자가 마우스나 트랙패드를 가지고 있는 것은 아니므로 특정 장치 및 제스처를 사용할 수 있는지 여부에 의존하지 마십시오. 사람들은 또한 여러분이 모르는 사이에 제스처를 비활성화하고 재정의할 수도 있습니다. 자세한 내용은 포인팅 장치를 참조하십시오.
+>
+
+
+
+
+**DEVELOPER NOTE**The two touches in the pinch and rotate gestures get sent to the view under the pointer, not the view under each touch.
+> 개발자 참고: 꼬집기 및 회전 제스처의 두 터치는 각 터치 아래의 뷰가 아니라 포인터 아래의 뷰로 전송됩니다.
+>
+
+
+
