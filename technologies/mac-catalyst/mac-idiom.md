@@ -68,3 +68,23 @@ In addition to displaying unscaled text and images, selecting the Mac idiom furt
 - >  그래픽을 많이 사용하는 앱은 성능이 향상되고 전력 소비가 감소할 수 있습니다.
 
 
+**When you adopt the Mac idiom, thoroughly audit your app’s layout and plan to make changes to it.** In addition, you may need to use an asset catalog that contains your Mac app’s assets instead of reusing the asset catalog that contains your iPad app’s assets.
+> Mac 관용구를 채택할 때는 앱의 레이아웃을 철저히 감사하고 변경할 계획입니다. 또한 iPad 앱의 자산이 포함된 자산 카탈로그를 재사용하는 대신 Mac 앱의 자산이 포함된 자산 카탈로그를 사용해야 할 수도 있습니다.
+>
+
+
+
+
+**Limit your appearance customizations to standard macOS appearance customizations that overlap with those available in iOS.** Not all appearance customizations available to iOS controls are available to macOS controls.
+> 모양 사용자 지정을 iOS에서 사용할 수 있는 표준 MacOS 모양 사용자 지정으로 제한합니다. iOS 컨트롤에서 사용할 수 있는 모양 사용자 지정 중 일부는 MacOS 컨트롤에서 사용할 수 없습니다.
+>
+
+
+
+
+**DEVELOPER NOTE**When you adopt the Mac idiom, the unscaled views and interface elements report different metrics, often resulting in a significant amount of additional work. To reduce the amount of work, avoid fixed font, view, or layout sizes. Additionally, make sure any appearance customizations you use are available in macOS. For developer guidance, see [Choosing a user interface idiom for your Mac app](https://developer.apple.com/documentation/uikit/mac_catalyst/choosing_a_user_interface_idiom_for_your_mac_app)
+> 개발자 참고 Mac 관용구를 채택하면 확장되지 않은 보기와 인터페이스 요소가 서로 다른 메트릭을 보고하므로 종종 상당한 양의 추가 작업이 발생합니다. 작업량을 줄이려면 글꼴, 보기 또는 레이아웃 크기가 고정되지 않도록 합니다. 또한 MacOS에서 사용하는 모양 사용자 지정을 사용할 수 있는지 확인하십시오. 개발자 지침은 Mac 앱의 사용자 인터페이스 숙어 선택을 참조하십시오
+>
+
+
+
