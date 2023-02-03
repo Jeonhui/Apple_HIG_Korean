@@ -114,3 +114,4 @@
  | 2023-01-31 01:42:27 | ./technologies/mac-catalyst/user-interaction.md | 65 | 9799 | 
  | 2023-02-01 01:51:04 | ./technologies/mac-catalyst/mac-idiom.md | 28 | 9915 | 
  | 2023-02-02 01:41:28 | ./technologies/machine-learning/explicit-feedback.md | 13 | 9712 | 
+ | 2023-02-03 01:42:35 | ./technologies/machine-learning/calibration.md | 29 | 9830 | 
