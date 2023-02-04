@@ -89,3 +89,9 @@ In general, only use calibration when your feature can’t function without that
 
 
 
+**Give people a way to update or remove information they provided during calibration.** Letting people edit their information gives them more control and can lead them to have greater trust in your app. Although the calibration experience can help people edit their responses, it’s a good idea to let people edit their information outside of the calibration experience so that they feel free to make changes at any time.
+> 보정 중에 제공한 정보를 업데이트하거나 제거할 수 있는 방법을 사용자에게 제공합니다. 사용자가 정보를 편집하도록 허용하면 사용자가 더 많은 제어 권한을 갖게 되고 사용자의 앱을 더 신뢰할 수 있습니다. 보정 경험은 사용자의 반응을 편집하는 데 도움이 될 수 있지만, 사용자가 언제든지 자유롭게 변경할 수 있도록 보정 경험 외의 정보를 편집하도록 하는 것이 좋습니다.
+>
+
+
+

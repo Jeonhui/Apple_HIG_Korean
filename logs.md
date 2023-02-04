@@ -115,3 +115,4 @@
  | 2023-02-01 01:51:04 | ./technologies/mac-catalyst/mac-idiom.md | 28 | 9915 | 
  | 2023-02-02 01:41:28 | ./technologies/machine-learning/explicit-feedback.md | 13 | 9712 | 
  | 2023-02-03 01:42:35 | ./technologies/machine-learning/calibration.md | 29 | 9830 | 
+ | 2023-02-04 01:36:56 | ./technologies/machine-learning/multiple-optinos.md | 19 | 9990 | 
