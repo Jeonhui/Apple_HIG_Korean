@@ -54,3 +54,9 @@ You might present multiple options to people in the following contexts:
 
 
 
+**Learn from selections when it makes sense.** People give you [implicit feedback](../technologies/machine-learning/implicit-feedback) every time they make a selection. When it doesn’t adversely affect the user experience, use this feedback to refine the options you provide and increase the chance that you’ll present the most likely option first. In general, continuing to offer incorrect results is likely to decrease people’s trust in the quality of your app’s predictions.
+> 적절한 선택을 통해 학습하십시오. 사람들은 선택을 할 때마다 암묵적인 피드백을 제공합니다. 사용자 환경에 부정적인 영향을 미치지 않는 경우 이 피드백을 사용하여 제공하는 옵션을 세분화하고 가장 가능성이 높은 옵션을 먼저 제시할 가능성을 높입니다. 일반적으로 잘못된 결과를 계속 제공하면 앱의 예측 품질에 대한 사람들의 신뢰가 떨어질 수 있습니다.
+>
+
+
+
