@@ -56,3 +56,20 @@ An important part of the design process is to identify the scenarios where limit
 - As people interact with the feature, provide feedback on their actions to guide them towards a result without overwhelming them. For example, while people are interacting with Animoji, the feature responds to current conditions and suggests how people can improve their results by adjusting the lighting or moving closer to the camera.
 - >  사람들이 기능과 상호 작용할 때, 그들을 압도하지 않고 결과로 안내하기 위해 그들의 행동에 대한 피드백을 제공합니다. 예를 들어, 사람들이 Animoji와 상호 작용하는 동안, 이 기능은 현재 상태에 반응하고 사람들이 조명을 조정하거나 카메라에 더 가까이 이동함으로써 결과를 개선할 수 있는 방법을 제안한다.
 
+- Suggest alternative ways to accomplish the user’s goal instead of showing no results. To do this successfully, you need to understand the goal well enough to suggest alternatives that make sense. For example, if people ask Siri to set a timer on a Mac, Siri suggests setting a reminder instead, because timers aren’t available in macOS. This suggestion makes sense because Siri understands that the goal is to receive an alert at a certain time.
+- >  결과를 보여주지 않고 사용자의 목표를 달성할 수 있는 대안을 제시합니다. 이것을 성공적으로 하기 위해서는, 당신은 타당한 대안을 제시할 수 있을 정도로 목표를 잘 이해해야 한다. 예를 들어, 사람들이 시리에게 맥에서 타이머를 설정하라고 하면, 시리는 대신 미리 알림을 설정할 것을 제안한다. 이 제안은 시리가 특정 시간에 경보를 수신하는 것이 목표라는 것을 이해하기 때문에 타당하다.
+
+
+**Explain how limitations can cause unsatisfactory results.** People can get frustrated when it seems that your feature works intermittently. Ideally, your feature can recognize and describe the reasons for poor results to make people aware of the limitations and help them to adjust their expectations. For example, Animoji tells people that it doesn’t work well in the dark.
+> 제한이 어떻게 불만족스러운 결과를 초래할 수 있는지 설명하십시오. 사람들은 당신의 기능이 간헐적으로 작동하는 것처럼 보일 때 좌절할 수 있습니다. 이상적인 기능은 좋지 않은 결과의 원인을 인식하고 설명하여 사람들에게 한계를 인식시키고 기대를 조정하는 데 도움이 될 수 있습니다. 예를 들어, Animoji는 사람들에게 어둠 속에서는 잘 작동하지 않는다고 말합니다.
+>
+
+
+
+
+**Consider telling people when limitations are resolved.** When people use a feature frequently, they learn to avoid the interactions that fail because of the feature’s limitations. When you update your app to remove a limitation, you might want to notify people so that they can adjust their mental model of your feature and return to interactions they’d previously avoided.
+> 사용자가 기능을 자주 사용할 때 기능의 제한으로 인해 실패하는 상호 작용을 피하는 방법을 배울 수 있습니다. 제한을 제거하기 위해 앱을 업데이트할 때 사용자의 기능에 대한 마인드 모델을 조정하고 이전에 피했던 상호 작용으로 돌아갈 수 있도록 사람들에게 알릴 수 있습니다.
+>
+
+
+
