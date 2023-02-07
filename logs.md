@@ -118,3 +118,4 @@
  | 2023-02-04 01:36:56 | ./technologies/machine-learning/multiple-optinos.md | 19 | 9990 | 
  | 2023-02-05 01:45:51 | ./technologies/machine-learning/limitations.md | 21 | 9986 | 
  | 2023-02-06 01:36:39 | ./technologies/messages-for-business/introduction.md | 5 | 9875 | 
+ | 2023-02-07 01:37:58 | ./technologies/messages-for-business/message-bubble-content.md | 13 | 9730 | 
