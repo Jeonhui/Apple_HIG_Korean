@@ -119,3 +119,4 @@
  | 2023-02-05 01:45:51 | ./technologies/machine-learning/limitations.md | 21 | 9986 | 
  | 2023-02-06 01:36:39 | ./technologies/messages-for-business/introduction.md | 5 | 9875 | 
  | 2023-02-07 01:37:58 | ./technologies/messages-for-business/message-bubble-content.md | 13 | 9730 | 
+ | 2023-02-08 01:42:01 | ./technologies/photo-editing.md | 11 | 9881 | 
