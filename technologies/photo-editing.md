@@ -25,3 +25,30 @@ To access a photo editing extension, a photo must be in edit mode. While in edit
 
 # **Best practices**
 
+**Confirm cancellation of edits.** Editing a photo or video can be time consuming. If someone taps the Cancel button, don’t immediately discard their changes. Ask them to confirm that they really want to cancel, and inform them that any edits will be lost after cancellation. There’s no need to show this confirmation if no edits have been made yet.
+> 편집 취소를 확인합니다. 사진이나 비디오를 편집하는 데 시간이 걸릴 수 있습니다. 다른 사용자가 취소 단추를 누른 경우 변경 내용을 즉시 취소하지 마십시오. 취소할 것인지 확인하고 취소 후 편집 내용이 손실된다는 사실을 알려달라고 요청합니다. 아직 편집하지 않은 경우에는 이 확인을 표시할 필요가 없습니다.
+>
+
+
+
+
+**Don’t provide a custom navigation bar.** Your extension loads within a modal view that already includes a navigation bar. Providing a second navigation bar is confusing and takes space away from the content being edited.
+> 사용자 지정 탐색 모음을 제공하지 마십시오. 탐색 모음이 이미 포함된 모달 보기 내에서 확장이 로드됩니다. 두 번째 탐색 모음을 제공하는 것은 혼란스럽고 편집 중인 내용에서 공간을 빼앗습니다.
+>
+
+
+
+
+**Let people preview edits.** It’s hard to approve an edit if you can’t see what it looks like. Let people see the result of their work before closing your extension and returning to the Photos app.
+> 편집 내용을 미리 볼 수 없습니다. 편집 내용을 확인할 수 없으면 편집을 승인하기 어렵습니다. 내선 번호를 닫고 사진 앱으로 돌아가기 전에 사람들이 작업 결과를 볼 수 있도록 합니다.
+>
+
+
+
+
+**Use your app icon for your photo editing extension icon.** This instills confidence that the extension is in fact provided by your app.
+> 앱 아이콘을 사용하여 사진 편집 확장 아이콘을 사용하십시오. 이 아이콘은 앱이 확장을 제공한다는 확신을 심어줍니다.
+>
+
+
+
