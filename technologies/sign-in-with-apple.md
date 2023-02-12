@@ -502,3 +502,42 @@ To coordinate with your app design, you can change:
 
 ### **Custom logo-only buttons**
 
+**Choose the format of the logo file based on the size of your button.** The downloadable artwork for logo-only buttons is available in SVG, PDF, and PNG formats. Use the vector-based SVG and PDF formats for buttons of any size; use the PNG format only in buttons that measure 44x44 pt.
+> 버튼 크기에 따라 로고 파일 형식을 선택하십시오. 로고 전용 버튼의 아트워크는 SVG, PDF, PNG 형식으로 다운로드할 수 있습니다. 모든 크기의 버튼에 벡터 기반 SVG 및 PDF 형식을 사용합니다. 44x44pt를 측정하는 버튼에서만 PNG 형식을 사용합니다.
+>
+
+
+
+
+**Don’t add horizontal padding to a logo-only image.** A logo-only Sign in with Apple button always has a 1:1 aspect ratio, and the artwork already includes the correct padding on all sides.
+> 로고 전용 이미지에 가로 패딩을 추가하지 마십시오. 로고 전용 Apple 단추로 로그인하면 항상 가로 세로 비율이 1:1이며, 아트워크에는 이미 모든 면에 올바른 패딩이 포함되어 있습니다.
+>
+
+
+
+
+**Use a mask to change the default square shape of the logo-only image.** For example, you might want to use a circular or rounded rectangular shape to present all logo-only sign-in buttons. Never crop the Apple-provided artwork to decrease its built-in padding or use the logo by itself, and avoid including additional padding.
+> 마스크를 사용하여 로고 전용 이미지의 기본 사각형 모양을 변경합니다. 예를 들어 원형 또는 둥근 직사각형 모양을 사용하여 모든 로고 전용 로그인 단추를 표시할 수 있습니다. 내장된 패딩을 줄이거나 로고를 직접 사용하기 위해 Apple에서 제공하는 아트워크를 자르지 말고 추가 패딩을 포함하지 마십시오.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/sign-in-with-apple/images/logo-masked-rounded-rect_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/sign-in-with-apple/images/logo-masked-rounded-rect_2x.png)
+
+Rounded rectangle mask
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/sign-in-with-apple/images/logo-default_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/sign-in-with-apple/images/logo-default_2x.png)
+
+No mask
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/sign-in-with-apple/images/logo-masked-circle_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/sign-in-with-apple/images/logo-masked-circle_2x.png)
+
+Circular mask
+
+**Maintain a minimum margin around the button.** The margin should measure at least 1/10 of the button’s height.
+> 버튼 주위의 최소 여백을 유지합니다. 여백은 버튼 높이의 10분의 1 이상이어야 합니다.
+>
+
+
+

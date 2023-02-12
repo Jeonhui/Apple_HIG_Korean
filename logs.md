@@ -123,3 +123,4 @@
  | 2023-02-09 01:40:32 | ./technologies/shareplay.md | 23 | 9869 | 
  | 2023-02-10 01:46:40 | ./technologies/sign-in-with-apple.md | 50 | 9782 | 
  | 2023-02-11 01:35:10 | ./technologies/sign-in-with-apple.md | 211 | 9992 | 
+ | 2023-02-12 01:43:30 | ./technologies/siri/introduction.md | 64 | 9931 | 
