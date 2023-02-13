@@ -180,3 +180,93 @@ Siri can use signals like location, time of day, and type of motion (such as wal
 - After people use a box office–type app to buy tickets to a movie, Siri might remind them to turn on Do Not Disturb shortly before showtime.
 - >  사람들이 영화 티켓을 사기 위해 박스 오피스 형태의 앱을 사용한 후, 시리는 그들에게 상영 시간 직전에 방해하지 말라고 상기시킬 수 있다.
 
+- Siri might suggest an automation that starts a workout in the user’s favorite workout app and plays their favorite workout playlist as they enter their usual gym.
+- >  시리는 사용자가 가장 좋아하는 운동 앱에서 운동을 시작하고 그들이 평소 사용하던 체육관에 들어갈 때 가장 좋아하는 운동 재생 목록을 재생하는 자동화를 제안할 수 있다.
+
+- When people enter the airport after a home-bound flight, Siri might suggest they request a ride home from their favorite ride-sharing app.
+- >  사람들이 집으로 향하는 비행기를 타고 공항에 들어갈 때, 시리는 그들이 가장 좋아하는 승차 공유 앱에서 집으로 태워달라고 제안할 수 있다.
+
+
+When you provide information about your actions to the system, people can also use the Shortcuts app to create shortcuts for the system and custom intents you support. For guidance, see [Shortcuts and suggestions](../technologies/siri/shortcuts-and-suggestions/).
+> 작업에 대한 정보를 시스템에 제공하면 바로 가기 앱을 사용하여 지원하는 시스템 및 사용자 지정 의도에 대한 바로 가기를 만들 수도 있습니다. 자세한 내용은 바로 가기 및 제안을 참조하십시오.
+>
+
+
+
+
+# **Design a great voice experience**
+> 뛰어난 음성 환경 설계
+>
+
+
+
+
+A great voice interface helps people feel confident they’ll get the results they want, even when they’re not sure what they can say. Siri supports different voice experiences for system-provided intents and custom intents. With a system intent, Siri does the natural language processing for you, letting people interact with your app in various conversational ways. With a custom intent, your app helps people perform a task that Siri doesn’t know about yet, which results in a different type of support for the voice experience. Custom intents give you additional opportunities to customize conversational dialogue, but also require people to create and speak a precise phrase to trigger the interaction.
+> 훌륭한 음성 인터페이스는 사람들이 그들이 무엇을 말할 수 있는지 확신할 수 없을 때에도 그들이 원하는 결과를 얻을 것이라고 확신하도록 도와준다. Siri는 시스템 제공 의도와 사용자 정의 의도를 위해 다양한 음성 경험을 지원합니다. 시스템 의도로, Siri는 사람들이 다양한 대화 방식으로 당신의 앱과 상호 작용할 수 있도록 당신을 위해 자연어 처리를 한다. 사용자 지정 의도를 가진 당신의 앱은 사람들이 시리가 아직 알지 못하는 작업을 수행하도록 도와주므로 음성 경험에 대한 다른 유형의 지원을 제공한다. 사용자 정의 의도는 대화 대화를 사용자 정의할 수 있는 추가적인 기회를 제공하지만 사용자가 상호 작용을 트리거하기 위해 정확한 구문을 만들고 말해야 합니다.
+>
+
+
+
+
+As a designer, you have several ways to enhance both types of conversational experiences and help people specify what they want without engaging in lengthy exchanges.
+> 디자이너로서, 당신은 두 가지 유형의 대화 경험을 향상시키고 사람들이 긴 교환에 참여하지 않고 그들이 원하는 것을 지정하도록 돕는 몇 가지 방법을 가지고 있다.
+>
+
+
+
+
+For system-provided intents, you help Siri communicate with people about the action they want to accomplish by providing essential information and defining any app-specific terminology that might come up during the conversation. You don’t have to write additional dialogue for Siri to speak because Siri already knows about the actions in the system-defined domains and understands many ways that people may talk about them. For example, if you need to confirm the recipient’s name during the resolve phase of a messaging intent, you simply indicate that the required parameter value is missing and Siri says to the sender "Who do you want to send it to?"
+> 시스템 제공 목적을 위해 Siri는 필수 정보를 제공하고 대화 중에 나타날 수 있는 앱별 용어를 정의하여 사람들이 원하는 작업에 대해 소통할 수 있도록 도와줍니다. Siri는 이미 시스템 정의 도메인의 동작에 대해 알고 있고 사람들이 그것에 대해 말할 수 있는 많은 방법을 이해하고 있기 때문에 Siri가 말하기 위해 추가 대화를 작성할 필요가 없다. 예를 들어, 메시징 의도 해결 단계에서 수신자의 이름을 확인해야 하는 경우, 필요한 매개 변수 값이 누락되었음을 표시하고 Siri는 발신자에게 "누구에게 보낼 것입니까?"라고 말합니다
+>
+
+
+
+
+Even though you don’t write custom dialogue for system-provided intents, you can enhance the voice experience in other ways. For example, if people ask Siri to "play *Your Music App*" as they enter their gym, you could respond by playing their workout playlist.
+> 시스템에서 제공하는 용도로 사용자 지정 대화를 작성하지 않더라도 다른 방법으로 음성 경험을 향상시킬 수 있습니다. 예를 들어, 만약 사람들이 체육관에 들어갈 때 시리에게 "당신의 음악 앱을 틀어달라"고 요청한다면, 당신은 그들의 운동 재생 목록을 재생함으로써 응답할 수 있다.
+>
+
+
+
+
+When you support a custom intent, people initiate the action by using their personal invocation phrase; if people don’t speak their phrase precisely, Siri doesn’t trigger the intent. Although you can suggest a memorable phrase for people to use, your principal job is to write clear, direct dialogue, often in the form of follow-up questions, to help people accomplish the action in as few steps as possible.
+> 사용자 정의 의도를 지지할 때, 사람들은 개인적인 호출 문구를 사용하여 행동을 시작합니다. 사람들이 그들의 문구를 정확하게 말하지 않으면, 시리는 의도를 유발하지 않습니다. 비록 여러분이 사람들이 사용해야 할 기억할 만한 문구를 제안할 수 있지만, 여러분의 주된 일은 사람들이 가능한 몇 단계로 행동을 완수하도록 돕기 위해 종종 후속 질문의 형태로 명확하고 직접적인 대화를 쓰는 것입니다.
+>
+
+
+
+
+For example, a coffee app might suggest *Order coffee* as a phrase people could use to reorder a favorite cup of coffee. In a scenario where people usually use *Order coffee* to order a cappuccino in various sizes, the coffee app could follow up with custom dialogue that builds on this knowledge, like "What size of cappuccino?" For other types of actions, more open-ended questions can be better at helping people accomplish the task efficiently. For example, if people trigger a grocery shopping action by saying *Add to cart*, the grocery shopping app could follow up with "OK, what do you want?"
+> 예를 들어, 커피 앱은 사람들이 좋아하는 커피를 주문할 때 사용할 수 있는 문구로 커피 주문을 제안할 수 있다. 보통 주문커피를 이용해 다양한 크기의 카푸치노를 주문하는 시나리오에서 커피 앱은 '카푸치노 사이즈는?'와 같은 이 지식을 바탕으로 한 맞춤형 대화로 후속할 수 있다 다른 유형의 행동의 경우, 더 자유로운 질문은 사람들이 작업을 효율적으로 수행하도록 돕는 데 더 효과적일 수 있다. 예를 들어, 만약 사람들이 카트에 추가라고 말하면서 식료품 쇼핑 행동을 촉발시킨다면, 식료품 쇼핑 앱은 "좋아, 너는 무엇을 원하니?"로 후속 조치를 할 수 있다
+>
+
+
+
+
+# **Recognize that people use Siri in different contexts**
+> 사람들이 다양한 맥락에서 시리를 사용한다는 것을 인식합니다
+>
+
+
+
+
+People can use Siri to get things done while they’re in a car, working out, using apps on a device, or interacting with HomePod. You don’t always know the context in which people are using Siri to perform your app’s actions, so flexibility is key in order to help people have a great experience no matter what they’re doing.
+> 사람들은 차 안에 있거나, 운동을 하거나, 기기의 앱을 사용하거나, 홈팟과 상호 작용하는 동안 시리를 사용하여 일을 끝낼 수 있다. 사용자가 Siri를 사용하여 앱의 작업을 수행하는 상황을 항상 알 수 있는 것은 아니므로, 사용자가 무엇을 하든 훌륭한 경험을 할 수 있도록 하려면 유연성이 중요합니다.
+>
+
+
+
+
+To communicate with people regardless of their current context, you should supply information that Siri can provide both vocally and visually. Supporting both voice and screen-based content lets Siri decide which communication method works best for people in their current situation. For example, Siri speaks to people through their AirPods if they say "Hey Siri" while using them.
+> 현재 상황에 상관없이 사람들과 소통하기 위해서는 시리가 음성적으로나 시각적으로 제공할 수 있는 정보를 제공해야 한다. 음성과 화면 기반 콘텐츠를 모두 지원함으로써 시리는 현재 상황에 있는 사람들에게 가장 적합한 의사소통 방법을 결정할 수 있다. 예를 들어, 사람들이 에어팟을 사용하면서 "안녕 시리"라고 말하면 시리는 에어팟을 통해 사람들에게 말한다.
+>
+
+
+
+
+In voice-only situations, Siri verbally describes information that would have been presented onscreen in other situations. Consider a food-delivery app that requires people to confirm a transaction before completing the order. In a voice-only scenario, Siri may say "Your total is fifteen dollars, and your order will take thirty minutes to arrive at your door. Ready to order?" In contrast, when people can view the cost and delivery information onscreen, Siri might simply say "Ready to order?" When you support custom intents, you’re responsible for supplying the voice-only dialogue that describes these types of onscreen information.’
+> 음성 전용 상황에서 시리는 다른 상황에서 화면에 표시되었을 정보를 구두로 설명합니다. 주문을 완료하기 전에 사람들이 거래를 확인하도록 요구하는 음식 배달 앱을 생각해보세요. 음성 전용 시나리오에서 시리는 "총 15달러이며, 주문하신 물건이 문 앞에 도착하는 데 30분이 걸릴 것입니다. 주문하시겠습니까?" 대조적으로, 사람들이 가격과 배송 정보를 화면에서 볼 수 있을 때, 시리는 단순히 "주문 준비가 되었습니까?"라고 말할 수 있다 사용자 지정 의도를 지원할 때는 이러한 유형의 화면 정보를 설명하는 음성 전용 대화를 제공해야 합니다.'
+>
+
+
+
