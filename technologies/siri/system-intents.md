@@ -137,3 +137,25 @@ If it makes sense in your iOS app, you can supply custom interface elements or a
 
 ![https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/custom-ui-insets_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/custom-ui-insets_2x.png)
 
+**Minimize the height of your interface.** The system displays other elements above and below your custom interface, such as the text prompt, the spoken response, and the Siri waveform. Aim for a custom interface height that’s no taller than half the height of the screen, so people can see all your content without scrolling.
+> 인터페이스 높이를 최소화합니다. 시스템은 텍스트 프롬프트, 음성 응답 및 Siri 파형과 같은 다른 요소를 사용자 지정 인터페이스 위와 아래에 표시합니다. 화면 높이의 절반 이하인 사용자 지정 인터페이스 높이를 목표로 하여 스크롤하지 않고도 모든 콘텐츠를 볼 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/custom-ui-height_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/custom-ui-height_2x.png)
+
+**Refrain from displaying your app name or icon.** The system automatically shows this information, so it’s redundant to include it in your custom interface.
+> 앱 이름이나 아이콘을 표시하지 마십시오. 시스템에서 자동으로 이 정보를 표시하므로 사용자 지정 인터페이스에 포함하는 것이 중복됩니다.
+>
+
+
+
+
+For developer guidance, see [Creating an intents UI extension](https://developer.apple.com/documentation/sirikit/creating_an_intents_ui_extension).
+> 개발자 지침은 의도 UI 확장 만들기를 참조하십시오.
+>
+
+
+
