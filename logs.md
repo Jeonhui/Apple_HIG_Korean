@@ -126,3 +126,4 @@
  | 2023-02-12 01:43:30 | ./technologies/siri/introduction.md | 64 | 9931 | 
  | 2023-02-13 01:43:59 | ./technologies/siri/system-intents.md | 53 | 9753 | 
  | 2023-02-14 01:44:09 | ./technologies/siri/custom-intents.md | 67 | 9505 | 
+ | 2023-02-15 01:45:09 | ./technologies/siri/shortcuts-and-suggestions.md | 11 | 9867 | 
