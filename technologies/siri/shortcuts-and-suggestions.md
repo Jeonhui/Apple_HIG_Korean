@@ -288,3 +288,200 @@ Your app provides default phrases for shortcuts during setup. People can persona
 
 
 
+**Don’t commandeer core Siri commands.** For example, your app should never suggest a phrase like *Call 911* or include the text *Hey Siri*.
+> 핵심 Siri 명령을 강요하지 마십시오. 예를 들어, 앱은 Call 911과 같은 문구를 제안하거나 Hey Siri 텍스트를 포함해서는 안 됩니다.
+>
+
+
+
+
+# **Make shortcuts customizable**
+
+When you define a parameter for each detail your app needs to perform an intent, people can customize the shortcut by editing these details in the Shortcuts app or your Add to Siri sheet.
+> 앱에서 의도를 수행하는 데 필요한 각 세부 정보에 대한 매개 변수를 정의하면 바로 가기 앱 또는 시리에 추가 시트에서 이러한 세부 정보를 편집하여 바로 가기를 사용자 지정할 수 있습니다.
+>
+
+
+
+
+To show people which details they can edit and how their edits affect the action, you provide a *parameter summary*. A parameter summary succinctly describes the action by using the parameters in a sentence that begins with a verb. For example, a customizable *Order coffee* shortcut could display a parameter summary like “Order *quantity* *coffee*” where *quantity* and *coffee* are the parameters that people can edit. Here’s an example of how the *Order coffee* shortcut might look after people supply values for the *quantity* and *coffee* parameters.
+> 사용자가 편집할 수 있는 세부사항과 편집한 내용이 수행에 미치는 영향을 사용자에게 표시하려면 매개변수 요약을 제공합니다. 매개 변수 요약은 동사로 시작하는 문장의 매개 변수를 사용하여 동작을 간결하게 설명합니다. 예를 들어, 사용자 정의 가능한 커피 주문 바로 가기는 "커피 주문 수량"과 같은 매개 변수 요약을 표시할 수 있습니다. 여기서 수량과 커피는 사용자가 편집할 수 있는 매개 변수입니다. 다음은 커피 주문 바로 가기가 사람들이 수량 및 커피 매개변수에 대한 값을 제공한 후 어떻게 보이는지 보여주는 예입니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/edited-parameter-summary_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/edited-parameter-summary_2x.png)
+
+**Provide a parameter summary for each custom intent you support.** At minimum, your parameter summary should include all parameters your intent requires and any parameters that receive values from other apps or actions. The summary doesn’t have to include optional parameters or parameters that people aren’t likely to edit; if you omit parameters like these from the summary, people can still access them in the Show More section.
+> 지원하는 각 사용자 지정 의도에 대한 매개 변수 요약을 제공하십시오. 최소한 매개 변수 요약에는 해당 의도에 필요한 모든 매개 변수와 다른 앱 또는 작업에서 값을 받는 모든 매개 변수가 포함되어야 합니다. 요약에는 사용자가 편집하지 않는 선택적 매개 변수나 매개 변수가 포함될 필요가 없습니다. 요약에서 이러한 매개 변수를 생략해도 사용자는 추가 표시 섹션에서 해당 매개 변수에 액세스할 수 있습니다.
+>
+
+
+
+
+**Craft a short parameter summary that’s clearly related to your intent’s title.** When the intent title and the parameter summary are similar, it’s easy for people to recognize the action regardless of where they view it. Aim to use the same words in the summary and the title — in particular, it’s helpful to begin both phrases with the same verb. For example, if your intent title is “Search encyclopedia”, a good parameter summary could be “Search encyclopedia for *search term*”.
+> 의도 제목과 명확하게 관련된 짧은 매개 변수 요약을 작성합니다. 의도 제목과 매개 변수 요약이 유사할 때, 사람들은 그들이 어디에서 보든 간에 행동을 쉽게 인식할 수 있습니다. 요약과 제목에서 동일한 단어를 사용하는 것을 목표로 합니다. 특히 두 구문 모두 동일한 동사로 시작하는 것이 도움이 됩니다. 예를 들어, 원하는 제목이 "백과사전 검색"인 경우, 좋은 매개변수 요약은 "검색어에 대한 백과사전 검색"이 될 수 있습니다.
+>
+
+
+
+
+**Aim for a parameter summary that reads like a sentence.** Use sentence-style capitalization, but don’t include ending punctuation. When possible, avoid punctuation entirely. Punctuation within a summary — especially colons, semicolons, and parentheses — can make the summary hard to read and understand.
+> 문장처럼 읽는 매개 변수 요약을 목표로 합니다. 문장 형식의 대소문자를 사용하되, 구두점 끝은 포함하지 마십시오. 가능한 경우 구두점을 완전히 사용하지 마십시오. 요약 내 구두점(특히 콜론, 세미콜론 및 괄호)은 요약을 읽고 이해하기 어려울 수 있습니다.
+>
+
+
+
+
+**Provide multiple parameter summaries when necessary.** If your action includes a parameter that has a parent-child relationship with other parameters, you can provide multiple variants of the summary based on the current value of the parent parameter. For example, if your *order coffee*shortcut lets people specify whether they want to pick up their order or have it delivered, your parameter summary should reflect the current choice. In this scenario, you should create one parameter summary that helps people pick a store location and another summary that helps them pick a delivery address. Be sure to use a consistent grammatical structure and parameter order in all variants of the summary that you create.
+> 필요한 경우 여러 개의 매개 변수 요약을 제공하십시오. 작업에 다른 매개 변수와 상위-하위 관계가 있는 매개 변수가 포함된 경우 상위 매개 변수의 현재 값을 기준으로 여러 변형의 요약을 제공할 수 있습니다. 예를 들어, 주문 커피 바로 가기를 통해 사람들이 주문을 수령할지 배달할지 지정할 수 있는 경우, 매개 변수 요약은 현재 선택 사항을 반영해야 합니다. 이 시나리오에서는 사용자가 상점 위치를 선택하는 데 도움이 되는 하나의 매개 변수 요약과 배달 주소를 선택하는 데 도움이 되는 다른 요약을 생성해야 합니다. 작성하는 요약의 모든 변형에서 일관된 문법 구조와 매개 변수 순서를 사용해야 합니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/parent-parameter-choice_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/parent-parameter-choice_2x.png)
+
+Delivery or pickup
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/child-parameter-choice_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/child-parameter-choice_2x.png)
+
+Delivery location
+
+**Provide output parameters for information that people can use in a multistep shortcut.** For example, an *order coffee* action might provide output that includes the estimated delivery time and the cost of the order. With this information, people could create a multistep shortcut that messages a friend about the delivery time and logs the transaction in their favorite budgeting app.
+> 사람들이 다단계 단축키로 사용할 수 있는 정보에 대한 출력 매개변수를 제공합니다. 예를 들어, 주문 커피 작업은 예상 배송 시간과 주문 비용을 포함하는 출력을 제공할 수 있습니다. 이 정보로, 사람들은 친구에게 배달 시간에 대해 메시지를 보내고 그들이 가장 좋아하는 예산 책정 앱에 거래를 기록하는 다단계 바로 가기를 만들 수 있다.
+>
+
+
+
+
+**Consider defining an input parameter.** When you define an input parameter for an action, the action can automatically receive output from a preceding action in a multistep shortcut. For example, if your action applies a filter to the image it receives in an *image* parameter, you might designate *image* as the input parameter so that it automatically accepts images from other actions. You configure an input parameter in your intent definition file (shown in “Define User-Configurable Shortcuts” in [Adding user interactivity with Siri shortcuts and the Shortcuts app](https://developer.apple.com/documentation/sirikit/adding_user_interactivity_with_siri_shortcuts_and_the_shortcuts_app)).
+> 입력 매개 변수를 정의하는 것을 고려해 보십시오. 작업에 대한 입력 매개 변수를 정의할 때 작업은 이전 작업의 출력을 다단계 바로 가기에서 자동으로 수신할 수 있습니다. 예를 들어, 작업이 이미지 매개 변수에서 수신하는 이미지에 필터를 적용하는 경우 다른 작업의 이미지를 자동으로 받아들이도록 이미지를 입력 매개 변수로 지정할 수 있습니다. 사용자 정의 파일에서 입력 매개 변수를 구성합니다("사용자 구성 가능한 바로 가기 정의"의 "Siri 바로 가기 및 바로 가기 앱을 사용하여 사용자 상호 작용 추가"에 표시됨).
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/input-output-parameters_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/input-output-parameters_2x.png)
+
+**Help people distinguish among different variations of the same action.** For example, an app that offers a *send message* action might use a contact photo to help people visually distinguish the various messages they send. To do this, choose the parameter that’s most identifiable to people and designate it as the key parameter (shown in “Define User-Configurable Shortcuts” in [Adding user interactivity with Siri shortcuts and the Shortcuts app](https://developer.apple.com/documentation/sirikit/adding_user_interactivity_with_siri_shortcuts_and_the_shortcuts_app)). Be sure to provide an image for the key parameter every time you donate the action (for developer guidance, see [INImage](https://developer.apple.com/documentation/sirikit/inimage)).
+> 예를 들어, 메시지 보내기 동작을 제공하는 앱은 연락처 사진을 사용하여 사람들이 보내는 다양한 메시지를 시각적으로 구분할 수 있습니다. 이렇게 하려면 사용자가 가장 쉽게 식별할 수 있는 매개변수를 선택하고 키 매개변수로 지정합니다("사용자 구성 가능한 바로 가기 정의"의 "Siri 바로 가기 및 바로 가기 앱 사용자 상호작용 추가"에 표시됨). 작업을 기부할 때마다 키 매개 변수에 대한 이미지를 제공해야 합니다(개발자 지침은 INImage 참조).
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/multiple-intent-configurations_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/multiple-intent-configurations_2x.png)
+
+**Avoid providing multiple actions that perform the same basic task.** For example, instead of providing an action that adds text to a note and a different action that adds an image, consider providing a single action that lets people add both types of content. Providing a few high-level actions can make it easier for people to understand what the actions do when they’re combined in a multistep shortcut.
+> 노트에 텍스트를 추가하는 작업과 이미지를 추가하는 다른 작업을 제공하는 대신 두 가지 유형의 콘텐츠를 모두 추가할 수 있는 단일 작업을 제공하는 것이 좋습니다. 몇 가지 높은 수준의 작업을 제공하면 사용자가 여러 단계의 바로 가기에서 작업을 결합할 때 수행하는 작업을 쉽게 이해할 수 있습니다.
+>
+
+
+
+
+For developer guidance, see [Shortcut management](https://developer.apple.com/documentation/sirikit/shortcut_management).
+
+# **Add to Siri button styles**
+> Siri 버튼 스타일에 추가
+>
+
+
+
+
+The Add to Siri button is available in several visual styles. You can also customize the corner radius of the buttons to match your app’s interface.
+> Add to Siri 버튼은 여러 가지 시각적 스타일로 사용할 수 있습니다. 또한 앱의 인터페이스에 맞게 버튼의 모서리 반지름을 사용자 지정할 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/AddToSiri-Black_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/AddToSiri-Black_2x.png)
+
+**Black.** Use on white or light-color backgrounds that provide sufficient contrast. Don’t use on black or dark backgrounds.
+> 검은색. 흰색 또는 밝은 색 배경에 사용하여 충분한 대비를 제공합니다. 검은색이나 어두운 배경에는 사용하지 마십시오.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/AddToSiri-Black-Outlined_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/AddToSiri-Black-Outlined_2x.png)
+
+**Black with outline.** Use on dark backgrounds that provide sufficient contrast. Don’t use on white or light-color backgrounds.
+> 윤곽이 있는 검은색. 대비가 충분히 되는 어두운 배경에 사용합니다. 흰색이나 밝은 색 배경에는 사용하지 마십시오.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/AddToSiri-White_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/AddToSiri-White_2x.png)
+
+**White.** Use on dark backgrounds that provide sufficient contrast. Don’t use on white or light-color backgrounds.
+> 흰색. 대비가 충분한 어두운 배경에 사용합니다. 흰색이나 밝은 색 배경에는 사용하지 마십시오.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/AddToSiri-White-Outlined_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/AddToSiri-White-Outlined_2x.png)
+
+**White with outline.** Use on white or light-color backgrounds that don’t provide sufficient contrast. Don’t use on dark or saturated backgrounds.
+> 윤곽선이 있는 흰색. 대비가 충분하지 않은 흰색 또는 밝은 색 배경에 사용합니다. 어둡거나 포화된 배경에는 사용하지 마십시오.
+>
+
+
+
+
+**Accommodate the variable width of the Add to Siri button.** The width of the button varies in different locales and when updated to display the user’s invocation phrase.
+> Add to Siri 버튼의 가변 너비를 수용합니다. 버튼의 너비는 사용자의 호출 구문을 표시하도록 업데이트할 때와 로케일마다 다릅니다.
+>
+
+
+
+
+**Maintain clear space around the Add to Siri button.** At minimum, leave padding of 1/10 the button’s height on all sides of the button.
+> Add to Siri 버튼 주변에 공백을 유지하고 버튼 높이의 1/10 이상의 패딩을 버튼의 모든 면에 남겨둡니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/AddToSiri-ClearSpace_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/AddToSiri-ClearSpace_2x.png)
+
+# **Display multiple shortcuts in one place**
+> 한 곳에 여러 바로 가기 표시
+>
+
+
+
+
+If your app contains more than a few shortcuts, consider creating a dedicated area of the app to display them. A dedicated screen makes it easy for people to see all of your app’s shortcuts at a glance and to add the shortcuts they want to use. Alternatively, consider offering follow-up questions to support additional options for a single shortcut.
+> 앱에 몇 개 이상의 바로 가기가 포함되어 있는 경우 앱의 전용 영역을 만들어 바로 가기를 표시하는 것을 고려해 보십시오. 전용 화면을 사용하면 사용자가 앱의 모든 바로 가기를 한 눈에 쉽게 볼 수 있고 사용할 바로 가기를 추가할 수 있습니다. 또는 단일 바로 가기에 대한 추가 옵션을 지원하는 후속 질문을 제공하는 것을 고려해 보십시오.
+>
+
+
+
+
+**Use an unambiguous title for your list of shortcuts.** For example, using “Siri Shortcuts” for the navigation bar title clearly communicates the purpose of the screen.
+> 바로 가기 목록에는 명확한 제목을 사용하십시오. 예를 들어, 탐색 모음 제목에 "Siri 바로 가기"를 사용하면 화면의 목적을 명확하게 알 수 있습니다.
+>
+
+
+
+
+**Consider creating a custom Add button for a list of shortcuts.** The system-provided Add to Siri button can add too much visual weight when it’s used several times in one view. If the screen makes it clear that all the items in the list are Siri Shortcuts, you can display a simpler button that uses “Add” or “+” for each shortcut in the list.
+> 시스템에서 제공하는 Add to Siri 버튼은 한 뷰에서 여러 번 사용할 경우 시각적인 무게를 너무 많이 추가할 수 있습니다. 화면에서 목록의 모든 항목이 Siri 바로 가기임을 분명히 표시하면 목록의 각 바로 가기에 대해 "추가" 또는 "+"를 사용하는 더 간단한 단추를 표시할 수 있습니다.
+>
+
+
+
+
+![https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/add-to-siri-list-shortcuts-added_2x.png](https://developer.apple.com/design/human-interface-guidelines/technologies/siri/images/add-to-siri-list-shortcuts-added_2x.png)
+
+**Provide feedback when a shortcut has been added.** Show people that they’ve successfully added a shortcut by replacing the Add button with an Edit button and displaying the phrase they recorded. Alternatively, you can remove the Add button and let people tap the phrase they recorded to open an editing view.
+> 바로 가기가 추가되었을 때 피드백을 제공합니다. 추가 단추를 편집 단추로 바꾸고 사용자가 기록한 구문을 표시하여 바로 가기를 성공적으로 추가했음을 사람들에게 보여줍니다. 또는 추가 단추를 제거하고 사용자가 기록한 구문을 눌러 편집 보기를 열 수 있습니다.
+>
+
+
+
