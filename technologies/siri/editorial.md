@@ -112,3 +112,11 @@ To encourage people to create or use shortcuts in ways other than voice — such
 - Do not indicate any kind of sponsorship, partnership, or endorsement from Apple.
 - >  Apple의 후원, 파트너십 또는 지지를 표시하지 마십시오.
 
+- Attribute Apple, Siri, and all other Apple trademarks with the correct credit lines wherever legal information appears within your app.
+- >  Apple, Siri 및 기타 모든 Apple 상표를 앱 내에서 법적 정보가 표시되는 곳마다 올바른 크레딧 라인과 함께 속성을 지정합니다.
+
+- Refer to Apple devices and operating systems only in technical specifications or compatibility descriptions.
+- >  Apple 장치 및 운영 체제는 기술 사양 또는 호환성 설명에서만 참조하십시오.
+
+
+See [Guidelines for Using Apple Trademarks](https://www.apple.com/legal/intellectual-property/guidelinesfor3rdparties.html).
