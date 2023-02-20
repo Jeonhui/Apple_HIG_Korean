@@ -567,5 +567,25 @@ For each purpose string, aim for a brief, complete sentence that’s direct, spe
 >
 
 
+**Ask only for the data you actually need.** People may lose trust in your app if you ask for more data than you need to complete the current task or action. For example, if you need to ensure that a customer is at least a certain age, use a request that specifies an age threshold; avoid requesting the customer’s current age or birth date. For developer guidance, see [age(atLeast:)](https://developer.apple.com/documentation/passkit/pkidentityelement/3930277-age).
+> **실제로 필요한 데이터만 요청하십시오.** 현재 작업이나 작업을 완료하는 데 필요한 것보다 더 많은 데이터를 요청하면 사람들이 앱에 대한 신뢰를 잃을 수 있습니다. 예를 들어, 고객이 특정 연령 이상인지 확인해야 하는 경우 연령 임계값을 지정하는 요청을 사용합니다. 고객의 현재 나이 또는 생년월일은 요청하지 마십시오. 개발자 지침은 [연령(최소:)](https://developer.apple.com/documentation/passkit/pkidentityelement/3930277-age)을 참조하십시오.
+> 
+
+**Clearly indicate whether you will keep the data and — if you need to keep it — specify how long you’ll do so.** To help people trust your app, it’s essential to explain how long you might need to keep the personal information they agree to share with you. When you use PassKit APIs to specify a duration — such as a particular period, indefinitely, or only as long as it takes to complete the current verification — the system automatically displays explanatory content in the verification sheet. For developer guidance, see [PKIdentityIntentToStore](https://developer.apple.com/documentation/passkit/pkidentityintenttostore).
+> **데이터를 보관할지 여부를 명확히 지정하고 보관해야 할 경우 보관 기간을 지정합니다.** 사용자의 앱을 신뢰할 수 있도록 하려면 사용자가 공유하기로 동의한 개인 정보를 얼마나 오래 보관해야 하는지 설명해야 합니다. PassKit API를 사용하여 특정 기간, 무기한 또는 현재 확인을 완료하는 데 걸리는 기간과 같은 기간을 지정하면 시스템은 자동으로 확인 시트에 설명 내용을 표시합니다. 개발자 지침은 [PKIEntityIntentToStore](https://developer.apple.com/documentation/passkit/pkidentityintenttostore).를 참조하십시오.
+> 
 
 
+**Choose the system-provided verification button that matches your use case and the visual design of your app.** The system provides the following button labels to support various use cases:
+> **사용 사례 및 앱의 시각적 디자인과 일치하는 시스템 제공 검증 버튼을 선택하십시오.** 시스템은 다양한 사용 사례를 지원하기 위해 다음과 같은 버튼 레이블을 제공합니다:
+> 
+
+[제목 없음](https://www.notion.so/18138785e3b64f23862b051c2f16d51d)
+
+All button labels are also available in a multiline variant that the system automatically uses when horizontal space is constrained. For developer guidance, see [PKIdentityButton.Label](https://developer.apple.com/documentation/passkit/pkidentitybutton/label).
+> 모든 버튼 레이블은 수평 공간이 제한될 때 시스템이 자동으로 사용하는 다중 라인 변형으로도 사용할 수 있습니다. 개발자 지침은 [PKIDEntityButton.Label](https://developer.apple.com/documentation/passkit/pkidentitybutton/label)을 참조하십시오.
+> 
+
+The verification button always uses white letters on a black background. You can choose the style that includes a light outline if you need to ensure that the button contrasts well with a dark background in your app (for developer guidance, see [PKIdentityButton.Style.blackOutline](https://developer.apple.com/documentation/passkit/pkidentitybutton/style/blackoutline)). In addition, you can use the [cornerRadius](https://developer.apple.com/documentation/passkit/pkidentitybutton/3967461-cornerradius) property to adjust the verification button’s corners to match other related buttons in your interface.
+> 확인 버튼은 항상 검은색 배경에 흰색 문자를 사용합니다. 버튼이 앱의 어두운 배경과 잘 대비되도록 하려면 밝은 윤곽선이 포함된 스타일을 선택할 수 있습니다(개발자 지침은 [PKIDEntityButton.style.blackOutline](https://developer.apple.com/documentation/passkit/pkidentitybutton/style/blackoutline)). 또한 [cornerRadius](https://developer.apple.com/documentation/passkit/pkidentitybutton/3967461-cornerradius) 속성을 사용하여 확인 버튼의 모서리를 인터페이스의 다른 관련 버튼과 일치하도록 조정할 수 있습니다.
+> 
