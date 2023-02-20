@@ -384,3 +384,188 @@ The [Wallet Orders](https://developer.apple.com/documentation/walletorders) sc
 
 
 
+**Make data available immediately after people place an order.** People often want to confirm that their order was received, even when payment, processing, and fulfillment are still pending. It’s essential to provide existing information quickly so that the system can display it right away.
+> 주문 후 즉시 데이터를 사용할 수 있도록 합니다. 결제, 처리 및 이행이 보류 중인 경우에도 주문이 접수되었는지 확인하려는 경우가 많습니다. 시스템이 바로 표시할 수 있도록 기존 정보를 신속하게 제공하는 것이 필수적이다.
+>
+
+
+
+
+**Provide fulfillment information as soon as it’s available, and keep the status up to date.**When you supply fulfillment data or you change the status of an order, the system updates the order information and can automatically send a notification to customers. The system uses the fulfillment status you report to update the order’s current status to a value like Order Placed, Processing, Ready for Pickup, Picked Up, Out for Delivery, Delivered, or — if something goes wrong — Issue or Canceled. For guidance on describing a status, see [Displaying order and fulfillment details](https://developer.apple.com/design/human-interface-guidelines/technologies/wallet#displaying-order-and-fulfillment-details).
+> 사용 가능한 즉시 이행 정보를 제공하고 상태를 최신 상태로 유지합니다.이행 데이터를 제공하거나 주문 상태를 변경하면 시스템이 주문 정보를 업데이트하고 고객에게 자동으로 알림을 보낼 수 있습니다. 시스템은 사용자가 보고한 이행 상태를 사용하여 주문의 현재 상태를 주문 완료, 처리, 픽업 준비, 픽업, 배달, 배달 등의 값으로 업데이트하거나 문제가 발생할 경우 발급 또는 취소와 같은 값으로 업데이트합니다. 상태 설명에 대한 지침은 주문 및 이행 세부사항 표시를 참조하십시오.
+>
+
+
+
+
+**Supply a high-resolution logo image.** The system displays your logo image in the dashboard and detail view, so you want to make sure that people can instantly recognize it at various sizes. Use the PNG or JPEG format to create a logo image that measures 300x300 pixels. For developer guidance, see [logo](https://developer.apple.com/documentation/walletorders/merchant).
+> 고해상도 로고 이미지를 제공합니다. 이 시스템은 대시보드 및 세부 정보 보기에 로고 이미지를 표시하므로 다양한 크기로 즉시 인식할 수 있습니다. PNG 또는 JPEG 형식을 사용하여 300x300픽셀의 로고 이미지를 만듭니다. 개발자 지침은 로고를 참조하십시오.
+>
+
+
+
+
+**Supply distinct, high-resolution product images.** The system displays a product’s image — along with descriptive information you supply — in the detail views, order dashboard, and notifications for an order or a fulfillment. When creating a product image, prefer using a straightforward depiction and a solid background. Showing a product in a “lifestyle” context or against a busy background can make the item hard to distinguish at small sizes. For each product, use the PNG or JPEG format to create an image that measures 300x300 pixels.
+> 고유한 고해상도 제품 이미지를 제공합니다. 시스템은 사용자가 제공하는 설명 정보와 함께 제품 이미지를 상세 보기, 주문 대시보드 및 주문 또는 이행에 대한 알림에 표시합니다. 제품 이미지를 만들 때는 간단한 묘사와 확실한 배경을 사용하는 것이 좋습니다. "라이프스타일" 맥락에서 또는 바쁜 배경에서 제품을 보여주면 작은 크기에서 제품을 구분하기 어려울 수 있다. 각 제품에 대해 PNG 또는 JPEG 형식을 사용하여 300x300픽셀을 측정하는 이미지를 만듭니다.
+>
+
+
+
+
+**In general, keep text brief.** People appreciate being able to read text at a glance, and the system can truncate text that’s too long.
+> 일반적으로 텍스트를 짧게 유지하십시오. 사람들은 텍스트를 한 눈에 볼 수 있는 것을 좋아하고 시스템은 너무 긴 텍스트를 잘라낼 수 있습니다.
+>
+
+
+
+
+**Use clear, approachable language, and localize the text you provide.** You want to make sure that all your customers can read the information in an order. Also, make sure the price you show matches the final price the customer confirmed.
+> 명확하고 쉽게 접근할 수 있는 언어를 사용하고 제공하는 텍스트를 현지화하십시오. 모든 고객이 주문의 정보를 읽을 수 있도록 하려는 것입니다. 또한 당신이 보여주는 가격이 고객이 확인한 최종 가격과 일치하는지 확인하십시오.
+>
+
+
+
+
+# **Displaying order and fulfillment details**
+> 주문 및 이행내역 표시
+>
+
+
+
+
+An order gives people ways to contact you and displays details about their Apple Pay purchase, including fulfillment status and per-item information.
+> 주문은 사용자에게 연락할 수 있는 방법을 제공하며, 이행 상태 및 항목별 정보를 포함하여 Apple Pay 구매에 대한 세부 정보를 표시합니다.
+>
+
+
+
+
+**Provide a link to an area where people manage their order.** When you provide a universal link, people can open your order management area even if they don’t have your app installed. To learn more about universal links, see [Allowing apps and websites to link to your content](https://developer.apple.com/documentation/xcode/allowing-apps-and-websites-to-link-to-your-content?preferredLanguage=occ); for developer guidance, see [orderManagementURL](https://developer.apple.com/documentation/walletorders/order).
+> 사용자가 주문을 관리하는 영역에 대한 링크를 제공합니다. 범용 링크를 제공하면 사용자의 앱이 설치되어 있지 않더라도 주문 관리 영역을 열 수 있습니다. 범용 링크에 대한 자세한 내용은 앱 및 웹 사이트의 콘텐츠 연결 허용을 참조하십시오.개발자 지침은 주문 관리를 참조하십시오URL.
+>
+
+
+
+
+**Clearly describe each item so people can verify that their order contains everything they expect.** You can use the [lineItem](https://developer.apple.com/documentation/walletorders/lineitem) field to provide information like a product’s price, name, and image. An order lists the line items for every item the customer ordered; a fulfillment lists only the line items that fulfillment includes.
+> 사람들이 그들의 주문이 그들이 기대하는 모든 것을 포함하고 있는지 확인할 수 있도록 각 품목을 명확하게 설명하십시오. lineItem 필드를 사용하여 제품의 가격, 이름 및 이미지와 같은 정보를 제공할 수 있습니다. 주문에는 고객이 주문한 모든 품목의 라인 항목이 나열되고, 풀필먼트에는 풀필먼트가 포함된 라인 항목만 나열됩니다.
+>
+
+
+
+
+**Supply a prioritized list of your apps that might be installed on the device.** The system uses this list when it needs to display a link to your app within the order details view. For example, if you provide multiple apps and more than one of them is installed on the device, the system displays a link to the installed app that’s highest on your list. If none of your apps are installed on the device, the system displays a link to the first app on your list. For developer guidance, see [associatedApplications](https://developer.apple.com/documentation/walletorders/order).
+> 장치에 설치될 수 있는 앱의 우선 순위 목록을 제공하십시오. 시스템은 주문 세부 정보 보기 내에 앱에 대한 링크를 표시해야 할 때 이 목록을 사용합니다. 예를 들어, 여러 개의 앱을 제공하고 두 개 이상의 앱이 장치에 설치되어 있는 경우 목록에서 가장 높은 위치에 있는 설치된 앱에 대한 링크가 시스템에 표시됩니다. 장치에 설치된 앱이 없는 경우 목록의 첫 번째 앱에 대한 링크가 표시됩니다. 개발자 지침은 관련 응용프로그램을 참조하십시오.
+>
+
+
+
+
+**Avoid sending duplicate notifications.** For example, you can tell the system to avoid sending order-related notifications through Wallet when the customer has one of your associated apps installed.
+> 중복된 알림을 보내지 않도록 합니다. 예를 들어, 고객이 연결된 앱 중 하나를 설치한 경우 주문 관련 알림을 Wallet을 통해 보내지 않도록 시스템에 지시할 수 있습니다.
+>
+
+
+
+
+**Make it easy for customers to contact you.** Provide multiple contact methods, so people can choose the one that works best for them. At minimum, you need to provide a link to your website or landing page, but you can also provide a Messages for Business link, a phone number, an email address, and a link to your support page (for developer guidance, see [Merchant](https://developer.apple.com/documentation/walletorders/merchant)). When people choose the Contact button in an order, the system displays a menu of the contact methods you supply.
+> 고객이 쉽게 연락할 수 있도록 합니다. 여러 연락 방법을 제공하여 사람들이 자신에게 가장 적합한 방법을 선택할 수 있도록 합니다. 최소한 웹 사이트 또는 랜딩 페이지에 대한 링크를 제공해야 하지만 비즈니스 메시지 링크, 전화 번호, 이메일 주소 및 지원 페이지에 대한 링크도 제공할 수 있습니다(개발자 지침은 상인 참조). 사용자가 주문에서 연락처 단추를 선택하면 시스템에 사용자가 제공하는 연락처 방법의 메뉴가 표시됩니다.
+>
+
+
+
+
+**Help people track their order.** A multi-item order can have multiple fulfillments, where each fulfillment is either shipping or pickup. For example, if a customer orders a pair of shoes and a T-shirt, the customer might want to have one item shipped, while picking up the other. Regardless of fulfillment type, you need to supply enough information for people to know where their items are and when to expect them at the destination they specified. In addition to an estimated time of arrival, here’s some information that people particularly appreciate:
+> 사람들이 주문을 추적할 수 있도록 도와줍니다. 여러 항목의 주문에는 배송 또는 픽업이 포함된 여러 가지 주문이 포함될 수 있습니다. 예를 들어, 고객이 신발 한 켤레와 티셔츠를 주문하는 경우, 고객은 한 품목을 배송받으면서 다른 품목을 배송하기를 원할 수 있습니다. 이행 유형에 관계없이, 사용자가 지정한 목적지에서 항목의 위치와 예상 시기를 알 수 있도록 충분한 정보를 제공해야 합니다. 예상 도착 시간 외에도, 사람들이 특히 높이 평가하는 몇 가지 정보가 있습니다:
+>
+
+
+
+
+- A link that opens the carrier’s website to a page with information about a shipping fulfillment. When possible, provide a direct link — in addition to a tracking number — so people can easily view the most up-to-date shipping information.
+- >  운송업체의 웹 사이트를 열어 배송 완료에 대한 정보가 있는 페이지로 연결하는 링크입니다. 가능한 경우, 사람들이 최신 배송 정보를 쉽게 볼 수 있도록 추적 번호 외에 직접 링크를 제공하십시오.
+
+- A scannable barcode when one is required to pick up the order in a pickup fulfillment. It’s convenient when people can offer the barcode from within Wallet instead of finding it in an email or webpage.
+- >  픽업 수행 시 주문을 픽업해야 할 때 스캔 가능한 바코드입니다. 전자 메일이나 웹 페이지에서 바코드를 찾는 대신 지갑 내에서 바코드를 제공할 수 있을 때 편리합니다.
+
+- Clear, detailed instructions that can help people receive or pick up their order.
+- >  주문을 받거나 수령하는 데 도움이 될 수 있는 명확하고 상세한 지침.
+
+
+**Choose shipping-fulfillment values that match the details you have about the shipping process.** If you know the carrier, enter its name in the `carrier` field; otherwise, leave the default “Track Shipment” value. If you can access details about a carrier’s interim shipping steps — such as when a fulfillment is on the way or out for delivery — indicate each step by using specific status values like `onTheWay`, `outForDelivery`, or `delivered`. In contrast, if you don’t have access to a carrier’s shipping details, use the `shipped` status. In both cases, provide a tracking link (when one is available) so people can track their order on their own. For developer guidance, see [ShippingFulfillment](https://developer.apple.com/documentation/walletorders/shippingfulfillment).
+> 배송 과정에 대한 세부 정보와 일치하는 배송 완료 값을 선택하십시오. 운송업체를 알고 있는 경우에는 '운송업체' 필드에 이름을 입력하고, 알고 있는 경우에는 기본 '배송 추적' 값을 그대로 둡니다. 운송업체의 중간 배송 단계에 대한 세부 정보에 액세스할 수 있는 경우(예: 배송 중 또는 배송 중인 경우) 'On The Way', 'Out For Delivery' 또는 'delivered'와 같은 특정 상태 값을 사용하여 각 단계를 표시합니다. 반면 운송업체의 배송 정보를 확인할 수 없는 경우에는 배송된 상태를 사용합니다. 두 경우 모두, 사람들이 스스로 주문을 추적할 수 있도록 추적 링크를 제공하십시오. 개발자 지침은 배송 완료를 참조하십시오.
+>
+
+
+
+
+**Keep customers informed through relevant fulfillment status descriptions.** A great status message is approachable, accurate, and clearly related to the status it describes. In addition to supplying information that helps people understand the status of their order, a status message also gives you an opportunity to use your brand’s communication style.
+> 관련 이행 상태 설명을 통해 고객에게 지속적으로 정보를 제공합니다. 훌륭한 상태 메시지는 접근 가능하고 정확하며 설명하는 상태와 명확하게 관련되어 있습니다. 상태 메시지는 주문 상태를 이해하는 데 도움이 되는 정보를 제공하는 것 외에도 브랜드의 커뮤니케이션 스타일을 사용할 수 있는 기회를 제공합니다.
+>
+
+
+
+
+**Be direct and thorough when describing an Issue or Canceled status.** People generally need to know why there’s a problem and what they can do about it.
+> 문제 또는 취소 상태를 설명할 때는 직접적이고 철저해야 합니다. 일반적으로 사람들은 문제가 있는 이유와 문제에 대해 무엇을 할 수 있는지 알아야 합니다.
+>
+
+
+
+
+# **Identity verification**
+
+On iPhone running iOS 16 and later, people can store an ID card in Wallet, and later allow an app or App Clip to access information on the card to verify their identity without leaving their current context. For example, a person might need to confirm their identity when they apply for a credit card within their banking app.
+> iOS 16 이상을 실행하는 아이폰에서 사람들은 지갑에 신분증을 저장할 수 있으며, 나중에 앱이나 앱 클립이 카드의 정보에 액세스하여 현재 컨텍스트를 떠나지 않고 자신의 신원을 확인할 수 있다. 예를 들어, 한 사람이 그들의 은행 앱에서 신용카드를 신청할 때 그들의 신원을 확인해야 할 수도 있다.
+>
+
+
+
+
+**DEVELOPER NOTE**Apple doesn’t create or see the ID documents that people add to Wallet, and when people agree to share identifying information with your app, you receive only encrypted data that isn’t readable on the device. For developer guidance, see [Requesting identity data from a Wallet pass](https://developer.apple.com/documentation/passkit/wallet/requesting_identity_data_from_a_wallet_pass).
+> 개발자 참고 Apple은 사람들이 Wallet에 추가하는 ID 문서를 만들거나 보지 않으며, 사람들이 앱과 식별 정보를 공유하기로 동의하면 장치에서 읽을 수 없는 암호화된 데이터만 수신합니다. 개발자 지침은 지갑 패스에서 ID 데이터 요청을 참조하십시오.
+>
+
+
+
+
+To help you offer a consistent experience that people can trust, Apple provides a Verify with Wallet button you can use in your app when you need to ask for identify verification. The button reveals a sheet that describes your request and lets people agree to share their information or cancel.
+> 신뢰할 수 있는 일관된 경험을 제공할 수 있도록 Apple은 식별 확인을 요청해야 할 때 앱에서 사용할 수 있는 Verify with Wallet 버튼을 제공합니다. 이 단추는 사용자의 요청을 설명하고 사용자가 자신의 정보를 공유하거나 취소하는 데 동의할 수 있는 시트를 표시합니다.
+>
+
+
+
+
+**Present a Wallet verification option only when the device supports it.** If the current device can’t return the identify information you request, don’t display a Verify with Apple Wallet button. Be prepared to present a fallback view that offers a different verification method if Verify with Apple Wallet isn’t available; for developer guidance, see [VerifyIdentityWithWalletButton](https://developer.apple.com/documentation/passkit/verifyidentitywithwalletbutton).
+> 장치에서 지원하는 경우에만 지갑 확인 옵션을 표시합니다. 현재 장치에서 요청한 식별 정보를 반환할 수 없으면 Apple 지갑으로 확인 단추를 표시하지 마십시오. Apple Wallet으로 확인을 사용할 수 없는 경우 다른 확인 방법을 제공하는 폴백 뷰를 제공할 준비를 하십시오. 개발자 지침은 ID 확인을 참조하십시오지갑 단추로.
+>
+
+
+
+
+**Ask for identity information only at the precise moment you need it.** People can be suspicious of a request for personal information if it doesn’t seem to be related to their current action. If your app needs identity verification, for example, wait to ask for this information until people are completing the process or transaction that requires it; don't request verification before people are ready to start the process or when they're simply creating an account.
+> 필요한 정확한 순간에만 신원정보를 요구하고, 현재의 행동과 관련이 없는 것 같으면 개인정보 요청을 의심할 수 있다. 예를 들어, 앱에 신원 확인이 필요한 경우, 사용자가 프로세스 또는 트랜잭션을 완료할 때까지 이 정보를 요청할 때까지 기다리십시오. 사용자가 프로세스를 시작할 준비가 되기 전에 또는 단순히 계정을 만들 때 확인을 요청하지 마십시오.
+>
+
+
+
+
+**Clearly and succinctly describe the reason you need the information you’re requesting.** You must write copy (called a *purpose string* or *usage description string*) that explains why people need to share identity information with your app. The system displays your purpose string in the verification sheet so people can make an informed decision. Here are a couple of examples:
+> 요청하는 정보가 필요한 이유를 명확하고 간결하게 설명하십시오. 앱과 ID 정보를 공유해야 하는 이유를 설명하는 복사본(목적 문자열 또는 사용 설명 문자열이라고 함)을 작성해야 합니다. 시스템은 사용자가 정보에 입각한 결정을 내릴 수 있도록 사용자의 목적 문자열을 확인 시트에 표시합니다. 다음은 몇 가지 예입니다:
+>
+
+
+
+
+| To verify... | To support... | Example purpose string |
+| --- | --- | --- |
+| Identity | Opening an account for which proof of identity is legally required to prevent fraud | Federal law requires this information to verify your identity and also to help [App Name] prevent fraud. |
+| Driving privilege | Renting a vehicle that requires legal driving privileges | Applicable state law requires [App Name] to verify your driving privileges. |
+
+For each purpose string, aim for a brief, complete sentence that’s direct, specific, and easy for everyone to understand. Use sentence case, avoid passive voice, and include a period at the end.
+> 각 목적 문자열에 대해, 직접적이고 구체적이며 모든 사람이 이해하기 쉬운 짧고 완전한 문장을 목표로 하라. 문장 대소문자를 사용하고 수동적인 음성을 피하고 끝에 마침표를 포함합니다.
+>
+
+
+
+
