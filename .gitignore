@@ -39,4 +39,6 @@ Temporary Items
 environ.py
 __pycache__
 
+venv
+
 # End of https://www.toptal.com/developers/gitignore/api/macos
