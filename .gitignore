@@ -41,4 +41,6 @@ __pycache__
 
 venv
 
+sidebar*
+
 # End of https://www.toptal.com/developers/gitignore/api/macos
