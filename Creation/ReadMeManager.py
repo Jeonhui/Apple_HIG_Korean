@@ -1,5 +1,5 @@
 import re
-import json
+import os
 from RMConfig import RMConfig
 
 
@@ -29,15 +29,17 @@ class ReadMeManager:
             if path_components[-1] != '':
                 path_list.append(path_components)
             prev_depth = depth
-        self.create_readme(path_list)
+        # self.create_readme(path_list)
         # self.create_url_list(path_list)
+        self.create_base_file(path_list)
 
     def create_readme(self, path_list):
-        with open(self.config.readme_file_name, 'w') as readme_file:
+        readme_file_path = '/'.join([self.config.to_main_path, self.config.readme_file_name])
+        with open(readme_file_path, 'w') as readme_file:
             readme_file.write(self.config.readme_base)
             for path_components in path_list:
                 keyword, path = self.__toPath(path_components)
-                line = self.__change(keyword, path, depth=(len(path_components) - 2))
+                line = self.__change_readme_line(keyword, path, depth=(len(path_components) - 2))
                 readme_file.write(line)
 
     def create_url_list(self, path_list):
@@ -49,17 +51,44 @@ class ReadMeManager:
                        self.config.line_seperator
                 url_list_file.write(line)
 
-    def __toPath(self, path_components, url=False):
+    def create_base_file(self, path_list):
+        for path_components in path_list:
+            keyword, path = self.__toPath(path_components, with_main_path=True)
+            dir_path = self.__dir_path(path)
+            os.makedirs(dir_path, exist_ok=True)
+            with open(path, 'w') as file:
+
+                subtitle = ''
+                subtitle_keyword = self.config.base_file_join_key.join(path_components[1:-1]).strip()
+                if len(subtitle_keyword) > 0:
+                    _, subtitle_path = self.__toPath(path_components[:-1])
+
+                    link_subtitle_keyword = re.sub(self.config.change_keyword_key,
+                                                   subtitle_keyword,
+                                                   self.config.link)
+                    link_subtitle_keyword = re.sub(self.config.change_path_key,
+                                                   subtitle_path,
+                                                   link_subtitle_keyword)
+                    subtitle = re.sub(self.config.change_keyword_key,
+                                      link_subtitle_keyword,
+                                      self.config.base_file_subtitle)
+                title = re.sub(self.config.change_keyword_key, keyword, self.config.base_file_title)
+
+                line = subtitle + self.config.line_seperator + title
+                file.write(line)
+
+    def __toPath(self, path_components, url=False, with_main_path=False):
         keyword = path_components[-1]
         last_components = re.sub(' ', '-', path_components[-1].lower())
         if url:
             path = '/'.join([self.config.start_url, last_components])
+        elif with_main_path:
+            path = '/'.join([self.config.to_main_path] + path_components[:-1] + [last_components]) + '.md'
         else:
             path = '/'.join(path_components[:-1] + [last_components]) + '.md'
         return keyword, path
 
-    def __change(self, keyword, path, depth):
-        line = ""
+    def __change_readme_line(self, keyword, path, depth):
         if depth < 1:
             line = self.config.line_seperator2 + self.config.main_title
         elif depth == 1:
@@ -69,6 +98,12 @@ class ReadMeManager:
         line = re.sub(self.config.change_keyword_key, keyword, line)
         line = re.sub(self.config.change_path_key, path, line)
         return line
+
+    def __dir_path(self, path):
+        path_components = path.split('/')
+        if re.match(r'^\.?[a-zA-z0-9\-]+\.[a-zA-z0-9\-]+$', path_components[-1]):
+            return '/'.join(path_components[:-1])
+        return path
 
 
 ReadMeManager().create()

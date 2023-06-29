@@ -7,12 +7,18 @@
   "url_list_file_name": "urlList.md",
   "start_url": "https://developer.apple.com/design/human-interface-guidelines",
   "url_list_base": "| keyword | url | check |  \n | --- | --- | ---- |  \n",
-  "line_seperator":"  \n",
+  "line_seperator": "  \n",
   "url_list_seperator": " | ",
-  "change_keyword_key": "###",
+  "change_keyword_key": "&&&",
+  "change_keyword2_key": "%%%",
   "change_path_key": "@@@",
   "main_title": "[![https://img.shields.io/badge/###-9cf?style=for-the-badge&](https://img.shields.io/badge/Foundations-9cf?style=for-the-badge&)](@@@)  \n",
-  "sub_title": "- [###](@@@)  \n",
-  "sub_title2": "    - [###](@@@)  \n",
-  "line_seperator2": "\n---  \n\n"
+  "sub_title": "- [&&&](@@@)  \n",
+  "sub_title2": "    - [&&&](@@@)  \n",
+  "line_seperator2": "\n---  \n\n",
+  "to_main_path": "..",
+  "base_file_join_key": " - ",
+  "base_file_title": "# **&&&**  \n\n",
+  "base_file_subtitle": "### [&&&]  \n",
+  "link": "[&&&](@@@)"
 }
