@@ -1,341 +1,186 @@
-# **[Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/guidelines/overview/) 번역**
-
+# **[Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/guidelines/overview/) 번역**  
 ![https://img.shields.io/badge/papago-blue?style=for-the-badge&](https://img.shields.io/badge/papago-blue?style=for-the-badge&)
 ![https://img.shields.io/badge/githubAction-lightgray?style=for-the-badge&](https://img.shields.io/badge/githubActionS-lightgray?style=for-the-badge&)
-
-![https://img.shields.io/badge/platfroms-9cf?style=for-the-badge&](https://img.shields.io/badge/platfroms-9cf?style=for-the-badge&)
-
-- [Overview](./old/translated-markdown/platforms/overview.md)
-- [Designing for iOS](./old/translated-markdown/platforms/designing-for-ios.md)
-- [Designing for iPadOS](./old/translated-markdown/platforms/designing-for-ipados.md)
-- [Designing for macOS](./old/translated-markdown/platforms/designing-for-macos.md)
-- [Designing for tvOS](./old/translated-markdown/platforms/designing-for-tvos.md)
-- [Designing for watchOS](./old/translated-markdown/platforms/designing-for-watchos.md)
-
----
-
-![https://img.shields.io/badge/Foundations-9cf?style=for-the-badge&](https://img.shields.io/badge/Foundations-9cf?style=for-the-badge&)
-
-- [Overview](./old/translated-markdown/foundations/overview.md)
-- [Accessibility](./old/translated-markdown/foundations/accessibility.md)
-- [App icons](./old/translated-markdown/foundations/app-icons.md)
-- [Branding](./old/translated-markdown/foundations/branding.md)
-- [Color](./old/translated-markdown/foundations/color.md)
-- [Dark Mode](./old/translated-markdown/foundations/dark-mode.md)
-- [Icons](./old/translated-markdown/foundations/icons.md)
-- [Images](./old/translated-markdown/foundations/images.md)
-- [Inclusion](./old/translated-markdown/foundations/inclusion.md)
-- [Layout](./old/translated-markdown/foundations/layout.md)
-- [Materials](./old/translated-markdown/foundations/materials.md)
-- [Motion](./old/translated-markdown/foundations/motion.md)
-- [Right to left](./old/translated-markdown/foundations/right-to-left.md)
-- [SF Symbols](./old/translated-markdown/foundations/sf-symbols.md)
-- [Typography](./old/translated-markdown/foundations/typography.md)
-
----
-
-![https://img.shields.io/badge/Patterns-9cf?style=for-the-badge&](https://img.shields.io/badge/Patterns-9cf?style=for-the-badge&)
-
-- [Accessing private data](./old/translated-markdown/patterns/accessing-private-data.md)
-- [Charting data](./old/translated-markdown/patterns/charting-data.md)
-- [Collaboration and sharing](./old/translated-markdown/patterns/collaboration-and-sharing.md)
-- [Drag and drop](./old/translated-markdown/patterns/drag-and-drop.md)
-- [Entering data](./old/translated-markdown/patterns/entering-data.md)
-- [Feedback](./old/translated-markdown/patterns/feedback.md)
-- [File management](./old/translated-markdown/patterns/file-management.md)
-- [Going full screen](./old/translated-markdown/patterns/going-full-screen.md)
-- [Launching](./old/translated-markdown/patterns/launching.md)
-- [Live-viewing apps](./old/translated-markdown/patterns/live-viewing-apps.md)
-- [Loading](./old/translated-markdown/patterns/loading.md)
-- [Managing accounts](./old/translated-markdown/patterns/managing-accounts.md)
-- [Managing notifications](./old/translated-markdown/patterns/managing-notifications.md)
-- [Modality](./old/translated-markdown/patterns/modality.md)
-- [Multitasking](./old/translated-markdown/patterns/multitasking.md)
-- [Offering help](./old/translated-markdown/patterns/offering-help.md)
-- [Onboarding](./old/translated-markdown/patterns/onboarding.md)
-- [Playing audio](./old/translated-markdown/patterns/playing-audio.md)
-- [Playing haptics](./old/translated-markdown/patterns/playing-haptics.md)
-- [Playing video](./old/translated-markdown/patterns/playing-video.md)
-- [Printing](./old/translated-markdown/patterns/printing.md)
-- [Ratings and reviews](./old/translated-markdown/patterns/ratings-and-reviews.md)
-- [Searching](./old/translated-markdown/patterns/searching.md)
-- [Settings](./old/translated-markdown/patterns/settings.md)
-- [Undo and redo](./old/translated-markdown/patterns/undo-and-redo.md)
-- [Workouts](./old/translated-markdown/patterns/workouts.md)
-
----
-
-![https://img.shields.io/badge/Components-9cf?style=for-the-badge&](https://img.shields.io/badge/Components-9cf?style=for-the-badge&)
-
-- <details> <summary> Content </summary>
-  
-  - [Charts](./old/translated-markdown/components/content/charts.md)
-  - [Image views](./old/translated-markdown/components/content/image-views.md)
-  - [Text views](./old/translated-markdown/components/content/text-views.md)
-  - [Web views](./old/translated-markdown/components/content/web-views.md)
-  
-</details>
-
-- <details> <summary> Layout and organization </summary>
-
-  - [Boxes](./old/translated-markdown/components/layout-and-organization/boxes.md)
-  - [Collections](./old/translated-markdown/components/layout-and-organization/collections.md)
-  - [Column views](./old/translated-markdown/components/layout-and-organization/column-views.md)
-  - [Disclosure controls](./old/translated-markdown/components/layout-and-organization/disclosure-controls.md)
-  - [Labels](./old/translated-markdown/components/layout-and-organization/labels.md)
-  - [Lists and tables](./old/translated-markdown/components/layout-and-organization/list-and-tables.md)
-  - [Lockups](./old/translated-markdown/components/layout-and-organization/lockups.md)
-  - [Outline views](./old/translated-markdown/components/layout-and-organization/outline-views.md)
-  - [Split views](./old/translated-markdown/components/layout-and-organization/split-views.md)
-  - [Tab views](./old/translated-markdown/components/layout-and-organization/tab-views.md)
-
-</details>
-
-- <details> <summary> Menus and actions </summary>
-  
-  - [Activity views](./old/translated-markdown/components/menus-and-actions/activity-views.md)
-  - [Buttons](./old/translated-markdown/components/menus-and-actions/buttons.md)
-  - [Context menus](./old/translated-markdown/components/menus-and-actions/context-menus.md)
-  - [Dock menus](./old/translated-markdown/components/menus-and-actions/dock-menus.md)
-  - [Edit menus](./old/translated-markdown/components/menus-and-actions/edit-menus.md)
-  - [Menus](./old/translated-markdown/components/menus-and-actions/menus.md)
-  - [Pop-up buttons](./old/translated-markdown/components/menus-and-actions/pop-up-buttons.md)
-  - [Pull-down buttons](./old/translated-markdown/components/menus-and-actions/pull-down-buttons.md)
-  - [Toolbars](./old/translated-markdown/components/menus-and-actions/toolbars.md)
-
-</details>
-
-- <details> <summary> Navigation and search </summary>
-  
-  - [Navigation bars](./old/translated-markdown/components/navigation-and-search/navigation-bars.md)
-  - [Path controls](./old/translated-markdown/components/navigation-and-search/path-controls.md)
-  - [Search fields](./old/translated-markdown/components/navigation-and-search/search-fields.md)
-  - [Sidebars](./old/translated-markdown/components/navigation-and-search/sidebars.md)
-  - [Tab bars](./old/translated-markdown/components/navigation-and-search/tab-bars.md)
-  - [Token fields](./old/translated-markdown/components/navigation-and-search/token-fields.md)
-
-</details>
-
-- <details> <summary> Navigation and search </summary>
-
-  - [Action sheets](./old/translated-markdown/components/presentation/action-sheets.md)
-  - [Alerts](./old/translated-markdown/components/presentation/alerts.md)
-  - [Page controls](./old/translated-markdown/components/presentation/page-controls.md)
-  - [Panels](./old/translated-markdown/components/presentation/panels.md)
-  - [Popovers](./old/translated-markdown/components/presentation/popovers.md)
-  - [Scroll views](./old/translated-markdown/components/presentation/scroll-views.md)
-  - [Sheets](./old/translated-markdown/components/presentation/sheets.md)
-  - [Windows](./old/translated-markdown/components/presentation/windows.md)
-
-</details>
-
-- <details> <summary> Selection and input </summary>
-  
-  - [Color wells](./old/translated-markdown/components/selection-and-input/color-wells.md)
-  - [Combo boxes](./old/translated-markdown/components/selection-and-input/combo-boxes.md)
-  - [Digit entry views](./old/translated-markdown/components/selection-and-input/digit-entry-views.md)
-  - [Image wells](./old/translated-markdown/components/selection-and-input/image-wells.md)
-  - [Onscreen keyboards](./old/translated-markdown/components/selection-and-input/onscreen-keyboards.md)
-  - [Pickers](./old/translated-markdown/components/selection-and-input/pickers.md)
-  - [Segmented controls](./old/translated-markdown/components/selection-and-input/segmented-controls.md)
-  - [Sliders](./old/translated-markdown/components/selection-and-input/sliders.md)
-  - [Steppers](./old/translated-markdown/components/selection-and-input/steppers.md)
-  - [Text fields](./old/translated-markdown/components/selection-and-input/text-fields.md)
-  - [Toggles](./old/translated-markdown/components/selection-and-input/toggles.md)
-
-</details>
-
-- <details> <summary> Status </summary>
-  
-  - [Activity rings](./old/translated-markdown/components/status/acitivity-rings.md)
-  - [Gauges](./old/translated-markdown/components/status/gauges.md)
-  - [Progress indicators](./old/translated-markdown/components/status/progress-indicators.md)
-  - [Rating indicators](./old/translated-markdown/components/status/rating-indicators.md)
-
-</details>
-
-- <details> <summary> System experiences </summary>
-  
-  - [Complications](./old/translated-markdown/components/system-experiences/complications.md)
-  - [Home Screen quick actions](./old/translated-markdown/components/system-experiences/home-screen-quick-actions.md)
-  - [Live Activities](./old/translated-markdown/components/system-experiences/live-activities.md)
-  - [The menu bar](./old/translated-markdown/components/system-experiences/the-menu-bar.md)
-  - [Notifications](./old/translated-markdown/components/system-experiences/notifications.md)
-  - [Status bars](./old/translated-markdown/components/system-experiences/status-bars.md)
-  - [Top Shelf](./old/translated-markdown/components/system-experiences/top-shelf.md)
-  - [Watch faces](./old/translated-markdown/components/system-experiences/watch-faces.md)
-  - [Widgets](./old/translated-markdown/components/system-experiences/widgets.md)
-
-</details>
-  
----
-
-![https://img.shields.io/badge/Inputs-9cf?style=for-the-badge&](https://img.shields.io/badge/Inputs-9cf?style=for-the-badge&)
-
-- [Action button](./old/translated-markdown/inputs/action-button.md)
-- [Apple Pencil and Scribble](./old/translated-markdown/inputs/apple-pencil-and-scribble.md)
-- [Digital Crown](./old/translated-markdown/inputs/digital-crown.md)
-- [Focus and selection](./old/translated-markdown/inputs/focus-and-selection.md)
-- [Game controllers](./old/translated-markdown/inputs/game-controllers.md)
-- [Gyro and accelerometer](./old/translated-markdown/inputs/gyro-and-accelerometer.md)
-- [Keyboards](./old/translated-markdown/inputs/keyboards.md)
-- [Pointing devices](./old/translated-markdown/inputs/pointing-devices.md)
-- [Remotes](./old/translated-markdown/inputs/remotes.md)
-- [Spatial interactions](./old/translated-markdown/inputs/spatial-interactions.md)
-- [Touch Bar](./old/translated-markdown/inputs/touch-bar.md)
-- [Touchscreen gestures](./old/translated-markdown/inputs/touchscreen-gestures.md)
-
----
-
-![https://img.shields.io/badge/Technologies-9cf?style=for-the-badge&](https://img.shields.io/badge/Technologies-9cf?style=for-the-badge&)
-- <details> <summary> AirPlay </summary>
-  
-  - [Introduction](./old/translated-markdown/technologies/airplay/introduction.md)
-  - [Icon](./old/translated-markdown/technologies/airplay/icon.md)
-  - [Editorial](./old/translated-markdown/technologies/airplay/editorial.md)
-
-</details>
-
-- [Always On](./old/translated-markdown/technologies/always-on.md)
-
-- <details> <summary> App Clips </summary>
-
-  - [Introduction](./old/translated-markdown/technologies/app-clips/introduction.md)
-  - [User experience](./old/translated-markdown/technologies/app-clips/user-experience.md)
-  - [App Clip card](./old/translated-markdown/technologies/app-clips/app-clip-card.md)
-  - [App Clip Codes](./old/translated-markdown/technologies/app-clips/app-clip-codes.md)
-  - [Printing guidelines](./old/translated-markdown/technologies/app-clips/printing-guidelines.md)
-  - [Legal requirements](./old/translated-markdown/technologies/app-clips/legal-requirements.md)
-
-</details>
-
-- <details> <summary> Apple Pay </summary>
-
-  - [Introduction](./old/translated-markdown/technologies/apple-pay/introduction.md)
-  - [Offering Apple Pay](./old/translated-markdown/technologies/apple-pay/offering-apple-pay.md)
-  - [Checkout and payment](./old/translated-markdown/technologies/apple-pay/checkout-and-payment.md)
-  - [Error handling](./old/translated-markdown/technologies/apple-pay/error-handling.md)
-  - [Subscriptions and donations](./old/translated-markdown/technologies/apple-pay/subscriptions-and-donations.md)
-  - [Buttons and marks](./old/translated-markdown/technologies/apple-pay/Buttons-and-marks.md)
-  - [Editorial](./old/translated-markdown/technologies/apple-pay/editorial.md)
-
-</details>
-
-- [Augmented reality](./old/translated-markdown/technologies/augmented-reality.md)
-- <details> <summary> CareKit </summary>
-
-  - [Introduction](./old/translated-markdown/technologies/carekit/introduction.md)
-  - [Data and privacy](./old/translated-markdown/technologies/carekit/data-and-privacy.md)
-  - [Views](./old/translated-markdown/technologies/carekit/views.md)
-  - [User experience](./old/translated-markdown/technologies/carekit/user-experience.md)
-  - [Symbols and branding](./old/translated-markdown/technologies/carekit/symbols-and-branding.md)
-
-</details>
-
-- <details> <summary> CarPlay </summary>
-
-  - [Introduction](./old/translated-markdown/technologies/carplay/introduction.md)
-  - [Architecture](./old/translated-markdown/technologies/carplay/architecture.md)
-  - [Interaction](./old/translated-markdown/technologies/carplay/interaction.md)
-  - [Visual design](./old/translated-markdown/technologies/carplay/visual-design.md)
-  - [Icons and Images](./old/translated-markdown/technologies/carplay/icons-and-images.md)
-  - [System elements](./old/translated-markdown/technologies/carplay/system-elements.md)
-
-</details>
-
-- <details> <summary> Game Center </summary>
-
-  - [Introduction](./old/translated-markdown/technologies/game-center/introduction.md)
-  - [Access point](./old/translated-markdown/technologies/game-center/access-point.md)
-  - [Dashboard](./old/translated-markdown/technologies/game-center/dashboard.md)
-  - [Achievements](./old/translated-markdown/technologies/game-center/achievements.md)
-  - [Leaderboards](./old/translated-markdown/technologies/game-center/leaderboards.md)
-  - [Multiplayer](./old/translated-markdown/technologies/game-center/multiplayer.md)
-  - [Custom dashboard links](./old/translated-markdown/technologies/game-center/custom-dashboard-links.md)
-
-</details>
-
-- [HealthKit](./old/translated-markdown/technologies/healthkit.md)
-
-- <details> <summary> HomeKit </summary>
-
-  - [Introduction](./old/translated-markdown/technologies/homekit/introduction.md)
-  - [Terminology and layout](./old/translated-markdown/technologies/homekit/terminology-and-layout.md)
-  - [Setup](./old/translated-markdown/technologies/homekit/setup.md)
-  - [Siri interactions](./old/translated-markdown/technologies/homekit/siri-interactions.md)
-  - [Custom functionality](./old/translated-markdown/technologies/homekit/custom-functionality.md)
-  - [Icons](./old/translated-markdown/technologies/homekit/icons.md)
-  - [Editorial](./old/translated-markdown/technologies/homekit/editorial.md)
-
-</details>
-
-- [iCloud](./old/translated-markdown/technologies/icloud.md)
-- [In-app purchase](./old/translated-markdown/technologies/in-app-purchase.md)
-- [Live Photos](./old/translated-markdown/technologies/live-photos.md)
-
-- <details> <summary> Mac Catalyst  </summary>
-
-  - [Introduction](./old/translated-markdown/technologies/mac-catalyst/introduction.md)
-  - [App structure](./old/translated-markdown/technologies/mac-catalyst/app-structure.md)
-  - [User interaction](./old/translated-markdown/technologies/mac-catalyst/user-interaction.md)
-  - [Visual design](./old/translated-markdown/technologies/mac-catalyst/visual-design.md)
-  - [Mac idiom](./old/translated-markdown/technologies/mac-catalyst/mac-idiom.md)
-
-</details>
-
-- <details> <summary> Machine learning </summary>
-
-  - [Introduction](./old/translated-markdown/technologies/machine-learning/introduction.md)
-  - [Machine learning roles](./old/translated-markdown/technologies/machine-learning/machine-learning-roles.md)
-  - [Explicit feedback](./old/translated-markdown/technologies/machine-learning/explicit-feedback.md)
-  - [Implicit feedback](./old/translated-markdown/technologies/machine-learning/implicit-feedback.md)
-  - [Calibration](./old/translated-markdown/technologies/machine-learning/calibration.md)
-  - [Corrections](./old/translated-markdown/technologies/machine-learning/corrections.md)
-  - [Mistakes](./old/translated-markdown/technologies/machine-learning/mistakes.md)
-  - [Multiple options](./old/translated-markdown/technologies/machine-learning/multiple-optinos.md)
-  - [Confidence](./old/translated-markdown/technologies/machine-learning/confidence.md)
-  - [Attribution](./old/translated-markdown/technologies/machine-learning/attribution.md)
-  - [Limitations](./old/translated-markdown/technologies/machine-learning/limitations.md)
-
-</details>
-  
-- [Maps](./old/translated-markdown/technologies/maps.md)
-
-- <details> <summary> Messages for Business  </summary>
-
-  - [Introduction](./old/translated-markdown/technologies/messages-for-business/introduction.md)
-  - [Branding](./old/translated-markdown/technologies/messages-for-business/branding.md)
-  - [Buttons](./old/translated-markdown/technologies/messages-for-business/buttons.md)
-  - [Color](./old/translated-markdown/technologies/messages-for-business/color.md)
-  - [Dark Mode](./old/translated-markdown/technologies/messages-for-business/dark-mode.md)
-  - [Logo](./old/translated-markdown/technologies/messages-for-business/logo.md)
-  - [Message bubble content](./old/translated-markdown/technologies/messages-for-business/message-bubble-content.md)
-  - [Screenshots](./old/translated-markdown/technologies/messages-for-business/screenshots.md)
-
-</details>
-
-- [NFC](./old/translated-markdown/technologies/nfc.md)
-- [Photo editing](./old/translated-markdown/technologies/photo-editing.md)
-- [ResearchKit](./old/translated-markdown/technologies/researchkit.md)
-- [SharePlay](./old/translated-markdown/technologies/shareplay.md)
-- [ShazamKit](./old/translated-markdown/technologies/shazamkit.md)
-- [Sign in with Apple](./old/translated-markdown/technologies/sign-in-with-apple.md)
-- <details> <summary> Siri </summary>
-
-  - [Introduction](./old/translated-markdown/technologies/siri/introduction.md)
-  - [System intents](./old/translated-markdown/technologies/siri/system-intents.md)
-  - [Custom intents](./old/translated-markdown/technologies/siri/custom-intents.md)
-  - [Shortcuts and suggestions](./old/translated-markdown/technologies/siri/shortcuts-and-suggestions.md)
-  - [Editorial](./old/translated-markdown/technologies/siri/editorial.md)
-
-</details>
-
-- [Tap to Pay on iPhone](./old/translated-markdown/technologies/tap-to-pay-on-iphone.md)
-- [Wallet](./old/translated-markdown/technologies/wallet.md)
-
-
-
-
-
-
-
+    
+---  
+
+[![https://img.shields.io/badge/Platforms-9cf?style=for-the-badge&](https://img.shields.io/badge/Foundations-9cf?style=for-the-badge&)](./human-interface-guidelines-markdown/platforms.md)  
+- [Designing for iOS](./human-interface-guidelines-markdown/Platforms/designing-for-ios.md)  
+- [Designing for iPadOS](./human-interface-guidelines-markdown/Platforms/designing-for-ipados.md)  
+- [Designing for macOS](./human-interface-guidelines-markdown/Platforms/designing-for-macos.md)  
+- [Designing for tvOS](./human-interface-guidelines-markdown/Platforms/designing-for-tvos.md)  
+- [Designing for visionOS](./human-interface-guidelines-markdown/Platforms/designing-for-visionos.md)  
+- [Designing for watchOS](./human-interface-guidelines-markdown/Platforms/designing-for-watchos.md)  
+
+---  
+
+[![https://img.shields.io/badge/Foundations-9cf?style=for-the-badge&](https://img.shields.io/badge/Foundations-9cf?style=for-the-badge&)](./human-interface-guidelines-markdown/foundations.md)  
+- [Accessibility](./human-interface-guidelines-markdown/Foundations/accessibility.md)  
+- [App icons](./human-interface-guidelines-markdown/Foundations/app-icons.md)  
+- [Branding](./human-interface-guidelines-markdown/Foundations/branding.md)  
+- [Color](./human-interface-guidelines-markdown/Foundations/color.md)  
+- [Dark Mode](./human-interface-guidelines-markdown/Foundations/dark-mode.md)  
+- [Icons](./human-interface-guidelines-markdown/Foundations/icons.md)  
+- [Images](./human-interface-guidelines-markdown/Foundations/images.md)  
+- [Immersive experiences](./human-interface-guidelines-markdown/Foundations/immersive-experiences.md)  
+- [Inclusion](./human-interface-guidelines-markdown/Foundations/inclusion.md)  
+- [Layout](./human-interface-guidelines-markdown/Foundations/layout.md)  
+- [Materials](./human-interface-guidelines-markdown/Foundations/materials.md)  
+- [Motion](./human-interface-guidelines-markdown/Foundations/motion.md)  
+- [Privacy](./human-interface-guidelines-markdown/Foundations/privacy.md)  
+- [Right to left](./human-interface-guidelines-markdown/Foundations/right-to-left.md)  
+- [SF Symbols](./human-interface-guidelines-markdown/Foundations/sf-symbols.md)  
+- [Spatial layout](./human-interface-guidelines-markdown/Foundations/spatial-layout.md)  
+- [Typography](./human-interface-guidelines-markdown/Foundations/typography.md)  
+- [Writing](./human-interface-guidelines-markdown/Foundations/writing.md)  
+
+---  
+
+[![https://img.shields.io/badge/Patterns-9cf?style=for-the-badge&](https://img.shields.io/badge/Foundations-9cf?style=for-the-badge&)](./human-interface-guidelines-markdown/patterns.md)  
+- [Charting data](./human-interface-guidelines-markdown/Patterns/charting-data.md)  
+- [Collaboration and sharing](./human-interface-guidelines-markdown/Patterns/collaboration-and-sharing.md)  
+- [Drag and drop](./human-interface-guidelines-markdown/Patterns/drag-and-drop.md)  
+- [Entering data](./human-interface-guidelines-markdown/Patterns/entering-data.md)  
+- [Feedback](./human-interface-guidelines-markdown/Patterns/feedback.md)  
+- [File management](./human-interface-guidelines-markdown/Patterns/file-management.md)  
+- [Going full screen](./human-interface-guidelines-markdown/Patterns/going-full-screen.md)  
+- [Launching](./human-interface-guidelines-markdown/Patterns/launching.md)  
+- [Live-viewing apps](./human-interface-guidelines-markdown/Patterns/live-viewing-apps.md)  
+- [Loading](./human-interface-guidelines-markdown/Patterns/loading.md)  
+- [Managing accounts](./human-interface-guidelines-markdown/Patterns/managing-accounts.md)  
+- [Managing notifications](./human-interface-guidelines-markdown/Patterns/managing-notifications.md)  
+- [Modality](./human-interface-guidelines-markdown/Patterns/modality.md)  
+- [Multitasking](./human-interface-guidelines-markdown/Patterns/multitasking.md)  
+- [Offering help](./human-interface-guidelines-markdown/Patterns/offering-help.md)  
+- [Onboarding](./human-interface-guidelines-markdown/Patterns/onboarding.md)  
+- [Playing audio](./human-interface-guidelines-markdown/Patterns/playing-audio.md)  
+- [Playing haptics](./human-interface-guidelines-markdown/Patterns/playing-haptics.md)  
+- [Playing video](./human-interface-guidelines-markdown/Patterns/playing-video.md)  
+- [Printing](./human-interface-guidelines-markdown/Patterns/printing.md)  
+- [Ratings and reviews](./human-interface-guidelines-markdown/Patterns/ratings-and-reviews.md)  
+- [Searching](./human-interface-guidelines-markdown/Patterns/searching.md)  
+- [Settings](./human-interface-guidelines-markdown/Patterns/settings.md)  
+- [Undo and redo](./human-interface-guidelines-markdown/Patterns/undo-and-redo.md)  
+- [Workouts](./human-interface-guidelines-markdown/Patterns/workouts.md)  
+
+---  
+
+[![https://img.shields.io/badge/Component-9cf?style=for-the-badge&](https://img.shields.io/badge/Foundations-9cf?style=for-the-badge&)](./human-interface-guidelines-markdown/component.md)  
+- [Content](./human-interface-guidelines-markdown/Component/content.md)  
+    - [Charts](./human-interface-guidelines-markdown/Component/Content/charts.md)  
+    - [image views](./human-interface-guidelines-markdown/Component/Content/image-views.md)  
+    - [Text views](./human-interface-guidelines-markdown/Component/Content/text-views.md)  
+    - [Web views](./human-interface-guidelines-markdown/Component/Content/web-views.md)  
+- [Layout and organization](./human-interface-guidelines-markdown/Component/layout-and-organization.md)  
+    - [Boxes](./human-interface-guidelines-markdown/Component/Layout and organization/boxes.md)  
+    - [Collections](./human-interface-guidelines-markdown/Component/Layout and organization/collections.md)  
+    - [Column views](./human-interface-guidelines-markdown/Component/Layout and organization/column-views.md)  
+    - [Disclosure controls](./human-interface-guidelines-markdown/Component/Layout and organization/disclosure-controls.md)  
+    - [Lables](./human-interface-guidelines-markdown/Component/Layout and organization/lables.md)  
+    - [Lists and tables](./human-interface-guidelines-markdown/Component/Layout and organization/lists-and-tables.md)  
+    - [Lockups](./human-interface-guidelines-markdown/Component/Layout and organization/lockups.md)  
+    - [Outline views](./human-interface-guidelines-markdown/Component/Layout and organization/outline-views.md)  
+    - [Split views](./human-interface-guidelines-markdown/Component/Layout and organization/split-views.md)  
+    - [Tab views](./human-interface-guidelines-markdown/Component/Layout and organization/tab-views.md)  
+- [Menus and actions](./human-interface-guidelines-markdown/Component/menus-and-actions.md)  
+    - [Activity views](./human-interface-guidelines-markdown/Component/Menus and actions/activity-views.md)  
+    - [Buttons](./human-interface-guidelines-markdown/Component/Menus and actions/buttons.md)  
+    - [Context menus](./human-interface-guidelines-markdown/Component/Menus and actions/context-menus.md)  
+    - [Dock menus](./human-interface-guidelines-markdown/Component/Menus and actions/dock-menus.md)  
+    - [Edit menus](./human-interface-guidelines-markdown/Component/Menus and actions/edit-menus.md)  
+    - [Menus](./human-interface-guidelines-markdown/Component/Menus and actions/menus.md)  
+    - [Ornaments](./human-interface-guidelines-markdown/Component/Menus and actions/ornaments.md)  
+    - [Pop-up buttons](./human-interface-guidelines-markdown/Component/Menus and actions/pop-up-buttons.md)  
+    - [Pull-down buttons](./human-interface-guidelines-markdown/Component/Menus and actions/pull-down-buttons.md)  
+    - [Toolbars](./human-interface-guidelines-markdown/Component/Menus and actions/toolbars.md)  
+- [Navigation and search](./human-interface-guidelines-markdown/Component/navigation-and-search.md)  
+    - [Navigation bars](./human-interface-guidelines-markdown/Component/Navigation and search/navigation-bars.md)  
+    - [Path controls](./human-interface-guidelines-markdown/Component/Navigation and search/path-controls.md)  
+    - [Search fields](./human-interface-guidelines-markdown/Component/Navigation and search/search-fields.md)  
+    - [Sidebars](./human-interface-guidelines-markdown/Component/Navigation and search/sidebars.md)  
+    - [Tab bars](./human-interface-guidelines-markdown/Component/Navigation and search/tab-bars.md)  
+    - [Token fields](./human-interface-guidelines-markdown/Component/Navigation and search/token-fields.md)  
+- [Presentation](./human-interface-guidelines-markdown/Component/presentation.md)  
+    - [Action sheets](./human-interface-guidelines-markdown/Component/Presentation/action-sheets.md)  
+    - [Alerts](./human-interface-guidelines-markdown/Component/Presentation/alerts.md)  
+    - [Page controls](./human-interface-guidelines-markdown/Component/Presentation/page-controls.md)  
+    - [Panels](./human-interface-guidelines-markdown/Component/Presentation/panels.md)  
+    - [Popovers](./human-interface-guidelines-markdown/Component/Presentation/popovers.md)  
+    - [Scroll views](./human-interface-guidelines-markdown/Component/Presentation/scroll-views.md)  
+    - [Sheets](./human-interface-guidelines-markdown/Component/Presentation/sheets.md)  
+    - [windows](./human-interface-guidelines-markdown/Component/Presentation/windows.md)  
+- [Selection and input](./human-interface-guidelines-markdown/Component/selection-and-input.md)  
+    - [Color wells](./human-interface-guidelines-markdown/Component/Selection and input/color-wells.md)  
+    - [Combo boxes](./human-interface-guidelines-markdown/Component/Selection and input/combo-boxes.md)  
+    - [Digit entry views](./human-interface-guidelines-markdown/Component/Selection and input/digit-entry-views.md)  
+    - [Image wells](./human-interface-guidelines-markdown/Component/Selection and input/image-wells.md)  
+    - [Pickers](./human-interface-guidelines-markdown/Component/Selection and input/pickers.md)  
+    - [Segmented Controls](./human-interface-guidelines-markdown/Component/Selection and input/segmented-controls.md)  
+    - [Sliders](./human-interface-guidelines-markdown/Component/Selection and input/sliders.md)  
+    - [Steppers](./human-interface-guidelines-markdown/Component/Selection and input/steppers.md)  
+    - [Text fields](./human-interface-guidelines-markdown/Component/Selection and input/text-fields.md)  
+    - [Toggles](./human-interface-guidelines-markdown/Component/Selection and input/toggles.md)  
+    - [Virtual keyboards](./human-interface-guidelines-markdown/Component/Selection and input/virtual-keyboards.md)  
+- [Status](./human-interface-guidelines-markdown/Component/status.md)  
+    - [Activity rings](./human-interface-guidelines-markdown/Component/Status/activity-rings.md)  
+    - [Gauges](./human-interface-guidelines-markdown/Component/Status/gauges.md)  
+    - [Progress indicators](./human-interface-guidelines-markdown/Component/Status/progress-indicators.md)  
+    - [Rating indicators](./human-interface-guidelines-markdown/Component/Status/rating-indicators.md)  
+- [System experiences](./human-interface-guidelines-markdown/Component/system-experiences.md)  
+    - [App Shortcuts](./human-interface-guidelines-markdown/Component/System experiences/app-shortcuts.md)  
+    - [Complications](./human-interface-guidelines-markdown/Component/System experiences/complications.md)  
+    - [Home Screen quick actions](./human-interface-guidelines-markdown/Component/System experiences/home-screen-quick-actions.md)  
+    - [Live Activities](./human-interface-guidelines-markdown/Component/System experiences/live-activities.md)  
+    - [The menu bar](./human-interface-guidelines-markdown/Component/System experiences/the-menu-bar.md)  
+    - [Notifications](./human-interface-guidelines-markdown/Component/System experiences/notifications.md)  
+    - [Status bars](./human-interface-guidelines-markdown/Component/System experiences/status-bars.md)  
+    - [Top Shelf](./human-interface-guidelines-markdown/Component/System experiences/top-shelf.md)  
+    - [Watch faces](./human-interface-guidelines-markdown/Component/System experiences/watch-faces.md)  
+    - [Widgets](./human-interface-guidelines-markdown/Component/System experiences/widgets.md)  
+
+---  
+
+[![https://img.shields.io/badge/Inputs-9cf?style=for-the-badge&](https://img.shields.io/badge/Foundations-9cf?style=for-the-badge&)](./human-interface-guidelines-markdown/inputs.md)  
+- [Action button](./human-interface-guidelines-markdown/Inputs/action-button.md)  
+- [Apple Pencil and Scribble](./human-interface-guidelines-markdown/Inputs/apple-pencil-and-scribble.md)  
+- [Digital Crown](./human-interface-guidelines-markdown/Inputs/digital-crown.md)  
+- [Eyes](./human-interface-guidelines-markdown/Inputs/eyes.md)  
+- [Focus and selection](./human-interface-guidelines-markdown/Inputs/focus-and-selection.md)  
+- [Game controllers](./human-interface-guidelines-markdown/Inputs/game-controllers.md)  
+- [Gestures](./human-interface-guidelines-markdown/Inputs/gestures.md)  
+- [Gyroscope and accelerometer](./human-interface-guidelines-markdown/Inputs/gyroscope-and-accelerometer.md)  
+- [Keyboards](./human-interface-guidelines-markdown/Inputs/keyboards.md)  
+- [Nearby interactions](./human-interface-guidelines-markdown/Inputs/nearby-interactions.md)  
+- [Pointing devices](./human-interface-guidelines-markdown/Inputs/pointing-devices.md)  
+- [Remotes](./human-interface-guidelines-markdown/Inputs/remotes.md)  
+- [Touch Bar](./human-interface-guidelines-markdown/Inputs/touch-bar.md)  
+
+---  
+
+[![https://img.shields.io/badge/Technologies-9cf?style=for-the-badge&](https://img.shields.io/badge/Foundations-9cf?style=for-the-badge&)](./human-interface-guidelines-markdown/technologies.md)  
+- [AirPlay](./human-interface-guidelines-markdown/Technologies/airplay.md)  
+- [Always On](./human-interface-guidelines-markdown/Technologies/always-on.md)  
+- [App Clips](./human-interface-guidelines-markdown/Technologies/app-clips.md)  
+- [Apple Pay](./human-interface-guidelines-markdown/Technologies/apple-pay.md)  
+- [Augmented reality](./human-interface-guidelines-markdown/Technologies/augmented-reality.md)  
+- [CareKit](./human-interface-guidelines-markdown/Technologies/carekit.md)  
+- [CarPlay](./human-interface-guidelines-markdown/Technologies/carplay.md)  
+- [Game Center](./human-interface-guidelines-markdown/Technologies/game-center.md)  
+- [HealthKit](./human-interface-guidelines-markdown/Technologies/healthkit.md)  
+- [HomeKit](./human-interface-guidelines-markdown/Technologies/homekit.md)  
+- [iCloud](./human-interface-guidelines-markdown/Technologies/icloud.md)  
+- [iMessage apps and stickers](./human-interface-guidelines-markdown/Technologies/imessage-apps-and-stickers.md)  
+- [In-app purchase](./human-interface-guidelines-markdown/Technologies/in-app-purchase.md)  
+- [Live Photos](./human-interface-guidelines-markdown/Technologies/live-photos.md)  
+- [Machine learning](./human-interface-guidelines-markdown/Technologies/machine-learning.md)  
+- [Maps](./human-interface-guidelines-markdown/Technologies/maps.md)  
+- [Messages for Business](./human-interface-guidelines-markdown/Technologies/messages-for-business.md)  
+- [NFC](./human-interface-guidelines-markdown/Technologies/nfc.md)  
+- [Photo editing](./human-interface-guidelines-markdown/Technologies/photo-editing.md)  
+- [ResearchKit](./human-interface-guidelines-markdown/Technologies/researchkit.md)  
+- [SharePlay](./human-interface-guidelines-markdown/Technologies/shareplay.md)  
+- [ShazamKit](./human-interface-guidelines-markdown/Technologies/shazamkit.md)  
+- [Sign in with Apple](./human-interface-guidelines-markdown/Technologies/sign-in-with-apple.md)  
+- [Siri](./human-interface-guidelines-markdown/Technologies/siri.md)  
+- [Tap to Pay of iPhone](./human-interface-guidelines-markdown/Technologies/tap-to-pay-of-iphone.md)  
+- [Wallet](./human-interface-guidelines-markdown/Technologies/wallet.md)  

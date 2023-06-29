@@ -27,6 +27,14 @@ class RMConfigKey(StrEnum):
     line_seperator = 'line_seperator'
     url_list_seperator = 'url_list_seperator'
 
+    change_keyword_key = 'change_keyword_key'
+    change_path_key = 'change_path_key'
+    main_title = 'main_title'
+    sub_title = 'sub_title'
+    sub_title2 = 'sub_title2'
+    line_seperator2 = 'line_seperator2'
+
+
 class RMConfig:
     def __init__(self):
         with open('configure.json','r') as c:
@@ -41,3 +49,9 @@ class RMConfig:
             self.url_list_base = configure[RMConfigKey.url_list_base.value]
             self.line_seperator = configure[RMConfigKey.line_seperator.value]
             self.url_list_seperator = configure[RMConfigKey.url_list_seperator.value]
+            self.change_keyword_key = configure[RMConfigKey.change_keyword_key.value]
+            self.change_path_key = configure[RMConfigKey.change_path_key.value]
+            self.main_title = configure[RMConfigKey.main_title.value]
+            self.sub_title = configure[RMConfigKey.sub_title.value]
+            self.sub_title2 = configure[RMConfigKey.sub_title2.value]
+            self.line_seperator2 = configure[RMConfigKey.line_seperator2.value]

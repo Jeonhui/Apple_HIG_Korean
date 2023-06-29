@@ -33,28 +33,42 @@ class ReadMeManager:
         # self.create_url_list(path_list)
 
     def create_readme(self, path_list):
-        for path_components in path_list:
-            key, path = self.__toPath(path_components)
-            print(key, path)
+        with open(self.config.readme_file_name, 'w') as readme_file:
+            readme_file.write(self.config.readme_base)
+            for path_components in path_list:
+                keyword, path = self.__toPath(path_components)
+                line = self.__change(keyword, path, depth=(len(path_components) - 2))
+                readme_file.write(line)
 
     def create_url_list(self, path_list):
         with open(self.config.url_list_file_name, 'w') as url_list_file:
             url_list_file.write(self.config.url_list_base)
             for path_components in path_list:
-                key, url = self.__toPath(path_components, url=True)
-                line = self.config.url_list_seperator.join(['', key, url, '', '']) + \
-                    self.config.line_seperator
+                keyword, url = self.__toPath(path_components, url=True)
+                line = self.config.url_list_seperator.join(['', keyword, url, '', '']) + \
+                       self.config.line_seperator
                 url_list_file.write(line)
 
     def __toPath(self, path_components, url=False):
-        key = path_components[-1]
+        keyword = path_components[-1]
         last_components = re.sub(' ', '-', path_components[-1].lower())
         if url:
-            url = '/'.join([self.config.start_url, last_components])
-            return key, url
+            path = '/'.join([self.config.start_url, last_components])
         else:
             path = '/'.join(path_components[:-1] + [last_components]) + '.md'
-            return key, path
+        return keyword, path
+
+    def __change(self, keyword, path, depth):
+        line = ""
+        if depth < 1:
+            line = self.config.line_seperator2 + self.config.main_title
+        elif depth == 1:
+            line = self.config.sub_title
+        else:
+            line = self.config.sub_title2
+        line = re.sub(self.config.change_keyword_key, keyword, line)
+        line = re.sub(self.config.change_path_key, path, line)
+        return line
 
 
 ReadMeManager().create()
