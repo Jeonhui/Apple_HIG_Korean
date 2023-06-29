@@ -29,8 +29,8 @@ class ReadMeManager:
             if path_components[-1] != '':
                 path_list.append(path_components)
             prev_depth = depth
-        # self.create_readme(path_list)
-        # self.create_url_list(path_list)
+        self.create_readme(path_list)
+        self.create_url_list(path_list)
         self.create_base_file(path_list)
 
     def create_readme(self, path_list):
@@ -79,13 +79,15 @@ class ReadMeManager:
 
     def __toPath(self, path_components, url=False, with_main_path=False):
         keyword = path_components[-1]
-        last_components = re.sub(' ', '-', path_components[-1].lower())
+        change = lambda x: re.sub(' ', '-', x.lower())
+        path_components = list(map(change, path_components))
+        last_component = path_components[-1]
         if url:
-            path = '/'.join([self.config.start_url, last_components])
+            path = '/'.join([self.config.start_url, last_component])
         elif with_main_path:
-            path = '/'.join([self.config.to_main_path] + path_components[:-1] + [last_components]) + '.md'
+            path = '/'.join([self.config.to_main_path] + path_components[:-1] + [last_component]) + '.md'
         else:
-            path = '/'.join(path_components[:-1] + [last_components]) + '.md'
+            path = '/'.join(path_components[:-1] + [last_component]) + '.md'
         return keyword, path
 
     def __change_readme_line(self, keyword, path, depth):
