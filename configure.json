@@ -1,0 +1,12 @@
+{
+  "sidebar_path": "sidebar.md",
+  "depth_keyword": "- ",
+  "readme_file_name": "README.md",
+  "start_path": "./human-interface-guidelines-markdown",
+  "readme_base": "# **[Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/guidelines/overview/) 번역**  \n    ![https://img.shields.io/badge/papago-blue?style=for-the-badge&](https://img.shields.io/badge/papago-blue?style=for-the-badge&)\n    ![https://img.shields.io/badge/githubAction-lightgray?style=for-the-badge&](https://img.shields.io/badge/githubActionS-lightgray?style=for-the-badge&)\n    ",
+  "url_list_file_name": "urlList.md",
+  "start_url": "https://developer.apple.com/design/human-interface-guidelines",
+  "url_list_base": "| keyword | url | check |  \n | --- | --- | ---- |  \n",
+  "line_seperator":"  \n",
+  "url_list_seperator": " | "
+}
