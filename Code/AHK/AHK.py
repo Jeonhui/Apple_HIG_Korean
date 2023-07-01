@@ -17,7 +17,7 @@ class AHK:
     def __init__(self):
         with open(self.config.url_list_file_path, 'r+') as url_list_file:
             url_list = url_list_file.readlines()
-        for line in url_list[164:]:
+        for line in url_list[10:11]:
             data = tuple(filter(lambda x: len(x.strip()) > 0, line.split(self.config.url_list_seperator)))
             if len(data) != 3:
                 continue
