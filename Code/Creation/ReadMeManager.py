@@ -30,8 +30,8 @@ class ReadMeManager:
                 path_list.append(path_components)
             prev_depth = depth
         self.create_readme(path_list)
-        # self.create_url_list(path_list)
-        # self.create_base_file(path_list)
+        self.create_url_list(path_list)
+        self.create_base_file(path_list)
 
     def create_readme(self, path_list):
         readme_file_path = '/'.join([self.config.to_main_path, self.config.readme_file_name])

@@ -182,5 +182,5 @@
 - [ShazamKit](./human-interface-guidelines-markdown/technologies/shazamkit.md)  
 - [Sign in with Apple](./human-interface-guidelines-markdown/technologies/sign-in-with-apple.md)  
 - [Siri](./human-interface-guidelines-markdown/technologies/siri.md)  
-- [Tap to Pay of iPhone](./human-interface-guidelines-markdown/technologies/tap-to-pay-of-iphone.md)  
+- [Tap to Pay on iPhone](./human-interface-guidelines-markdown/technologies/tap-to-pay-on-iphone.md)  
 - [Wallet](./human-interface-guidelines-markdown/technologies/wallet.md)  

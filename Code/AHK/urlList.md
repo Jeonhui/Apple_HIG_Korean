@@ -132,7 +132,7 @@
  | Focus and selection | https://developer.apple.com/design/human-interface-guidelines/focus-and-selection | ./human-interface-guidelines-markdown/inputs/focus-and-selection.md |  |   
  | Game controllers | https://developer.apple.com/design/human-interface-guidelines/game-controllers | ./human-interface-guidelines-markdown/inputs/game-controllers.md |  |   
  | Gestures | https://developer.apple.com/design/human-interface-guidelines/gestures | ./human-interface-guidelines-markdown/inputs/gestures.md |  |   
- | Gyroscope and accelerometer | https://developer.apple.com/design/human-interface-guidelines/gyroscope-and-accelerometer | ./human-interface-guidelines-markdown/inputs/gyroscope-and-accelerometer.md |  |   
+ | Gyroscope and accelerometer | https://developer.apple.com/design/human-interface-guidelines/gyro-and-accelerometer | ./human-interface-guidelines-markdown/inputs/gyroscope-and-accelerometer.md |  |   
  | Keyboards | https://developer.apple.com/design/human-interface-guidelines/keyboards | ./human-interface-guidelines-markdown/inputs/keyboards.md |  |   
  | Nearby interactions | https://developer.apple.com/design/human-interface-guidelines/nearby-interactions | ./human-interface-guidelines-markdown/inputs/nearby-interactions.md |  |   
  | Pointing devices | https://developer.apple.com/design/human-interface-guidelines/pointing-devices | ./human-interface-guidelines-markdown/inputs/pointing-devices.md |  |   
@@ -163,5 +163,5 @@
  | ShazamKit | https://developer.apple.com/design/human-interface-guidelines/shazamkit | ./human-interface-guidelines-markdown/technologies/shazamkit.md |  |   
  | Sign in with Apple | https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple | ./human-interface-guidelines-markdown/technologies/sign-in-with-apple.md |  |   
  | Siri | https://developer.apple.com/design/human-interface-guidelines/siri | ./human-interface-guidelines-markdown/technologies/siri.md |  |   
- | Tap to Pay of iPhone | https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-of-iphone | ./human-interface-guidelines-markdown/technologies/tap-to-pay-of-iphone.md |  |   
+ | Tap to Pay on iPhone | https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone | ./human-interface-guidelines-markdown/technologies/tap-to-pay-on-iphone.md |  |   
  | Wallet | https://developer.apple.com/design/human-interface-guidelines/wallet | ./human-interface-guidelines-markdown/technologies/wallet.md |  |   
