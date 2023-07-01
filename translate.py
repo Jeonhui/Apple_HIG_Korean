@@ -38,7 +38,7 @@ def translateWithPapagoAPI(text):
 
 def translate():
     # get last log
-    logsFile = open('../../0.1.0/logs.md', 'r+')
+    logsFile = open('logs.md', 'r+')
     logs = list(filter(lambda log: log.strip() != '', logsFile.readlines()))
 
     # check last log
@@ -47,7 +47,7 @@ def translate():
     lastLogFileLine = int(lastLog.split("|")[3].strip()) if lastLog is not None else 0
     print(lastLogFilePath, lastLogFileLine)
     # open README.md & get Lines containing paths
-    README = open('../../0.1.0/README.md', 'r')
+    README = open('README.md', 'r')
     lines = list(filter(lambda line: line.strip()[:3] == '- [', README.readlines()))
     README.close()
 
@@ -68,7 +68,7 @@ def translate():
     for line in lines:
         # get Path
         currentFilePath = line.split("(")[1].replace(")", "").rstrip()
-        originFilePath = "./originHIG-markdown" + currentFilePath[1:]
+        originFilePath = "./translated-human-interface-guidelines-markdown" + currentFilePath[1:]
 
         # for Log
         logFilePath = currentFilePath
