@@ -29,10 +29,10 @@ class TranslationConfigureKey(StrEnum):
 class TranslationConfigure:
     def __init__(self, test=False):
         if test:
-            with open('Job/Configure/translationConfigure.json', 'r') as c:
+            with open('Job/Configure/testingTranslationConfigure.json', 'r') as c:
                 configure = json.load(c)
         else:
-            with open('Job/Configure/testingTranslationConfigure.json', 'r') as c:
+            with open('Job/Configure/translationConfigure.json', 'r') as c:
                 configure = json.load(c)
 
         self.url_list_file_path = configure[TranslationConfigureKey.url_list_file_path.value]
