@@ -97,7 +97,7 @@ class AHKModel:
             last_log_values = list(map(lambda x: x.strip(),
                                        filter(lambda x: len(x.strip()) > 0,
                                               last_log.split(self.configure.log_split_keyword))))
-        if len(last_log_values) < 5:
+        if len(last_log_values) < 5 or last_log[0][0] == '-':
             return None, None
         path, line = last_log_values[1], max(0, int(last_log_values[2]) - (1 if last_log_values[4] == '' else 0))
         return path, line
