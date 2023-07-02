@@ -1,6 +1,5 @@
 from PapagoAPI import PapagoAPI
 from AHKError import AHKError
-from Job.Configure.TranslationConfigure import TranslationConfigure
 from datetime import datetime
 import re
 import os
@@ -8,7 +7,9 @@ import os
 
 class AHKModel:
     papagoAPI = PapagoAPI()
-    configure = TranslationConfigure()
+
+    def __init__(self, configure):
+        self.configure = configure
 
     def start(self):
         self.papagoAPI.set_capacity(self.get_today_capacity())
@@ -142,4 +143,3 @@ class AHKModel:
 
     def to_main_path(self, path):
         return f"{self.configure.to_main_path}/{path}"
-
