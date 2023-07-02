@@ -1,13 +1,13 @@
 {
-  "url_list_file_path": "Job/urlList.md",
-  "logs_file_path": "Job/logs.md",
+  "url_list_file_path": "../urlList.md",
+  "logs_file_path": "../logs.md",
   "url_list_split_keyword": "|",
   "log_split_keyword": "|",
   "datetime_format": "%Y-%m-%d %H:%M",
   "origin-markdown": "human-interface-guidelines-markdown",
   "translated-markdown": "translated-human-interface-guidelines-markdown",
-  "to_main_path": "/",
-  "main_path_to": "",
+  "to_main_path": "../..",
+  "main_path_to": "Job/Configure",
   "url": "https://developer.apple.com/design/human-interface-guidelines",
   "prev_path": ".."
 }
