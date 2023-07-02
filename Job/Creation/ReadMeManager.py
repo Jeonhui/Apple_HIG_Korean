@@ -1,6 +1,6 @@
 import re
 import os
-from Code.Configure.CreationConfigure import CreationConfigure
+from Job.Configure.CreationConfigure import CreationConfigure
 
 
 class ReadMeManager:

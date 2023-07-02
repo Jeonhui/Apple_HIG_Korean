@@ -36,11 +36,11 @@ Temporary Items
 *.icloud
 
 # User
-Code/Translation/environ.py
+Job/Translation/environ.py
 __pycache__
 
 venv
 
-Code/Creation/sidebar.md
+Job/Creation/sidebar.md
 
 # End of https://www.toptal.com/developers/gitignore/api/macos

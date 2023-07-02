@@ -1,6 +1,6 @@
 from PapagoAPI import PapagoAPI
 from AHKError import AHKError
-from Code.Configure.TranslationConfigure import TranslationConfigure
+from Job.Configure.TranslationConfigure import TranslationConfigure
 from datetime import datetime
 import re
 import os

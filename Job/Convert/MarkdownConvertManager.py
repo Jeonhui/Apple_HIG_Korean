@@ -6,9 +6,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from bs4 import BeautifulSoup
-from Code.Convert.CustomMarkDownConverter import CustomMarkDowConverter as cmdConverter
+from Job.Convert.CustomMarkDownConverter import CustomMarkDowConverter as cmdConverter
 
-from Code.Configure.CreationConfigure import CreationConfigure
+from Job.Configure.CreationConfigure import CreationConfigure
 
 
 class MarkdownConvertManager:
