@@ -114,7 +114,7 @@ class AHKModel:
         for log in logs_lines:
             log = list(map(lambda x: x.strip(), filter(lambda x: len(x.strip()) > 0 or x.strip()[0] != '-',
                                                        log.split(self.configure.log_split_keyword))))
-            if len(log) < 5:
+            if len(log) < 4:
                 continue
             log_date = datetime.strptime(log[0], self.configure.datetime_format).date()
             if date is not None:
@@ -125,6 +125,7 @@ class AHKModel:
         return date_log
 
     def write_log(self, path, line, capacity, error_code=None, date=datetime.now().date()):
+        date = date.strftime(self.configure.datetime_format)
         with open(self.configure.logs_file_path, 'a') as logs_file:
             content_list = list(map(lambda x: str(x).strip(), [date, path, line, capacity]))
             line = self.configure.log_split_keyword.join([''] +
@@ -142,5 +143,6 @@ class AHKModel:
 
     def to_main_path(self, path):
         return f"{self.configure.to_main_path}/{path}"
+
 
 AHKModel().start()
