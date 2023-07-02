@@ -143,5 +143,3 @@ class AHKModel:
     def to_main_path(self, path):
         return f"{self.configure.to_main_path}/{path}"
 
-
-AHKModel().start()
