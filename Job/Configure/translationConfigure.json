@@ -7,6 +7,7 @@
   "origin-markdown": "human-interface-guidelines-markdown",
   "translated-markdown": "translated-human-interface-guidelines-markdown",
   "to_main_path": "../..",
+  "main_path_to": "Job/Configure",
   "url": "https://developer.apple.com/design/human-interface-guidelines",
   "prev_path": ".."
 }

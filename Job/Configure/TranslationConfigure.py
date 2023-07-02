@@ -24,10 +24,11 @@ class TranslationConfigureKey(StrEnum):
     to_main_path = 'to_main_path'
     url = 'url'
     prev_path = 'prev_path'
+    main_path_to = 'main_path_to'
 
 class TranslationConfigure:
     def __init__(self):
-        with open('../Configure/translationConfigure.json', 'r') as c:
+        with open('Job/Configure/translationConfigure.json', 'r') as c:
             configure = json.load(c)
             self.url_list_file_path = configure[TranslationConfigureKey.url_list_file_path.value]
             self.logs_file_path =  configure[TranslationConfigureKey.logs_file_path.value]
@@ -39,3 +40,4 @@ class TranslationConfigure:
             self.to_main_path = configure[TranslationConfigureKey.to_main_path.value]
             self.url = configure[TranslationConfigureKey.url.value]
             self.prev_path = configure[TranslationConfigureKey.prev_path.value]
+            self.main_path_to = configure[TranslationConfigureKey.main_path_to.value]
