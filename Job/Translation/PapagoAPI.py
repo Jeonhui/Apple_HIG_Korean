@@ -1,6 +1,6 @@
 import os
 import requests
-from AHKError import AHKError
+from Job.Translation.AHKError import AHKError
 # test - 주석 해제
 # import environ
 # environ.environ()
