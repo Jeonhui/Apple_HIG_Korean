@@ -33,6 +33,7 @@ class AHKModel:
     def translate_markdown_file(self, path, line=None):
         origin_file_path, translated_file_path = self.to_translated_file_path(path)
         if not os.path.isfile(origin_file_path) or not os.path.isfile(translated_file_path):
+            print(f">>>>>>>>>>>>>>>>>>> {origin_file_path}, {translated_file_path}")
             return line, AHKError.FileNotFoundError.value
 
         if line is None:
