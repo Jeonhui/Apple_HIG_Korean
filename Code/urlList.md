@@ -132,7 +132,7 @@
  | Focus and selection | https://developer.apple.com/design/human-interface-guidelines/focus-and-selection | ./human-interface-guidelines-markdown/inputs/focus-and-selection.md |  |   
  | Game controllers | https://developer.apple.com/design/human-interface-guidelines/game-controllers | ./human-interface-guidelines-markdown/inputs/game-controllers.md |  |   
  | Gestures | https://developer.apple.com/design/human-interface-guidelines/gestures | ./human-interface-guidelines-markdown/inputs/gestures.md |  |   
- | Gyroscope and accelerometer | https://developer.apple.com/design/human-interface-guidelines/gyro-and-accelerometer | ./human-interface-guidelines-markdown/inputs/gyroscope-and-accelerometer.md |  |   
+ | Gyroscope and accelerometer | https://developer.apple.com/design/human-interface-guidelines/gyroscope-and-accelerometer | ./human-interface-guidelines-markdown/inputs/gyroscope-and-accelerometer.md |  |   
  | Keyboards | https://developer.apple.com/design/human-interface-guidelines/keyboards | ./human-interface-guidelines-markdown/inputs/keyboards.md |  |   
  | Nearby interactions | https://developer.apple.com/design/human-interface-guidelines/nearby-interactions | ./human-interface-guidelines-markdown/inputs/nearby-interactions.md |  |   
  | Pointing devices | https://developer.apple.com/design/human-interface-guidelines/pointing-devices | ./human-interface-guidelines-markdown/inputs/pointing-devices.md |  |   

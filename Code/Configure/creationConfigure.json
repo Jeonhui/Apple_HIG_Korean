@@ -6,7 +6,7 @@
   "translated_markdown_path": "./translated-human-interface-guidelines-markdown",
   "origin_markdown_path": "./human-interface-guidelines-markdown",
   "readme_base": "# **[Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/guidelines/overview/) 번역**  \n![https://img.shields.io/badge/papago-blue?style=for-the-badge&](https://img.shields.io/badge/papago-blue?style=for-the-badge&)\n![https://img.shields.io/badge/githubAction-lightgray?style=for-the-badge&](https://img.shields.io/badge/githubActionS-lightgray?style=for-the-badge&)\n    ",
-  "url_list_file_path": "../AHK/urlList.md",
+  "url_list_file_path": "../urlList.md",
   "start_url": "https://developer.apple.com/design/human-interface-guidelines",
   "url_list_base": "| keyword | url | path | check |  \n | --- | --- | --- | ---- |  \n",
   "line_seperator": "  \n",

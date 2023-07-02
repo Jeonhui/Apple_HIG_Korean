@@ -1,10 +1,10 @@
 import re
 import os
-from Code.Configure.Configure import Configure
+from Code.Configure.CreationConfigure import CreationConfigure
 
 
 class ReadMeManager:
-    config = Configure()
+    config = CreationConfigure()
 
     def __init__(self):
         with open(self.config.sidebar_path, 'r') as f:
@@ -29,9 +29,9 @@ class ReadMeManager:
             if path_components[-1] != '':
                 path_list.append(path_components)
             prev_depth = depth
-        self.create_readme(path_list)
+        # self.create_readme(path_list)
         self.create_url_list(path_list)
-        self.create_base_file(path_list)
+        # self.create_base_file(path_list)
 
     def create_readme(self, path_list):
         readme_file_path = '/'.join([self.config.to_main_path, self.config.readme_file_name])

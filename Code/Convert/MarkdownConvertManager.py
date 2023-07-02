@@ -6,17 +6,18 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from bs4 import BeautifulSoup
-from Code.AHK.CustomMarkDownConverter import CustomMarkDowConverter as cmdConverter
+from Code.Convert.CustomMarkDownConverter import CustomMarkDowConverter as cmdConverter
 
-from Code.Configure.Configure import Configure
+from Code.Configure.CreationConfigure import CreationConfigure
 
 
-class AHK:
-    config = Configure()
+class MarkdownConvertManager:
+    config = CreationConfigure()
 
     def __init__(self):
         with open(self.config.url_list_file_path, 'r+') as url_list_file:
             url_list = url_list_file.readlines()
+
         for line in url_list[10:11]:
             data = tuple(filter(lambda x: len(x.strip()) > 0, line.split(self.config.url_list_seperator)))
             if len(data) != 3:
@@ -44,4 +45,4 @@ class AHK:
         return path
 
 
-AHK()
+MarkdownConvertManager()
