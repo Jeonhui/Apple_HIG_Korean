@@ -6,7 +6,7 @@
   "datetime_format": "%Y-%m-%d %H:%M",
   "origin-markdown": "human-interface-guidelines-markdown",
   "translated-markdown": "translated-human-interface-guidelines-markdown",
-  "to_main_path": "/",
+  "to_main_path": "",
   "main_path_to": "",
   "url": "https://developer.apple.com/design/human-interface-guidelines",
   "prev_path": ".."

@@ -10,7 +10,10 @@ class AHKModel:
     papagoAPI = PapagoAPI()
     configure = TranslationConfigure()
 
-    def start(self):
+
+    def start(self, test=False):
+        if test:
+            self.configure = TranslationConfigure(test=True)
         self.papagoAPI.set_capacity(self.get_today_capacity())
         start_path, start_line = self.find_last_log()
         path_list = self.find_path_list(start_path)
@@ -30,8 +33,8 @@ class AHKModel:
             if idx == 0:
                 start_line = None
 
-    def translate_markdown_file(self, path, line=None):
-        origin_file_path, translated_file_path = self.to_translated_file_path(path)
+    def translate_markdown_file(self, path, line=None, test=False):
+        origin_file_path, translated_file_path = self.to_translated_file_path(path, to_main_path=test)
         if not os.path.isfile(origin_file_path) or not os.path.isfile(translated_file_path):
             print(f">>>>>>>>>>>>>>>>>>> {origin_file_path}, {translated_file_path}")
             return line, AHKError.FileNotFoundError.value
@@ -135,7 +138,7 @@ class AHKModel:
                                                          ['']) + '\n'
             logs_file.write(line)
 
-    def to_translated_file_path(self, path, to_main_path=True):
+    def to_translated_file_path(self, path, to_main_path=False):
         origin_file_path = re.sub(self.configure.translated_markdown, self.configure.origin_markdown, path)
         translated_file_path = re.sub(self.configure.origin_markdown, self.configure.translated_markdown, path)
         return (self.to_main_path(origin_file_path), self.to_main_path(translated_file_path)) \
