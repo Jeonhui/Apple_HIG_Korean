@@ -1,6 +1,6 @@
 import os
 import requests
-from enum import Enum
+from AHKError import AHKError
 # test - 주석 해제
 # import environ
 # environ.environ()
@@ -17,7 +17,7 @@ class PapagoAPI:
 
     def translate(self, text):
         if self.capacity + len(text) > self.MAX_CAPACITY:
-            return PapagoAPIError.OverCapacityError
+            return AHKError.OverCapacityError
         # Header
         headers = {'X-Naver-Client-Id': self.client_id, 'X-Naver-Client-Secret': self.client_secret}
 
@@ -31,11 +31,7 @@ class PapagoAPI:
         if response.status_code == 200:
             return response.json()['message']['result']['translatedText']
         else:
-            return PapagoAPIError.ResponseError
+            return AHKError.ResponseError
 
     def set_capacity(self, capacity):
         self.capacity = capacity
-
-class PapagoAPIError(Enum):
-    OverCapacityError = 0
-    ResponseError = 1

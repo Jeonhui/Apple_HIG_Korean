@@ -1,4 +1,5 @@
-from PapagoAPI import PapagoAPI, PapagoAPIError
+from PapagoAPI import PapagoAPI
+from AHKError import AHKError
 from Code.Configure.TranslationConfigure import TranslationConfigure
 from datetime import datetime
 import re
@@ -14,12 +15,17 @@ class AHKModel:
         start_path, start_line = self.find_last_log()
         path_list = self.find_path_list(start_path)
         for idx, path in enumerate(path_list):
-            result = self.translate_markdown_file(path, start_line)
+            line, error_code = self.translate_markdown_file(path, start_line)
+            if error_code == AHKError.OverCapacityError.value:
+                self.write_log(path, line,
+                               capacity=self.papagoAPI.capacity)
+                break
 
-            if result is None:
-                pass
-            else:
-                pass
+            self.write_log(path, line,
+                           capacity=self.papagoAPI.capacity,
+                           error_code=error_code)
+            if error_code is not None:
+                break
 
             if idx == 0:
                 start_line = None
@@ -27,33 +33,46 @@ class AHKModel:
     def translate_markdown_file(self, path, line=None):
         origin_file_path, translated_file_path = self.to_translated_file_path(path)
         if not os.path.isfile(origin_file_path) or not os.path.isfile(translated_file_path):
-            return None
+            return line, AHKError.FileNotFoundError.value
 
         if line is None:
             line = 0
 
         with open(origin_file_path) as origin_file:
             text_lines = origin_file.readlines()[line + 1:]
-        current_file = open(translated_file_path, 'a')
+        translated_file = open(translated_file_path, 'a')
 
         for line, text_line in enumerate(text_lines):
-            # self.papagoAPI.translate()
-            self.convert_text(text_line)
-        return line
+            text, converted_text = self.convert_text(line, text_line)
+            translated_file.write(f"{text}\n")
+            if converted_text is not None:
+                translated_text = self.papagoAPI.translate(text)
+                if translated_text is AHKError.ResponseError:
+                    return line, translated_text.value
+                if translated_text is AHKError.OverCapacityError:
+                    return line, translated_text.value
 
-    def convert_text(self, text):
+                translated_text = f"> {translated_text}\n>\n\n" \
+                    if translated_text[0] != '-' \
+                    else f"- > {translated_text}\n\n"
+                translated_file.write(translated_text)
+        return line, None
+
+    def convert_text(self, line, text):
+        if line == 0 or len(text.strip().split(' ')) < 5:
+            return text, None
         if len(text) < 5 or text.strip()[0] in ['!', '[', '|']:
             return text, None
 
-        converted_text = text.replace('#', '').replace('*', '')
+        converted_text = text.strip().replace('#', '').replace('*', '')
 
-        for repl in re.findall('\[(.*?)\]\((.*?)\)', converted_text):
-            print(f"xxx [{repl[0]}]({repl[1]})")
-            if repl[1][0] == '/':
+        for repl in re.findall('\[(.*?)]\((.*?\)*)\)', converted_text):
+            if len(repl[1]) > 0 and repl[1][0] == '/':
                 text = re.sub(repl[1], self.configure.url + repl[1], text)
-            converted_text = re.sub("[" + repl[0] + "](" + repl[1] + ")", repl[0], converted_text)
-        print(converted_text)
-        # text.replace("[" + repl[0] + "](" + repl[1] + ")", repl[0])
+            changed_repl_0 = repl[0].replace('-', '\-')
+            changed_repl_1 = repl[1].replace('-', '\-')
+            converted_text = re.sub(f"\[{changed_repl_0}]\({changed_repl_1}\)", repl[0], converted_text)
+        return text, converted_text
 
     def find_path_list(self, start_path=None):
         with open(self.configure.url_list_file_path) as url_list_file:
@@ -78,9 +97,9 @@ class AHKModel:
             last_log_values = list(map(lambda x: x.strip(),
                                        filter(lambda x: len(x.strip()) > 0,
                                               last_log.split(self.configure.log_split_keyword))))
-        if len(last_log_values) < 4:
+        if len(last_log_values) < 5:
             return None, None
-        path, line = last_log_values[1], int(last_log_values[2])
+        path, line = last_log_values[1], max(0, int(last_log_values[2]) - (1 if last_log_values[4] == '' else 0))
         return path, line
 
     def get_today_capacity(self):
@@ -95,7 +114,7 @@ class AHKModel:
         for log in logs_lines:
             log = list(map(lambda x: x.strip(), filter(lambda x: len(x.strip()) > 0,
                                                        log.split(self.configure.log_split_keyword))))
-            if len(log) < 4:
+            if len(log) < 5:
                 continue
             log_date = datetime.strptime(log[0], self.configure.datetime_format).date()
             if date is not None:
@@ -105,10 +124,13 @@ class AHKModel:
                 date_log.append(log)
         return date_log
 
-    def write_log(self, path, line, capacity, date=datetime.now().date()):
+    def write_log(self, path, line, capacity, error_code=None, date=datetime.now().date()):
         with open(self.configure.logs_file_path, 'a') as logs_file:
             content_list = list(map(lambda x: str(x).strip(), [date, path, line, capacity]))
-            line = self.configure.log_split_keyword.join([''] + content_list + ['']) + '\n'
+            line = self.configure.log_split_keyword.join([''] +
+                                                         content_list +
+                                                         [str(error_code) if error_code is not None else ''] +
+                                                         ['']) + '\n'
             logs_file.write(line)
 
     def to_translated_file_path(self, path, to_main_path=True):
@@ -123,55 +145,3 @@ class AHKModel:
 
 
 AHKModel().start()
-
-# # open origin File and current File
-# originFile = open(originFilePath, 'r')
-# originData = originFile.readlines()
-# currentPathFile = open(currentFilePath, 'a')
-#
-# # empty file
-# if len(originData) < 2:
-#     break
-#
-# # read Origin Text Data
-# for i in range(len(originData)):
-#     # if find last log file line
-#     if findLastLogFileLine:
-#         if originData[i][0] != '|' and originData[i].strip() != '' and originData[i][0] != '!' and i != 0:
-#
-#             # remove Sharp and Asterisk
-#             originText = originData[i].strip()
-#             text = originText.replace('#', '').replace('*', '')
-#
-#             # check link and replace text
-#             for repl in re.findall('\[(.*?)\]\((.*?)\)', text):
-#                 originText = originText.replace(repl[1], repl[1].replace(
-#                     "https://developer.apple.com/design/human-interface-guidelines", ".."))
-#                 text = text.replace("[" + repl[0] + "](" + repl[1] + ")", repl[0])
-#
-#             # translate
-#             if len(text.split(' ')) > 5:
-#                 if capacity + len(originData[i]) > MAX_CAPACITY:
-#                     finished = True
-#                     break
-#                 translatedText = translateWithPapagoAPI(text)
-#
-#                 if translatedText == 'error' or translatedText == '':
-#                     finished = True
-#                     break
-#
-#                 capacity += len(originData[i])
-#                 currentPathFile.write(originText + '\n')
-#
-#                 currentPathFile.write(
-#                     (('> ' + translatedText + '\n>\n\n') if translatedText[0] != '-' else (
-#                             '- > ' + translatedText[1:])) + '\n\n')
-#
-#             else:
-#                 currentPathFile.write(originText + '\n')
-#
-#         elif i == 0:
-#             currentPathFile.write('\n')  # title
-#
-#         else:
-#             currentPathFile.write(originData[i].strip() + '\n')  # image or table or empty
