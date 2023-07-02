@@ -112,7 +112,7 @@ class AHKModel:
             logs_lines = logs_file.readlines()[2:]
         date_log = []
         for log in logs_lines:
-            log = list(map(lambda x: x.strip(), filter(lambda x: len(x.strip()) > 0 or x.strip()[0] != '-',
+            log = list(map(lambda x: x.strip(), filter(lambda x: (len(x.strip()) > 0 and x.strip()[0] != '-'),
                                                        log.split(self.configure.log_split_keyword))))
             if len(log) < 4:
                 continue
