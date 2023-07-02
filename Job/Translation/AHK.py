@@ -95,7 +95,7 @@ class AHKModel:
         with open(self.configure.logs_file_path, 'r') as logs_file:
             last_log = logs_file.readlines()[-1]
             last_log_values = list(map(lambda x: x.strip(),
-                                       filter(lambda x: len(x.strip()) > 0 or x.strip()[0] != '-',
+                                       filter(lambda x: (len(x.strip()) > 0 and x.strip()[0] != '-'),
                                               last_log.split(self.configure.log_split_keyword))))
         if len(last_log_values) < 5:
             return None, None
