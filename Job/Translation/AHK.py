@@ -1,15 +1,14 @@
 from PapagoAPI import PapagoAPI
 from AHKError import AHKError
 from datetime import datetime
+from Job.Configure.TranslationConfigure import TranslationConfigure
 import re
 import os
 
 
 class AHKModel:
     papagoAPI = PapagoAPI()
-
-    def __init__(self, configure):
-        self.configure = configure
+    configure = TranslationConfigure()
 
     def start(self):
         self.papagoAPI.set_capacity(self.get_today_capacity())
