@@ -60,3 +60,5 @@
 |2023-07-24 00:00|./human-interface-guidelines-markdown/foundations/accessibility.md|2|0|1|
 |2023-07-25 00:00|./human-interface-guidelines-markdown/foundations/accessibility.md|106|0|1|
 |2023-07-25 00:00|./human-interface-guidelines-markdown/foundations/accessibility.md|2|0|1|
+|2023-07-26 00:00|./human-interface-guidelines-markdown/foundations/accessibility.md|106|0|1|
+|2023-07-26 00:00|./human-interface-guidelines-markdown/foundations/accessibility.md|2|0|1|
