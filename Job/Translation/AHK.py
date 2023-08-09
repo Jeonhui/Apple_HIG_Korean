@@ -16,7 +16,6 @@ class AHKModel:
         pass
 
     def start(self, test=False):
-        print("runrunrun")
         # test일 경우 test configuration 사용
         if test:
             self.configure = TranslationConfigure(test=True)
@@ -53,7 +52,7 @@ class AHKModel:
     # Markdown 번역
     def translate_markdown_file(self, path, line=None, test=False):
         # 해당 경로 파일 확인
-        origin_file_path, translated_file_path = self.to_translated_file_path(path, to_main_path=test)
+        origin_file_path, translated_file_path = self.to_translated_file_path(path)
         if not os.path.isfile(origin_file_path) or not os.path.isfile(translated_file_path):
             print(f"Error: FileNotFoundError {origin_file_path}, {translated_file_path}")
             return line, AHKError.FileNotFoundError.value
@@ -181,5 +180,3 @@ class AHKModel:
     # main path로 path 변환
     def to_main_path(self, path):
         return f"{self.configure.to_main_path}/{path}"
-
-AHKModel().start()
