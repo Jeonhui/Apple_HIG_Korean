@@ -1,3 +1,3 @@
-from .AHK import AHKModel
-from .AHKError import AHKError
-from .PapagoAPI import PapagoAPI
+from Job.Translation.AHK import AHKModel
+from Job.Translation.AHKError import AHKError
+from Job.Translation.PapagoAPI import PapagoAPI

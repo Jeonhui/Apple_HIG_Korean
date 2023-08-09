@@ -8,49 +8,77 @@ import os
 
 class AHKModel:
     papagoAPI = PapagoAPI()
-    configure = TranslationConfigure()
+    configure = None
+    testCnt = 0
+    testMaxCnt = 10000
 
+    def __init__(self):
+        pass
 
     def start(self, test=False):
+        print("runrunrun")
+        # test일 경우 test configuration 사용
         if test:
             self.configure = TranslationConfigure(test=True)
+        else:
+            self.configure = TranslationConfigure()
+        # papago API 사용량 확인 및 설정
         self.papagoAPI.set_capacity(self.get_today_capacity())
+
+        # 시작 경로와 번역 마무리 줄 수 확인
         start_path, start_line = self.find_last_log()
         path_list = self.find_path_list(start_path)
-        for idx, path in enumerate(path_list):
-            line, error_code = self.translate_markdown_file(path, start_line)
+
+        # 경로 목록을 가지고 번역을 실행
+        for path in path_list:
+            line, error_code = self.translate_markdown_file(path, start_line, test)
+            # error code 확인
+            if test:
+                print(f"(test) error_code: {error_code}, capacity: {self.testCnt}")
+            else:
+                print(f"error_code: {error_code}, capacity: {self.papagoAPI.capacity}")
             if error_code == AHKError.OverCapacityError.value:
                 self.write_log(path, line,
                                capacity=self.papagoAPI.capacity)
-                break
+                return
 
+            # log 작성
             self.write_log(path, line,
                            capacity=self.papagoAPI.capacity,
                            error_code=error_code)
+
             if error_code is not None:
-                break
+                return
 
-            if idx == 0:
-                start_line = None
-
+    # Markdown 번역
     def translate_markdown_file(self, path, line=None, test=False):
+        # 해당 경로 파일 확인
         origin_file_path, translated_file_path = self.to_translated_file_path(path, to_main_path=test)
         if not os.path.isfile(origin_file_path) or not os.path.isfile(translated_file_path):
-            print(f">>>>>>>>>>>>>>>>>>> {origin_file_path}, {translated_file_path}")
+            print(f"Error: FileNotFoundError {origin_file_path}, {translated_file_path}")
             return line, AHKError.FileNotFoundError.value
 
-        if line is None:
+        # line이 None으로 지정되면 0번째부터 시작
+        if line is None or line == 'None':
             line = 0
 
+        # 해당 MarkDown 원본 파일 읽기 (선택한 다음 줄부터)
         with open(origin_file_path) as origin_file:
-            text_lines = origin_file.readlines()[line + 1:]
+            text_lines = origin_file.readlines()
         translated_file = open(translated_file_path, 'a')
 
-        for line, text_line in enumerate(text_lines):
+        for text_line in text_lines[line + 1:]:
             text, converted_text = self.convert_text(line, text_line)
             translated_file.write(f"{text}\n")
             if converted_text is not None:
-                translated_text = self.papagoAPI.translate(text)
+                if test:
+                    self.testCnt += len(converted_text)
+                    translated_text = converted_text
+                    if self.testCnt > self.testMaxCnt:
+                        translated_text = AHKError.OverCapacityError
+                        return line, translated_text.value
+                else:
+                    translated_text = self.papagoAPI.translate(text)
                 if translated_text is AHKError.ResponseError:
                     return line, translated_text.value
                 if translated_text is AHKError.OverCapacityError:
@@ -60,6 +88,7 @@ class AHKModel:
                     if translated_text[0] != '-' \
                     else f"- > {translated_text}\n\n"
                 translated_file.write(translated_text)
+            line += 1
         return line, None
 
     def convert_text(self, line, text):
@@ -106,11 +135,13 @@ class AHKModel:
         path, line = last_log_values[1], max(0, int(last_log_values[2]) - (1 if last_log_values[4] == '' else 0))
         return path, line
 
+    # Papago API 하루 사용량 확인
     def get_today_capacity(self):
         total_capacity = sum(list(map(lambda x: int(x[3]),
                                       self.read_log(datetime.now().date()))))
         return total_capacity
 
+    # read log
     def read_log(self, date=None):
         with open(self.configure.logs_file_path, 'r') as logs_file:
             logs_lines = logs_file.readlines()[2:]
@@ -128,16 +159,18 @@ class AHKModel:
                 date_log.append(log)
         return date_log
 
+    # log 기록
     def write_log(self, path, line, capacity, error_code=None, date=datetime.now().date()):
         date = date.strftime(self.configure.datetime_format)
         with open(self.configure.logs_file_path, 'a') as logs_file:
             content_list = list(map(lambda x: str(x).strip(), [date, path, line, capacity]))
             line = self.configure.log_split_keyword.join([''] +
                                                          content_list +
-                                                         [str(error_code) if error_code is not None else ''] +
+                                                         [str(error_code) if error_code is not None else '.'] +
                                                          ['']) + '\n'
             logs_file.write(line)
 
+    # translated_file path 변환
     def to_translated_file_path(self, path, to_main_path=False):
         origin_file_path = re.sub(self.configure.translated_markdown, self.configure.origin_markdown, path)
         translated_file_path = re.sub(self.configure.origin_markdown, self.configure.translated_markdown, path)
@@ -145,8 +178,8 @@ class AHKModel:
             if to_main_path \
             else (origin_file_path, translated_file_path)
 
+    # main path로 path 변환
     def to_main_path(self, path):
         return f"{self.configure.to_main_path}/{path}"
-
 
 AHKModel().start()

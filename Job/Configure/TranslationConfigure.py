@@ -29,7 +29,7 @@ class TranslationConfigureKey(StrEnum):
 class TranslationConfigure:
     def __init__(self, test=False):
         if test:
-            with open('Job/Configure/testingTranslationConfigure.json', 'r') as c:
+            with open('../Configure/testingTranslationConfigure.json', 'r') as c:
                 configure = json.load(c)
         else:
             with open('Job/Configure/translationConfigure.json', 'r') as c:
