@@ -1,3 +1,3 @@
 from Job.Translation.AHK import AHKModel
 
-AHKModel().start(True)
+AHKModel().start()
