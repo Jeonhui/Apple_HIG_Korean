@@ -67,3 +67,310 @@ When you use standard components to implement your interface, text and controls 
 
 When you test important user flows with accessibility features turned on, you gain an appreciation for the challenges of interacting with a device in different ways. You also discover places where your app might fail to deliver a great user experience.
 
+When you test important user flows with accessibility features turned on, you gain an appreciation for the challenges of interacting with a device in different ways. You also discover places where your app might fail to deliver a great user experience.
+
+> 접근성 기능이 설정된 상태에서 중요한 사용자 흐름을 테스트하면 다양한 방식으로 장치와 상호 작용하는 문제에 대한 인식을 얻을 수 있습니다. 또한 앱이 훌륭한 사용자 경험을 제공하지 못할 수 있는 장소도 발견할 수 있습니다.
+>
+
+
+
+For example, a common user flow in a social media app might be “post a response to a comment.” The tasks that make up this flow could include:
+
+> 예를 들어, 소셜 미디어 앱의 일반적인 사용자 흐름은 "댓글에 대한 응답 게시"일 수 있다 이 흐름을 구성하는 작업에는 다음이 포함될 수 있습니다:
+>
+
+
+
+* Read posted comments.
+
+* Choose a comment for a response.
+
+> * 응답에 대한 설명을 선택합니다.
+>
+
+* Open the response view.
+
+> * 응답 보기를 엽니다.
+>
+
+* Edit the response.
+
+* Post the response.
+
+
+
+For each critical user flow in your app or game, turn on an accessibility feature, such as VoiceOver, Reduce Motion, or Large Text Size, and make sure that you can complete every task in the flow without difficulty. After you fix the problems you uncover, turn on a different accessibility feature and run through the user flow again. To help you audit, test, and fix your app or game, consider using Xcode’s Accessibility Inspector.
+
+> 앱 또는 게임의 중요한 각 사용자 흐름에 대해 VoiceOver, Reduce Motion 또는 Large Text Size와 같은 접근성 기능을 설정하고 흐름의 모든 작업을 어렵지 않게 완료할 수 있는지 확인합니다. 발견한 문제를 해결한 후 다른 접근성 기능을 설정하고 사용자 흐름을 다시 실행합니다. 앱이나 게임을 감사, 테스트 및 수정하는 데 도움이 되려면 Xcode의 내게 필요한 옵션 관리자를 사용하는 것을 고려해 보십시오.
+>
+
+
+
+[Interactions](/design/human-interface-guidelines/accessibility#Interactions)
+
+-----------------------------------------------------------------------------
+
+
+
+Assistive technologies like VoiceOver, Assistive Touch, Pointer Control, and Switch Control expand the ways people can interact with their devices. Because these technologies integrate with system-provided interactions, it’s essential that you support the system interactions correctly in your app.
+
+> VoiceOver, Assistive Touch, Pointer Control 및 Switch Control과 같은 보조 기술은 사람들이 그들의 장치와 상호작용할 수 있는 방법을 확장한다. 이러한 기술은 시스템 제공 상호 작용과 통합되므로 앱에서 시스템 상호 작용을 올바르게 지원해야 합니다.
+>
+
+
+
+### [Gestures](/design/human-interface-guidelines/accessibility#Gestures)
+
+
+
+**Don’t override the platform gestures.** People expect gestures that target system features — like swiping down to reveal Notification Center — to work regardless of the app they’re using.
+
+> **플랫폼 제스처를 무시하지 마십시오.** 사람들은 Notification Center를 표시하기 위해 아래로 쓸어 내리는 것과 같은 대상 시스템 기능이 사용 중인 앱에 상관없이 작동하기를 기대합니다.
+>
+
+
+
+**Prefer simplified gestures for common interactions.** Complex gestures such as multifinger or multihand gestures, long presses, or gestures that require repeated movements can be challenging for many people. Using the simplest gestures possible improves the experience for everyone who interacts with your app.
+
+> **일반적인 상호작용을 위해 단순한 제스처를 선호합니다.** 멀티핑거나 멀티핸드 제스처, 길게 누르기 또는 반복적인 움직임을 필요로 하는 제스처와 같은 복잡한 제스처는 많은 사람들에게 어려울 수 있다. 가능한 가장 간단한 제스처를 사용하면 앱과 상호 작용하는 모든 사람의 경험이 향상됩니다.
+>
+
+
+
+**Provide alternative ways to perform gesture-based actions.** Include an option for people who may not be able to perform a specific gesture. For example, if people can use a gesture to delete a row in a table, you can also provide a way to delete items through an edit mode or by offering a Delete button in an item detail view.
+
+> **제스처 기반 작업을 수행하는 대체 방법을 제공합니다.** 특정 제스처를 수행할 수 없는 사람을 위한 옵션을 포함합니다. 예를 들어, 사용자가 제스처를 사용하여 테이블의 행을 삭제할 수 있는 경우 편집 모드를 통해 또는 항목 상세 보기에서 삭제 단추를 제공하여 항목을 삭제하는 방법을 제공할 수도 있습니다.
+>
+
+
+
+![An illustration of a list-based app on iPhone. The list is in edit mode, and each list item displays a circular Delete button on the left.](https://docs-assets.developer.apple.com/published/0ef69eb127a1f8225ebbd5ba6786fb63/tap-to-delete@2x.png)Edit to delete.![An illustration of a list-based app on iPhone. The Delete button for the first item is revealed, as if someone swiped the item to the left.](https://docs-assets.developer.apple.com/published/7180d8c6c9a19832cebdfb515b0dbfea/swipe-to-delete@2x.png)Swipe to delete.**When possible, make your app’s core functionality accessible through more than one type of physical interaction.** For example, Camera on iPhone and iPad lets people take a photo by tapping the onscreen button or by pressing the device’s volume down button. In addition to making photo-capture more convenient for everyone, these alternative interactions provide options to people who might have limited grip strength or dexterity.
+
+
+
+**If you define custom gestures, be sure to support assistive technologies that give people alternative ways to interact with your app.** For example, with Pointer Control, people can use a wrist, index finger, or head-based pointer; with Dwell Control, they can use only their eyes to select and activate objects. One way to support technologies like VoiceOver, Dwell Control, and Switch Control is to implement custom actions; for developer guidance, see [`UIAccessibilityCustomAction`](https://developer.apple.com/design/human-interface-guidelines/documentation/uikit/uiaccessibilitycustomaction)
+
+> **사용자 지정 제스처를 정의하는 경우, 사람들에게 앱과 상호 작용할 수 있는 대안적인 방법을 제공하는 보조 기술을 지원해야 합니다.** 예를 들어, 포인터 컨트롤을 사용하면 사람들은 손목, 검지 또는 머리 기반 포인터를 사용할 수 있고, 드웰 컨트롤을 사용하면 눈만 사용하여 객체를 선택하고 활성화할 수 있습니다. VoiceOver, Dwell Control 및 Switch Control과 같은 기술을 지원하는 한 가지 방법은 사용자 지정 작업을 구현하는 것입니다. 개발자 지침은 ['UIA Accessibility CustomAction'](https://developer.apple.com/design/human-interface-guidelines/documentation/uikit/uiaccessibilitycustomaction) 을 참조하십시오
+>
+
+.
+
+
+
+**Make drag and drop accessible in your iOS or iPadOS app.** When you use the accessibility APIs to identify drag sources and drop targets in your app, assistive technologies can help people drag and drop items. For developer guidance, see [`accessibilityDragSourceDescriptors`](https://developer.apple.com/design/human-interface-guidelines/documentation/objectivec/nsobject/2891001-accessibilitydragsourcedescripto)
+
+> **iOS 또는 iPadOS 앱에서 드래그 앤 드롭을 사용할 수 있도록 합니다.** 접근성 API를 사용하여 앱에서 드래그 소스를 식별하고 대상을 드롭할 때 보조 기술을 사용하면 사람들이 항목을 드래그하고 드롭하는 데 도움이 될 수 있습니다. 개발자 지침은 ['접근성 DragSource Descriptors'](https://developer.apple.com/design/human-interface-guidelines/documentation/objectivec/nsobject/2891001-accessibilitydragsourcedescripto) 를 참조하십시오
+>
+
+ and [`accessibilityDropPointDescriptors`](/documentation/objectivec/nsobject/2891048-accessibilitydroppointdescriptor)
+
+.
+
+
+
+### [Buttons and controls](/design/human-interface-guidelines/accessibility#Buttons-and-controls)
+
+
+
+**Give all controls and interactive elements a hit target that’s large enough.** For example, on touchscreen devices, a hit target needs to measure at least 44x44 pt; in visionOS, place controls so that their centers are at least 60 pt apart. People with limited mobility need larger hit targets to help them interact with your app. It can be frustrating to interact with too-small controls in any platform, even when people use a pointer.
+
+> **모든 컨트롤 및 대화형 요소에 충분히 큰 목표치를 부여하십시오.** 예를 들어, 터치스크린 장치에서 히트 대상은 최소 44x44 pt를 측정해야 합니다OS, 중심이 최소 60p 이상 떨어져 있도록 컨트롤을 배치하십시오. 이동성이 제한된 사람들은 당신의 앱과 상호작용하는 것을 돕기 위해 더 큰 목표물이 필요하다. 사람들이 포인터를 사용할 때조차도 어떤 플랫폼에서도 너무 작은 컨트롤과 상호작용하는 것은 좌절감을 줄 수 있다.
+>
+
+
+
+**Characterize the accessibility of custom elements.** You can use system APIs to tell assistive technologies how a component behaves. For example, using [`button`](https://developer.apple.com/design/human-interface-guidelines/documentation/uikit/uiaccessibilitytraits/1620194-button)
+
+> **사용자 지정 요소의 접근성을 특성화합니다.** 시스템 API를 사용하여 보조 기술에 구성 요소의 동작 방식을 알려줄 수 있습니다. 예를 들어 ['버튼'](https://developer.apple.com/design/human-interface-guidelines/documentation/uikit/uiaccessibilitytraits/1620194-button) 을 사용합니다
+>
+
+ or [`NSAccessibilityButton`](/documentation/appkit/nsaccessibilitybutton)
+
+ to characterize a view as a button means that VoiceOver speaks the view’s description followed by the word *button*, which tells people that the view behaves like a button.
+
+> 뷰를 버튼으로 특성화한다는 것은 VoiceOver가 뷰의 설명과 *버튼*이라는 단어를 말하는 것을 의미하며, 이는 뷰가 버튼처럼 동작한다는 것을 사람들에게 알려줍니다.
+>
+
+
+
+**Use a consistent style hierarchy to communicate the relative importance of buttons.** In iOS, iPadOS, and tvOS, for example, you can use the visually prominent filled style for the button that performs the most likely action in a view, using less prominent styles — such as gray or plain — for buttons that perform less important actions. (For developer guidance, see [`UIButton.Configuration`](https://developer.apple.com/design/human-interface-guidelines/documentation/uikit/uibutton/configuration)
+
+> ** 일관된 스타일 계층을 사용하여 단추의 상대적인 중요성을 전달합니다.** 예를 들어 iOS, iPadOS 및 TVOS에서는 보기에서 가장 가능성이 높은 동작을 수행하는 버튼에 시각적으로 두드러지는 채우기 스타일을 사용할 수 있으며, 덜 중요한 동작을 수행하는 버튼에 회색 또는 일반과 같은 덜 두드러지는 스타일을 사용할 수 있습니다. (개발자 안내에 대해서는 [`UIButton]을 참조하십시오.구성'](https://developer.apple.com/design/human-interface-guidelines/documentation/uikit/uibutton/configuration)
+>
+
+.) In visionOS, system-provided buttons generally include a visible background by default. In iOS, iPadOS, visionOS, and for some buttons in macOS, people can also turn on Button Shapes to make it easier to distinguish active buttons from surrounding content.
+
+> .) 비전OS, 시스템 제공 버튼은 일반적으로 기본적으로 보이는 배경을 포함한다. iOS, iPadOS, 비전OS, 그리고 macOS의 일부 버튼의 경우, 사람들은 버튼 모양을 사용하여 활성 버튼과 주변 콘텐츠를 더 쉽게 구분할 수 있습니다.
+>
+
+
+
+**Prefer the system-provided switch component.** SwiftUI provides a switch that indicates its state by the position of its knob and its fill color. For some people, however, the addition of labels makes it easier to perceive whether a switch is on or off. When you use system-provided switches, iOS, iPadOS, tvOS, visionOS, and watchOS automatically display on/off glyphs within them when people turn on On/Off Labels.
+
+> **시스템 제공 스위치 구성 요소를 선호합니다.** 스위프트UI는 노브의 위치와 채우기 색상으로 상태를 나타내는 스위치를 제공합니다. 그러나 어떤 사람들은 라벨을 추가하면 스위치가 켜져 있는지 또는 꺼져 있는지를 더 쉽게 알 수 있습니다. 시스템에서 제공하는 스위치를 사용하는 경우 iOS, iPadOS, tvOS, 비전OS, 그리고 시청OS는 사람들이 온/오프 라벨을 켜면 자동으로 그 안에 온/오프 글리프를 표시한다.
+>
+
+
+
+![An illustration of two switches. The on/off labels are turned off.](https://docs-assets.developer.apple.com/published/a8ffdabefeb92d1f9c364a973ff3a9dc/switches-without-labels@2x.png)Without on/off labels![An illustration of two switches. The on/off labels are turned on.](https://docs-assets.developer.apple.com/published/8020de55fd585edbf1d0733b518a7a7e/switches-with-labels@2x.png)With on/off labels**Consider giving links a visual indicator in addition to color, such as an underline.** It’s fine to use color to identify a link, but if you use it as the only indicator, people — such as those with color blindness or cognitive or situational attention impairments — may not be able to perceive the distinction.
+
+
+
+### [User input](/design/human-interface-guidelines/accessibility#User-input)
+
+
+
+**Let people input information by speaking instead of typing or gesturing.** Adding a dictation button in a text entry field lets people choose speech as their preferred input method. If you create a custom keyboard, be sure to include a microphone key for dictation.
+
+> **사람들이 타자를 치거나 손짓을 하는 대신 말을 통해 정보를 입력하도록 합니다.** 텍스트 입력 필드에 받아쓰기 버튼을 추가하면 사용자가 선호하는 입력 방법으로 음성을 선택할 수 있습니다. 사용자 지정 키보드를 만드는 경우 받아쓰기용 마이크 키를 포함해야 합니다.
+>
+
+
+
+**Support Siri or Shortcuts for performing important tasks by voice alone.** To learn more about helping people use Siri interactions in your app, see [Siri](https://developer.apple.com/design/human-interface-guidelines/design/human-interface-guidelines/siri)
+
+> **중요한 작업을 음성으로만 수행할 수 있는 Siri 또는 바로 가기를 지원합니다.** 앱에서 사람들이 Siri 상호작용을 사용할 수 있도록 돕는 방법에 대한 자세한 내용은 [Siri](https://developer.apple.com/design/human-interface-guidelines/design/human-interface-guidelines/siri) 를 참조하십시오
+>
+
+.
+
+
+
+**When possible, don’t prevent people from selecting plain text.** Many people rely on using selected text as input for translations and definitions.
+
+> **가능한 경우, 사람들이 일반 텍스트를 선택하는 것을 막지 마십시오.** 많은 사람들이 번역과 정의를 위한 입력으로 선택된 텍스트를 사용하는 것에 의존합니다.
+>
+
+
+
+### [Haptics](/design/human-interface-guidelines/accessibility#Haptics)
+
+
+
+**Support the system-defined haptics where available.** Many people rely on haptics to help them interact with apps when they can’t see the display. For example, system apps play haptics to notify people when a task has succeeded or failed or when an event is about to happen. Be sure to use the system-defined haptics consistently in your app so that you don’t confuse people. For guidance, see [Playing haptics](https://developer.apple.com/design/human-interface-guidelines/design/human-interface-guidelines/playing-haptics)
+
+> **사용 가능한 경우 시스템 정의 햅틱을 지원합니다.** 많은 사람들이 디스플레이를 볼 수 없을 때 앱과 상호작용하는 것을 돕기 위해 햅틱에 의존한다. 예를 들어, 시스템 앱은 작업이 성공 또는 실패했을 때 또는 이벤트가 발생하려고 할 때 사람들에게 알리기 위해 햅틱을 재생한다. 사람들을 혼란스럽게 하지 않도록 앱에서 시스템 정의 햅틱을 일관되게 사용해야 한다. 자세한 내용은 [Haptics 플레이하기](https://developer.apple.com/design/human-interface-guidelines/design/human-interface-guidelines/playing-haptics) 를 참조하십시오
+>
+
+.
+
+
+
+Note
+
+
+
+In platforms that don’t play haptics, use other ways to provide feedback when people interact with custom objects, such as sound.
+
+> 햅틱을 재생하지 않는 플랫폼에서는 사람들이 소리와 같은 사용자 정의 객체와 상호 작용할 때 다른 방법을 사용하여 피드백을 제공한다.
+>
+
+
+
+[VoiceOver](/design/human-interface-guidelines/accessibility#VoiceOver)
+
+-----------------------------------------------------------------------
+
+
+
+VoiceOver gives audible descriptions of visible content, helping people get information and navigate when they can’t see the display. In visionOS, VoiceOver uses Spatial Audio to help communicate the location of accessible objects.
+
+> VoiceOver는 표시된 콘텐츠에 대한 청각적 설명을 제공하여 사람들이 디스플레이를 볼 수 없을 때 정보를 얻고 탐색할 수 있도록 도와줍니다. 시야에OS, VoiceOver는 Spatial Audio를 사용하여 접근 가능한 객체의 위치를 전달하는 데 도움이 됩니다.
+>
+
+
+
+Important
+
+
+
+When VoiceOver is on in visionOS, apps that define custom gestures don’t receive hand input by default. Instead, people can perform VoiceOver gestures to explore apps without worrying about an app interpreting their hand input. In VoiceOver’s Direct Gesture mode, VoiceOver doesn’t process its standard gestures, instead letting an app process hand input directly. For developer guidance, see [Improving accessibility support in your visionOS app](https://developer.apple.com/design/human-interface-guidelines/documentation/visionOS/improving-accessibility-support-in-your-app)
+
+> 비전에서 VoiceOver가 켜져 있을 때사용자 지정 제스처를 정의하는 앱인 OS는 기본적으로 손 입력을 받지 않습니다. 대신, 사람들은 자신의 손 입력을 해석하는 앱에 대한 걱정 없이 앱을 탐색하기 위해 보이스 오버 제스처를 수행할 수 있다. 보이스오버의 직접 제스처 모드에서 보이스오버는 표준 제스처를 처리하지 않고 앱이 직접 손 입력을 처리하도록 합니다. 개발자 지침은 [비전 내 접근성 지원 향상]을 참조하십시오OS 앱](https://developer.apple.com/design/human-interface-guidelines/documentation/visionOS/improving-accessibility-support-in-your-app)
+>
+
+.
+
+
+
+### [Content descriptions](/design/human-interface-guidelines/accessibility#Content-descriptions)
+
+
+
+**Provide alternative descriptions for all images that convey meaning.** If you don’t describe the meaningful images in your content, you prevent VoiceOver users from fully experiencing your app. To create a useful description, start by reporting what would be self-explanatory to someone who is able to see the image. Because VoiceOver reads the text surrounding the image and any captions, focus your description on information that’s conveyed by the image itself.
+
+> **의미를 전달하는 모든 이미지에 대한 대체 설명을 제공합니다.** 콘텐츠의 의미 있는 이미지를 설명하지 않으면 VoiceOver 사용자가 앱을 완전히 경험하지 못하도록 합니다. 유용한 설명을 작성하려면 먼저 이미지를 볼 수 있는 사용자에게 설명이 필요한 내용을 보고하십시오. VoiceOver는 이미지와 캡션을 둘러싼 텍스트를 읽으므로 이미지 자체가 전달하는 정보에 설명을 집중하십시오.
+>
+
+
+
+![A partial screenshot of a summary screen in the Activity app on iPhone. The activity rings element has a frame around it, representing the active element in VoiceOver.](https://docs-assets.developer.apple.com/published/c6b54e401411a6488486e5b960f05ab5/image-with-alt-text@2x.png)The alternative description for this element is “Moving: 125 percent; Exercise: zero percent; Standing: 58 percent.”**Make infographics fully accessible.** Provide a concise description of the infographic that explains what it conveys. If people can interact with the infographic to get more or different information, you need to make these interactions available to VoiceOver users, too. The accessibility APIs provide ways to represent custom interactive elements so that assistive technologies can help people use them.
+
+
+
+**When an image is purely decorative and isn’t intended to communicate anything important, hide it from assistive technologies.** Making VoiceOver describe a purely decorative image can waste people’s time and add to their cognitive load without providing any benefit.
+
+> **이미지가 순수하게 장식적이고 중요한 정보를 전달하기 위한 것이 아닐 때는 보조 기술로부터 숨깁니다.** VoiceOver가 순수하게 장식적인 이미지를 묘사하도록 만드는 것은 사람들의 시간을 낭비하고 어떠한 이점도 제공하지 않으면서 그들의 인지 부하를 가중시킬 수 있다.
+>
+
+
+
+**Give each page a unique title and provide headings that identify sections in your information hierarchy.** When people arrive on a page, the title is the first piece of information they receive from an assistive technology. To help people understand the structure of your app, create a unique title for each page that succinctly describes its contents or purpose. Similarly, people need accurate section headings to help them build a mental map of the information hierarchy of each page.
+
+> **각 페이지에 고유한 제목을 지정하고 정보 계층의 섹션을 식별하는 제목을 지정합니다.** 사람들이 페이지에 도착하면, 제목은 보조 기술로부터 받는 첫 번째 정보입니다. 앱의 구조를 사람들이 이해할 수 있도록 도와주려면, 앱의 내용이나 목적을 간결하게 설명하는 각 페이지에 대한 고유한 제목을 만드십시오. 마찬가지로, 사람들은 각 페이지의 정보 계층에 대한 마인드 맵을 구축하는 데 도움이 되는 정확한 섹션 제목이 필요하다.
+>
+
+
+
+**Help everyone enjoy your video and audio content.** When you provide closed captions, audio descriptions, and transcripts, you can help people benefit from audio and video content in ways that work for them.
+
+> **모두가 비디오 및 오디오 컨텐츠를 즐길 수 있도록 도와주세요.** 폐쇄 캡션, 오디오 설명 및 스크립트를 제공하면 사용자에게 적합한 방식으로 오디오 및 비디오 컨텐츠의 이점을 제공할 수 있습니다.
+>
+
+
+
+*Closed captions* give people a textual equivalent for the audible information in a video. You can also use closed captions to provide multiple translations for the same content, letting the system choose the version that matches the device’s current settings. Because closed captions aren’t always available, it’s important to provide subtitles, too.
+
+> *폐쇄 캡션*은 사람들에게 동영상의 청각적 정보에 해당하는 텍스트를 제공합니다. 또한 폐쇄 캡션을 사용하여 동일한 콘텐츠에 대해 여러 개의 번역을 제공하여 시스템이 장치의 현재 설정과 일치하는 버전을 선택할 수 있습니다. 닫힌 캡션을 항상 사용할 수 있는 것은 아니기 때문에 자막을 제공하는 것도 중요합니다.
+>
+
+
+
+*Audio descriptions* provide a spoken narration of important information that’s presented only visually.
+
+> *오디오 설명*은 시각적으로만 제공되는 중요한 정보의 음성 내레이션을 제공합니다.
+>
+
+
+
+A *transcript* provides a complete textual description of a video, covering both audible and visual information, so that people can enjoy the video in different ways.
+
+> *스크립트*는 청각적 정보와 시각적 정보를 모두 포함하는 동영상에 대한 완전한 텍스트 설명을 제공하여 사람들이 다양한 방식으로 동영상을 즐길 수 있도록 한다.
+>
+
+
+
+For developer guidance, see [Selecting Subtitles and Alternative Audio Tracks](https://developer.apple.com/design/human-interface-guidelines/documentation/avfoundation/media_playback/selecting_subtitles_and_alternative_audio_tracks)
+
+> 개발자 안내는 [자막 및 대체 오디오 트랙 선택](https://developer.apple.com/design/human-interface-guidelines/documentation/avfoundation/media_playback/selecting_subtitles_and_alternative_audio_tracks) 을 참조하십시오
+>
+
+.
+
+
+
+### [Navigation](/design/human-interface-guidelines/accessibility#Navigation)
+
+
+
+**Make sure VoiceOver users can navigate to every element.** VoiceOver uses accessibility information from UI elements to help people understand the location of each element and what it can do. System-provided UI components include this accessibility information by default, but VoiceOver can’t help people discover and use custom elements unless you provide the information. For developer guidance, see [Accessibility modifiers](https://developer.apple.com/design/human-interface-guidelines/documentation/SwiftUI/View-Accessibility)
+
+> **VoiceOver 사용자가 모든 요소를 탐색할 수 있는지 확인합니다.** VoiceOver는 UI 요소의 접근성 정보를 사용하여 사람들이 각 요소의 위치와 기능을 이해할 수 있도록 도와줍니다. 시스템 제공 UI 구성 요소에는 기본적으로 이 접근성 정보가 포함되어 있지만, 사용자가 정보를 제공하지 않는 한 VoiceOver는 사용자 지정 요소를 검색하고 사용하는 데 도움이 되지 않습니다. 개발자 지침은 [접근성 수식어](https://developer.apple.com/design/human-interface-guidelines/documentation/SwiftUI/View-Accessibility) 를 참조하십시오
+>
+
+.
+
+
+
+**Improve the VoiceOver experience by specifying how elements are grouped, ordered, or linked.** Proximity, alignment, and other contextual cues can help sighted people perceive the relationships among visible elements, but these cues don’t work well for VoiceOver users. Examine your app for places where relationships among elements are visual only, and describe these relationships to VoiceOver.
+
