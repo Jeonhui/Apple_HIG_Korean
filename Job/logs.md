@@ -11,3 +11,4 @@
 |2023-08-12 00:00|./human-interface-guidelines-markdown/foundations.md|21|0|.|
 |2023-08-12 00:00|./human-interface-guidelines-markdown/foundations/accessibility.md|25|0|1|
 |2023-08-13 00:00|./human-interface-guidelines-markdown/foundations/accessibility.md|128|0|1|
+|2023-08-14 00:00|./human-interface-guidelines-markdown/foundations/accessibility.md|223|0|1|
