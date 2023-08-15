@@ -659,3 +659,139 @@ For example, the layout below relies on proximity and centering to imply that ea
 
 For additional guidance on helping people remain comfortable while they experience motion in your visionOS app, see [Motion > visionOS](/design/human-interface-guidelines/motion#visionOS)
 
+For additional guidance on helping people remain comfortable while they experience motion in your visionOS app, see [Motion > visionOS](/design/human-interface-guidelines/motion#visionOS)
+
+> 사용자가 시야에서 움직임을 경험하는 동안 사람들이 편안하게 지낼 수 있도록 지원하는 방법에 대한 추가 안내OS 앱, [모션] > vision OS](/design/human-interface-guideline/motion#vision 참조)OS)
+>
+
+. For developer guidance, see [Improving accessibility support in your visionOS app](https://developer.apple.com/design/human-interface-guidelines/documentation/visionOS/improving-accessibility-support-in-your-app)
+
+> . 개발자 지침은 [비전 내 접근성 지원 향상]을 참조하십시오OS 앱](https://developer.apple.com/design/human-interface-guidelines/documentation/visionOS/improving-accessibility-support-in-your-app)
+>
+
+.
+
+
+
+[Platform considerations](/design/human-interface-guidelines/accessibility#Platform-considerations)
+
+---------------------------------------------------------------------------------------------------
+
+
+
+*No additional considerations for iOS, iPadOS, macOS, tvOS, or watchOS.*
+
+> *iOS, iPadOS, macOS, tvOS 또는 시계에 대한 추가 고려 사항 없음OS.*
+>
+
+
+
+### [visionOS](/design/human-interface-guidelines/accessibility#visionOS)
+
+
+
+**Avoid anchoring content to the wearer’s head.** In addition to making people feel stuck or confined, anchoring content to their can prevent someone from using Pointer Control to interact with that content. Head-anchored content can also prevent people with low vision from reading it because they can’t move closer to it or position the content inside the Zoom lens.
+
+> ** 착용자의 머리에 내용물을 고정하지 마십시오.** 사람들이 막혔거나 갇힌 느낌을 갖게 할 뿐만 아니라 내용을 앵커링하면 포인터 컨트롤을 사용하여 해당 내용과 상호 작용하는 것을 방지할 수 있습니다. 머리 고정 콘텐츠는 더 가까이 이동하거나 줌 렌즈 안에 콘텐츠를 위치시킬 수 없기 때문에 시력이 낮은 사람이 읽지 못하도록 할 수도 있습니다.
+>
+
+
+
+* [Pointer control - hand](#)
+
+> * [포인터 컨트롤 - 핸드](#)
+>
+
+* [Pointer control - head](#)
+
+> * [포인터 컨트롤 - 헤드](#)
+>
+
+* [Zoom lens](#)
+
+ [Play](#) 
+
+ [Play](#) 
+
+![A screenshot of an app's window in visionOS. A zoom lens is visible above a portion of the window, and displays a zoomed-in version of the content beneath the lens.](https://docs-assets.developer.apple.com/published/82d9878af5b6517724653da73d20b14b/visionos-accessibility-zoom-lens@2x.png)
+
+
+
+[Resources](/design/human-interface-guidelines/accessibility#Resources)
+
+-----------------------------------------------------------------------
+
+
+
+#### [Related](/design/human-interface-guidelines/accessibility#Related)
+
+
+
+[Inclusion](/design/human-interface-guidelines/inclusion)
+
+
+
+
+
+#### [Developer documentation](/design/human-interface-guidelines/accessibility#Developer-documentation)
+
+
+
+[Accessibility](/documentation/accessibility)
+
+
+
+
+
+[Accessibility for developers](https://developer.apple.com/accessibility/)
+
+
+
+
+
+[Accessibility modifiers](/documentation/SwiftUI/View-Accessibility)
+
+
+
+
+
+[Accessibility for UIKit](/documentation/uikit/accessibility_for_uikit)
+
+
+
+
+
+[Accessibility for AppKit](/documentation/appkit/accessibility_for_appkit)
+
+
+
+
+
+#### [Videos](/design/human-interface-guidelines/accessibility#Videos)
+
+
+
+[![](https://devimages-cdn.apple.com/wwdc-services/images/D35E0E85-CCB6-41A1-B227-7995ECD83ED5/D1866B0D-617B-4A78-A645-915F82BC0B78/8062_wide_250x141_1x.jpg) Create accessible spatial experiences](https://developer.apple.com/videos/play/wwdc2023/10034) 
+
+[![](https://devimages-cdn.apple.com/wwdc-services/images/D35E0E85-CCB6-41A1-B227-7995ECD83ED5/2C47B638-090D-4CBB-9E9E-EBE8114536D9/8132_wide_250x141_1x.jpg) Design considerations for vision and motion](https://developer.apple.com/videos/play/wwdc2023/10078) 
+
+[![](https://devimages-cdn.apple.com/wwdc-services/images/119/90B67086-3A99-49A5-965A-D35DB6552AE0/5206_wide_250x141_1x.jpg) The practice of inclusive design](https://developer.apple.com/videos/play/wwdc2021/10275) 
+
+[Change log](/design/human-interface-guidelines/accessibility#Change-log)
+
+-------------------------------------------------------------------------
+
+
+
+
+
+
+
+| Date | Changes |
+
+| --- | --- |
+
+| June 21, 2023 | Updated to include guidance for visionOS. |
+
+
+
