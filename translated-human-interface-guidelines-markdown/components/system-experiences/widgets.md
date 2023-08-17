@@ -135,3 +135,262 @@ To make sure images look great in the vibrant rendering mode:
 
 *No additional considerations for macOS. Not supported in tvOS or visionOS.*
 
+*No additional considerations for macOS. Not supported in tvOS or visionOS.*
+
+> *macOS에 대한 추가 고려 사항 없음. TVOS 또는 비전에서 지원되지 않음OS.*
+>
+
+
+
+### [iOS and iPadOS](/design/human-interface-guidelines/widgets#iOS-and-iPadOS)
+
+
+
+Widgets on the Lock Screen are functionally similar to watch complications and follow design principles for [Complications](https://developer.apple.com/design/human-interface-guidelines/design/human-interface-guidelines/complications)
+
+> 잠금 화면의 위젯은 기능적으로 [Complexions](https://developer.apple.com/design/human-interface-guidelines/design/human-interface-guidelines/complications) 의 설계 원리를 따르고 복잡한 문제를 관찰하는 것과 유사합니다
+>
+
+ in addition to design principles for widgets. Both support Always-On displays and emphasize glanceable content within their limited space. Provide useful information in your Lock Screen widget, and don’t treat it only as an additional way for people to launch into your app. Additionally, the vibrant rendering mode that widgets on the Lock Screen use is similar to the accented rendering mode for watch complications because they both communicate information without relying on color only. In many cases, a design for complications also works well for widgets on the Lock Screen (and vice versa), so consider creating them in tandem.
+
+> 또한 위젯에 대한 설계 원칙도 포함됩니다. 두 제품 모두 상시 디스플레이를 지원하며 제한된 공간 내에서 눈에 띄는 콘텐츠를 강조합니다. 잠금 화면 위젯에서 유용한 정보를 제공하고, 사용자가 앱을 실행하기 위한 추가 방법으로만 취급하지 마십시오. 또한, 잠금 화면에서 위젯을 사용하는 선명한 렌더링 모드는 색상에만 의존하지 않고 정보를 전달하기 때문에 시계 문제에 대한 악센트 렌더링 모드와 유사하다. 대부분의 경우 복잡한 설계는 잠금 화면의 위젯에도 잘 작동하므로 함께 만드는 것을 고려해 보십시오.
+>
+
+
+
+Your app can offer widgets on the Lock Screen in three different shapes: as inline text that appears above the clock, and as circular and rectangular shapes that appear below the clock.
+
+> 잠금 화면의 위젯은 시계 위에 나타나는 인라인 텍스트와 시계 아래에 나타나는 원형 및 직사각형 모양의 세 가지 모양으로 제공할 수 있습니다.
+>
+
+
+
+![A partial screenshot of the Lock Screen on iPhone that shows three Weather widgets below the time. From the left, the widgets are an inline text widget and two circular widgets.](https://docs-assets.developer.apple.com/published/a823acc4c31f5a7483d116321d45755b/weather-widget-lock-screen@2x.png)### [iOS](/design/human-interface-guidelines/widgets#iOS)
+
+
+
+**Support Always-On display.** Devices with Always-On display render widgets on the Lock Screen with reduced luminance. Use levels of gray that provide enough contrast in Always-On display, and make sure your content is legible.
+
+> **상시 지원 디스플레이.** Always-On 디스플레이가 있는 장치는 잠금 화면의 위젯을 감소된 휘도로 렌더링합니다. 상시 디스플레이에서 충분한 대비를 제공하는 회색 수준을 사용하고 콘텐츠를 읽을 수 있는지 확인합니다.
+>
+
+
+
+For developer guidance, see [Creating accessory widgets and watch complications](https://developer.apple.com/design/human-interface-guidelines/documentation/WidgetKit/Creating-accessory-widgets-and-watch-complications)
+
+> 개발자 지침은 [액세서리 위젯 작성 및 복잡도 감시](https://developer.apple.com/design/human-interface-guidelines/documentation/WidgetKit/Creating-accessory-widgets-and-watch-complications) 를 참조하십시오
+>
+
+, [WidgetRenderingMode](https://developer.apple.com/documentation/widgetkit/WidgetRenderingMode)
+
+, and [vibrant](https://developer.apple.com/documentation/widgetkit/WidgetRenderingMode/vibrant)
+
+.
+
+
+
+### [watchOS](/design/human-interface-guidelines/widgets#watchOS)
+
+
+
+**Provide a colorful background that conveys meaning.** By default, widgets in the Smart Stack use a black background. Consider using a custom color that provides additional meaning. For example, the Stocks app uses a red background for falling stock values and a green background if a stock’s value rises.
+
+> **의미를 전달하는 다채로운 배경을 제공합니다.** 기본적으로 스마트 스택의 위젯은 검은색 배경을 사용합니다. 추가적인 의미를 제공하는 사용자 정의 색상을 사용하는 것을 고려해 보십시오. 예를 들어, 주식 앱은 주식 가치 하락에 빨간색 배경을 사용하고 주식 가치가 상승할 경우 녹색 배경을 사용한다.
+>
+
+
+
+[Specifications](/design/human-interface-guidelines/widgets#Specifications)
+
+---------------------------------------------------------------------------
+
+
+
+As you design your widgets, use the following values for guidance.
+
+> 위젯을 설계할 때 다음 값을 사용하여 지침을 제공합니다.
+>
+
+
+
+### [iOS widget dimensions](/design/human-interface-guidelines/widgets#iOS-widget-dimensions)
+
+
+
+
+
+
+
+| Screen size (portrait, pt) | Small (pt) | Medium (pt) | Large (pt) | Circular (pt) | Rectangular (pt) | Inline (pt) |
+
+| --- | --- | --- | --- | --- | --- | --- |
+
+| 430×932 | 170x170 | 364x170 | 364x382 | 76x76 | 172x76 | 257x26 |
+
+| 428x926 | 170x170 | 364x170 | 364x382 | 76x76 | 172x76 | 257x26 |
+
+| 414x896 | 169x169 | 360x169 | 360x379 | 76x76 | 160x72 | 248x26 |
+
+| 414x736 | 159x159 | 348x157 | 348x357 | 76x76 | 170x76 | 248x26 |
+
+| 393x852 | 158x158 | 338x158 | 338x354 | 72x72 | 160x72 | 234x26 |
+
+| 390x844 | 158x158 | 338x158 | 338x354 | 72x72 | 160x72 | 234x26 |
+
+| 375x812 | 155x155 | 329x155 | 329x345 | 72x72 | 157x72 | 225x26 |
+
+| 375x667 | 148x148 | 321x148 | 321x324 | 68x68 | 153x68 | 225x26 |
+
+| 360x780 | 155x155 | 329x155 | 329x345 | 72x72 | 157x72 | 225x26 |
+
+| 320x568 | 141x141 | 292x141 | 292x311 | N/A | N/A | N/A |
+
+
+
+### [iPadOS widget dimensions](/design/human-interface-guidelines/widgets#iPadOS-widget-dimensions)
+
+
+
+
+
+
+
+| Screen size (portrait, pt) | Target | Small (pt) | Medium (pt) | Large (pt) | Extra large (pt) |
+
+| --- | --- | --- | --- | --- | --- |
+
+| 768x1024 | Canvas | 141x141 | 305.5x141 | 305.5x305.5 | 634.5x305.5 |
+
+| Device | 120x120 | 260x120 | 260x260 | 540x260 |
+
+| 744x1133 | Canvas | 141x141 | 305.5x141 | 305.5x305.5 | 634.5x305.5 |
+
+| Device | 120x120 | 260x120 | 260x260 | 540x260 |
+
+| 810x1080 | Canvas | 146x146 | 320.5x146 | 320.5x320.5 | 669x320.5 |
+
+| Device | 124x124 | 272x124 | 272x272 | 568x272 |
+
+| 820x1180 | Canvas | 155x155 | 342x155 | 342x342 | 715.5x342 |
+
+| Device | 136x136 | 300x136 | 300x300 | 628x300 |
+
+| 834x1112 | Canvas | 150x150 | 327.5x150 | 327.5x327.5 | 682x327.5 |
+
+| Device | 132x132 | 288x132 | 288x288 | 600x288 |
+
+| 834x1194 | Canvas | 155x155 | 342x155 | 342x342 | 715.5x342 |
+
+| Device | 136x136 | 300x136 | 300x300 | 628x300 |
+
+| 954x1373 \* | Canvas | 162x162 | 350x162 | 350x350 | 726x350 |
+
+| Device | 162x162 | 350x162 | 350x350 | 726x350 |
+
+| 970x1389 \* | Canvas | 162x162 | 350x162 | 350x350 | 726x350 |
+
+| Device | 162x162 | 350x162 | 350x350 | 726x350 |
+
+| 1024x1366 | Canvas | 170x170 | 378.5x170 | 378.5x378.5 | 795x378.5 |
+
+| Device | 160x160 | 356x160 | 356x356 | 748x356 |
+
+| 1192x1590 \* | Canvas | 188x188 | 412x188 | 412x412 | 860x412 |
+
+| Device | 188x188 | 412x188 | 412x412 | 860x412 |
+
+
+
+\* When Display Zoom is set to More Space.
+
+> \* Display Zoom(디스플레이 줌)이 More Space(추가 공간)로 설정된 경우.
+>
+
+
+
+### [watchOS widget dimensions](/design/human-interface-guidelines/widgets#watchOS-widget-dimensions)
+
+
+
+
+
+
+
+| Apple Watch size | Size of a widget in the Smart Stack (pts) |
+
+| --- | --- |
+
+| 40mm | 304x139 |
+
+| 41mm | 330x145 |
+
+| 44mm | 346x153 |
+
+| 45mm | 368x161 |
+
+| 49mm | 382x163 |
+
+
+
+[Resources](/design/human-interface-guidelines/widgets#Resources)
+
+-----------------------------------------------------------------
+
+
+
+#### [Related](/design/human-interface-guidelines/widgets#Related)
+
+
+
+[Layout](/design/human-interface-guidelines/layout)
+
+
+
+
+
+#### [Developer documentation](/design/human-interface-guidelines/widgets#Developer-documentation)
+
+
+
+[WidgetKit](/documentation/WidgetKit)
+
+
+
+
+
+[Developing a WidgetKit strategy](/documentation/WidgetKit/Developing-a-WidgetKit-strategy)
+
+
+
+
+
+#### [Videos](/design/human-interface-guidelines/widgets#Videos)
+
+
+
+[![](https://devimages-cdn.apple.com/wwdc-services/images/D35E0E85-CCB6-41A1-B227-7995ECD83ED5/5631C647-3158-42F6-A1D3-50566815A1BB/8056_wide_250x141_1x.jpg) Bring widgets to life](https://developer.apple.com/videos/play/wwdc2023/10028) 
+
+[![](https://devimages-cdn.apple.com/wwdc-services/images/D35E0E85-CCB6-41A1-B227-7995ECD83ED5/D21F46FB-1BFA-479D-B9DD-71C620C5E482/8055_wide_250x141_1x.jpg) Bring widgets to new places](https://developer.apple.com/videos/play/wwdc2023/10027) 
+
+[![](https://devimages-cdn.apple.com/wwdc-services/images/119/079B9406-40CE-48BA-88DC-21BCA7841674/4938_wide_250x141_1x.jpg) Principles of great widgets](https://developer.apple.com/videos/play/wwdc2021/10048) 
+
+[Change log](/design/human-interface-guidelines/widgets#Change-log)
+
+-------------------------------------------------------------------
+
+
+
+
+
+
+
+| Date | Changes |
+
+| --- | --- |
+
+| June 5, 2023 | Updated guidance to include widgets in watchOS, widgets on the iPad Lock Screen, and updates for iOS 17, iPadOS 17, and macOS 14. |
+
+| November 3, 2022 | Added guidance for widgets on the iPhone Lock Screen and updated design comprehensives for iPhone 14, iPhone 14 Pro, and iPhone 14 Pro Max. |
+
+
+
