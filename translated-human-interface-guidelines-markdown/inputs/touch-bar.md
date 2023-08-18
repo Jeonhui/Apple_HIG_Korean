@@ -765,3 +765,270 @@ Collapsed popovers open when people tap them. Optionally, popovers can also open
 
 For developer guidance, see [`NSPopoverTouchBarItem`](https://developer.apple.com/design/human-interface-guidelines/documentation/appkit/nspopovertouchbaritem)
 
+For developer guidance, see [`NSPopoverTouchBarItem`](https://developer.apple.com/design/human-interface-guidelines/documentation/appkit/nspopovertouchbaritem)
+
+> 개발자 지침은 [`NSPopover]를 참조하십시오터치바 아이템'](https://developer.apple.com/design/human-interface-guidelines/documentation/appkit/nspopovertouchbaritem)
+>
+
+.
+
+
+
+### [Scrubbers](/design/human-interface-guidelines/touch-bar#Scrubbers)
+
+
+
+A scrubber lets people swipe left and right to navigate through content like a list of dates or a group of photos. Scrubbers can be fixed or free, and are highly customizable — but need to retain an appearance that doesn’t feel out of place in the Touch Bar.
+
+> 스크러버는 사람들이 왼쪽과 오른쪽으로 스와이프하여 날짜 목록이나 사진 그룹과 같은 내용을 탐색할 수 있도록 해줍니다. 스크러버는 고정 또는 무료로 사용할 수 있으며 사용자 정의가 매우 용이하지만 터치 바에서 어색하지 않은 외관을 유지해야 합니다.
+>
+
+
+
+For developer guidance, see [`NSScrubber`](https://developer.apple.com/design/human-interface-guidelines/documentation/appkit/nsscrubber)
+
+> 개발자 안내는 ['NSCruber'](https://developer.apple.com/design/human-interface-guidelines/documentation/appkit/nsscrubber) 를 참조하십시오
+>
+
+.
+
+
+
+#### [Fixed scrubbers](/design/human-interface-guidelines/touch-bar#Fixed-scrubbers)
+
+
+
+A fixed scrubber allows for fluid, continuous interaction with a set of arranged content, such as open Safari tabs. As people swipe across the scrubber, items beneath their finger become highlighted. Depending on the scrubber’s configuration, people make a selection by moving a finger to the item, or by lifting their finger from the scrubber. If the amount of content exceeds the size of a fixed scrubber, the scrubber automatically scrolls to reveal additional items as the finger nears the edge of the control. In a fixed scrubber, people use a finger to move the selection, rather than the content.
+
+> 고정 스크러버를 사용하면 열려 있는 Safari 탭과 같이 배열된 컨텐츠 집합과 유동적이고 지속적으로 상호 작용할 수 있습니다. 사람들이 수세미를 가로질러 미끄러지면서 손가락 밑에 있는 물건들이 강조됩니다. 스크러버의 구성에 따라 사람들은 항목으로 손가락을 움직이거나 스크러버에서 손가락을 들어 올려 선택합니다. 콘텐츠의 양이 고정된 스크러버의 크기를 초과하면 손가락이 컨트롤의 가장자리에 가까워지면 스크러버가 자동으로 스크롤하여 추가 항목을 표시합니다. 고정된 스크러버에서 사람들은 콘텐츠가 아닌 손가락을 사용하여 선택 영역을 이동합니다.
+>
+
+
+
+![Screenshot of a Touch Bar that highlights a fixed scrubber. The six items in the scrubber are six different Safari pages. The third item from the left is selected.](https://docs-assets.developer.apple.com/published/9e67256da4a516b4031cb59583aa376a/tb-cv-fixed-scrubber@2x.png)
+
+
+
+#### [Free scrubbers](/design/human-interface-guidelines/touch-bar#Free-scrubbers)
+
+
+
+A free scrubber presents content in a scrollable list — such as a list of Calendar dates — that people swipe to scroll. Depending on the scrubber’s configuration, people select an item by moving it to a specific location, like the center of the scrubber, or by tapping the item while the scrubber is stationary.
+
+> 무료 스크러버는 일정관리 날짜 목록과 같은 스크롤 가능한 목록에 사용자가 스크롤하기 위해 스와이프하는 내용을 표시합니다. 스크러버의 구성에 따라 사람들은 스크러버의 중앙과 같은 특정 위치로 항목을 이동하거나 스크러버가 정지된 상태에서 항목을 탭하여 항목을 선택합니다.
+>
+
+
+
+**Use predictable and logically ordered values.** When the scrollable list in a free scrubber is stationary, some values may be hidden. If the list displays items in a logical order that follows an obvious progression, people can predict the hidden values and move through the list quickly. When viewing a list of country or region names, for example, people are generally better at predicting hidden values in an alphabetized list than in a list ordered by population size.
+
+> **예측 가능하고 논리적으로 순서가 지정된 값을 사용합니다.** 자유 스크러버에서 스크롤 가능한 목록이 고정되어 있으면 일부 값이 숨겨질 수 있습니다. 목록이 명확한 진행률을 따르는 논리적 순서로 항목을 표시하면, 사람들은 숨겨진 값을 예측하고 목록을 빠르게 이동할 수 있다. 예를 들어, 국가 또는 지역 이름 목록을 볼 때, 사람들은 일반적으로 인구 크기에 따라 순서가 정해진 목록보다 알파벳순으로 정렬된 목록에서 숨겨진 값을 더 잘 예측한다.
+>
+
+
+
+**Keep lists of values as short as possible.** People can find it tedious to navigate long lists in the Touch Bar. If you have a large list of values, consider presenting it on the main screen instead of the Touch Bar, so people can use the keyboard or trackpad for navigation.
+
+> **값 목록을 최대한 짧게 유지하십시오.** 사람들은 터치 바에서 긴 목록을 탐색하는 것이 지루하다고 느낄 수 있다. 값 목록이 많은 경우 키보드 또는 트랙패드를 탐색에 사용할 수 있도록 터치 바 대신 주 화면에 표시하는 것을 고려해 보십시오.
+>
+
+
+
+### [Segmented controls](/design/human-interface-guidelines/touch-bar#Segmented-controls)
+
+
+
+A segmented control is a linear set of two or more segments, each of which functions as a button — usually configured as a toggle. Within the control, all segments are equal in width. Like buttons, segments can contain text and icons.
+
+> 세그먼트 컨트롤은 두 개 이상의 세그먼트로 구성된 선형 세트이며, 각 세그먼트는 버튼으로 기능합니다(일반적으로 토글로 구성됩니다). 컨트롤 내에서 모든 세그먼트의 너비는 동일합니다. 버튼과 마찬가지로 세그먼트에는 텍스트와 아이콘이 포함될 수 있습니다.
+>
+
+
+
+![Partial screenshot of a Touch Bar that highlights a text justification segmented control that contains four segments.](https://docs-assets.developer.apple.com/published/f152dceafdacc50e16eed80f4c3a02a4/tb-cv-segmented-controls@2x.png)
+
+
+
+**Limit the number of segments to improve usability.** Wider segments are easier for people to tap.
+
+> **사용성을 향상시키기 위해 세그먼트 수를 제한합니다.** 더 넓은 부분은 사람들이 탭하기에 더 쉽다.
+>
+
+
+
+**Prefer icons over titles.** Strive to design clear icons that stand on their own without requiring supporting text.
+
+> **제목보다 아이콘을 선호합니다.** 지원 텍스트 없이 스스로 서 있는 명확한 아이콘을 디자인하기 위해 노력합니다.
+>
+
+
+
+**Try to keep segment content size consistent.** Because segments match in width, it’s visually coherent if the content in the segments is also equal in length.
+
+> **세그먼트 콘텐츠 크기를 일관되게 유지하도록 노력하십시오.** 세그먼트는 너비가 일치하므로 세그먼트의 내용도 길이가 같으면 시각적으로 일관성이 있습니다.
+>
+
+
+
+**Keep titles short.** Lengthy titles can crowd the Touch Bar.
+
+> **제목을 짧게 유지합니다.** 긴 제목은 터치 바를 가득 채울 수 있습니다.
+>
+
+
+
+**Prefer darker colors for bezel color changes.** The appearance of the system-provided bezel resembles physical keyboard buttons. If your app requires a custom bezel color, dark colors are recommended.
+
+> ** 베젤 색상 변경은 어두운 색상을 선호합니다.** 시스템이 제공하는 베젤의 외관은 물리적인 키보드 버튼과 유사하다. 앱에 사용자 지정 베젤 색상이 필요한 경우 어두운 색상이 권장됩니다.
+>
+
+
+
+For developer guidance, see [`NSSegmentedControl`](https://developer.apple.com/design/human-interface-guidelines/documentation/appkit/nssegmentedcontrol)
+
+> 개발자 지침은 ['NS Segmented Control'](https://developer.apple.com/design/human-interface-guidelines/documentation/appkit/nssegmentedcontrol) 을 참조하십시오
+>
+
+.
+
+
+
+### [Sharing service pickers](/design/human-interface-guidelines/touch-bar#Sharing-service-pickers)
+
+
+
+People use sharing service pickers to share text, images, and other content with apps, social media accounts, and other services. When people tap a sharing service picker, it displays a popover that contains sharing buttons.
+
+> 사람들은 공유 서비스 피커를 사용하여 텍스트, 이미지 및 기타 콘텐츠를 앱, 소셜 미디어 계정 및 기타 서비스와 공유합니다. 사용자가 공유 서비스 선택기를 누르면 공유 버튼이 포함된 팝업이 표시됩니다.
+>
+
+
+
+![Partial screenshot of a Touch Bar that highlights a sharing service picker in a closed state.](https://docs-assets.developer.apple.com/published/fad03c9101cc3c16641e836ed124c2e4/tb-cv-sharing-picker-closed@2x.png)Closed![Partial screenshot of a Touch Bar that highlights a sharing service picker in an open state.](https://docs-assets.developer.apple.com/published/99591462b4f3eab1a579c96dc53b5b3d/tb-cv-sharing-picker-open@2x.png)Open**Present a sharing service picker only when there’s content to share.** If people haven’t selected text, images, or other sharable content, the sharing service picker needs to be unavailable.
+
+
+
+For developer guidance, see [`NSSharingServicePicker`](https://developer.apple.com/design/human-interface-guidelines/documentation/appkit/nssharingservicepicker)
+
+> 개발자 안내는 ['NS 공유 서비스 피커'](https://developer.apple.com/design/human-interface-guidelines/documentation/appkit/nssharingservicepicker) 를 참조하십시오
+>
+
+.
+
+
+
+### [Sliders](/design/human-interface-guidelines/touch-bar#Sliders)
+
+
+
+A slider is a horizontal track with a control called a thumb, which people can slide to move between a minimum and maximum value, such as screen brightness level, or position during media playback. As a slider’s value changes, the portion of track between the minimum value and the thumb fills with color.
+
+> 슬라이더는 엄지손가락이라는 컨트롤이 있는 수평 트랙으로, 사람들이 화면 밝기 수준이나 미디어 재생 중 위치와 같은 최소와 최대 값 사이를 이동하도록 슬라이드할 수 있습니다. 슬라이더의 값이 변경되면 최소 값과 엄지 사이의 트랙 부분이 색상으로 채워집니다.
+>
+
+
+
+![Partial screenshot of a Touch Bar that highlights a sharing service picker in an open state.](https://docs-assets.developer.apple.com/published/82d9de0501fa09107e4bab1c528f1ea1/tb-cv-slider@2x.png)
+
+
+
+**Customize a slider’s appearance to match your app and add value.** Consider coordinating a slider’s track color with your app’s color scheme.
+
+> **슬라이더 모양을 앱에 맞게 사용자 지정하고 가치를 추가합니다.** 슬라이더의 트랙 색상을 앱의 색상 체계와 조정하는 것을 고려해 보십시오.
+>
+
+
+
+**Consider using a stepper instead of a slider when space is tight.** If a slider’s values cover a limited range and it’s possible to move through them in discrete steps, it might make sense to use a stepper. For guidance, see [Steppers](/design/human-interface-guidelines/touch-bar#Steppers)
+
+> **공간이 좁을 때 슬라이더 대신 스테퍼를 사용하는 것을 고려해보세요.** 슬라이더의 값이 제한된 범위를 포함하고 개별 단계로 슬라이더를 이동할 수 있다면 스테퍼를 사용하는 것이 합리적일 수 있습니다. 자세한 지침은 [Stepers](/design/human-interface-guideline/touch-bar#Stepers)를 참조하십시오
+>
+
+.
+
+
+
+**Provide left and right icons that illustrate the meaning of the minimum and maximum values.** A slider that adjusts image size, for example, could show a small image icon on the left and a large image icon on the right.
+
+> **최소값과 최대값의 의미를 나타내는 왼쪽 및 오른쪽 아이콘을 제공합니다.** 예를 들어, 이미지 크기를 조정하는 슬라이더는 왼쪽에 작은 이미지 아이콘을 표시하고 오른쪽에 큰 이미지 아이콘을 표시할 수 있습니다.
+>
+
+
+
+For developer guidance, see [`NSSlider`](https://developer.apple.com/design/human-interface-guidelines/documentation/appkit/nsslider)
+
+> 개발자 안내는 ['NS슬라이더'](https://developer.apple.com/design/human-interface-guidelines/documentation/appkit/nsslider) 를 참조하십시오
+>
+
+.
+
+
+
+### [Steppers](/design/human-interface-guidelines/touch-bar#Steppers)
+
+
+
+Steppers provide a set of continuous — usually numeric — values from which people can choose. A stepper displays the current value centered between a decrementing control and an incrementing control. People tap the controls or swipe the current value left or right to change the value by an amount you specify.
+
+> 스텝퍼는 사람들이 선택할 수 있는 연속형(일반적으로 숫자) 값 집합을 제공합니다. 스텝퍼는 감소하는 컨트롤과 증가하는 컨트롤 사이에 중심이 되는 현재 값을 표시합니다. 사람들은 사용자가 지정한 양만큼 값을 변경하기 위해 컨트롤을 누르거나 현재 값을 왼쪽 또는 오른쪽으로 스와이프합니다.
+>
+
+
+
+![Partial screenshot of a Touch Bar that highlights a font-size stepper with a current value of 22 points.](https://docs-assets.developer.apple.com/published/9565a3385c551a7aa1d077d738146cc6/tb-cv-steppers@2x.png)
+
+
+
+**Display the item’s current value in the center view.** By default, a stepper uses text to display the current value. You can use a formatter to style the text — for example, in a stepper that lets people choose dates, you might make today’s date red. In some cases, it might make sense to use images instead of text, but it can be tricky to create images that convey a logical progression from which people can predict the values that precede and follow the current value. For example, a stepper that controls the line weight of a marking tool could use a set of images that vary in thickness to help people understand the effect of incrementing and decrementing the value.
+
+> **중앙 보기에 항목의 현재 값을 표시합니다.** 기본적으로 스테퍼는 텍스트를 사용하여 현재 값을 표시합니다. 형식을 사용하여 텍스트 스타일을 지정할 수 있습니다. 예를 들어 사용자가 날짜를 선택할 수 있는 단계에서 오늘 날짜를 빨간색으로 만들 수 있습니다. 경우에 따라 텍스트 대신 이미지를 사용하는 것이 합리적일 수 있지만, 사람들이 현재 가치에 선행하고 따르는 가치를 예측할 수 있는 논리적인 진행을 전달하는 이미지를 만드는 것은 어려울 수 있다. 예를 들어, 마킹 도구의 선 무게를 제어하는 스테퍼는 사람들이 값의 증가와 감소의 효과를 이해하도록 돕기 위해 두께가 다른 이미지 세트를 사용할 수 있다.
+>
+
+
+
+**Avoid using a stepper when people are likely to make large adjustments to an item’s value.** Because a stepper changes an item’s value by one discrete step per swipe or tap, people would have to swipe or tap a lot to make a large value change.
+
+> ** 사람들이 물건의 가치를 크게 조정할 가능성이 있는 경우에는 스테퍼를 사용하지 마십시오.** 스텝퍼는 물건의 값을 스와이프 또는 탭 당 한 번의 개별 단계로 변경하기 때문에, 큰 값 변경을 위해 사람들은 스와이프 또는 탭을 많이 해야 할 것이다.
+>
+
+
+
+[Platform considerations](/design/human-interface-guidelines/touch-bar#Platform-considerations)
+
+-----------------------------------------------------------------------------------------------
+
+
+
+*Not supported in iOS, iPadOS, tvOS, visionOS, or watchOS.*
+
+> *iOS, iPadOS, tvOS, 비전에서 지원되지 않음OS 또는 시계OS.*
+>
+
+
+
+[Resources](/design/human-interface-guidelines/touch-bar#Resources)
+
+-------------------------------------------------------------------
+
+
+
+#### [Related](/design/human-interface-guidelines/touch-bar#Related)
+
+
+
+[Feedback](/design/human-interface-guidelines/feedback)
+
+
+
+
+
+#### [Developer documentation](/design/human-interface-guidelines/touch-bar#Developer-documentation)
+
+
+
+[`NSTouchBar`](/documentation/appkit/nstouchbar)
+
+
+
+
+
