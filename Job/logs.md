@@ -172,3 +172,4 @@
 |2023-08-18 00:00|./human-interface-guidelines-markdown/technologies/siri.md|582|0|.|
 |2023-08-18 00:00|./human-interface-guidelines-markdown/technologies/tap-to-pay-on-iphone.md|582|0|.|
 |2023-08-18 00:00|./human-interface-guidelines-markdown/technologies/wallet.md|582|0|.|
+|2023-08-19 00:00|./human-interface-guidelines-markdown/technologies/wallet.md|582|0|.|
