@@ -3,7 +3,7 @@ import os
 
 def makeTranslatedFile():
     # open README.md & get Lines containing paths
-    f = open('./README.md', 'r')
+    f = open('README.md', 'r')
     lines = list(filter(lambda line: line.strip()[:3] == '- [', f.readlines()))
 
     for line in lines:
