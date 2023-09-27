@@ -7,10 +7,10 @@ name: Python package
 # Event 작성 부분(Trigger)
 # [push(Branch or Tag), pull_request, schedule]
 on:
-    pull_request:
-      branches: [ main ]
-    schedule:
-    - cron: '0 0 * * *'
+    # pull_request:
+    #   branches: [ main ]
+    # schedule:
+    # - cron: '0 0 * * *'
 #    push:
 #     branches: [ main ]
 
